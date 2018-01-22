@@ -1,0 +1,7 @@
+{
+  "urls": {
+    "api": "https://api.iextrading.com/1.0/",
+    "dev": "https://iextrading.com/developer/",
+    "terms": "https://iextrading.com/api-exhibit-a/"
+  }
+}

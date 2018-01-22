@@ -1,0 +1,1391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers PageInternal PageBodyContainerWatchlist ArticleTableContainerSignalsWatchlist shallow renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleTableContainerSignalsWatchlist
+    dispatch={[Function]}
+    heightBuffer={20}
+    items={
+      Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "data": Object {
+            "description": "testDescription0",
+            "signals": Array [
+              Object {
+                "action": "SELL",
+                "change": 0.003,
+                "date": 1513432000000,
+                "position": 0.403,
+                "securityId": "testId0",
+              },
+              Object {
+                "action": "BUY",
+                "change": 0.005,
+                "date": 1513332000000,
+                "position": 0.601,
+                "securityId": "testId0",
+              },
+            ],
+          },
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "data": Object {
+            "description": "testDescription1",
+            "signals": Array [],
+          },
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+      }
+    }
+    statusSignals="SUCCESS"
+    widthIndent={30}
+    widthTable={470}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "alignItems": null,
+      "alignSelf": "flex-start",
+      "borderColorType": "border",
+      "borderRadius": null,
+      "borderStyle": null,
+      "borderWidth": null,
+      "boxSizing": null,
+      "children": <Table
+        HeaderStyle={Object {}}
+        background={null}
+        borderColorType="border"
+        color={Object {}}
+        colorType="dark"
+        columns={
+          Array [
+            Object {
+              "Header": "Recent Signals",
+              "columns": Array [
+                Object {
+                  "Header": "Date",
+                  "accessor": "formattedDate",
+                  "minWidth": 90,
+                },
+                Object {
+                  "Header": "Time",
+                  "accessor": "formattedTime",
+                  "minWidth": 80,
+                },
+                Object {
+                  "Header": "Action",
+                  "accessor": "action",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Change",
+                  "accessor": "change",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Position",
+                  "accessor": "position",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Cash",
+                  "accessor": "cash",
+                  "minWidth": 75,
+                },
+              ],
+            },
+          ]
+        }
+        data={
+          Array [
+            Object {
+              "action": "SELL",
+              "change": 0.003,
+              "date": 1513432000000,
+              "position": 0.403,
+              "securityId": "testId0",
+            },
+            Object {
+              "action": "BUY",
+              "change": 0.005,
+              "date": 1513332000000,
+              "position": 0.601,
+              "securityId": "testId0",
+            },
+          ]
+        }
+        fontFamily={null}
+        fontSize={null}
+        fontWeight={null}
+        letterSpacing={null}
+        lineHeight={null}
+        pageSize={2}
+        showPagination={false}
+        themeColor="primary"
+        themeFont="default"
+        themeFontWeight="light"
+        themeLetterSpacing="default"
+        themeLineHeight="default"
+        themeSize="table"
+        width={null}
+      />,
+      "color": Object {},
+      "display": null,
+      "flex": null,
+      "flexWrap": null,
+      "height": null,
+      "justifyContent": null,
+      "margin": "0",
+      "mediaWidth": "500px",
+      "minHeight": null,
+      "minWidth": null,
+      "overflowX": null,
+      "overflowY": null,
+      "padding": "10px 0 0 0",
+      "position": null,
+      "responsiveAlignItems": null,
+      "responsiveJustifyContent": null,
+      "responsiveMargin": null,
+      "responsivePadding": null,
+      "responsivePosition": null,
+      "responsiveWidth": "100%",
+      "separator": false,
+      "themeColor": "primary",
+      "width": null,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "HeaderStyle": Object {},
+        "background": null,
+        "borderColorType": "border",
+        "color": Object {},
+        "colorType": "dark",
+        "columns": Array [
+          Object {
+            "Header": "Recent Signals",
+            "columns": Array [
+              Object {
+                "Header": "Date",
+                "accessor": "formattedDate",
+                "minWidth": 90,
+              },
+              Object {
+                "Header": "Time",
+                "accessor": "formattedTime",
+                "minWidth": 80,
+              },
+              Object {
+                "Header": "Action",
+                "accessor": "action",
+                "minWidth": 75,
+              },
+              Object {
+                "Header": "Change",
+                "accessor": "change",
+                "minWidth": 75,
+              },
+              Object {
+                "Header": "Position",
+                "accessor": "position",
+                "minWidth": 75,
+              },
+              Object {
+                "Header": "Cash",
+                "accessor": "cash",
+                "minWidth": 75,
+              },
+            ],
+          },
+        ],
+        "data": Array [
+          Object {
+            "action": "SELL",
+            "change": 0.003,
+            "date": 1513432000000,
+            "position": 0.403,
+            "securityId": "testId0",
+          },
+          Object {
+            "action": "BUY",
+            "change": 0.005,
+            "date": 1513332000000,
+            "position": 0.601,
+            "securityId": "testId0",
+          },
+        ],
+        "fontFamily": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "letterSpacing": null,
+        "lineHeight": null,
+        "pageSize": 2,
+        "showPagination": false,
+        "themeColor": "primary",
+        "themeFont": "default",
+        "themeFontWeight": "light",
+        "themeLetterSpacing": "default",
+        "themeLineHeight": "default",
+        "themeSize": "table",
+        "width": null,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "alignItems": null,
+        "alignSelf": "flex-start",
+        "borderColorType": "border",
+        "borderRadius": null,
+        "borderStyle": null,
+        "borderWidth": null,
+        "boxSizing": null,
+        "children": <Table
+          HeaderStyle={Object {}}
+          background={null}
+          borderColorType="border"
+          color={Object {}}
+          colorType="dark"
+          columns={
+            Array [
+              Object {
+                "Header": "Recent Signals",
+                "columns": Array [
+                  Object {
+                    "Header": "Date",
+                    "accessor": "formattedDate",
+                    "minWidth": 90,
+                  },
+                  Object {
+                    "Header": "Time",
+                    "accessor": "formattedTime",
+                    "minWidth": 80,
+                  },
+                  Object {
+                    "Header": "Action",
+                    "accessor": "action",
+                    "minWidth": 75,
+                  },
+                  Object {
+                    "Header": "Change",
+                    "accessor": "change",
+                    "minWidth": 75,
+                  },
+                  Object {
+                    "Header": "Position",
+                    "accessor": "position",
+                    "minWidth": 75,
+                  },
+                  Object {
+                    "Header": "Cash",
+                    "accessor": "cash",
+                    "minWidth": 75,
+                  },
+                ],
+              },
+            ]
+          }
+          data={
+            Array [
+              Object {
+                "action": "SELL",
+                "change": 0.003,
+                "date": 1513432000000,
+                "position": 0.403,
+                "securityId": "testId0",
+              },
+              Object {
+                "action": "BUY",
+                "change": 0.005,
+                "date": 1513332000000,
+                "position": 0.601,
+                "securityId": "testId0",
+              },
+            ]
+          }
+          fontFamily={null}
+          fontSize={null}
+          fontWeight={null}
+          letterSpacing={null}
+          lineHeight={null}
+          pageSize={2}
+          showPagination={false}
+          themeColor="primary"
+          themeFont="default"
+          themeFontWeight="light"
+          themeLetterSpacing="default"
+          themeLineHeight="default"
+          themeSize="table"
+          width={null}
+        />,
+        "color": Object {},
+        "display": null,
+        "flex": null,
+        "flexWrap": null,
+        "height": null,
+        "justifyContent": null,
+        "margin": "0",
+        "mediaWidth": "500px",
+        "minHeight": null,
+        "minWidth": null,
+        "overflowX": null,
+        "overflowY": null,
+        "padding": "10px 0 0 0",
+        "position": null,
+        "responsiveAlignItems": null,
+        "responsiveJustifyContent": null,
+        "responsiveMargin": null,
+        "responsivePadding": null,
+        "responsivePosition": null,
+        "responsiveWidth": "100%",
+        "separator": false,
+        "themeColor": "primary",
+        "width": null,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "HeaderStyle": Object {},
+          "background": null,
+          "borderColorType": "border",
+          "color": Object {},
+          "colorType": "dark",
+          "columns": Array [
+            Object {
+              "Header": "Recent Signals",
+              "columns": Array [
+                Object {
+                  "Header": "Date",
+                  "accessor": "formattedDate",
+                  "minWidth": 90,
+                },
+                Object {
+                  "Header": "Time",
+                  "accessor": "formattedTime",
+                  "minWidth": 80,
+                },
+                Object {
+                  "Header": "Action",
+                  "accessor": "action",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Change",
+                  "accessor": "change",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Position",
+                  "accessor": "position",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Cash",
+                  "accessor": "cash",
+                  "minWidth": 75,
+                },
+              ],
+            },
+          ],
+          "data": Array [
+            Object {
+              "action": "SELL",
+              "change": 0.003,
+              "date": 1513432000000,
+              "position": 0.403,
+              "securityId": "testId0",
+            },
+            Object {
+              "action": "BUY",
+              "change": 0.005,
+              "date": 1513332000000,
+              "position": 0.601,
+              "securityId": "testId0",
+            },
+          ],
+          "fontFamily": null,
+          "fontSize": null,
+          "fontWeight": null,
+          "letterSpacing": null,
+          "lineHeight": null,
+          "pageSize": 2,
+          "showPagination": false,
+          "themeColor": "primary",
+          "themeFont": "default",
+          "themeFontWeight": "light",
+          "themeLetterSpacing": "default",
+          "themeLineHeight": "default",
+          "themeSize": "table",
+          "width": null,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerWatchlist ArticleTableContainerSignalsWatchlist shallow renders correctly, with componentWillReceiveProps 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleTableContainerSignalsWatchlist
+    dispatch={[Function]}
+    heightBuffer={20}
+    items={
+      Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "data": Object {
+            "description": "testDescription0",
+            "signals": Array [
+              Object {
+                "action": "SELL",
+                "change": 0.003,
+                "date": 1513432000000,
+                "position": 0.403,
+                "securityId": "testId0",
+              },
+              Object {
+                "action": "BUY",
+                "change": 0.005,
+                "date": 1513332000000,
+                "position": 0.601,
+                "securityId": "testId0",
+              },
+            ],
+          },
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "data": Object {
+            "description": "testDescription1",
+            "signals": Array [],
+          },
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+      }
+    }
+    statusSignals="IDLE"
+    widthIndent={30}
+    widthTable={470}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "alignItems": null,
+      "alignSelf": "flex-start",
+      "borderColorType": "border",
+      "borderRadius": null,
+      "borderStyle": null,
+      "borderWidth": null,
+      "boxSizing": null,
+      "children": <Table
+        HeaderStyle={Object {}}
+        background={null}
+        borderColorType="border"
+        color={Object {}}
+        colorType="dark"
+        columns={
+          Array [
+            Object {
+              "Header": "Recent Signals",
+              "columns": Array [
+                Object {
+                  "Header": "Date",
+                  "accessor": "formattedDate",
+                  "minWidth": 90,
+                },
+                Object {
+                  "Header": "Time",
+                  "accessor": "formattedTime",
+                  "minWidth": 80,
+                },
+                Object {
+                  "Header": "Action",
+                  "accessor": "action",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Change",
+                  "accessor": "change",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Position",
+                  "accessor": "position",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Cash",
+                  "accessor": "cash",
+                  "minWidth": 75,
+                },
+              ],
+            },
+          ]
+        }
+        data={
+          Array [
+            Object {
+              "action": "BUY",
+              "change": 0.012,
+              "date": 1516414800000,
+              "position": 0.601,
+              "securityId": "testId1",
+            },
+            Object {
+              "action": "SELL",
+              "change": 0.002,
+              "date": 1513414800000,
+              "position": 0.446,
+              "securityId": "testId1",
+            },
+          ]
+        }
+        fontFamily={null}
+        fontSize={null}
+        fontWeight={null}
+        letterSpacing={null}
+        lineHeight={null}
+        pageSize={2}
+        showPagination={false}
+        themeColor="primary"
+        themeFont="default"
+        themeFontWeight="light"
+        themeLetterSpacing="default"
+        themeLineHeight="default"
+        themeSize="table"
+        width={null}
+      />,
+      "color": Object {},
+      "display": null,
+      "flex": null,
+      "flexWrap": null,
+      "height": null,
+      "justifyContent": null,
+      "margin": "0",
+      "mediaWidth": "500px",
+      "minHeight": null,
+      "minWidth": null,
+      "overflowX": null,
+      "overflowY": null,
+      "padding": "10px 0 0 0",
+      "position": null,
+      "responsiveAlignItems": null,
+      "responsiveJustifyContent": null,
+      "responsiveMargin": null,
+      "responsivePadding": null,
+      "responsivePosition": null,
+      "responsiveWidth": "100%",
+      "separator": false,
+      "themeColor": "primary",
+      "width": null,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "HeaderStyle": Object {},
+        "background": null,
+        "borderColorType": "border",
+        "color": Object {},
+        "colorType": "dark",
+        "columns": Array [
+          Object {
+            "Header": "Recent Signals",
+            "columns": Array [
+              Object {
+                "Header": "Date",
+                "accessor": "formattedDate",
+                "minWidth": 90,
+              },
+              Object {
+                "Header": "Time",
+                "accessor": "formattedTime",
+                "minWidth": 80,
+              },
+              Object {
+                "Header": "Action",
+                "accessor": "action",
+                "minWidth": 75,
+              },
+              Object {
+                "Header": "Change",
+                "accessor": "change",
+                "minWidth": 75,
+              },
+              Object {
+                "Header": "Position",
+                "accessor": "position",
+                "minWidth": 75,
+              },
+              Object {
+                "Header": "Cash",
+                "accessor": "cash",
+                "minWidth": 75,
+              },
+            ],
+          },
+        ],
+        "data": Array [
+          Object {
+            "action": "BUY",
+            "change": 0.012,
+            "date": 1516414800000,
+            "position": 0.601,
+            "securityId": "testId1",
+          },
+          Object {
+            "action": "SELL",
+            "change": 0.002,
+            "date": 1513414800000,
+            "position": 0.446,
+            "securityId": "testId1",
+          },
+        ],
+        "fontFamily": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "letterSpacing": null,
+        "lineHeight": null,
+        "pageSize": 2,
+        "showPagination": false,
+        "themeColor": "primary",
+        "themeFont": "default",
+        "themeFontWeight": "light",
+        "themeLetterSpacing": "default",
+        "themeLineHeight": "default",
+        "themeSize": "table",
+        "width": null,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "alignItems": null,
+        "alignSelf": "flex-start",
+        "borderColorType": "border",
+        "borderRadius": null,
+        "borderStyle": null,
+        "borderWidth": null,
+        "boxSizing": null,
+        "children": <Table
+          HeaderStyle={Object {}}
+          background={null}
+          borderColorType="border"
+          color={Object {}}
+          colorType="dark"
+          columns={
+            Array [
+              Object {
+                "Header": "Recent Signals",
+                "columns": Array [
+                  Object {
+                    "Header": "Date",
+                    "accessor": "formattedDate",
+                    "minWidth": 90,
+                  },
+                  Object {
+                    "Header": "Time",
+                    "accessor": "formattedTime",
+                    "minWidth": 80,
+                  },
+                  Object {
+                    "Header": "Action",
+                    "accessor": "action",
+                    "minWidth": 75,
+                  },
+                  Object {
+                    "Header": "Change",
+                    "accessor": "change",
+                    "minWidth": 75,
+                  },
+                  Object {
+                    "Header": "Position",
+                    "accessor": "position",
+                    "minWidth": 75,
+                  },
+                  Object {
+                    "Header": "Cash",
+                    "accessor": "cash",
+                    "minWidth": 75,
+                  },
+                ],
+              },
+            ]
+          }
+          data={
+            Array [
+              Object {
+                "action": "BUY",
+                "change": 0.012,
+                "date": 1516414800000,
+                "position": 0.601,
+                "securityId": "testId1",
+              },
+              Object {
+                "action": "SELL",
+                "change": 0.002,
+                "date": 1513414800000,
+                "position": 0.446,
+                "securityId": "testId1",
+              },
+            ]
+          }
+          fontFamily={null}
+          fontSize={null}
+          fontWeight={null}
+          letterSpacing={null}
+          lineHeight={null}
+          pageSize={2}
+          showPagination={false}
+          themeColor="primary"
+          themeFont="default"
+          themeFontWeight="light"
+          themeLetterSpacing="default"
+          themeLineHeight="default"
+          themeSize="table"
+          width={null}
+        />,
+        "color": Object {},
+        "display": null,
+        "flex": null,
+        "flexWrap": null,
+        "height": null,
+        "justifyContent": null,
+        "margin": "0",
+        "mediaWidth": "500px",
+        "minHeight": null,
+        "minWidth": null,
+        "overflowX": null,
+        "overflowY": null,
+        "padding": "10px 0 0 0",
+        "position": null,
+        "responsiveAlignItems": null,
+        "responsiveJustifyContent": null,
+        "responsiveMargin": null,
+        "responsivePadding": null,
+        "responsivePosition": null,
+        "responsiveWidth": "100%",
+        "separator": false,
+        "themeColor": "primary",
+        "width": null,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "HeaderStyle": Object {},
+          "background": null,
+          "borderColorType": "border",
+          "color": Object {},
+          "colorType": "dark",
+          "columns": Array [
+            Object {
+              "Header": "Recent Signals",
+              "columns": Array [
+                Object {
+                  "Header": "Date",
+                  "accessor": "formattedDate",
+                  "minWidth": 90,
+                },
+                Object {
+                  "Header": "Time",
+                  "accessor": "formattedTime",
+                  "minWidth": 80,
+                },
+                Object {
+                  "Header": "Action",
+                  "accessor": "action",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Change",
+                  "accessor": "change",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Position",
+                  "accessor": "position",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Cash",
+                  "accessor": "cash",
+                  "minWidth": 75,
+                },
+              ],
+            },
+          ],
+          "data": Array [
+            Object {
+              "action": "BUY",
+              "change": 0.012,
+              "date": 1516414800000,
+              "position": 0.601,
+              "securityId": "testId1",
+            },
+            Object {
+              "action": "SELL",
+              "change": 0.002,
+              "date": 1513414800000,
+              "position": 0.446,
+              "securityId": "testId1",
+            },
+          ],
+          "fontFamily": null,
+          "fontSize": null,
+          "fontWeight": null,
+          "letterSpacing": null,
+          "lineHeight": null,
+          "pageSize": 2,
+          "showPagination": false,
+          "themeColor": "primary",
+          "themeFont": "default",
+          "themeFontWeight": "light",
+          "themeLetterSpacing": "default",
+          "themeLineHeight": "default",
+          "themeSize": "table",
+          "width": null,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerWatchlist ArticleTableContainerSignalsWatchlist shallow renders correctly, with no item data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleTableContainerSignalsWatchlist
+    dispatch={[Function]}
+    heightBuffer={20}
+    items={
+      Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "data": Object {
+            "description": "testDescription1",
+            "signals": Array [],
+          },
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+      }
+    }
+    statusSignals="IDLE"
+    widthIndent={30}
+    widthTable={470}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "alignItems": null,
+      "alignSelf": "flex-start",
+      "borderColorType": "border",
+      "borderRadius": null,
+      "borderStyle": null,
+      "borderWidth": null,
+      "boxSizing": null,
+      "children": <Table
+        HeaderStyle={Object {}}
+        background={null}
+        borderColorType="border"
+        color={Object {}}
+        colorType="dark"
+        columns={
+          Array [
+            Object {
+              "Header": "Recent Signals",
+              "columns": Array [
+                Object {
+                  "Header": "Date",
+                  "accessor": "formattedDate",
+                  "minWidth": 90,
+                },
+                Object {
+                  "Header": "Time",
+                  "accessor": "formattedTime",
+                  "minWidth": 80,
+                },
+                Object {
+                  "Header": "Action",
+                  "accessor": "action",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Change",
+                  "accessor": "change",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Position",
+                  "accessor": "position",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Cash",
+                  "accessor": "cash",
+                  "minWidth": 75,
+                },
+              ],
+            },
+          ]
+        }
+        data={Array []}
+        fontFamily={null}
+        fontSize={null}
+        fontWeight={null}
+        letterSpacing={null}
+        lineHeight={null}
+        pageSize={5}
+        showPagination={false}
+        themeColor="primary"
+        themeFont="default"
+        themeFontWeight="light"
+        themeLetterSpacing="default"
+        themeLineHeight="default"
+        themeSize="table"
+        width={null}
+      />,
+      "color": Object {},
+      "display": null,
+      "flex": null,
+      "flexWrap": null,
+      "height": null,
+      "justifyContent": null,
+      "margin": "0",
+      "mediaWidth": "500px",
+      "minHeight": null,
+      "minWidth": null,
+      "overflowX": null,
+      "overflowY": null,
+      "padding": "10px 0 0 0",
+      "position": null,
+      "responsiveAlignItems": null,
+      "responsiveJustifyContent": null,
+      "responsiveMargin": null,
+      "responsivePadding": null,
+      "responsivePosition": null,
+      "responsiveWidth": "100%",
+      "separator": false,
+      "themeColor": "primary",
+      "width": null,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "HeaderStyle": Object {},
+        "background": null,
+        "borderColorType": "border",
+        "color": Object {},
+        "colorType": "dark",
+        "columns": Array [
+          Object {
+            "Header": "Recent Signals",
+            "columns": Array [
+              Object {
+                "Header": "Date",
+                "accessor": "formattedDate",
+                "minWidth": 90,
+              },
+              Object {
+                "Header": "Time",
+                "accessor": "formattedTime",
+                "minWidth": 80,
+              },
+              Object {
+                "Header": "Action",
+                "accessor": "action",
+                "minWidth": 75,
+              },
+              Object {
+                "Header": "Change",
+                "accessor": "change",
+                "minWidth": 75,
+              },
+              Object {
+                "Header": "Position",
+                "accessor": "position",
+                "minWidth": 75,
+              },
+              Object {
+                "Header": "Cash",
+                "accessor": "cash",
+                "minWidth": 75,
+              },
+            ],
+          },
+        ],
+        "data": Array [],
+        "fontFamily": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "letterSpacing": null,
+        "lineHeight": null,
+        "pageSize": 5,
+        "showPagination": false,
+        "themeColor": "primary",
+        "themeFont": "default",
+        "themeFontWeight": "light",
+        "themeLetterSpacing": "default",
+        "themeLineHeight": "default",
+        "themeSize": "table",
+        "width": null,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "alignItems": null,
+        "alignSelf": "flex-start",
+        "borderColorType": "border",
+        "borderRadius": null,
+        "borderStyle": null,
+        "borderWidth": null,
+        "boxSizing": null,
+        "children": <Table
+          HeaderStyle={Object {}}
+          background={null}
+          borderColorType="border"
+          color={Object {}}
+          colorType="dark"
+          columns={
+            Array [
+              Object {
+                "Header": "Recent Signals",
+                "columns": Array [
+                  Object {
+                    "Header": "Date",
+                    "accessor": "formattedDate",
+                    "minWidth": 90,
+                  },
+                  Object {
+                    "Header": "Time",
+                    "accessor": "formattedTime",
+                    "minWidth": 80,
+                  },
+                  Object {
+                    "Header": "Action",
+                    "accessor": "action",
+                    "minWidth": 75,
+                  },
+                  Object {
+                    "Header": "Change",
+                    "accessor": "change",
+                    "minWidth": 75,
+                  },
+                  Object {
+                    "Header": "Position",
+                    "accessor": "position",
+                    "minWidth": 75,
+                  },
+                  Object {
+                    "Header": "Cash",
+                    "accessor": "cash",
+                    "minWidth": 75,
+                  },
+                ],
+              },
+            ]
+          }
+          data={Array []}
+          fontFamily={null}
+          fontSize={null}
+          fontWeight={null}
+          letterSpacing={null}
+          lineHeight={null}
+          pageSize={5}
+          showPagination={false}
+          themeColor="primary"
+          themeFont="default"
+          themeFontWeight="light"
+          themeLetterSpacing="default"
+          themeLineHeight="default"
+          themeSize="table"
+          width={null}
+        />,
+        "color": Object {},
+        "display": null,
+        "flex": null,
+        "flexWrap": null,
+        "height": null,
+        "justifyContent": null,
+        "margin": "0",
+        "mediaWidth": "500px",
+        "minHeight": null,
+        "minWidth": null,
+        "overflowX": null,
+        "overflowY": null,
+        "padding": "10px 0 0 0",
+        "position": null,
+        "responsiveAlignItems": null,
+        "responsiveJustifyContent": null,
+        "responsiveMargin": null,
+        "responsivePadding": null,
+        "responsivePosition": null,
+        "responsiveWidth": "100%",
+        "separator": false,
+        "themeColor": "primary",
+        "width": null,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "HeaderStyle": Object {},
+          "background": null,
+          "borderColorType": "border",
+          "color": Object {},
+          "colorType": "dark",
+          "columns": Array [
+            Object {
+              "Header": "Recent Signals",
+              "columns": Array [
+                Object {
+                  "Header": "Date",
+                  "accessor": "formattedDate",
+                  "minWidth": 90,
+                },
+                Object {
+                  "Header": "Time",
+                  "accessor": "formattedTime",
+                  "minWidth": 80,
+                },
+                Object {
+                  "Header": "Action",
+                  "accessor": "action",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Change",
+                  "accessor": "change",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Position",
+                  "accessor": "position",
+                  "minWidth": 75,
+                },
+                Object {
+                  "Header": "Cash",
+                  "accessor": "cash",
+                  "minWidth": 75,
+                },
+              ],
+            },
+          ],
+          "data": Array [],
+          "fontFamily": null,
+          "fontSize": null,
+          "fontWeight": null,
+          "letterSpacing": null,
+          "lineHeight": null,
+          "pageSize": 5,
+          "showPagination": false,
+          "themeColor": "primary",
+          "themeFont": "default",
+          "themeFontWeight": "light",
+          "themeLetterSpacing": "default",
+          "themeLineHeight": "default",
+          "themeSize": "table",
+          "width": null,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;

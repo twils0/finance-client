@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`uiActionsAccount setButtonText fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"text\\":\\"testText\\"}"`;
+
+exports[`uiActionsAccount setButtonText fails when not provided a payload with a 'text' key 1`] = `"Please enter a value for the 'text' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`uiActionsAccount setButtonVisible fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"visible\\":false}"`;
+
+exports[`uiActionsAccount setButtonVisible fails when not provided a payload with a 'visible' key 1`] = `"Please enter a value for the 'visible' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`uiActionsAccount setButtonVisible fails when provided a payload with an 'visible' key that is not a boolean 1`] = `"Please enter a boolean value for the 'visible' key - {\\"id\\":\\"testId\\",\\"visible\\":\\"visible\\"}"`;
+
+exports[`uiActionsAccount setCurrentForm fails when not provided a payload with a 'current' key 1`] = `"Please enter a value for the 'current' key - {}"`;
+
+exports[`uiActionsAccount setFormEdit fails when not provided a payload with a 'edit' key 1`] = `"Please enter a value for the 'edit' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`uiActionsAccount setFormEdit fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"edit\\":false}"`;
+
+exports[`uiActionsAccount setFormEdit fails when provided a payload with an 'edit' key that is not a boolean 1`] = `"Please enter a boolean value for the 'edit' key - {\\"id\\":\\"testId\\",\\"edit\\":\\"edit\\"}"`;
+
+exports[`uiActionsAccount setFormHeight fails when not provided a payload with a 'height' key 1`] = `"Please enter a value for the 'height' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`uiActionsAccount setFormHeight fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"height\\":1}"`;
+
+exports[`uiActionsAccount setFormHeight fails when provided a payload with an 'height' key that is not a number 1`] = `"Please enter a number value for the 'height' key - {\\"id\\":\\"testId\\",\\"height\\":\\"height\\"}"`;
+
+exports[`uiActionsAccount setInputValueError fails when not provided a payload with a 'errorMessage' key 1`] = `"Please enter a value for the 'errorMessage' key - {\\"id\\":\\"testId\\",\\"parentId\\":\\"testParentId\\",\\"value\\":\\"testValue\\"}"`;
+
+exports[`uiActionsAccount setInputValueError fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"parentId\\":\\"testParentId\\",\\"value\\":\\"testValue\\",\\"errorMessage\\":\\"testErrorMessage\\"}"`;
+
+exports[`uiActionsAccount setInputValueError fails when not provided a payload with a 'parentId' key 1`] = `"Please enter a value for the 'parentId' key - {\\"id\\":\\"testId\\",\\"value\\":\\"testValue\\",\\"errorMessage\\":\\"testErrorMessage\\"}"`;
+
+exports[`uiActionsAccount setInputValueError fails when not provided a payload with a 'value' key 1`] = `"Please enter a value for the 'value' key - {\\"id\\":\\"testId\\",\\"parentId\\":\\"testParentId\\",\\"errorMessage\\":\\"testErrorMessage\\"}"`;

@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers PageInternal PageBodyContainerWatchlist ArticleGridContainerDataWatchlist shallow renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleGridContainerDataWatchlist
+    articleGridHeightBuffer={20}
+    articleGridHeightIndent={10}
+    articleGridWidthIndent={10}
+    dispatch={[Function]}
+    items={
+      Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+          "testId2",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "data": Object {
+            "description": "testDescription0",
+          },
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "data": Object {
+            "description": "testDescription1",
+          },
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+        "testId2": Object {
+          "category": "testCategory2",
+          "data": Object {
+            "description": "testDescription2",
+          },
+          "exchange": "testExchange2",
+          "id": "testId2",
+          "name": "testName2",
+          "tickerCusip": "testTickerCusip2",
+        },
+      }
+    }
+    statusItemData="IDLE"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): null,
+  Symbol(enzyme.__nodes__): Array [
+    null,
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerWatchlist ArticleGridContainerDataWatchlist shallow renders correctly, with no item data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleGridContainerDataWatchlist
+    articleGridHeightBuffer={20}
+    articleGridHeightIndent={10}
+    articleGridWidthIndent={10}
+    dispatch={[Function]}
+    items={
+      Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+          "testId2",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "data": Object {
+            "description": "testDescription1",
+          },
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+        "testId2": Object {
+          "category": "testCategory2",
+          "data": Object {
+            "description": "testDescription2",
+          },
+          "exchange": "testExchange2",
+          "id": "testId2",
+          "name": "testName2",
+          "tickerCusip": "testTickerCusip2",
+        },
+      }
+    }
+    statusItemData="IDLE"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): null,
+  Symbol(enzyme.__nodes__): Array [
+    null,
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;

@@ -1,0 +1,11 @@
+{
+  "Auth": {
+    "identityPoolId": "us-east-1:...",
+    "region": "us-east-1",
+    "userPoolId": "us-east-1_...",
+    "userPoolWebClientId": "..."
+  },
+  "Analytics": {
+    "disabled": true
+  }
+}

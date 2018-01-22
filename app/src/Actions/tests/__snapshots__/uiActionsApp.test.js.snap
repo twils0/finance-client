@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`uiActionsApp setFontsStatus fails when not provided a payload with a 'status' key 1`] = `"Please enter a value for the 'status' key - {}"`;
+
+exports[`uiActionsApp setImageStatus fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"status\\":\\"SUCCESS\\"}"`;
+
+exports[`uiActionsApp setImageStatus fails when not provided a payload with a 'status' key 1`] = `"Please enter a value for the 'status' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`uiActionsApp setStripeElementLoaded fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"loaded\\":true}"`;
+
+exports[`uiActionsApp setStripeElementLoaded fails when not provided a payload with a 'loaded' key 1`] = `"Please enter a value for the 'status' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`uiActionsApp setStripeElementLoaded fails when provided a payload with a 'loaded' key that is not a boolean 1`] = `"Please enter a value for the 'id' key - {\\"loaded\\":\\"loaded\\"}"`;
+
+exports[`uiActionsApp setStripeObject fails when not provided a payload with a 'stripeObject' key 1`] = `"Please enter a value for the 'stripeObject' key - {}"`;
+
+exports[`uiActionsApp setStripeObject fails when provided a payload with a 'stripeObject' key that is not an object 1`] = `"Please provide an object value for the 'stripeObject' key - {\\"stripeObject\\":[]}"`;
+
+exports[`uiActionsApp setStripeStatus fails when not provided a payload with a 'status' key 1`] = `"Please enter a value for the 'status' key - {}"`;

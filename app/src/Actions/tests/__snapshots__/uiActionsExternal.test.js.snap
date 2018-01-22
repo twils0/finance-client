@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`uiActionsExternal setButtonText fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"text\\":\\"testText\\"}"`;
+
+exports[`uiActionsExternal setButtonText fails when not provided a payload with a 'text' key 1`] = `"Please enter a value for the 'text' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`uiActionsExternal setCurrentForm fails when not provided a payload with a 'current' key 1`] = `"Please enter a value for the 'current' key - {}"`;
+
+exports[`uiActionsExternal setFormHeight fails when not provided a payload with a 'height' key 1`] = `"Please enter a value for the 'height' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`uiActionsExternal setFormHeight fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"height\\":1}"`;
+
+exports[`uiActionsExternal setFormHeight fails when provided a payload with an 'height' key that is not a number 1`] = `"Please enter a number value for the 'height' key - {\\"id\\":\\"testId\\",\\"height\\":\\"height\\"}"`;
+
+exports[`uiActionsExternal setInputValueError fails when not provided a payload with a 'errorMessage' key 1`] = `"Please enter a value for the 'errorMessage' key - {\\"id\\":\\"testId\\",\\"parentId\\":\\"testParentId\\",\\"value\\":\\"testValue\\"}"`;
+
+exports[`uiActionsExternal setInputValueError fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"parentId\\":\\"testParentId\\",\\"value\\":\\"testValue\\",\\"errorMessage\\":\\"testErrorMessage\\"}"`;
+
+exports[`uiActionsExternal setInputValueError fails when not provided a payload with a 'parentId' key 1`] = `"Please enter a value for the 'parentId' key - {\\"id\\":\\"testId\\",\\"value\\":\\"testValue\\",\\"errorMessage\\":\\"testErrorMessage\\"}"`;
+
+exports[`uiActionsExternal setInputValueError fails when not provided a payload with a 'value' key 1`] = `"Please enter a value for the 'value' key - {\\"id\\":\\"testId\\",\\"parentId\\":\\"testParentId\\",\\"errorMessage\\":\\"testErrorMessage\\"}"`;

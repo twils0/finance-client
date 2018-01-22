@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataThunkAuth requestVerifyField fails and throws an error when missing 'field' key in payload 1`] = `[Error: Please enter a value for the 'field' key - {}]`;
+
+exports[`dataThunkAuth requestVerifyField fails and throws an error when the 'field' key does not have an 'phone_number' or 'phone_number' value 1`] = `[Error: Please enter a value for the 'field' key - {"test":"testTest"}]`;

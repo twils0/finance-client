@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataThunkAuth requestLogin fails and throws an error when missing 'email' key in payload 1`] = `[Error: Please enter a value for the 'email' key - {}]`;
+
+exports[`dataThunkAuth requestLogin fails and throws an error when missing 'password' key in payload 1`] = `[Error: Please enter a value for the 'password' key - {"email":"testEmail"}]`;

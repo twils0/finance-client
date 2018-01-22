@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataThunkAuth requestSignOutOtherDevices fails and throws an error when missing 'email' key in payload 1`] = `[Error: Please enter a value for the 'password' key - {}]`;
+
+exports[`dataThunkAuth requestSignOutOtherDevices fails and throws an error when missing 'password' key in payload 1`] = `[Error: Please enter a value for the 'password' key - {"email":"testEmail"}]`;
+
+exports[`dataThunkAuth requestSignOutOtherDevices fails and throws an error when missing 'remembered' key in payload 1`] = `[Error: Please enter a value for the 'remembered' key - {"email":"testEmail","password":"testPassword1!"}]`;

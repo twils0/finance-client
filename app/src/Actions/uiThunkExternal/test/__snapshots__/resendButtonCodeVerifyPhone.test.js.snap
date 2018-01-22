@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`uiThunkExternal resendButtonCodeVerifyPhone fails and throws an error when missing 'history' key in payload 1`] = `[Error: Please enter a value for the 'history' key - {}]`;

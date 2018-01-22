@@ -1,0 +1,5 @@
+{
+  "apiKey": "pk_...",
+  "url": "https://pay.example.com/",
+  "src": "https://js.stripe.com/v3/"
+}

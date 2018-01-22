@@ -1,0 +1,2942 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerBilling shallow renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FormContainerBilling
+    clearElement={[MockFunction]}
+    currentForm="profileForm"
+    dataAccountFields={
+      Object {
+        "accountCustomer": Object {
+          "id": "accountCustomer",
+          "value": "",
+        },
+        "accountEmail": Object {
+          "id": "accountEmail",
+          "value": "",
+        },
+        "accountEmailAdditional": Object {
+          "id": "accountEmailAdditional",
+          "value": "",
+        },
+        "accountName": Object {
+          "id": "accountName",
+          "value": "",
+        },
+        "accountNameOnCard": Object {
+          "id": "accountNameOnCard",
+          "value": "testNameOnCard",
+        },
+        "accountPhone": Object {
+          "id": "accountPhone",
+          "value": "",
+        },
+        "accountPromoCode": Object {
+          "id": "accountPromoCode",
+          "value": "testPromoCode",
+        },
+        "accountPromoCodeValid": Object {
+          "id": "accountPromoCodeValid",
+          "value": true,
+        },
+        "list": Array [
+          "accountName",
+          "accountEmail",
+          "accountEmailAdditional",
+          "accountPhone",
+          "accountNameOnCard",
+          "accountPromoCode",
+          "accountPromoCodeValid",
+          "accountCustomer",
+        ],
+      }
+    }
+    editForm={false}
+    handleInputValueError={[Function]}
+    headerWidthBufferRight={10}
+    height={0}
+    heightRef={[MockFunction]}
+    inputs={
+      Object {
+        "billingNameOnCard": Object {
+          "errorMessage": "",
+          "id": "billingNameOnCard",
+          "parentId": "billingForm",
+          "value": "testNameOnCard",
+        },
+        "billingPromoCode": Object {
+          "errorMessage": "",
+          "id": "billingPromoCode",
+          "parentId": "billingForm",
+          "value": "testPromoCode",
+        },
+        "billingStripe": Object {
+          "errorMessage": "",
+          "id": "billingStripe",
+          "parentId": "billingForm",
+          "value": "",
+        },
+      }
+    }
+    mediaWidth={874}
+    resetStripeElement={[MockFunction]}
+    rowHeight={60}
+    rowHeightBuffer={18}
+    rowWidthIndent={10}
+    setHeight={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "billingForm",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    statusAccount={
+      Object {
+        "accountStatusAWSFields": Object {
+          "id": "accountStatusAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusStripeFields": Object {
+          "id": "accountStatusStripeFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateAWSFields": Object {
+          "id": "accountStatusUpdateAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateDBFields": Object {
+          "id": "accountStatusUpdateDBFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsRequest": Object {
+          "id": "accountStatusUpdateStripeFieldsRequest",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsToken": Object {
+          "id": "accountStatusUpdateStripeFieldsToken",
+          "status": "IDLE",
+        },
+      }
+    }
+    stripe={
+      Object {
+        "stripeObject": Object {
+          "test": "testStripe",
+        },
+      }
+    }
+    stripeRef={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <mockConstructor>
+        <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "testNameOnCard",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "testPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />
+      </mockConstructor>,
+      "stripe": Object {
+        "test": "testStripe",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "testNameOnCard",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "testPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "currentFormBool": false,
+          "editForm": false,
+          "handleInputChange": [Function],
+          "headerWidthBufferRight": 10,
+          "heightRef": [MockFunction],
+          "inputs": Object {
+            "billingNameOnCard": Object {
+              "errorMessage": "",
+              "id": "billingNameOnCard",
+              "parentId": "billingForm",
+              "value": "testNameOnCard",
+            },
+            "billingPromoCode": Object {
+              "errorMessage": "",
+              "id": "billingPromoCode",
+              "parentId": "billingForm",
+              "value": "testPromoCode",
+            },
+            "billingStripe": Object {
+              "errorMessage": "",
+              "id": "billingStripe",
+              "parentId": "billingForm",
+              "value": "",
+            },
+          },
+          "mediaWidth": 874,
+          "rowHeight": 60,
+          "rowHeightBuffer": 18,
+          "rowWidthIndent": 10,
+          "stripeRef": [MockFunction],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [MockFunction],
+    },
+    "type": [MockFunction],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <mockConstructor>
+          <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "testNameOnCard",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "testPromoCode",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />
+        </mockConstructor>,
+        "stripe": Object {
+          "test": "testStripe",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "testNameOnCard",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "testPromoCode",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentFormBool": false,
+            "editForm": false,
+            "handleInputChange": [Function],
+            "headerWidthBufferRight": 10,
+            "heightRef": [MockFunction],
+            "inputs": Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "testNameOnCard",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "testPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            },
+            "mediaWidth": 874,
+            "rowHeight": 60,
+            "rowHeightBuffer": 18,
+            "rowWidthIndent": 10,
+            "stripeRef": [MockFunction],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [MockFunction],
+      },
+      "type": [MockFunction],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerBilling shallow renders correctly and calls handleInputChange, with no name on card error 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FormContainerBilling
+    clearElement={[MockFunction]}
+    currentForm="profileForm"
+    dataAccountFields={
+      Object {
+        "accountCustomer": Object {
+          "id": "accountCustomer",
+          "value": "",
+        },
+        "accountEmail": Object {
+          "id": "accountEmail",
+          "value": "",
+        },
+        "accountEmailAdditional": Object {
+          "id": "accountEmailAdditional",
+          "value": "",
+        },
+        "accountName": Object {
+          "id": "accountName",
+          "value": "",
+        },
+        "accountNameOnCard": Object {
+          "id": "accountNameOnCard",
+          "value": "",
+        },
+        "accountPhone": Object {
+          "id": "accountPhone",
+          "value": "",
+        },
+        "accountPromoCode": Object {
+          "id": "accountPromoCode",
+          "value": "",
+        },
+        "accountPromoCodeValid": Object {
+          "id": "accountPromoCodeValid",
+          "value": true,
+        },
+        "list": Array [
+          "accountName",
+          "accountEmail",
+          "accountEmailAdditional",
+          "accountPhone",
+          "accountNameOnCard",
+          "accountPromoCode",
+          "accountPromoCodeValid",
+          "accountCustomer",
+        ],
+      }
+    }
+    editForm={false}
+    handleInputValueError={[Function]}
+    headerWidthBufferRight={10}
+    height={0}
+    heightRef={[MockFunction]}
+    inputs={
+      Object {
+        "billingNameOnCard": Object {
+          "errorMessage": "Please enter the name shown on your credit card.",
+          "id": "billingNameOnCard",
+          "parentId": "billingForm",
+          "value": "",
+        },
+        "billingPromoCode": Object {
+          "errorMessage": "",
+          "id": "billingPromoCode",
+          "parentId": "billingForm",
+          "value": "",
+        },
+        "billingStripe": Object {
+          "errorMessage": "",
+          "id": "billingStripe",
+          "parentId": "billingForm",
+          "value": "",
+        },
+      }
+    }
+    mediaWidth={874}
+    resetStripeElement={[MockFunction]}
+    rowHeight={60}
+    rowHeightBuffer={18}
+    rowWidthIndent={10}
+    setHeight={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "billingForm",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    statusAccount={
+      Object {
+        "accountStatusAWSFields": Object {
+          "id": "accountStatusAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusStripeFields": Object {
+          "id": "accountStatusStripeFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateAWSFields": Object {
+          "id": "accountStatusUpdateAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateDBFields": Object {
+          "id": "accountStatusUpdateDBFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsRequest": Object {
+          "id": "accountStatusUpdateStripeFieldsRequest",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsToken": Object {
+          "id": "accountStatusUpdateStripeFieldsToken",
+          "status": "IDLE",
+        },
+      }
+    }
+    stripe={
+      Object {
+        "stripeObject": Object {
+          "test": "testStripe",
+        },
+      }
+    }
+    stripeRef={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <mockConstructor>
+        <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "Please enter the name shown on your credit card.",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />
+      </mockConstructor>,
+      "stripe": Object {
+        "test": "testStripe",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "Please enter the name shown on your credit card.",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "currentFormBool": false,
+          "editForm": false,
+          "handleInputChange": [Function],
+          "headerWidthBufferRight": 10,
+          "heightRef": [MockFunction],
+          "inputs": Object {
+            "billingNameOnCard": Object {
+              "errorMessage": "Please enter the name shown on your credit card.",
+              "id": "billingNameOnCard",
+              "parentId": "billingForm",
+              "value": "",
+            },
+            "billingPromoCode": Object {
+              "errorMessage": "",
+              "id": "billingPromoCode",
+              "parentId": "billingForm",
+              "value": "",
+            },
+            "billingStripe": Object {
+              "errorMessage": "",
+              "id": "billingStripe",
+              "parentId": "billingForm",
+              "value": "",
+            },
+          },
+          "mediaWidth": 874,
+          "rowHeight": 60,
+          "rowHeightBuffer": 18,
+          "rowWidthIndent": 10,
+          "stripeRef": [MockFunction],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [MockFunction],
+    },
+    "type": [MockFunction],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <mockConstructor>
+          <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "Please enter the name shown on your credit card.",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />
+        </mockConstructor>,
+        "stripe": Object {
+          "test": "testStripe",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "Please enter the name shown on your credit card.",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentFormBool": false,
+            "editForm": false,
+            "handleInputChange": [Function],
+            "headerWidthBufferRight": 10,
+            "heightRef": [MockFunction],
+            "inputs": Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "Please enter the name shown on your credit card.",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            },
+            "mediaWidth": 874,
+            "rowHeight": 60,
+            "rowHeightBuffer": 18,
+            "rowWidthIndent": 10,
+            "stripeRef": [MockFunction],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [MockFunction],
+      },
+      "type": [MockFunction],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerBilling shallow renders correctly and calls handleInputChange, with promo code expired error 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FormContainerBilling
+    clearElement={[MockFunction]}
+    currentForm="profileForm"
+    dataAccountFields={
+      Object {
+        "accountCustomer": Object {
+          "id": "accountCustomer",
+          "value": "",
+        },
+        "accountEmail": Object {
+          "id": "accountEmail",
+          "value": "",
+        },
+        "accountEmailAdditional": Object {
+          "id": "accountEmailAdditional",
+          "value": "",
+        },
+        "accountName": Object {
+          "id": "accountName",
+          "value": "",
+        },
+        "accountNameOnCard": Object {
+          "id": "accountNameOnCard",
+          "value": "",
+        },
+        "accountPhone": Object {
+          "id": "accountPhone",
+          "value": "",
+        },
+        "accountPromoCode": Object {
+          "id": "accountPromoCode",
+          "value": "wrongPromoCode",
+        },
+        "accountPromoCodeValid": Object {
+          "id": "accountPromoCodeValid",
+          "value": true,
+        },
+        "list": Array [
+          "accountName",
+          "accountEmail",
+          "accountEmailAdditional",
+          "accountPhone",
+          "accountNameOnCard",
+          "accountPromoCode",
+          "accountPromoCodeValid",
+          "accountCustomer",
+        ],
+      }
+    }
+    editForm={false}
+    handleInputValueError={[Function]}
+    headerWidthBufferRight={10}
+    height={0}
+    heightRef={[MockFunction]}
+    inputs={
+      Object {
+        "billingNameOnCard": Object {
+          "errorMessage": "",
+          "id": "billingNameOnCard",
+          "parentId": "billingForm",
+          "value": "",
+        },
+        "billingPromoCode": Object {
+          "errorMessage": "This promo code is no longer valid.",
+          "id": "billingPromoCode",
+          "parentId": "billingForm",
+          "value": "wrongPromoCode",
+        },
+        "billingStripe": Object {
+          "errorMessage": "",
+          "id": "billingStripe",
+          "parentId": "billingForm",
+          "value": "",
+        },
+      }
+    }
+    mediaWidth={874}
+    resetStripeElement={[MockFunction]}
+    rowHeight={60}
+    rowHeightBuffer={18}
+    rowWidthIndent={10}
+    setHeight={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "billingForm",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    statusAccount={
+      Object {
+        "accountStatusAWSFields": Object {
+          "id": "accountStatusAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusStripeFields": Object {
+          "id": "accountStatusStripeFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateAWSFields": Object {
+          "id": "accountStatusUpdateAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateDBFields": Object {
+          "id": "accountStatusUpdateDBFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsRequest": Object {
+          "id": "accountStatusUpdateStripeFieldsRequest",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsToken": Object {
+          "id": "accountStatusUpdateStripeFieldsToken",
+          "status": "IDLE",
+        },
+      }
+    }
+    stripe={
+      Object {
+        "stripeObject": Object {
+          "test": "testStripe",
+        },
+      }
+    }
+    stripeRef={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <mockConstructor>
+        <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "This promo code is no longer valid.",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "wrongPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />
+      </mockConstructor>,
+      "stripe": Object {
+        "test": "testStripe",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "This promo code is no longer valid.",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "wrongPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "currentFormBool": false,
+          "editForm": false,
+          "handleInputChange": [Function],
+          "headerWidthBufferRight": 10,
+          "heightRef": [MockFunction],
+          "inputs": Object {
+            "billingNameOnCard": Object {
+              "errorMessage": "",
+              "id": "billingNameOnCard",
+              "parentId": "billingForm",
+              "value": "",
+            },
+            "billingPromoCode": Object {
+              "errorMessage": "This promo code is no longer valid.",
+              "id": "billingPromoCode",
+              "parentId": "billingForm",
+              "value": "wrongPromoCode",
+            },
+            "billingStripe": Object {
+              "errorMessage": "",
+              "id": "billingStripe",
+              "parentId": "billingForm",
+              "value": "",
+            },
+          },
+          "mediaWidth": 874,
+          "rowHeight": 60,
+          "rowHeightBuffer": 18,
+          "rowWidthIndent": 10,
+          "stripeRef": [MockFunction],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [MockFunction],
+    },
+    "type": [MockFunction],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <mockConstructor>
+          <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "This promo code is no longer valid.",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "wrongPromoCode",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />
+        </mockConstructor>,
+        "stripe": Object {
+          "test": "testStripe",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "This promo code is no longer valid.",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "wrongPromoCode",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentFormBool": false,
+            "editForm": false,
+            "handleInputChange": [Function],
+            "headerWidthBufferRight": 10,
+            "heightRef": [MockFunction],
+            "inputs": Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "This promo code is no longer valid.",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "wrongPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            },
+            "mediaWidth": 874,
+            "rowHeight": 60,
+            "rowHeightBuffer": 18,
+            "rowWidthIndent": 10,
+            "stripeRef": [MockFunction],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [MockFunction],
+      },
+      "type": [MockFunction],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerBilling shallow renders correctly and calls handleInputChange, with promo code invalid error 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FormContainerBilling
+    clearElement={[MockFunction]}
+    currentForm="profileForm"
+    dataAccountFields={
+      Object {
+        "accountCustomer": Object {
+          "id": "accountCustomer",
+          "value": "",
+        },
+        "accountEmail": Object {
+          "id": "accountEmail",
+          "value": "",
+        },
+        "accountEmailAdditional": Object {
+          "id": "accountEmailAdditional",
+          "value": "",
+        },
+        "accountName": Object {
+          "id": "accountName",
+          "value": "",
+        },
+        "accountNameOnCard": Object {
+          "id": "accountNameOnCard",
+          "value": "",
+        },
+        "accountPhone": Object {
+          "id": "accountPhone",
+          "value": "",
+        },
+        "accountPromoCode": Object {
+          "id": "accountPromoCode",
+          "value": "wrongPromoCode",
+        },
+        "accountPromoCodeValid": Object {
+          "id": "accountPromoCodeValid",
+          "value": true,
+        },
+        "list": Array [
+          "accountName",
+          "accountEmail",
+          "accountEmailAdditional",
+          "accountPhone",
+          "accountNameOnCard",
+          "accountPromoCode",
+          "accountPromoCodeValid",
+          "accountCustomer",
+        ],
+      }
+    }
+    editForm={false}
+    handleInputValueError={[Function]}
+    headerWidthBufferRight={10}
+    height={0}
+    heightRef={[MockFunction]}
+    inputs={
+      Object {
+        "billingNameOnCard": Object {
+          "errorMessage": "",
+          "id": "billingNameOnCard",
+          "parentId": "billingForm",
+          "value": "",
+        },
+        "billingPromoCode": Object {
+          "errorMessage": "Please enter a valid promo code.",
+          "id": "billingPromoCode",
+          "parentId": "billingForm",
+          "value": "wrongPromoCode",
+        },
+        "billingStripe": Object {
+          "errorMessage": "",
+          "id": "billingStripe",
+          "parentId": "billingForm",
+          "value": "",
+        },
+      }
+    }
+    mediaWidth={874}
+    resetStripeElement={[MockFunction]}
+    rowHeight={60}
+    rowHeightBuffer={18}
+    rowWidthIndent={10}
+    setHeight={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "billingForm",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    statusAccount={
+      Object {
+        "accountStatusAWSFields": Object {
+          "id": "accountStatusAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusStripeFields": Object {
+          "id": "accountStatusStripeFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateAWSFields": Object {
+          "id": "accountStatusUpdateAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateDBFields": Object {
+          "id": "accountStatusUpdateDBFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsRequest": Object {
+          "id": "accountStatusUpdateStripeFieldsRequest",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsToken": Object {
+          "id": "accountStatusUpdateStripeFieldsToken",
+          "status": "IDLE",
+        },
+      }
+    }
+    stripe={
+      Object {
+        "stripeObject": Object {
+          "test": "testStripe",
+        },
+      }
+    }
+    stripeRef={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <mockConstructor>
+        <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "Please enter a valid promo code.",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "wrongPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />
+      </mockConstructor>,
+      "stripe": Object {
+        "test": "testStripe",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "Please enter a valid promo code.",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "wrongPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "currentFormBool": false,
+          "editForm": false,
+          "handleInputChange": [Function],
+          "headerWidthBufferRight": 10,
+          "heightRef": [MockFunction],
+          "inputs": Object {
+            "billingNameOnCard": Object {
+              "errorMessage": "",
+              "id": "billingNameOnCard",
+              "parentId": "billingForm",
+              "value": "",
+            },
+            "billingPromoCode": Object {
+              "errorMessage": "Please enter a valid promo code.",
+              "id": "billingPromoCode",
+              "parentId": "billingForm",
+              "value": "wrongPromoCode",
+            },
+            "billingStripe": Object {
+              "errorMessage": "",
+              "id": "billingStripe",
+              "parentId": "billingForm",
+              "value": "",
+            },
+          },
+          "mediaWidth": 874,
+          "rowHeight": 60,
+          "rowHeightBuffer": 18,
+          "rowWidthIndent": 10,
+          "stripeRef": [MockFunction],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [MockFunction],
+    },
+    "type": [MockFunction],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <mockConstructor>
+          <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "Please enter a valid promo code.",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "wrongPromoCode",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />
+        </mockConstructor>,
+        "stripe": Object {
+          "test": "testStripe",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "Please enter a valid promo code.",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "wrongPromoCode",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentFormBool": false,
+            "editForm": false,
+            "handleInputChange": [Function],
+            "headerWidthBufferRight": 10,
+            "heightRef": [MockFunction],
+            "inputs": Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "Please enter a valid promo code.",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "wrongPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            },
+            "mediaWidth": 874,
+            "rowHeight": 60,
+            "rowHeightBuffer": 18,
+            "rowWidthIndent": 10,
+            "stripeRef": [MockFunction],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [MockFunction],
+      },
+      "type": [MockFunction],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerBilling shallow renders correctly and calls handleInputChange, with undefined error 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FormContainerBilling
+    clearElement={[MockFunction]}
+    currentForm="profileForm"
+    dataAccountFields={
+      Object {
+        "accountCustomer": Object {
+          "id": "accountCustomer",
+          "value": "",
+        },
+        "accountEmail": Object {
+          "id": "accountEmail",
+          "value": "",
+        },
+        "accountEmailAdditional": Object {
+          "id": "accountEmailAdditional",
+          "value": "",
+        },
+        "accountName": Object {
+          "id": "accountName",
+          "value": "",
+        },
+        "accountNameOnCard": Object {
+          "id": "accountNameOnCard",
+          "value": "",
+        },
+        "accountPhone": Object {
+          "id": "accountPhone",
+          "value": "",
+        },
+        "accountPromoCode": Object {
+          "id": "accountPromoCode",
+          "value": "",
+        },
+        "accountPromoCodeValid": Object {
+          "id": "accountPromoCodeValid",
+          "value": true,
+        },
+        "list": Array [
+          "accountName",
+          "accountEmail",
+          "accountEmailAdditional",
+          "accountPhone",
+          "accountNameOnCard",
+          "accountPromoCode",
+          "accountPromoCodeValid",
+          "accountCustomer",
+        ],
+      }
+    }
+    editForm={false}
+    handleInputValueError={[Function]}
+    headerWidthBufferRight={10}
+    height={0}
+    heightRef={[MockFunction]}
+    inputs={
+      Object {
+        "billingNameOnCard": Object {
+          "errorMessage": "",
+          "id": "billingNameOnCard",
+          "parentId": "billingForm",
+          "value": "",
+        },
+        "billingPromoCode": Object {
+          "errorMessage": "",
+          "id": "billingPromoCode",
+          "parentId": "billingForm",
+          "value": "",
+        },
+        "billingStripe": Object {
+          "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+          "id": "billingStripe",
+          "parentId": "billingForm",
+          "value": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+        },
+      }
+    }
+    mediaWidth={874}
+    resetStripeElement={[MockFunction]}
+    rowHeight={60}
+    rowHeightBuffer={18}
+    rowWidthIndent={10}
+    setHeight={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "billingForm",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    statusAccount={
+      Object {
+        "accountStatusAWSFields": Object {
+          "id": "accountStatusAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusStripeFields": Object {
+          "id": "accountStatusStripeFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateAWSFields": Object {
+          "id": "accountStatusUpdateAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateDBFields": Object {
+          "id": "accountStatusUpdateDBFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsRequest": Object {
+          "id": "accountStatusUpdateStripeFieldsRequest",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsToken": Object {
+          "id": "accountStatusUpdateStripeFieldsToken",
+          "status": "IDLE",
+        },
+      }
+    }
+    stripe={
+      Object {
+        "stripeObject": Object {
+          "test": "testStripe",
+        },
+      }
+    }
+    stripeRef={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <mockConstructor>
+        <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingStripe": Object {
+                "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />
+      </mockConstructor>,
+      "stripe": Object {
+        "test": "testStripe",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingStripe": Object {
+                "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "currentFormBool": false,
+          "editForm": false,
+          "handleInputChange": [Function],
+          "headerWidthBufferRight": 10,
+          "heightRef": [MockFunction],
+          "inputs": Object {
+            "billingNameOnCard": Object {
+              "errorMessage": "",
+              "id": "billingNameOnCard",
+              "parentId": "billingForm",
+              "value": "",
+            },
+            "billingPromoCode": Object {
+              "errorMessage": "",
+              "id": "billingPromoCode",
+              "parentId": "billingForm",
+              "value": "",
+            },
+            "billingStripe": Object {
+              "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+              "id": "billingStripe",
+              "parentId": "billingForm",
+              "value": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+            },
+          },
+          "mediaWidth": 874,
+          "rowHeight": 60,
+          "rowHeightBuffer": 18,
+          "rowWidthIndent": 10,
+          "stripeRef": [MockFunction],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [MockFunction],
+    },
+    "type": [MockFunction],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <mockConstructor>
+          <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />
+        </mockConstructor>,
+        "stripe": Object {
+          "test": "testStripe",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentFormBool": false,
+            "editForm": false,
+            "handleInputChange": [Function],
+            "headerWidthBufferRight": 10,
+            "heightRef": [MockFunction],
+            "inputs": Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "",
+              },
+              "billingStripe": Object {
+                "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+              },
+            },
+            "mediaWidth": 874,
+            "rowHeight": 60,
+            "rowHeightBuffer": 18,
+            "rowWidthIndent": 10,
+            "stripeRef": [MockFunction],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [MockFunction],
+      },
+      "type": [MockFunction],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerBilling shallow renders correctly, with expired promo code, componentWillUpdate, componentDidUpdate, and componentWillUnmount 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FormContainerBilling
+    clearElement={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "billingForm",
+          ],
+          Array [
+            "billingForm",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    currentForm="profileForm"
+    dataAccountFields={
+      Object {
+        "accountCustomer": Object {
+          "id": "accountCustomer",
+          "value": "",
+        },
+        "accountEmail": Object {
+          "id": "accountEmail",
+          "value": "",
+        },
+        "accountEmailAdditional": Object {
+          "id": "accountEmailAdditional",
+          "value": "",
+        },
+        "accountName": Object {
+          "id": "accountName",
+          "value": "",
+        },
+        "accountNameOnCard": Object {
+          "id": "accountNameOnCard",
+          "value": "testNameOnCard",
+        },
+        "accountPhone": Object {
+          "id": "accountPhone",
+          "value": "",
+        },
+        "accountPromoCode": Object {
+          "id": "accountPromoCode",
+          "value": "wrongPromoCode",
+        },
+        "accountPromoCodeValid": Object {
+          "id": "accountPromoCodeValid",
+          "value": false,
+        },
+        "list": Array [
+          "accountName",
+          "accountEmail",
+          "accountEmailAdditional",
+          "accountPhone",
+          "accountNameOnCard",
+          "accountPromoCode",
+          "accountPromoCodeValid",
+          "accountCustomer",
+        ],
+      }
+    }
+    editForm={false}
+    handleInputValueError={[Function]}
+    headerWidthBufferRight={10}
+    height={0}
+    heightRef={[MockFunction]}
+    inputs={
+      Object {
+        "billingNameOnCard": Object {
+          "errorMessage": "",
+          "id": "billingNameOnCard",
+          "parentId": "billingForm",
+          "value": "testNameOnCard",
+        },
+        "billingPromoCode": Object {
+          "errorMessage": "This promo code is no longer valid.",
+          "id": "billingPromoCode",
+          "parentId": "billingForm",
+          "value": "wrongPromoCode",
+        },
+        "billingStripe": Object {
+          "errorMessage": "",
+          "id": "billingStripe",
+          "parentId": "billingForm",
+          "value": "",
+        },
+      }
+    }
+    mediaWidth={874}
+    resetStripeElement={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    rowHeight={60}
+    rowHeightBuffer={18}
+    rowWidthIndent={10}
+    setHeight={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "billingForm",
+          ],
+          Array [
+            "billingForm",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    statusAccount={
+      Object {
+        "accountStatusAWSFields": Object {
+          "id": "accountStatusAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusStripeFields": Object {
+          "id": "accountStatusStripeFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateAWSFields": Object {
+          "id": "accountStatusUpdateAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateDBFields": Object {
+          "id": "accountStatusUpdateDBFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsRequest": Object {
+          "id": "accountStatusUpdateStripeFieldsRequest",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsToken": Object {
+          "id": "accountStatusUpdateStripeFieldsToken",
+          "status": "IDLE",
+        },
+      }
+    }
+    stripe={
+      Object {
+        "stripeObject": Object {
+          "test": "testStripe",
+        },
+      }
+    }
+    stripeRef={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <mockConstructor>
+        <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "testNameOnCard",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "This promo code is no longer valid.",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "wrongPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />
+      </mockConstructor>,
+      "stripe": Object {
+        "test": "testStripe",
+      },
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <FormBilling
+          currentFormBool={false}
+          editForm={false}
+          handleInputChange={[Function]}
+          headerWidthBufferRight={10}
+          heightRef={[MockFunction]}
+          inputs={
+            Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "testNameOnCard",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "This promo code is no longer valid.",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "wrongPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            }
+          }
+          mediaWidth={874}
+          rowHeight={60}
+          rowHeightBuffer={18}
+          rowWidthIndent={10}
+          stripeRef={[MockFunction]}
+        />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "currentFormBool": false,
+          "editForm": false,
+          "handleInputChange": [Function],
+          "headerWidthBufferRight": 10,
+          "heightRef": [MockFunction],
+          "inputs": Object {
+            "billingNameOnCard": Object {
+              "errorMessage": "",
+              "id": "billingNameOnCard",
+              "parentId": "billingForm",
+              "value": "testNameOnCard",
+            },
+            "billingPromoCode": Object {
+              "errorMessage": "This promo code is no longer valid.",
+              "id": "billingPromoCode",
+              "parentId": "billingForm",
+              "value": "wrongPromoCode",
+            },
+            "billingStripe": Object {
+              "errorMessage": "",
+              "id": "billingStripe",
+              "parentId": "billingForm",
+              "value": "",
+            },
+          },
+          "mediaWidth": 874,
+          "rowHeight": 60,
+          "rowHeightBuffer": 18,
+          "rowWidthIndent": 10,
+          "stripeRef": [MockFunction],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [MockFunction],
+    },
+    "type": [MockFunction],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <mockConstructor>
+          <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "testNameOnCard",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "This promo code is no longer valid.",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "wrongPromoCode",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />
+        </mockConstructor>,
+        "stripe": Object {
+          "test": "testStripe",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <FormBilling
+            currentFormBool={false}
+            editForm={false}
+            handleInputChange={[Function]}
+            headerWidthBufferRight={10}
+            heightRef={[MockFunction]}
+            inputs={
+              Object {
+                "billingNameOnCard": Object {
+                  "errorMessage": "",
+                  "id": "billingNameOnCard",
+                  "parentId": "billingForm",
+                  "value": "testNameOnCard",
+                },
+                "billingPromoCode": Object {
+                  "errorMessage": "This promo code is no longer valid.",
+                  "id": "billingPromoCode",
+                  "parentId": "billingForm",
+                  "value": "wrongPromoCode",
+                },
+                "billingStripe": Object {
+                  "errorMessage": "",
+                  "id": "billingStripe",
+                  "parentId": "billingForm",
+                  "value": "",
+                },
+              }
+            }
+            mediaWidth={874}
+            rowHeight={60}
+            rowHeightBuffer={18}
+            rowWidthIndent={10}
+            stripeRef={[MockFunction]}
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentFormBool": false,
+            "editForm": false,
+            "handleInputChange": [Function],
+            "headerWidthBufferRight": 10,
+            "heightRef": [MockFunction],
+            "inputs": Object {
+              "billingNameOnCard": Object {
+                "errorMessage": "",
+                "id": "billingNameOnCard",
+                "parentId": "billingForm",
+                "value": "testNameOnCard",
+              },
+              "billingPromoCode": Object {
+                "errorMessage": "This promo code is no longer valid.",
+                "id": "billingPromoCode",
+                "parentId": "billingForm",
+                "value": "wrongPromoCode",
+              },
+              "billingStripe": Object {
+                "errorMessage": "",
+                "id": "billingStripe",
+                "parentId": "billingForm",
+                "value": "",
+              },
+            },
+            "mediaWidth": 874,
+            "rowHeight": 60,
+            "rowHeightBuffer": 18,
+            "rowWidthIndent": 10,
+            "stripeRef": [MockFunction],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [MockFunction],
+      },
+      "type": [MockFunction],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerBilling shallow renders correctly, with loading indicator 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FormContainerBilling
+    clearElement={[MockFunction]}
+    currentForm="profileForm"
+    dataAccountFields={
+      Object {
+        "accountCustomer": Object {
+          "id": "accountCustomer",
+          "value": "",
+        },
+        "accountEmail": Object {
+          "id": "accountEmail",
+          "value": "",
+        },
+        "accountEmailAdditional": Object {
+          "id": "accountEmailAdditional",
+          "value": "",
+        },
+        "accountName": Object {
+          "id": "accountName",
+          "value": "",
+        },
+        "accountNameOnCard": Object {
+          "id": "accountNameOnCard",
+          "value": "testNameOnCard",
+        },
+        "accountPhone": Object {
+          "id": "accountPhone",
+          "value": "",
+        },
+        "accountPromoCode": Object {
+          "id": "accountPromoCode",
+          "value": "testPromoCode",
+        },
+        "accountPromoCodeValid": Object {
+          "id": "accountPromoCodeValid",
+          "value": true,
+        },
+        "list": Array [
+          "accountName",
+          "accountEmail",
+          "accountEmailAdditional",
+          "accountPhone",
+          "accountNameOnCard",
+          "accountPromoCode",
+          "accountPromoCodeValid",
+          "accountCustomer",
+        ],
+      }
+    }
+    editForm={false}
+    handleInputValueError={[Function]}
+    headerWidthBufferRight={10}
+    height={0}
+    heightRef={[MockFunction]}
+    inputs={
+      Object {
+        "billingNameOnCard": Object {
+          "errorMessage": "",
+          "id": "billingNameOnCard",
+          "parentId": "billingForm",
+          "value": "testNameOnCard",
+        },
+        "billingPromoCode": Object {
+          "errorMessage": "",
+          "id": "billingPromoCode",
+          "parentId": "billingForm",
+          "value": "testPromoCode",
+        },
+        "billingStripe": Object {
+          "errorMessage": "",
+          "id": "billingStripe",
+          "parentId": "billingForm",
+          "value": "",
+        },
+      }
+    }
+    mediaWidth={874}
+    resetStripeElement={[MockFunction]}
+    rowHeight={60}
+    rowHeightBuffer={18}
+    rowWidthIndent={10}
+    setHeight={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "billingForm",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    statusAccount={
+      Object {
+        "accountStatusAWSFields": Object {
+          "id": "accountStatusAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusStripeFields": Object {
+          "id": "accountStatusStripeFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateAWSFields": Object {
+          "id": "accountStatusUpdateAWSFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateDBFields": Object {
+          "id": "accountStatusUpdateDBFields",
+          "status": "IDLE",
+        },
+        "accountStatusUpdateStripeFieldsRequest": Object {
+          "id": "accountStatusUpdateStripeFieldsRequest",
+          "status": "LOADING",
+        },
+        "accountStatusUpdateStripeFieldsToken": Object {
+          "id": "accountStatusUpdateStripeFieldsToken",
+          "status": "IDLE",
+        },
+      }
+    }
+    stripe={
+      Object {
+        "stripeObject": Object {
+          "test": "testStripe",
+        },
+      }
+    }
+    stripeRef={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "alignItems": null,
+      "alignSelf": null,
+      "borderColorType": "border",
+      "borderRadius": null,
+      "borderStyle": null,
+      "borderWidth": null,
+      "boxSizing": null,
+      "children": <BeatLoader
+        color="#509236"
+        loading={true}
+        margin="2px"
+        size="15px"
+      />,
+      "color": Object {},
+      "display": null,
+      "flex": null,
+      "flexWrap": null,
+      "height": "0px",
+      "justifyContent": null,
+      "margin": null,
+      "mediaWidth": null,
+      "minHeight": null,
+      "minWidth": null,
+      "overflowX": null,
+      "overflowY": null,
+      "padding": null,
+      "position": null,
+      "responsiveAlignItems": null,
+      "responsiveJustifyContent": null,
+      "responsiveMargin": null,
+      "responsivePadding": null,
+      "responsivePosition": null,
+      "responsiveWidth": null,
+      "separator": false,
+      "themeColor": "primary",
+      "width": "100%",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "color": "#509236",
+        "loading": true,
+        "margin": "2px",
+        "size": "15px",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "alignItems": null,
+        "alignSelf": null,
+        "borderColorType": "border",
+        "borderRadius": null,
+        "borderStyle": null,
+        "borderWidth": null,
+        "boxSizing": null,
+        "children": <BeatLoader
+          color="#509236"
+          loading={true}
+          margin="2px"
+          size="15px"
+        />,
+        "color": Object {},
+        "display": null,
+        "flex": null,
+        "flexWrap": null,
+        "height": "0px",
+        "justifyContent": null,
+        "margin": null,
+        "mediaWidth": null,
+        "minHeight": null,
+        "minWidth": null,
+        "overflowX": null,
+        "overflowY": null,
+        "padding": null,
+        "position": null,
+        "responsiveAlignItems": null,
+        "responsiveJustifyContent": null,
+        "responsiveMargin": null,
+        "responsivePadding": null,
+        "responsivePosition": null,
+        "responsiveWidth": null,
+        "separator": false,
+        "themeColor": "primary",
+        "width": "100%",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "color": "#509236",
+          "loading": true,
+          "margin": "2px",
+          "size": "15px",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;

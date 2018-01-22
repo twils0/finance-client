@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataThunkAuth requestSignUp fails and throws an error when missing 'element' key in payload 1`] = `[Error: Please enter a value for the 'element' key - {}]`;
+
+exports[`dataThunkAuth requestSignUp fails and throws an error when missing 'email' key in payload 1`] = `[Error: Please enter a value for the 'email' key - {"element":{"test":"testElement"},"nameOnCard":"testNameOnCard","promoCode":"testPromoCode"}]`;
+
+exports[`dataThunkAuth requestSignUp fails and throws an error when missing 'name' key in payload 1`] = `[Error: Please enter a value for the 'name' key - {"element":{"test":"testElement"},"nameOnCard":"testNameOnCard","promoCode":"testPromoCode","email":"testEmail","password":"testPassword1!","phone":"+12395550000"}]`;
+
+exports[`dataThunkAuth requestSignUp fails and throws an error when missing 'nameOnCard' key in payload 1`] = `[Error: Please enter a value for the 'name' key - {"element":{"test":"testElement"}}]`;
+
+exports[`dataThunkAuth requestSignUp fails and throws an error when missing 'password' key in payload 1`] = `[Error: Please enter a value for the 'password' key - {"element":{"test":"testElement"},"nameOnCard":"testNameOnCard","promoCode":"testPromoCode","email":"testEmail"}]`;
+
+exports[`dataThunkAuth requestSignUp fails and throws an error when missing 'phone' key in payload 1`] = `[Error: Please enter a value for the 'phone' key - {"element":{"test":"testElement"},"nameOnCard":"testNameOnCard","promoCode":"testPromoCode","email":"testEmail","password":"testPassword1!"}]`;
+
+exports[`dataThunkAuth requestSignUp fails and throws an error when missing 'promoCode' key in payload 1`] = `[Error: Please enter a value for the 'promoCode' key - {"element":{"test":"testElement"},"nameOnCard":"testNameOnCard"}]`;
+
+exports[`dataThunkAuth requestSignUp fails when provided a payload with an 'element' key that is not an object 1`] = `[Error: Please provide an object value for the 'element' key - {"element":"testElement"}]`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataActionsAWS setAWSStatus fails when not provided a payload with a 'status' key 1`] = `"Please enter a value for the 'status' key - {}"`;
+
+exports[`dataActionsAWS setAWSUser fails when not provided a payload with an 'user' key 1`] = `"Please enter a value for the 'user' key - {}"`;
+
+exports[`dataActionsAWS setAWSUser fails when provided a payload with an 'user' key that is not an object 1`] = `"Please provide an object value for the 'user' key - {\\"user\\":[]}"`;

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`uiThunkAccount handleClickFirstButton fails and throws an error when missing 'resetStripeElement' key in payload 1`] = `[Error: Please enter a value for the 'resetStripeElement' key - {"stripeElement":{"test":"testStripeElement"}}]`;
+
+exports[`uiThunkAccount handleClickFirstButton fails and throws an error when missing 'stripeElement' key in payload 1`] = `[Error: Please enter a value for the 'stripeElement' key - {}]`;
