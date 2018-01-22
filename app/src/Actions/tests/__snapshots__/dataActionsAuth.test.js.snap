@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataActionsAuth setAuthStatus fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"status\\":\\"SUCCESS\\"}"`;
+
+exports[`dataActionsAuth setAuthStatus fails when not provided a payload with a 'status' key 1`] = `"Please enter a value for the 'status' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`dataActionsAuth setAuthenticated fails when not provided a payload with a 'authenticated' key 1`] = `"Please enter a value for the 'authenticated' key - {}"`;
+
+exports[`dataActionsAuth setAuthenticated fails when provided a payload with an 'authenticated' key that is not a boolean 1`] = `"Please enter a boolean value for the 'authenticated' key - {\\"authenticated\\":\\"authenticated\\"}"`;
+
+exports[`dataActionsAuth setCodeType fails when not provided a payload with a 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"needed\\":false}"`;
+
+exports[`dataActionsAuth setCodeType fails when not provided a payload with a 'needed' key 1`] = `"Please enter a value for the 'needed' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`dataActionsAuth setCodeType fails when provided a payload with a 'needed' key that is not a boolean 1`] = `"Please enter a boolean value for the 'needed' key - {\\"id\\":\\"testId\\",\\"needed\\":\\"needed\\"}"`;
+
+exports[`dataActionsAuth setRedirectURL fails when not provided a payload with a 'redirectURL' key 1`] = `"Please enter a value for the 'redirectURL' key - {}"`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataActionsAccount setAccountStatus fails when not provided a payload with a 'status' key 1`] = `"Please enter a value for the 'status' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`dataActionsAccount setAccountStatus fails when not provided a payload with an 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"status\\":\\"SUCCESS\\"}"`;
+
+exports[`dataActionsAccount setField fails when not provided a payload with a 'value' key 1`] = `"Please enter a value for the 'value' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`dataActionsAccount setField fails when not provided a payload with an 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"value\\":\\"testValue\\"}"`;
+
+exports[`dataActionsAccount setFields fails when not provided a payload with a 'value' key 1`] = `"Please enter a value for the 'value' key - {\\"id\\":\\"testId2\\"}"`;
+
+exports[`dataActionsAccount setFields fails when not provided a payload with an 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"value\\":\\"testValue2\\"}"`;

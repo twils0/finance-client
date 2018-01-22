@@ -1,0 +1,321 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers PageExternal Buttons ButtonContainerFirst shallow renders correctly and button works, with disabled false 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ButtonContainerFirst
+    handleClickButton={[Function]}
+    heightBuffer={20}
+    history={
+      Object {
+        "test": "testHistory",
+      }
+    }
+    location={Object {}}
+    match={
+      Object {
+        "test": "testMatch ",
+      }
+    }
+    resetStripeElement={[MockFunction]}
+    statusAuth={
+      Object {
+        "authStatusChangePassword": Object {
+          "id": "authStatusChangePassword",
+          "status": "IDLE",
+        },
+        "authStatusDeleteAccount": Object {
+          "id": "authStatusDeleteAccount",
+          "status": "SUCCESS",
+        },
+        "authStatusForgotPassword": Object {
+          "id": "authStatusForgotPassword",
+          "status": "IDLE",
+        },
+        "authStatusLogin": Object {
+          "id": "authStatusLogin",
+          "status": "IDLE",
+        },
+        "authStatusLoginMFA": Object {
+          "id": "authStatusLoginMFA",
+          "status": "IDLE",
+        },
+        "authStatusLogout": Object {
+          "id": "authStatusLogout",
+          "status": "SUCCESS",
+        },
+        "authStatusResetPassword": Object {
+          "id": "authStatusResetPassword",
+          "status": "IDLE",
+        },
+        "authStatusSignOutDevices": Object {
+          "id": "authStatusSignOutDevices",
+          "status": "IDLE",
+        },
+        "authStatusSignUp": Object {
+          "id": "authStatusSignUp",
+          "status": "IDLE",
+        },
+        "authStatusVerifyEmail": Object {
+          "id": "authStatusVerifyEmail",
+          "status": "IDLE",
+        },
+        "authStatusVerifyEmailLink": Object {
+          "id": "authStatusVerifyEmailLink",
+          "status": "IDLE",
+        },
+        "authStatusVerifyPhone": Object {
+          "id": "authStatusVerifyPhone",
+          "status": "IDLE",
+        },
+        "authStatusVerifyPhoneCode": Object {
+          "id": "authStatusVerifyPhoneCode",
+          "status": "IDLE",
+        },
+      }
+    }
+    stripeElement={
+      Object {
+        "test": "testStripeElement",
+      }
+    }
+    text="Log In"
+    width={300}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "disabled": false,
+      "handleClick": [Function],
+      "heightBuffer": 20,
+      "text": "Log In",
+      "width": 300,
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "disabled": false,
+        "handleClick": [Function],
+        "heightBuffer": 20,
+        "text": "Log In",
+        "width": 300,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "test": "testHistory",
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {
+            "test": "testMatch ",
+          },
+        },
+      },
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageExternal Buttons ButtonContainerFirst shallow renders correctly, with disabled true 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ButtonContainerFirst
+    handleClickButton={[Function]}
+    heightBuffer={20}
+    history={
+      Object {
+        "test": "testHistory",
+      }
+    }
+    location={Object {}}
+    match={
+      Object {
+        "test": "testMatch ",
+      }
+    }
+    resetStripeElement={[MockFunction]}
+    statusAuth={
+      Object {
+        "authStatusChangePassword": Object {
+          "id": "authStatusChangePassword",
+          "status": "IDLE",
+        },
+        "authStatusDeleteAccount": Object {
+          "id": "authStatusDeleteAccount",
+          "status": "SUCCESS",
+        },
+        "authStatusForgotPassword": Object {
+          "id": "authStatusForgotPassword",
+          "status": "IDLE",
+        },
+        "authStatusLogin": Object {
+          "id": "authStatusLogin",
+          "status": "IDLE",
+        },
+        "authStatusLoginMFA": Object {
+          "id": "authStatusLoginMFA",
+          "status": "IDLE",
+        },
+        "authStatusLogout": Object {
+          "id": "authStatusLogout",
+          "status": "SUCCESS",
+        },
+        "authStatusResetPassword": Object {
+          "id": "authStatusResetPassword",
+          "status": "IDLE",
+        },
+        "authStatusSignOutDevices": Object {
+          "id": "authStatusSignOutDevices",
+          "status": "IDLE",
+        },
+        "authStatusSignUp": Object {
+          "id": "authStatusSignUp",
+          "status": "LOADING",
+        },
+        "authStatusVerifyEmail": Object {
+          "id": "authStatusVerifyEmail",
+          "status": "IDLE",
+        },
+        "authStatusVerifyEmailLink": Object {
+          "id": "authStatusVerifyEmailLink",
+          "status": "IDLE",
+        },
+        "authStatusVerifyPhone": Object {
+          "id": "authStatusVerifyPhone",
+          "status": "IDLE",
+        },
+        "authStatusVerifyPhoneCode": Object {
+          "id": "authStatusVerifyPhoneCode",
+          "status": "IDLE",
+        },
+      }
+    }
+    stripeElement={
+      Object {
+        "test": "testStripeElement",
+      }
+    }
+    text="Log In"
+    width={300}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "disabled": true,
+      "handleClick": [Function],
+      "heightBuffer": 20,
+      "text": "Log In",
+      "width": 300,
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "disabled": true,
+        "handleClick": [Function],
+        "heightBuffer": 20,
+        "text": "Log In",
+        "width": 300,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "test": "testHistory",
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {
+            "test": "testMatch ",
+          },
+        },
+      },
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;

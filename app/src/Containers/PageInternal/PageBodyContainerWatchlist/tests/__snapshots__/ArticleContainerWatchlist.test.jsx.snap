@@ -1,0 +1,405 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers PageInternal PageBodyContainerWatchlist ArticleContainerWatchlist shallow renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleContainerWatchlist
+    articleMenuHeight={75}
+    handleItemData={[Function]}
+    handleSignals={[Function]}
+    heightBuffer={60}
+    heightIndent={30}
+    items={
+      Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+          "testId2",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+        "testId2": Object {
+          "category": "testCategory2",
+          "exchange": "testExchange2",
+          "id": "testId2",
+          "name": "testName2",
+          "tickerCusip": "testTickerCusip2",
+        },
+      }
+    }
+    mediaWidth={925}
+    menuHeight={73}
+    outsideWidthTotal={429}
+    status={
+      Object {
+        "watchlistStatusGetItemData": Object {
+          "id": "watchlistStatusGetItemData",
+          "status": "IDLE",
+        },
+        "watchlistStatusGetSignals": Object {
+          "id": "watchlistStatusGetSignals",
+          "status": "IDLE",
+        },
+        "watchlistStatusItems": Object {
+          "id": "watchlistStatusItems",
+          "status": "IDLE",
+        },
+        "watchlistStatusUpdateItems": Object {
+          "id": "watchlistStatusUpdateItems",
+          "status": "IDLE",
+        },
+      }
+    }
+    widthBuffer={60}
+    widthIndent={30}
+    widthTable={470}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "articleMenuHeight": 75,
+      "heightBuffer": 60,
+      "heightIndent": 30,
+      "items": Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+          "testId2",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+        "testId2": Object {
+          "category": "testCategory2",
+          "exchange": "testExchange2",
+          "id": "testId2",
+          "name": "testName2",
+          "tickerCusip": "testTickerCusip2",
+        },
+      },
+      "mediaWidth": 925,
+      "menuHeight": 73,
+      "outsideWidthTotal": 429,
+      "statusLoading": true,
+      "widthBuffer": 60,
+      "widthIndent": 30,
+      "widthTable": 470,
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "articleMenuHeight": 75,
+        "heightBuffer": 60,
+        "heightIndent": 30,
+        "items": Object {
+          "current": "testId0",
+          "list": Array [
+            "testId0",
+            "testId1",
+            "testId2",
+          ],
+          "testId0": Object {
+            "category": "testCategory0",
+            "exchange": "testExchange0",
+            "id": "testId0",
+            "name": "testName0",
+            "tickerCusip": "testTickerCusip0",
+          },
+          "testId1": Object {
+            "category": "testCategory1",
+            "exchange": "testExchange1",
+            "id": "testId1",
+            "name": "testName1",
+            "tickerCusip": "testTickerCusip1",
+          },
+          "testId2": Object {
+            "category": "testCategory2",
+            "exchange": "testExchange2",
+            "id": "testId2",
+            "name": "testName2",
+            "tickerCusip": "testTickerCusip2",
+          },
+        },
+        "mediaWidth": 925,
+        "menuHeight": 73,
+        "outsideWidthTotal": 429,
+        "statusLoading": true,
+        "widthBuffer": 60,
+        "widthIndent": 30,
+        "widthTable": 470,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerWatchlist ArticleContainerWatchlist shallow renders correctly, with componentWillReceiveProps 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleContainerWatchlist
+    articleMenuHeight={75}
+    handleItemData={[Function]}
+    handleSignals={[Function]}
+    heightBuffer={60}
+    heightIndent={30}
+    items={
+      Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+          "testId2",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+        "testId2": Object {
+          "category": "testCategory2",
+          "exchange": "testExchange2",
+          "id": "testId2",
+          "name": "testName2",
+          "tickerCusip": "testTickerCusip2",
+        },
+      }
+    }
+    mediaWidth={925}
+    menuHeight={73}
+    outsideWidthTotal={429}
+    status={
+      Object {
+        "watchlistStatusGetItemData": Object {
+          "id": "watchlistStatusGetItemData",
+          "status": "IDLE",
+        },
+        "watchlistStatusGetSignals": Object {
+          "id": "watchlistStatusGetSignals",
+          "status": "IDLE",
+        },
+        "watchlistStatusItems": Object {
+          "id": "watchlistStatusItems",
+          "status": "IDLE",
+        },
+        "watchlistStatusUpdateItems": Object {
+          "id": "watchlistStatusUpdateItems",
+          "status": "IDLE",
+        },
+      }
+    }
+    widthBuffer={60}
+    widthIndent={30}
+    widthTable={470}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "articleMenuHeight": 75,
+      "heightBuffer": 60,
+      "heightIndent": 30,
+      "items": Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+          "testId2",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+        "testId2": Object {
+          "category": "testCategory2",
+          "exchange": "testExchange2",
+          "id": "testId2",
+          "name": "testName2",
+          "tickerCusip": "testTickerCusip2",
+        },
+      },
+      "mediaWidth": 925,
+      "menuHeight": 73,
+      "outsideWidthTotal": 429,
+      "statusLoading": true,
+      "widthBuffer": 60,
+      "widthIndent": 30,
+      "widthTable": 470,
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "articleMenuHeight": 75,
+        "heightBuffer": 60,
+        "heightIndent": 30,
+        "items": Object {
+          "current": "testId0",
+          "list": Array [
+            "testId0",
+            "testId1",
+            "testId2",
+          ],
+          "testId0": Object {
+            "category": "testCategory0",
+            "exchange": "testExchange0",
+            "id": "testId0",
+            "name": "testName0",
+            "tickerCusip": "testTickerCusip0",
+          },
+          "testId1": Object {
+            "category": "testCategory1",
+            "exchange": "testExchange1",
+            "id": "testId1",
+            "name": "testName1",
+            "tickerCusip": "testTickerCusip1",
+          },
+          "testId2": Object {
+            "category": "testCategory2",
+            "exchange": "testExchange2",
+            "id": "testId2",
+            "name": "testName2",
+            "tickerCusip": "testTickerCusip2",
+          },
+        },
+        "mediaWidth": 925,
+        "menuHeight": 73,
+        "outsideWidthTotal": 429,
+        "statusLoading": true,
+        "widthBuffer": 60,
+        "widthIndent": 30,
+        "widthTable": 470,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;

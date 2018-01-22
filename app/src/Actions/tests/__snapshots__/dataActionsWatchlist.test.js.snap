@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataActionsWatchlist setItem fails when not provided a payload with an 'category' key 1`] = `"Please enter a value for the 'category' key - {\\"id\\":\\"testId\\",\\"name\\":\\"testName\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip\\"}"`;
+
+exports[`dataActionsWatchlist setItem fails when not provided a payload with an 'exchange' key 1`] = `"Please enter a value for the 'exchange' key - {\\"id\\":\\"testId\\",\\"name\\":\\"testName\\",\\"tickerCusip\\":\\"testTickerCusip\\",\\"category\\":\\"testCategory\\"}"`;
+
+exports[`dataActionsWatchlist setItem fails when not provided a payload with an 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"name\\":\\"testName\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip\\",\\"category\\":\\"testCategory\\"}"`;
+
+exports[`dataActionsWatchlist setItem fails when not provided a payload with an 'name' key 1`] = `"Please enter a value for the 'name' key - {\\"id\\":\\"testId\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip\\",\\"category\\":\\"testCategory\\"}"`;
+
+exports[`dataActionsWatchlist setItem fails when not provided a payload with an 'tickerCusip' key 1`] = `"Please enter a value for the 'tickerCusip' key - {\\"id\\":\\"testId\\",\\"name\\":\\"testName\\",\\"exchange\\":null,\\"category\\":\\"testCategory\\"}"`;
+
+exports[`dataActionsWatchlist setItemData fails when not provided a payload with an 'data' key 1`] = `"Please enter a value for the 'data' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`dataActionsWatchlist setItemData fails when not provided a payload with an 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"data\\":{\\"description\\":\\"testDescription\\"}}"`;
+
+exports[`dataActionsWatchlist setItemData fails when provided a payload with a 'data' key that is not an object 1`] = `"Please enter an object value for the 'data' key - {\\"id\\":\\"testId\\",\\"data\\":[]}"`;
+
+exports[`dataActionsWatchlist setItemsAll fails when not provided a payload with a 'current' key 1`] = `"Please enter a value for the 'current' key - {\\"list\\":[\\"testId1\\",\\"testId2\\"],\\"testId1\\":{\\"id\\":\\"testId1\\",\\"name\\":\\"testName1\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip1\\",\\"category\\":\\"testCategory1\\"},\\"testId2\\":{\\"id\\":\\"testId2\\",\\"name\\":\\"testName2\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip2\\",\\"category\\":\\"testCategory2\\"}}"`;
+
+exports[`dataActionsWatchlist setItemsAll fails when not provided a payload with a 'list' key 1`] = `"Please enter a value for the 'list' key - {\\"current\\":\\"testId1\\",\\"testId1\\":{\\"id\\":\\"testId1\\",\\"name\\":\\"testName1\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip1\\",\\"category\\":\\"testCategory1\\"},\\"testId2\\":{\\"id\\":\\"testId2\\",\\"name\\":\\"testName2\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip2\\",\\"category\\":\\"testCategory2\\"}}"`;
+
+exports[`dataActionsWatchlist setItemsAll fails when not provided a payload with an 'items' key 1`] = `"Please enter a value for the 'items' key - {\\"current\\":\\"testId\\",\\"list\\":[\\"testId1\\",\\"testId2\\"],\\"testId1\\":{\\"id\\":\\"testId1\\",\\"name\\":\\"testName1\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip1\\",\\"category\\":\\"testCategory1\\"},\\"testId2\\":{\\"id\\":\\"testId2\\",\\"name\\":\\"testName2\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip2\\",\\"category\\":\\"testCategory2\\"}}"`;
+
+exports[`dataActionsWatchlist setItemsAll fails when provided a payload with a 'list' key that is not an array 1`] = `"Please enter an array value for the 'list' key - {\\"current\\":\\"testId1\\",\\"list\\":{},\\"testId1\\":{\\"id\\":\\"testId1\\",\\"name\\":\\"testName1\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip1\\",\\"category\\":\\"testCategory1\\"},\\"testId2\\":{\\"id\\":\\"testId2\\",\\"name\\":\\"testName2\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip2\\",\\"category\\":\\"testCategory2\\"}}"`;
+
+exports[`dataActionsWatchlist setItemsAll fails when provided a payload with an 'items' key that is not an object 1`] = `"Please enter an object value for the 'items' key - {\\"items\\":[]}"`;
+
+exports[`dataActionsWatchlist setItemsAll fails when provided a payload with an item that does not have an 'category' key 1`] = `"Please enter a value for the 'category' key - {\\"id\\":\\"testId2\\",\\"name\\":\\"testName2\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip2\\"}"`;
+
+exports[`dataActionsWatchlist setItemsAll fails when provided a payload with an item that does not have an 'exchange' key 1`] = `"Please enter a value for the 'exchange' key - {\\"id\\":\\"testId2\\",\\"name\\":\\"testName2\\",\\"tickerCusip\\":\\"testTickerCusip2\\",\\"category\\":\\"testCategory2\\"}"`;
+
+exports[`dataActionsWatchlist setItemsAll fails when provided a payload with an item that does not have an 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"name\\":\\"testName2\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip2\\",\\"category\\":\\"testCategory2\\"}"`;
+
+exports[`dataActionsWatchlist setItemsAll fails when provided a payload with an item that does not have an 'name' key 1`] = `"Please enter a value for the 'name' key - {\\"id\\":\\"testId2\\",\\"exchange\\":null,\\"tickerCusip\\":\\"testTickerCusip2\\",\\"category\\":\\"testCategory2\\"}"`;
+
+exports[`dataActionsWatchlist setItemsAll fails when provided a payload with an item that does not have an 'tickerCusip' key 1`] = `"Please enter a value for the 'tickerCusip' key - {\\"id\\":\\"testId2\\",\\"name\\":\\"testName2\\",\\"exchange\\":null,\\"category\\":\\"testCategory2\\"}"`;
+
+exports[`dataActionsWatchlist setItemsCurrent fails when not provided a payload with a 'current' key 1`] = `"Please enter a value for the 'current' key - {}"`;
+
+exports[`dataActionsWatchlist setItemsList fails when not provided a payload with a 'list' key 1`] = `"Please enter a value for the 'list' key - {}"`;
+
+exports[`dataActionsWatchlist setItemsList fails when provided a payload with a 'list' key that is not an array 1`] = `"Please enter an array value for the 'list' key - {\\"list\\":{}}"`;
+
+exports[`dataActionsWatchlist setWatchlistStatus fails when not provided a payload with a 'status' key 1`] = `"Please enter a value for the 'status' key - {\\"id\\":\\"testId\\"}"`;
+
+exports[`dataActionsWatchlist setWatchlistStatus fails when not provided a payload with an 'id' key 1`] = `"Please enter a value for the 'id' key - {\\"status\\":\\"SUCCESS\\"}"`;

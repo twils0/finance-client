@@ -1,0 +1,448 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers PageInternal PageBodyContainerWatchlist ArticleDescriptionContainerWatchlist shallow renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleDescriptionContainerWatchlist
+    articleDescriptionMinWidth={250}
+    dispatch={[Function]}
+    items={
+      Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+          "testId2",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "data": Object {
+            "description": "testDescription0",
+          },
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "data": Object {
+            "description": "testDescription1",
+          },
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+        "testId2": Object {
+          "category": "testCategory2",
+          "data": Object {
+            "description": "testDescription2",
+          },
+          "exchange": "testExchange2",
+          "id": "testId2",
+          "name": "testName2",
+          "tickerCusip": "testTickerCusip2",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "alignItems": null,
+      "alignSelf": "flex-start",
+      "background": null,
+      "borderColorType": "border",
+      "borderRadius": null,
+      "borderStyle": null,
+      "borderWidth": null,
+      "boxSizing": null,
+      "children": "testDescription0",
+      "color": Object {},
+      "colorType": "dark",
+      "display": null,
+      "flex": "1 1",
+      "flexDirection": null,
+      "flexWrap": null,
+      "fontFamily": null,
+      "fontSize": null,
+      "fontWeight": null,
+      "height": null,
+      "id": null,
+      "justifyContent": null,
+      "letterSpacing": null,
+      "lineHeight": null,
+      "margin": "0",
+      "mediaWidth": null,
+      "minWidth": "250px",
+      "padding": null,
+      "responsiveThemeFont": null,
+      "responsiveWidth": null,
+      "textAlign": null,
+      "themeColor": "primary",
+      "themeFont": "default",
+      "themeFontWeight": "light",
+      "themeLetterSpacing": "default",
+      "themeLineHeight": "default",
+      "themeSize": "paragraph",
+      "type": "text",
+      "whiteSpace": null,
+      "width": null,
+    },
+    "ref": null,
+    "rendered": "testDescription0",
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "alignItems": null,
+        "alignSelf": "flex-start",
+        "background": null,
+        "borderColorType": "border",
+        "borderRadius": null,
+        "borderStyle": null,
+        "borderWidth": null,
+        "boxSizing": null,
+        "children": "testDescription0",
+        "color": Object {},
+        "colorType": "dark",
+        "display": null,
+        "flex": "1 1",
+        "flexDirection": null,
+        "flexWrap": null,
+        "fontFamily": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "height": null,
+        "id": null,
+        "justifyContent": null,
+        "letterSpacing": null,
+        "lineHeight": null,
+        "margin": "0",
+        "mediaWidth": null,
+        "minWidth": "250px",
+        "padding": null,
+        "responsiveThemeFont": null,
+        "responsiveWidth": null,
+        "textAlign": null,
+        "themeColor": "primary",
+        "themeFont": "default",
+        "themeFontWeight": "light",
+        "themeLetterSpacing": "default",
+        "themeLineHeight": "default",
+        "themeSize": "paragraph",
+        "type": "text",
+        "whiteSpace": null,
+        "width": null,
+      },
+      "ref": null,
+      "rendered": "testDescription0",
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerWatchlist ArticleDescriptionContainerWatchlist shallow renders correctly, with loading indicator 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleDescriptionContainerWatchlist
+    articleDescriptionMinWidth={250}
+    dispatch={[Function]}
+    items={
+      Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+          "testId2",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "data": Object {
+            "description": "testDescription0",
+          },
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "data": Object {
+            "description": "testDescription1",
+          },
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+        "testId2": Object {
+          "category": "testCategory2",
+          "data": Object {
+            "description": "testDescription2",
+          },
+          "exchange": "testExchange2",
+          "id": "testId2",
+          "name": "testName2",
+          "tickerCusip": "testTickerCusip2",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "alignItems": null,
+      "alignSelf": "flex-start",
+      "background": null,
+      "borderColorType": "border",
+      "borderRadius": null,
+      "borderStyle": null,
+      "borderWidth": null,
+      "boxSizing": null,
+      "children": "testDescription0",
+      "color": Object {},
+      "colorType": "dark",
+      "display": null,
+      "flex": "1 1",
+      "flexDirection": null,
+      "flexWrap": null,
+      "fontFamily": null,
+      "fontSize": null,
+      "fontWeight": null,
+      "height": null,
+      "id": null,
+      "justifyContent": null,
+      "letterSpacing": null,
+      "lineHeight": null,
+      "margin": "0",
+      "mediaWidth": null,
+      "minWidth": "250px",
+      "padding": null,
+      "responsiveThemeFont": null,
+      "responsiveWidth": null,
+      "textAlign": null,
+      "themeColor": "primary",
+      "themeFont": "default",
+      "themeFontWeight": "light",
+      "themeLetterSpacing": "default",
+      "themeLineHeight": "default",
+      "themeSize": "paragraph",
+      "type": "text",
+      "whiteSpace": null,
+      "width": null,
+    },
+    "ref": null,
+    "rendered": "testDescription0",
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "alignItems": null,
+        "alignSelf": "flex-start",
+        "background": null,
+        "borderColorType": "border",
+        "borderRadius": null,
+        "borderStyle": null,
+        "borderWidth": null,
+        "boxSizing": null,
+        "children": "testDescription0",
+        "color": Object {},
+        "colorType": "dark",
+        "display": null,
+        "flex": "1 1",
+        "flexDirection": null,
+        "flexWrap": null,
+        "fontFamily": null,
+        "fontSize": null,
+        "fontWeight": null,
+        "height": null,
+        "id": null,
+        "justifyContent": null,
+        "letterSpacing": null,
+        "lineHeight": null,
+        "margin": "0",
+        "mediaWidth": null,
+        "minWidth": "250px",
+        "padding": null,
+        "responsiveThemeFont": null,
+        "responsiveWidth": null,
+        "textAlign": null,
+        "themeColor": "primary",
+        "themeFont": "default",
+        "themeFontWeight": "light",
+        "themeLetterSpacing": "default",
+        "themeLineHeight": "default",
+        "themeSize": "paragraph",
+        "type": "text",
+        "whiteSpace": null,
+        "width": null,
+      },
+      "ref": null,
+      "rendered": "testDescription0",
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageInternal PageBodyContainerWatchlist ArticleDescriptionContainerWatchlist shallow renders correctly, with no item data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleDescriptionContainerWatchlist
+    articleDescriptionMinWidth={250}
+    dispatch={[Function]}
+    items={
+      Object {
+        "current": "testId0",
+        "list": Array [
+          "testId0",
+          "testId1",
+          "testId2",
+        ],
+        "testId0": Object {
+          "category": "testCategory0",
+          "exchange": "testExchange0",
+          "id": "testId0",
+          "name": "testName0",
+          "tickerCusip": "testTickerCusip0",
+        },
+        "testId1": Object {
+          "category": "testCategory1",
+          "data": Object {
+            "description": "testDescription1",
+          },
+          "exchange": "testExchange1",
+          "id": "testId1",
+          "name": "testName1",
+          "tickerCusip": "testTickerCusip1",
+        },
+        "testId2": Object {
+          "category": "testCategory2",
+          "data": Object {
+            "description": "testDescription2",
+          },
+          "exchange": "testExchange2",
+          "id": "testId2",
+          "name": "testName2",
+          "tickerCusip": "testTickerCusip2",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): null,
+  Symbol(enzyme.__nodes__): Array [
+    null,
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;

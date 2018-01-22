@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`uiThunkExternal handleClickFirstButton fails and throws an error when missing 'history' key in payload 1`] = `[Error: Please enter a value for the 'history' key - {}]`;
+
+exports[`uiThunkExternal handleClickFirstButton fails and throws an error when missing 'history' key in payload 2`] = `[Error: Please enter a value for the 'match' key - {"history":{"test":"testHistory"}}]`;
+
+exports[`uiThunkExternal handleClickFirstButton fails and throws an error when missing 'resetStripeElement' key in payload 1`] = `[Error: Please enter a value for the 'resetStripeElement' key - {"history":{"test":"testHistory"},"match":{"test":"testMatch"},"stripeElement":{"test":"testStripeElement"}}]`;
+
+exports[`uiThunkExternal handleClickFirstButton fails and throws an error when missing 'stripeElement' key in payload 1`] = `[Error: Please enter a value for the 'stripeElement' key - {"history":{"test":"testHistory"},"match":{"test":"testMatch"}}]`;

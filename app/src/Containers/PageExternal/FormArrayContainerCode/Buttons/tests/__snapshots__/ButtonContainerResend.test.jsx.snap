@@ -1,0 +1,605 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers PageExternal FormArrayContainerCode Buttons ButtonContainerResend shallow renders correctly and button works, with code verify phone 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ButtonContainerResend
+    buttonTextEmail="Resend Email"
+    buttonTextPhone="Resend SMS"
+    forms={
+      Object {
+        "cardForm": Object {
+          "height": 360,
+          "id": "cardForm",
+          "inputs": Object {
+            "cardNameOnCard": Object {
+              "errorMessage": "",
+              "id": "cardNameOnCard",
+              "parentId": "cardForm",
+              "value": "",
+            },
+            "cardPromoCode": Object {
+              "errorMessage": "",
+              "id": "cardPromoCode",
+              "parentId": "cardForm",
+              "value": "",
+            },
+            "cardStripe": Object {
+              "errorMessage": "",
+              "id": "cardStripe",
+              "parentId": "cardForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "cardNameOnCard",
+            "cardPromoCode",
+            "cardStripe",
+          ],
+        },
+        "codeEmailVerifyForm": Object {
+          "height": 183,
+          "id": "codeEmailVerifyForm",
+          "inputs": Object {
+            "codeVerifyEmailCode": Object {
+              "errorMessage": "",
+              "id": "codeVerifyEmailCode",
+              "parentId": "codeEmailVerifyForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "codeVerifyEmailCode",
+          ],
+        },
+        "codePhoneMFAForm": Object {
+          "height": 183,
+          "id": "codePhoneMFAForm",
+          "inputs": Object {
+            "codeMFAPhoneCode": Object {
+              "errorMessage": "",
+              "id": "codeMFAPhoneCode",
+              "parentId": "codePhoneMFAForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "codeMFAPhoneCode",
+          ],
+        },
+        "codePhoneVerifyForm": Object {
+          "height": 183,
+          "id": "codePhoneVerifyForm",
+          "inputs": Object {
+            "codeVerifyPhoneCode": Object {
+              "errorMessage": "",
+              "id": "codeVerifyPhoneCode",
+              "parentId": "codePhoneVerifyForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "codeVerifyPhoneCode",
+          ],
+        },
+        "current": "codePhoneVerifyForm",
+        "deviceForm": Object {
+          "height": 146,
+          "id": "deviceForm",
+          "inputs": Object {},
+          "inputsList": Array [],
+        },
+        "forgotPasswordForm": Object {
+          "height": 220,
+          "id": "forgotPasswordForm",
+          "inputs": Object {
+            "loginPasswordEmail": Object {
+              "errorMessage": "",
+              "id": "loginPasswordEmail",
+              "parentId": "forgotPasswordForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [],
+        },
+        "infoForm": Object {
+          "height": 280,
+          "id": "infoForm",
+          "inputs": Object {
+            "infoEmail": Object {
+              "errorMessage": "",
+              "id": "infoEmail",
+              "parentId": "infoForm",
+              "value": "",
+            },
+            "infoName": Object {
+              "errorMessage": "",
+              "id": "infoName",
+              "parentId": "infoForm",
+              "value": "",
+            },
+            "infoPhone": Object {
+              "errorMessage": "",
+              "id": "infoPhone",
+              "parentId": "infoForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "infoName",
+            "infoPhone",
+            "infoEmail",
+          ],
+        },
+        "list": Array [
+          "resetPasswordForm",
+          "forgotPasswordForm",
+          "loginForm",
+          "cardForm",
+          "infoForm",
+          "signUpForm",
+          "codePhoneMFAForm",
+          "codePhoneVerifyForm",
+          "codeEmailVerifyForm",
+          "deviceForm",
+        ],
+        "loginForm": Object {
+          "height": 222,
+          "id": "loginForm",
+          "inputs": Object {
+            "loginEmail": Object {
+              "errorMessage": "",
+              "id": "loginEmail",
+              "parentId": "loginForm",
+              "value": "",
+            },
+            "loginPassword": Object {
+              "errorMessage": "",
+              "id": "loginPassword",
+              "parentId": "loginForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "loginEmail",
+            "loginPassword",
+          ],
+        },
+        "resetPasswordForm": Object {
+          "height": 339,
+          "id": "resetPasswordForm",
+          "inputs": Object {
+            "codeResetPassword": Object {
+              "errorMessage": "",
+              "id": "codeResetPassword",
+              "parentId": "resetPasswordForm",
+              "value": "",
+            },
+            "password2ResetPassword": Object {
+              "errorMessage": "",
+              "id": "password2ResetPassword",
+              "parentId": "resetPasswordForm",
+              "value": "",
+            },
+            "passwordResetPassword": Object {
+              "errorMessage": "",
+              "id": "passwordResetPassword",
+              "parentId": "resetPasswordForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "codeResetPassword",
+            "passwordResetPassword",
+            "password2ResetPassword",
+          ],
+        },
+        "signUpForm": Object {
+          "height": 247,
+          "id": "signUpForm",
+          "inputs": Object {
+            "signUpPassword": Object {
+              "errorMessage": "",
+              "id": "signUpPassword",
+              "parentId": "signUpForm",
+              "value": "",
+            },
+            "signUpPassword2": Object {
+              "errorMessage": "",
+              "id": "signUpPassword2",
+              "parentId": "signUpForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "signUpPassword",
+            "signUpPassword2",
+          ],
+        },
+      }
+    }
+    handleClickButton={[Function]}
+    history={
+      Object {
+        "test": "testHistory",
+      }
+    }
+    location={Object {}}
+    match={Object {}}
+    width={300}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "currentForm": "codePhoneVerifyForm",
+      "handleClick": [Function],
+      "text": "Resend SMS",
+      "width": 300,
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "currentForm": "codePhoneVerifyForm",
+        "handleClick": [Function],
+        "text": "Resend SMS",
+        "width": 300,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "test": "testHistory",
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {},
+        },
+      },
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`Containers PageExternal FormArrayContainerCode Buttons ButtonContainerResend shallow renders correctly, with code verify email 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ButtonContainerResend
+    buttonTextEmail="Resend Email"
+    buttonTextPhone="Resend SMS"
+    forms={
+      Object {
+        "cardForm": Object {
+          "height": 360,
+          "id": "cardForm",
+          "inputs": Object {
+            "cardNameOnCard": Object {
+              "errorMessage": "",
+              "id": "cardNameOnCard",
+              "parentId": "cardForm",
+              "value": "",
+            },
+            "cardPromoCode": Object {
+              "errorMessage": "",
+              "id": "cardPromoCode",
+              "parentId": "cardForm",
+              "value": "",
+            },
+            "cardStripe": Object {
+              "errorMessage": "",
+              "id": "cardStripe",
+              "parentId": "cardForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "cardNameOnCard",
+            "cardPromoCode",
+            "cardStripe",
+          ],
+        },
+        "codeEmailVerifyForm": Object {
+          "height": 183,
+          "id": "codeEmailVerifyForm",
+          "inputs": Object {
+            "codeVerifyEmailCode": Object {
+              "errorMessage": "",
+              "id": "codeVerifyEmailCode",
+              "parentId": "codeEmailVerifyForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "codeVerifyEmailCode",
+          ],
+        },
+        "codePhoneMFAForm": Object {
+          "height": 183,
+          "id": "codePhoneMFAForm",
+          "inputs": Object {
+            "codeMFAPhoneCode": Object {
+              "errorMessage": "",
+              "id": "codeMFAPhoneCode",
+              "parentId": "codePhoneMFAForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "codeMFAPhoneCode",
+          ],
+        },
+        "codePhoneVerifyForm": Object {
+          "height": 183,
+          "id": "codePhoneVerifyForm",
+          "inputs": Object {
+            "codeVerifyPhoneCode": Object {
+              "errorMessage": "",
+              "id": "codeVerifyPhoneCode",
+              "parentId": "codePhoneVerifyForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "codeVerifyPhoneCode",
+          ],
+        },
+        "current": "codeEmailVerifyForm",
+        "deviceForm": Object {
+          "height": 146,
+          "id": "deviceForm",
+          "inputs": Object {},
+          "inputsList": Array [],
+        },
+        "forgotPasswordForm": Object {
+          "height": 220,
+          "id": "forgotPasswordForm",
+          "inputs": Object {
+            "loginPasswordEmail": Object {
+              "errorMessage": "",
+              "id": "loginPasswordEmail",
+              "parentId": "forgotPasswordForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [],
+        },
+        "infoForm": Object {
+          "height": 280,
+          "id": "infoForm",
+          "inputs": Object {
+            "infoEmail": Object {
+              "errorMessage": "",
+              "id": "infoEmail",
+              "parentId": "infoForm",
+              "value": "",
+            },
+            "infoName": Object {
+              "errorMessage": "",
+              "id": "infoName",
+              "parentId": "infoForm",
+              "value": "",
+            },
+            "infoPhone": Object {
+              "errorMessage": "",
+              "id": "infoPhone",
+              "parentId": "infoForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "infoName",
+            "infoPhone",
+            "infoEmail",
+          ],
+        },
+        "list": Array [
+          "resetPasswordForm",
+          "forgotPasswordForm",
+          "loginForm",
+          "cardForm",
+          "infoForm",
+          "signUpForm",
+          "codePhoneMFAForm",
+          "codePhoneVerifyForm",
+          "codeEmailVerifyForm",
+          "deviceForm",
+        ],
+        "loginForm": Object {
+          "height": 222,
+          "id": "loginForm",
+          "inputs": Object {
+            "loginEmail": Object {
+              "errorMessage": "",
+              "id": "loginEmail",
+              "parentId": "loginForm",
+              "value": "",
+            },
+            "loginPassword": Object {
+              "errorMessage": "",
+              "id": "loginPassword",
+              "parentId": "loginForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "loginEmail",
+            "loginPassword",
+          ],
+        },
+        "resetPasswordForm": Object {
+          "height": 339,
+          "id": "resetPasswordForm",
+          "inputs": Object {
+            "codeResetPassword": Object {
+              "errorMessage": "",
+              "id": "codeResetPassword",
+              "parentId": "resetPasswordForm",
+              "value": "",
+            },
+            "password2ResetPassword": Object {
+              "errorMessage": "",
+              "id": "password2ResetPassword",
+              "parentId": "resetPasswordForm",
+              "value": "",
+            },
+            "passwordResetPassword": Object {
+              "errorMessage": "",
+              "id": "passwordResetPassword",
+              "parentId": "resetPasswordForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "codeResetPassword",
+            "passwordResetPassword",
+            "password2ResetPassword",
+          ],
+        },
+        "signUpForm": Object {
+          "height": 247,
+          "id": "signUpForm",
+          "inputs": Object {
+            "signUpPassword": Object {
+              "errorMessage": "",
+              "id": "signUpPassword",
+              "parentId": "signUpForm",
+              "value": "",
+            },
+            "signUpPassword2": Object {
+              "errorMessage": "",
+              "id": "signUpPassword2",
+              "parentId": "signUpForm",
+              "value": "",
+            },
+          },
+          "inputsList": Array [
+            "signUpPassword",
+            "signUpPassword2",
+          ],
+        },
+      }
+    }
+    handleClickButton={[Function]}
+    history={
+      Object {
+        "test": "testHistory",
+      }
+    }
+    location={Object {}}
+    match={Object {}}
+    width={300}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "currentForm": "codeEmailVerifyForm",
+      "handleClick": [Function],
+      "text": "Resend Email",
+      "width": 300,
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "currentForm": "codeEmailVerifyForm",
+        "handleClick": [Function],
+        "text": "Resend Email",
+        "width": 300,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "test": "testHistory",
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {},
+        },
+      },
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+    "hydrateIn": undefined,
+  },
+}
+`;
