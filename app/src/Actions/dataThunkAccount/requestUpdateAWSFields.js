@@ -9,13 +9,19 @@ import { setAccountStatus } from '../dataActionsAccount';
 
 import handleErrorCatch from '../../handleErrorCatch';
 
+import { demo } from '../../../../mode.config.json';
+
 const requestUpdateAWSFields = (payload) => {
   if (
-    !Object.prototype.hasOwnProperty.call(payload, 'email') &&
-    !Object.prototype.hasOwnProperty.call(payload, 'name') &&
-    !Object.prototype.hasOwnProperty.call(payload, 'phone')
+    !Object.prototype.hasOwnProperty.call(payload, 'email')
+    && !Object.prototype.hasOwnProperty.call(payload, 'name')
+    && !Object.prototype.hasOwnProperty.call(payload, 'phone')
   ) {
-    throw new Error(`Please enter a value for either the 'email', 'name', or 'phone' keys- ${JSON.stringify(payload)}`);
+    throw new Error(
+      `Please enter a value for either the 'email', 'name', or 'phone' keys- ${JSON.stringify(
+        payload,
+      )}`,
+    );
   }
 
   return async (dispatch, getState) => {
@@ -24,10 +30,12 @@ const requestUpdateAWSFields = (payload) => {
     if (
       state.data.account.status[statusNames.UPDATE_AWS_FIELDS].status !== requestStatusTypes.LOADING
     ) {
-      dispatch(setAccountStatus({
-        id: statusNames.UPDATE_AWS_FIELDS,
-        status: requestStatusTypes.LOADING,
-      }));
+      dispatch(
+        setAccountStatus({
+          id: statusNames.UPDATE_AWS_FIELDS,
+          status: requestStatusTypes.LOADING,
+        }),
+      );
 
       const updatePayload = { ...payload };
       if (payload.phone) {
@@ -45,14 +53,18 @@ const requestUpdateAWSFields = (payload) => {
           ({ user } = await dispatch(requestAWSUser()));
         }
 
-        await Auth.updateUserAttributes(user, updatePayload);
+        if (!demo) {
+          await Auth.updateUserAttributes(user, updatePayload);
+        }
       } catch (errorCatch) {
         const error = handleErrorCatch(errorCatch);
 
-        dispatch(setAccountStatus({
-          id: statusNames.UPDATE_AWS_FIELDS,
-          status: requestStatusTypes.ERROR,
-        }));
+        dispatch(
+          setAccountStatus({
+            id: statusNames.UPDATE_AWS_FIELDS,
+            status: requestStatusTypes.ERROR,
+          }),
+        );
 
         if (typeof error === 'object' && error.code === 'NotAuthorizedException') {
           dispatch(requestLogout());
@@ -61,24 +73,28 @@ const requestUpdateAWSFields = (payload) => {
         }
 
         if (
-          typeof error === 'object' &&
-          error &&
-          (error.code === 'AliasExistsException' || error.code === 'UsernameExistsException')
+          typeof error === 'object'
+          && error
+          && (error.code === 'AliasExistsException' || error.code === 'UsernameExistsException')
         ) {
           return Promise.reject(error);
         }
 
-        raven.captureException(error, {
-          logger: 'requestUpdateAWSFields',
-        });
+        if (!demo) {
+          raven.captureException(error, {
+            logger: 'requestUpdateAWSFields',
+          });
+        }
 
         return Promise.reject(error);
       }
 
-      dispatch(setAccountStatus({
-        id: statusNames.UPDATE_AWS_FIELDS,
-        status: requestStatusTypes.SUCCESS,
-      }));
+      dispatch(
+        setAccountStatus({
+          id: statusNames.UPDATE_AWS_FIELDS,
+          status: requestStatusTypes.SUCCESS,
+        }),
+      );
     }
 
     return null;

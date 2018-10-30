@@ -6,7 +6,7 @@ import requestVerifyEmailLink from '../dataThunkAuth/requestVerifyEmailLink';
 import requestAWSUser from '../dataThunkAWS/requestAWSUser';
 import { setCurrentForm, setInputValueError } from '../uiActionsExternal';
 
-const firstButtonCodeEmail = (payload) => {
+const firstButtonCodeEmail = payload => {
   if (!Object.prototype.hasOwnProperty.call(payload, 'match')) {
     throw new Error(`Please enter a value for the 'match' key - ${JSON.stringify(payload)}`);
   }
@@ -42,10 +42,6 @@ const firstButtonCodeEmail = (payload) => {
         const { forms } = state.ui.external;
         const loginEmail = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL];
         const loginPassword = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD];
-        const currentTime = new Date();
-
-        currentTime.setMinutes(currentTime.getMinutes() + 30);
-        window.sessionStorage.setSecurity('sessionTime', currentTime);
 
         dispatch(setAuthenticated({ authenticated: true }));
 

@@ -1,464 +1,105 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Containers PageInternal PageBodyContainerWatchlist shallow renders correctly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PageBodyContainerWatchlist
-    handleSession={[Function]}
-    heightBuffer={40}
-    mediaWidth={925}
-    menuHeight={73}
-    menuHeightBuffer={30}
-    statusItems="IDLE"
-    width={4}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "alignItems": null,
-      "alignSelf": null,
-      "borderColorType": "border",
-      "borderRadius": null,
-      "borderStyle": null,
-      "borderWidth": null,
-      "boxSizing": null,
-      "children": <BeatLoader
-        color="#509236"
-        loading={true}
-        margin="2px"
-        size="15px"
-      />,
-      "color": Object {},
-      "display": null,
-      "flex": null,
-      "flexWrap": null,
-      "height": "calc(100% - 103px)",
-      "justifyContent": null,
-      "margin": null,
-      "mediaWidth": null,
-      "minHeight": null,
-      "minWidth": null,
-      "overflowX": null,
-      "overflowY": null,
-      "padding": null,
-      "position": null,
-      "responsiveAlignItems": null,
-      "responsiveJustifyContent": null,
-      "responsiveMargin": null,
-      "responsivePadding": null,
-      "responsivePosition": null,
-      "responsiveWidth": null,
-      "separator": false,
-      "themeColor": "primary",
-      "width": "100%",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "color": "#509236",
-        "loading": true,
-        "margin": "2px",
-        "size": "15px",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "alignItems": null,
-        "alignSelf": null,
-        "borderColorType": "border",
-        "borderRadius": null,
-        "borderStyle": null,
-        "borderWidth": null,
-        "boxSizing": null,
-        "children": <BeatLoader
-          color="#509236"
-          loading={true}
-          margin="2px"
-          size="15px"
-        />,
-        "color": Object {},
-        "display": null,
-        "flex": null,
-        "flexWrap": null,
-        "height": "calc(100% - 103px)",
-        "justifyContent": null,
-        "margin": null,
-        "mediaWidth": null,
-        "minHeight": null,
-        "minWidth": null,
-        "overflowX": null,
-        "overflowY": null,
-        "padding": null,
-        "position": null,
-        "responsiveAlignItems": null,
-        "responsiveJustifyContent": null,
-        "responsiveMargin": null,
-        "responsivePadding": null,
-        "responsivePosition": null,
-        "responsiveWidth": null,
-        "separator": false,
-        "themeColor": "primary",
-        "width": "100%",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "color": "#509236",
-          "loading": true,
-          "margin": "2px",
-          "size": "15px",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+<FlexColumn
+  alignItems={null}
+  alignSelf={null}
+  borderColorType="border"
+  borderRadius={null}
+  borderStyle={null}
+  borderWidth={null}
+  boxSizing={null}
+  color={Object {}}
+  display={null}
+  flex={null}
+  flexWrap={null}
+  height="calc(100% - 103px)"
+  justifyContent={null}
+  margin={null}
+  mediaWidth={null}
+  minHeight={null}
+  minWidth={null}
+  overflowX={null}
+  overflowY={null}
+  padding={null}
+  position={null}
+  responsiveAlignSecurities={null}
+  responsiveJustifyContent={null}
+  responsiveMargin={null}
+  responsivePadding={null}
+  responsivePosition={null}
+  responsiveWidth={null}
+  separator={false}
+  themeColor="primary"
+  width="100%"
+>
+  <BeatLoader
+    color="#7367e6"
+    loading={true}
+    margin="2px"
+    size="15px"
+  />
+</FlexColumn>
 `;
 
-exports[`Containers PageInternal PageBodyContainerWatchlist shallow renders correctly, statusItems equals succcess 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PageBodyContainerWatchlist
-    handleSession={[Function]}
-    heightBuffer={40}
-    mediaWidth={925}
-    menuHeight={73}
-    menuHeightBuffer={30}
-    statusItems="SUCCESS"
-    width={4}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "alignItems": null,
-      "background": null,
-      "children": Array [
-        <withRouter(Connect(ListContainerWatchlist)) />,
-        <FlexColumn
-          alignItems={null}
-          alignSelf={null}
-          borderColorType="default"
-          borderRadius="4px"
-          borderStyle={null}
-          borderWidth="0 2px"
-          boxSizing={null}
-          color={Object {}}
-          display={null}
-          flex={null}
-          flexWrap={null}
-          height="calc(100% - 40px)"
-          justifyContent={null}
-          margin="20px 0"
-          mediaWidth="925px"
-          minHeight={null}
-          minWidth={null}
-          overflowX={null}
-          overflowY={null}
-          padding={null}
-          position={null}
-          responsiveAlignItems={null}
-          responsiveJustifyContent={null}
-          responsiveMargin={null}
-          responsivePadding={null}
-          responsivePosition={null}
-          responsiveWidth={null}
-          separator={true}
-          themeColor="secondary"
-          width={null}
-        />,
-        <Connect(ArticleContainerWatchlist) />,
-      ],
-      "flex": null,
-      "flexDirection": null,
-      "height": "calc(100% - 103px)",
-      "justifyContent": null,
-      "margin": null,
-      "mediaWidth": "925px",
-      "minHeight": null,
-      "minWidth": null,
-      "overflowX": null,
-      "overflowY": null,
-      "padding": null,
-      "width": null,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "alignItems": null,
-          "alignSelf": null,
-          "borderColorType": "default",
-          "borderRadius": "4px",
-          "borderStyle": null,
-          "borderWidth": "0 2px",
-          "boxSizing": null,
-          "color": Object {},
-          "display": null,
-          "flex": null,
-          "flexWrap": null,
-          "height": "calc(100% - 40px)",
-          "justifyContent": null,
-          "margin": "20px 0",
-          "mediaWidth": "925px",
-          "minHeight": null,
-          "minWidth": null,
-          "overflowX": null,
-          "overflowY": null,
-          "padding": null,
-          "position": null,
-          "responsiveAlignItems": null,
-          "responsiveJustifyContent": null,
-          "responsiveMargin": null,
-          "responsivePadding": null,
-          "responsivePosition": null,
-          "responsiveWidth": null,
-          "separator": true,
-          "themeColor": "secondary",
-          "width": null,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "alignItems": null,
-        "background": null,
-        "children": Array [
-          <withRouter(Connect(ListContainerWatchlist)) />,
-          <FlexColumn
-            alignItems={null}
-            alignSelf={null}
-            borderColorType="default"
-            borderRadius="4px"
-            borderStyle={null}
-            borderWidth="0 2px"
-            boxSizing={null}
-            color={Object {}}
-            display={null}
-            flex={null}
-            flexWrap={null}
-            height="calc(100% - 40px)"
-            justifyContent={null}
-            margin="20px 0"
-            mediaWidth="925px"
-            minHeight={null}
-            minWidth={null}
-            overflowX={null}
-            overflowY={null}
-            padding={null}
-            position={null}
-            responsiveAlignItems={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsivePosition={null}
-            responsiveWidth={null}
-            separator={true}
-            themeColor="secondary"
-            width={null}
-          />,
-          <Connect(ArticleContainerWatchlist) />,
-        ],
-        "flex": null,
-        "flexDirection": null,
-        "height": "calc(100% - 103px)",
-        "justifyContent": null,
-        "margin": null,
-        "mediaWidth": "925px",
-        "minHeight": null,
-        "minWidth": null,
-        "overflowX": null,
-        "overflowY": null,
-        "padding": null,
-        "width": null,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "alignItems": null,
-            "alignSelf": null,
-            "borderColorType": "default",
-            "borderRadius": "4px",
-            "borderStyle": null,
-            "borderWidth": "0 2px",
-            "boxSizing": null,
-            "color": Object {},
-            "display": null,
-            "flex": null,
-            "flexWrap": null,
-            "height": "calc(100% - 40px)",
-            "justifyContent": null,
-            "margin": "20px 0",
-            "mediaWidth": "925px",
-            "minHeight": null,
-            "minWidth": null,
-            "overflowX": null,
-            "overflowY": null,
-            "padding": null,
-            "position": null,
-            "responsiveAlignItems": null,
-            "responsiveJustifyContent": null,
-            "responsiveMargin": null,
-            "responsivePadding": null,
-            "responsivePosition": null,
-            "responsiveWidth": null,
-            "separator": true,
-            "themeColor": "secondary",
-            "width": null,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+exports[`Containers PageInternal PageBodyContainerWatchlist shallow renders correctly, statusSecurities equals succcess 1`] = `
+<PageBody
+  alignItems={null}
+  background={null}
+  flex={null}
+  flexDirection={null}
+  height="calc(100% - 103px)"
+  justifyContent={null}
+  margin={null}
+  mediaWidth="925px"
+  minHeight={null}
+  minWidth={null}
+  overflowX={null}
+  overflowY={null}
+  padding={null}
+  width={null}
+>
+  <withRouter(Connect(ListContainerWatchlist)) />
+  <FlexColumn
+    alignItems={null}
+    alignSelf={null}
+    borderColorType="default"
+    borderRadius="4px"
+    borderStyle={null}
+    borderWidth="0 2px"
+    boxSizing={null}
+    color={Object {}}
+    display={null}
+    flex={null}
+    flexWrap={null}
+    height="calc(100% - 40px)"
+    justifyContent={null}
+    margin="20px 0"
+    mediaWidth="925px"
+    minHeight={null}
+    minWidth={null}
+    overflowX={null}
+    overflowY={null}
+    padding={null}
+    position={null}
+    responsiveAlignSecurities={null}
+    responsiveJustifyContent={null}
+    responsiveMargin={null}
+    responsivePadding={null}
+    responsivePosition={null}
+    responsiveWidth={null}
+    separator={true}
+    themeColor="secondary"
+    width={null}
+  />
+  <Connect(ArticleContainerWatchlist) />
+</PageBody>
 `;
 
 exports[`Containers PageInternal PageBodyContainerWatchlist shallow renders correctly, with componentWillUpdate 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PageBodyContainerWatchlist
-    handleSession={[Function]}
     heightBuffer={40}
     mediaWidth={925}
     menuHeight={73}
@@ -622,168 +263,43 @@ ShallowWrapper {
 `;
 
 exports[`Containers PageInternal PageBodyContainerWatchlist shallow renders correctly, with loading indicator 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PageBodyContainerWatchlist
-    handleSession={[Function]}
-    heightBuffer={40}
-    mediaWidth={925}
-    menuHeight={73}
-    menuHeightBuffer={30}
-    statusItems="IDLE"
-    width={4}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "alignItems": null,
-      "alignSelf": null,
-      "borderColorType": "border",
-      "borderRadius": null,
-      "borderStyle": null,
-      "borderWidth": null,
-      "boxSizing": null,
-      "children": <BeatLoader
-        color="#509236"
-        loading={true}
-        margin="2px"
-        size="15px"
-      />,
-      "color": Object {},
-      "display": null,
-      "flex": null,
-      "flexWrap": null,
-      "height": "calc(100% - 103px)",
-      "justifyContent": null,
-      "margin": null,
-      "mediaWidth": null,
-      "minHeight": null,
-      "minWidth": null,
-      "overflowX": null,
-      "overflowY": null,
-      "padding": null,
-      "position": null,
-      "responsiveAlignItems": null,
-      "responsiveJustifyContent": null,
-      "responsiveMargin": null,
-      "responsivePadding": null,
-      "responsivePosition": null,
-      "responsiveWidth": null,
-      "separator": false,
-      "themeColor": "primary",
-      "width": "100%",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "color": "#509236",
-        "loading": true,
-        "margin": "2px",
-        "size": "15px",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "alignItems": null,
-        "alignSelf": null,
-        "borderColorType": "border",
-        "borderRadius": null,
-        "borderStyle": null,
-        "borderWidth": null,
-        "boxSizing": null,
-        "children": <BeatLoader
-          color="#509236"
-          loading={true}
-          margin="2px"
-          size="15px"
-        />,
-        "color": Object {},
-        "display": null,
-        "flex": null,
-        "flexWrap": null,
-        "height": "calc(100% - 103px)",
-        "justifyContent": null,
-        "margin": null,
-        "mediaWidth": null,
-        "minHeight": null,
-        "minWidth": null,
-        "overflowX": null,
-        "overflowY": null,
-        "padding": null,
-        "position": null,
-        "responsiveAlignItems": null,
-        "responsiveJustifyContent": null,
-        "responsiveMargin": null,
-        "responsivePadding": null,
-        "responsivePosition": null,
-        "responsiveWidth": null,
-        "separator": false,
-        "themeColor": "primary",
-        "width": "100%",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "color": "#509236",
-          "loading": true,
-          "margin": "2px",
-          "size": "15px",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+<FlexColumn
+  alignItems={null}
+  alignSelf={null}
+  borderColorType="border"
+  borderRadius={null}
+  borderStyle={null}
+  borderWidth={null}
+  boxSizing={null}
+  color={Object {}}
+  display={null}
+  flex={null}
+  flexWrap={null}
+  height="calc(100% - 103px)"
+  justifyContent={null}
+  margin={null}
+  mediaWidth={null}
+  minHeight={null}
+  minWidth={null}
+  overflowX={null}
+  overflowY={null}
+  padding={null}
+  position={null}
+  responsiveAlignSecurities={null}
+  responsiveJustifyContent={null}
+  responsiveMargin={null}
+  responsivePadding={null}
+  responsivePosition={null}
+  responsiveWidth={null}
+  separator={false}
+  themeColor="primary"
+  width="100%"
+>
+  <BeatLoader
+    color="#7367e6"
+    loading={true}
+    margin="2px"
+    size="15px"
+  />
+</FlexColumn>
 `;

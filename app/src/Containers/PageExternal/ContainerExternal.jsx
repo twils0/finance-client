@@ -396,7 +396,7 @@ class ContainerExternal extends React.Component {
         height="100%"
         minHeight="100vh"
       >
-        <Img src={exampleHeader.src} alt="exampleHeader" width={widthString} />
+        <Img margin="0 0 0 -15px" src={exampleHeader.src} alt="exampleHeader" width={widthString} />
         {this.renderFormsMotion()}
         <ButtonContainerFirst
           stripeElement={this.elements.stripe}

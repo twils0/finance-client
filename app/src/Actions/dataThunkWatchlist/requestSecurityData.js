@@ -22,7 +22,8 @@ const requestSecurityData = (payload) => {
     const state = getState();
 
     if (
-      state.data.watchlist.status[statusNames.GET_SECURITY_DATA].status !== requestStatusTypes.LOADING
+      state.data.watchlist.status[statusNames.GET_SECURITY_DATA].status
+      !== requestStatusTypes.LOADING
     ) {
       dispatch(
         setWatchlistStatus({

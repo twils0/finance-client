@@ -10,7 +10,7 @@ const BurgerMenuWrapperDiv = styled.div`
   flex-direction: ${props => props.flexDirection || 'column'};
 
   align-self: ${props => props.alignSelf};
-  align-securities: ${props => props.alignItems || 'center'};
+  align-items: ${props => props.alignItems || 'center'};
   justify-content: ${props => props.justifyContent || 'center'};
 
   top: ${props => props.top};

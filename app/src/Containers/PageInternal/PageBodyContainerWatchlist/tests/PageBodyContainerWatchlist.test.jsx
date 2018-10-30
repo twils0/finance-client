@@ -10,20 +10,17 @@ import { initialState as initialStateUIWatchlist } from '../../../../Reducers/ui
 import { requestStatusTypes } from '../../../../Constants/universalConstants';
 import { statusNames } from '../../../../Constants/dataConstantsWatchlist';
 
-import setSession from '../../../../Actions/dataThunkAuth/setSession';
-
 import PageBodyContainerWatchlist from '../PageBodyContainerWatchlist';
 
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
 
-jest.mock('../../../../Actions/dataThunkAuth/setSession', () => jest.fn());
-
-const shallowComponent = store => shallow(<PageBodyContainerWatchlist />, {
-  context: {
-    store,
-  },
-}).dive();
+const shallowComponent = store =>
+  shallow(<PageBodyContainerWatchlist />, {
+    context: {
+      store,
+    },
+  }).dive();
 
 const testId0 = 'testId0';
 const testId1 = 'testId1';
@@ -67,10 +64,6 @@ const securities = {
 describe('Containers', () => {
   describe('PageInternal', () => {
     describe('PageBodyContainerWatchlist', () => {
-      afterEach(() => {
-        setSession.mockReset();
-      });
-
       it('shallow renders correctly', async () => {
         const stateBeforeAWS = JSON.parse(JSON.stringify(initialStateAWS));
         const stateBeforeWatchlist = JSON.parse(JSON.stringify(initialStateWatchlist));
@@ -94,15 +87,12 @@ describe('Containers', () => {
 
         const expectedActions = [];
 
-        setSession.mockReturnValue(() => true);
-
         const wrapper = shallowComponent(store);
 
         const actions = store.getActions();
 
         expect(actions).toEqual(expectedActions);
         expect(wrapper).toMatchSnapshot();
-        expect(setSession).toHaveBeenCalledTimes(1);
       });
 
       it('shallow renders correctly, with componentWillUpdate', async () => {
@@ -130,8 +120,6 @@ describe('Containers', () => {
 
         const expectedActions = [];
 
-        setSession.mockReturnValue(() => true);
-
         const wrapper = shallowComponent(store);
 
         const instance = wrapper.instance();
@@ -142,7 +130,6 @@ describe('Containers', () => {
 
         expect(actions).toEqual(expectedActions);
         expect(wrapper).toMatchSnapshot();
-        expect(setSession).toHaveBeenCalledTimes(2);
       });
 
       it('shallow renders correctly, with loading indicator', async () => {
@@ -161,15 +148,12 @@ describe('Containers', () => {
 
         const expectedActions = [];
 
-        setSession.mockReturnValue(() => true);
-
         const wrapper = shallowComponent(store);
 
         const actions = store.getActions();
 
         expect(actions).toEqual(expectedActions);
         expect(wrapper).toMatchSnapshot();
-        expect(setSession).toHaveBeenCalledTimes(1);
       });
 
       it('shallow renders correctly, statusSecurities equals succcess', async () => {
@@ -192,8 +176,6 @@ describe('Containers', () => {
         });
 
         const expectedActions = [];
-
-        setSession.mockReturnValue(() => true);
 
         const wrapper = shallowComponent(store);
 

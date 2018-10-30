@@ -7,7 +7,6 @@ import theme from '../../../themes';
 
 import { requestStatusTypes } from '../../../Constants/universalConstants';
 import { statusNames } from '../../../Constants/dataConstantsWatchlist';
-import setSession from '../../../Actions/dataThunkAuth/setSession';
 
 import PageBody from '../../../Components/PageBody';
 import ListContainerWatchlist from './ListContainerWatchlist';
@@ -15,16 +14,6 @@ import FlexColumn from '../../../Components/Flex/FlexColumn';
 import ArticleContainerWatchlist from './ArticleContainerWatchlist';
 
 class PageBodyContainerWatchlist extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.props.handleSession();
-  }
-
-  componentWillUpdate() {
-    this.props.handleSession();
-  }
-
   render() {
     const {
       width,
@@ -74,7 +63,6 @@ PageBodyContainerWatchlist.propTypes = {
   menuHeight: PropTypes.number.isRequired,
   menuHeightBuffer: PropTypes.number.isRequired,
   statusSecurities: PropTypes.string.isRequired,
-  handleSession: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
@@ -86,11 +74,4 @@ const mapStateToProps = state => ({
   statusSecurities: state.data.watchlist.status[statusNames.SECURITIES].status,
 });
 
-const mapDispatchToProps = dispatch => ({
-  handleSession: () => dispatch(setSession()),
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(PageBodyContainerWatchlist);
+export default connect(mapStateToProps)(PageBodyContainerWatchlist);

@@ -13,7 +13,8 @@
   "homepage": "https://github.com/twils0/finance_client#readme",
   "scripts": {
     "webpack": "webpack --progress --colors --mode production",
-    "dev": "webpack-dev-server --mode development --open",
+    "dev": "webpack-dev-server --mode development",
+    "prod": "webpack-dev-server --mode production --display-error-details",
     "test": "jest",
     "test_watch": "jest --watch"
   },
@@ -24,7 +25,18 @@
     ],
     "modulePaths": [
       "<rootDir>/node_modules"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/mockFile.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/mockStyle.js"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transform": {
+      ".+\\.(jsx?)$": "babel-jest"
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -82,7 +94,6 @@
     "webpack": "^4.23.1",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-middleware": "^3.4.0",
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
@@ -90,7 +101,6 @@
     "axios": "^0.18.0",
     "express": "^4.16.4",
     "fast-equals": "^1.6.1",
-    "flexibility": "^2.0.1",
     "halogenium": "^2.2.3",
     "isomorphic-fetch": "^2.2.1",
     "polished": "^2.3.0",
@@ -105,7 +115,6 @@
     "react-router-dom": "^4.3.1",
     "react-select": "^2.1.1",
     "react-stripe-elements": "^2.0.1",
-    "react-table": "^6.8.6",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",

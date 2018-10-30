@@ -30,7 +30,7 @@ const FormProfile = (props) => {
   const formString = formNames.PROFILE;
 
   return (
-    <Form innerRef={heightRef} id={formString} width="100%">
+    <Form ref={heightRef} id={formString} width="100%">
       <FlexRow
         justifyContent="flex-start"
         width="100%"

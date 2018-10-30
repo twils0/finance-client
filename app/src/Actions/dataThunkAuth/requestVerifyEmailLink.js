@@ -7,6 +7,8 @@ import { setAuthStatus } from '../dataActionsAuth';
 
 import handleErrorCatch from '../../handleErrorCatch';
 
+import { demo } from '../../../../mode.config.json';
+
 const requestVerifyEmailLink = (payload) => {
   if (!Object.prototype.hasOwnProperty.call(payload, 'verificationId')) {
     throw Error(`Please enter a value for the 'verificationId' key - ${payload}`);
@@ -28,7 +30,9 @@ const requestVerifyEmailLink = (payload) => {
       const { verificationId } = payload;
 
       try {
-        await axios.put(URLs.EMAILS, { verificationId }, axiosConfig.DB);
+        if (!demo) {
+          await axios.put(URLs.EMAILS, { verificationId }, axiosConfig.DB);
+        }
       } catch (errorCatch) {
         const error = handleErrorCatch(errorCatch);
 
@@ -39,9 +43,11 @@ const requestVerifyEmailLink = (payload) => {
           }),
         );
 
-        raven.captureException(error, {
-          logger: 'requestVerifyEmailLink',
-        });
+        if (!demo) {
+          raven.captureException(error, {
+            logger: 'requestVerifyEmailLink',
+          });
+        }
 
         return Promise.reject(error);
       }

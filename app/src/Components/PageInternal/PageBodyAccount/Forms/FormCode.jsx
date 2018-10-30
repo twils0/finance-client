@@ -29,7 +29,7 @@ const FormCode = (props) => {
   const formString = formNames.CODE;
 
   return (
-    <Form innerRef={heightRef} id={formString} width="100%">
+    <Form ref={heightRef} id={formString} width="100%">
       <Header2
         margin={`0 0 ${rowHeightBufferString} 0`}
         width="100%"

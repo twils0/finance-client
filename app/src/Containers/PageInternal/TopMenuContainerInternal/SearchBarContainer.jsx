@@ -2,18 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import axios from 'axios';
-import raven from 'raven-js';
+// import axios from 'axios';
+// import raven from 'raven-js';
 import AsyncSelect from 'react-select/lib/Async';
 import { components } from 'react-select';
 import { BeatLoader } from 'halogenium';
 
 import theme from '../../../themes';
-import handleErrorCatch from '../../../handleErrorCatch';
+// import handleErrorCatch from '../../../handleErrorCatch';
+
+import demoSecurities from '../../../../../demo/demoAllSecurities';
 
 import {
-  axiosConfig,
-  URLs,
+  // axiosConfig,
+  // URLs,
   pathNames,
   requestStatusTypes,
 } from '../../../Constants/universalConstants';
@@ -165,14 +167,32 @@ class SearchBarContainer extends React.Component {
 
     if (currentTime - this.inputTime > 0) {
       try {
-        const response = await axios.get(URLs.SECURITIES_SEARCH, {
-          params: {
-            search: inputValue.toLowerCase(),
-          },
-          ...axiosConfig.DB,
+        // altered for github pages demo
+        const search = inputValue.toLowerCase();
+
+        const securities = demoSecurities.filter((security) => {
+          const {
+            tickerCusip, name, category, exchange,
+          } = security;
+
+          if (tickerCusip.toLowerCase().includes(search)
+          || name.toLowerCase().includes(search)
+          || category.toLowerCase().includes(search)
+          || exchange.toLowerCase().includes(search)) {
+            return true;
+          }
+
+          return false;
         });
 
-        const { securities } = response.data.body;
+        // const response = await axios.get(URLs.SECURITIES_SEARCH, {
+        //   params: {
+        //     search: inputValue.toLowerCase(),
+        //   },
+        //   ...axiosConfig.DB,
+        // });
+        //
+        // const { securities } = response.data.body;
 
         if (
           !securities
@@ -185,11 +205,11 @@ class SearchBarContainer extends React.Component {
 
         return this.addGroups(securities);
       } catch (errorCatch) {
-        const error = handleErrorCatch(errorCatch);
-
-        raven.captureException(error, {
-          logger: 'loadOptions',
-        });
+        // const error = handleErrorCatch(errorCatch);
+        //
+        // raven.captureException(error, {
+        //   logger: 'loadOptions',
+        // });
       }
     }
 

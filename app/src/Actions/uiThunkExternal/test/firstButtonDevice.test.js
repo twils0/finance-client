@@ -4,7 +4,6 @@
 
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import MockDate from 'mockdate';
 
 import { pathNames } from '../../../Constants/universalConstants';
 import { initialState as initialStateAuth } from '../../../Reducers/dataReducersAuth';
@@ -22,13 +21,6 @@ const history = {
   replace: jest.fn(),
 };
 
-const setSecurity = jest.fn();
-
-global.window = {
-  sessionStorage: {
-    setSecurity,
-  },
-};
 jest.mock('../../dataThunkAuth/requestSignOutOtherDevices', () => jest.fn());
 
 const middleware = [thunk];
@@ -42,7 +34,6 @@ describe('uiThunkAccount', () => {
   describe('firstButtonDevice', () => {
     afterEach(() => {
       requestSignOutOtherDevices.mockReset();
-      setSecurity.mockReset();
       history.replace.mockReset();
     });
 
@@ -109,11 +100,6 @@ describe('uiThunkAccount', () => {
 
       requestSignOutOtherDevices.mockReturnValue(() => Promise.resolve());
 
-      const startDate = new Date('1/2/2000');
-      const incrementDate = new Date('1/2/2000');
-      const expectDate = new Date(incrementDate.setMinutes(incrementDate.getMinutes() + 30));
-
-      MockDate.set(startDate);
       const result = await store.dispatch(firstButtonDevice({ history }));
 
       const actions = store.getActions();
@@ -125,9 +111,6 @@ describe('uiThunkAccount', () => {
         password,
         remembered,
       });
-      expect(setSecurity).toBeCalledWith('sessionTime', expectDate);
-
-      MockDate.reset();
     });
 
     it('requestSignOutOtherDevices throws an unexpected error, redirects to login', async () => {
@@ -173,7 +156,6 @@ describe('uiThunkAccount', () => {
         password,
         remembered,
       });
-      expect(setSecurity).not.toBeCalled();
       expect(history.replace).toBeCalledWith(pathNames.LOGIN);
     });
   });

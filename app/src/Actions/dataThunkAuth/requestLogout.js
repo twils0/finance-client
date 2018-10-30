@@ -11,6 +11,8 @@ import { resetAccountState } from '../dataActionsAccount';
 import { resetWatchlistState } from '../dataActionsWatchlist';
 import { setCurrentForm, setButtonText, setButtonVisible } from '../uiActionsAccount';
 
+import { demo } from '../../../../mode.config.json';
+
 const requestLogout = () => async (dispatch, getState) => {
   const state = getState();
 
@@ -35,7 +37,9 @@ const requestLogout = () => async (dispatch, getState) => {
     }
 
     try {
-      await Auth.signOut();
+      if (!demo) {
+        await Auth.signOut();
+      }
     } catch (errorCatch) {
       const error = handleErrorCatch(errorCatch);
 
@@ -46,21 +50,13 @@ const requestLogout = () => async (dispatch, getState) => {
         }),
       );
 
-      raven.captureException(error, {
-        logger: 'requestLogout',
-      });
+      if (!demo) {
+        raven.captureException(error, {
+          logger: 'requestLogout',
+        });
+      }
 
       return Promise.reject(error);
-    }
-
-    window.sessionStorage.removeSecurity('sessionTime');
-
-    const intervalId = window.sessionStorage.getSecurity('interval');
-
-    if (intervalId) {
-      window.clearInterval(intervalId);
-
-      window.sessionStorage.removeSecurity('interval');
     }
 
     dispatch(resetAWSState());
@@ -68,7 +64,9 @@ const requestLogout = () => async (dispatch, getState) => {
     dispatch(resetWatchlistState());
     dispatch(resetAuthState());
 
-    raven.setUserContext();
+    if (!demo) {
+      raven.setUserContext();
+    }
   }
 
   return null;

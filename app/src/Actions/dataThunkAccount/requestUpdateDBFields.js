@@ -9,6 +9,8 @@ import { setAccountStatus } from '../dataActionsAccount';
 
 import handleErrorCatch from '../../handleErrorCatch';
 
+import { demo } from '../../../../mode.config.json';
+
 const requestUpdateDBFields = (payload) => {
   if (
     !Object.prototype.hasOwnProperty.call(payload, 'name')
@@ -43,18 +45,20 @@ const requestUpdateDBFields = (payload) => {
           ({ user } = await dispatch(requestAWSUser()));
         }
 
-        const idToken = user.signInUserSession.idToken.jwtToken;
-        const accessToken = user.signInUserSession.accessToken.jwtToken;
+        if (!demo) {
+          const idToken = user.signInUserSession.idToken.jwtToken;
+          const accessToken = user.signInUserSession.accessToken.jwtToken;
 
-        await axios.put(URLs.USERS, payload, {
-          headers: {
-            Authorization: idToken,
-          },
-          params: {
-            accessToken,
-          },
-          ...axiosConfig.DB,
-        });
+          await axios.put(URLs.USERS, payload, {
+            headers: {
+              Authorization: idToken,
+            },
+            params: {
+              accessToken,
+            },
+            ...axiosConfig.DB,
+          });
+        }
       } catch (errorCatch) {
         const error = handleErrorCatch(errorCatch);
 
@@ -75,9 +79,11 @@ const requestUpdateDBFields = (payload) => {
           return Promise.reject(error);
         }
 
-        raven.captureException(error, {
-          logger: 'requestUpdateDBFields',
-        });
+        if (!demo) {
+          raven.captureException(error, {
+            logger: 'requestUpdateDBFields',
+          });
+        }
 
         return Promise.reject(error);
       }

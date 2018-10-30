@@ -9,14 +9,20 @@ import requestLogout from '../dataThunkAuth/requestLogout';
 
 import handleErrorCatch from '../../handleErrorCatch';
 
+import { demo } from '../../../../mode.config.json';
+
 const requestUpdateSecurities = () => async (dispatch, getState) => {
   const state = getState();
 
-  if (state.data.watchlist.status[statusNames.UPDATE_SECURITIES].status !== requestStatusTypes.LOADING) {
-    dispatch(setWatchlistStatus({
-      id: statusNames.UPDATE_SECURITIES,
-      status: requestStatusTypes.LOADING,
-    }));
+  if (
+    state.data.watchlist.status[statusNames.UPDATE_SECURITIES].status !== requestStatusTypes.LOADING
+  ) {
+    dispatch(
+      setWatchlistStatus({
+        id: statusNames.UPDATE_SECURITIES,
+        status: requestStatusTypes.LOADING,
+      }),
+    );
 
     let { user } = state.data.aws;
     const { current, list } = state.data.watchlist.securities;
@@ -26,29 +32,33 @@ const requestUpdateSecurities = () => async (dispatch, getState) => {
         ({ user } = await dispatch(requestAWSUser()));
       }
 
-      const idToken = user.signInUserSession.idToken.jwtToken;
-      const accessToken = user.signInUserSession.accessToken.jwtToken;
+      if (!demo) {
+        const idToken = user.signInUserSession.idToken.jwtToken;
+        const accessToken = user.signInUserSession.accessToken.jwtToken;
 
-      await axios.put(
-        URLs.USERS,
-        { current, list },
-        {
-          headers: {
-            Authorization: idToken,
+        await axios.put(
+          URLs.USERS,
+          { current, list },
+          {
+            headers: {
+              Authorization: idToken,
+            },
+            params: {
+              accessToken,
+            },
+            ...axiosConfig.DB,
           },
-          params: {
-            accessToken,
-          },
-          ...axiosConfig.DB,
-        },
-      );
+        );
+      }
     } catch (errorCatch) {
       const error = handleErrorCatch(errorCatch);
 
-      dispatch(setWatchlistStatus({
-        id: statusNames.UPDATE_SECURITIES,
-        status: requestStatusTypes.ERROR,
-      }));
+      dispatch(
+        setWatchlistStatus({
+          id: statusNames.UPDATE_SECURITIES,
+          status: requestStatusTypes.ERROR,
+        }),
+      );
 
       if (typeof error === 'object' && error && error.code === 'NotAuthorizedException') {
         dispatch(requestLogout());
@@ -56,17 +66,21 @@ const requestUpdateSecurities = () => async (dispatch, getState) => {
         return null;
       }
 
-      raven.captureException(error, {
-        logger: 'requestUpdateSecurities',
-      });
+      if (!demo) {
+        raven.captureException(error, {
+          logger: 'requestUpdateSecurities',
+        });
+      }
 
       return Promise.reject(error);
     }
 
-    dispatch(setWatchlistStatus({
-      id: statusNames.UPDATE_SECURITIES,
-      status: requestStatusTypes.SUCCESS,
-    }));
+    dispatch(
+      setWatchlistStatus({
+        id: statusNames.UPDATE_SECURITIES,
+        status: requestStatusTypes.SUCCESS,
+      }),
+    );
   }
 
   return null;

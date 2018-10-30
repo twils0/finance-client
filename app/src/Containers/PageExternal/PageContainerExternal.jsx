@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 import { requestStatusTypes } from '../../Constants/universalConstants';
 import { statusNames } from '../../Constants/dataConstantsAuth';
 import { setAuthStatus } from '../../Actions/dataActionsAuth';
-import setSession from '../../Actions/dataThunkAuth/setSession';
 
 import Page from '../../Components/Page';
 import ContainerExternal from './ContainerExternal';
@@ -14,7 +13,7 @@ import ContainerExternal from './ContainerExternal';
 class PageContainerExternal extends React.Component {
   constructor(props) {
     super(props);
-    const { statusAuth, handleSession } = this.props;
+    const { statusAuth } = this.props;
 
     if (statusAuth[statusNames.LOGOUT].status !== requestStatusTypes.IDLE) {
       this.props.handleAuthStatus({ id: statusNames.LOGOUT, status: requestStatusTypes.IDLE });
@@ -24,14 +23,6 @@ class PageContainerExternal extends React.Component {
         id: statusNames.DELETE_ACCOUNT,
         status: requestStatusTypes.IDLE,
       });
-    }
-
-    handleSession();
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (!nextProps.authenticated) {
-      this.props.handleSession();
     }
   }
 
@@ -53,7 +44,6 @@ PageContainerExternal.propTypes = {
   authenticated: PropTypes.bool.isRequired,
   redirectURL: PropTypes.string.isRequired,
   handleAuthStatus: PropTypes.func.isRequired,
-  handleSession: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state, ownProps) => ({
@@ -65,10 +55,9 @@ const mapStateToProps = (state, ownProps) => ({
 
 const mapDispatchToProps = dispatch => ({
   handleAuthStatus: payload => dispatch(setAuthStatus(payload)),
-  handleSession: payload => dispatch(setSession(payload)),
 });
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(PageContainerExternal);

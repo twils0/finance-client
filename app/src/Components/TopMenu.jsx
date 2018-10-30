@@ -8,7 +8,7 @@ const Menu = styled.div`
   flex-direction: ${props => props.flexDirection || 'row'};
   flex-wrap: no-wrap;
 
-  align-securities: ${props => props.alignItems};
+  align-items: ${props => props.alignItems};
   justify-content: ${props => props.justifyContent};
 
   overflow-x: hidden;

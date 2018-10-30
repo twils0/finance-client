@@ -1,57 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`uiThunkApp loadFonts calls the correct actions with the correct payloads, when WebFont returns fontinactive 1`] = `
-[MockFunction] {
-  "calls": Array [
-    Array [
-      Array [
-        "
-      @font-face {
-        font-family: Montserrat;
-      }
-      @font-face {
-        font-family: Roboto Condensed;
-      }
-      @font-face {
-        font-family: Lato;
-      }
-    ",
-      ],
-    ],
-  ],
-  "results": Array [
-    Object {
-      "isThrow": false,
-      "value": undefined,
-    },
-  ],
-}
-`;
+exports[`uiThunkApp loadFonts calls the correct actions with the correct payloads, when WebFont returns fontinactive 1`] = `[Function]`;
 
-exports[`uiThunkApp loadFonts calls the correct actions with the correct payloads, when WebFont returns fontinactive 2`] = `
-[MockFunction] {
-  "calls": Array [
-    Array [
-      Array [
-        "
-      @font-face {
-        font-family: Montserrat;
-      }
-      @font-face {
-        font-family: Roboto Condensed;
-      }
-      @font-face {
-        font-family: Lato;
-      }
-    ",
-      ],
-    ],
-  ],
-  "results": Array [
-    Object {
-      "isThrow": false,
-      "value": undefined,
-    },
-  ],
-}
-`;
+exports[`uiThunkApp loadFonts calls the correct actions with the correct payloads, when WebFont returns fontinactive 2`] = `[Function]`;

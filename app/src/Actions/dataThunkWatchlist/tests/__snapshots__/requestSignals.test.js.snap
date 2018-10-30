@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`dataThunkWatchlist requestSignals fails and throws an error when missing 'list' key in payload 1`] = `[Error: Please enter a value for 'list' - {}]`;

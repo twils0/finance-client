@@ -2,6 +2,7 @@ const config = {
   presets: ['@babel/preset-env', '@babel/preset-react'],
   plugins: [
     'react-hot-loader/babel',
+    'dynamic-import-node',
     'styled-components',
     '@babel/plugin-proposal-class-properties',
     // '@babel/plugin-proposal-decorators',
@@ -41,7 +42,6 @@ const config = {
         // '@babel/plugin-proposal-throw-expressions',
         '@babel/plugin-syntax-dynamic-import',
         '@babel/plugin-transform-react-jsx-source',
-        '@babel/plugin-transform-runtime',
       ],
     },
   },

@@ -27,30 +27,13 @@ jest.mock('aws-amplify', () => ({
   },
 }));
 
-const getSecurity = jest.fn();
-const removeSecurity = jest.fn();
-const clearInterval = jest.fn();
-
-global.window = {
-  sessionStorage: {
-    getSecurity,
-    removeSecurity,
-  },
-  clearInterval,
-};
-
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
-
-const intervalId = '123';
 
 describe('dataThunkAuth', () => {
   describe('requestLogout', () => {
     afterEach(() => {
       Auth.signOut.mockReset();
-      getSecurity.mockReset();
-      removeSecurity.mockReset();
-      clearInterval.mockReset();
     });
 
     it('fails and returns promise reject when Auth.signOut throws an error', async () => {
@@ -88,9 +71,6 @@ describe('dataThunkAuth', () => {
       const actions = store.getActions();
 
       expect(actions).toEqual(expectedActions);
-      expect(removeSecurity).not.toBeCalled();
-      expect(clearInterval).not.toBeCalled();
-      expect(getSecurity).not.toBeCalled();
     });
 
     it('correctly resets setCurrentForm, setButtonText, and setButtonVisible', async () => {
@@ -147,7 +127,6 @@ describe('dataThunkAuth', () => {
       ];
 
       Auth.signOut.mockReturnValue(Promise.resolve());
-      getSecurity.mockReturnValue(intervalId);
 
       const result = await store.dispatch(requestLogout());
 
@@ -155,10 +134,6 @@ describe('dataThunkAuth', () => {
 
       expect(actions).toEqual(expectedActions);
       expect(result).toEqual(null);
-      expect(removeSecurity).toBeCalledWith('sessionTime');
-      expect(getSecurity).toBeCalledWith('interval');
-      expect(clearInterval).toBeCalledWith(intervalId);
-      expect(removeSecurity).toBeCalledWith('interval');
     });
 
     it('creates the correct actions with the correct payloads', async () => {
@@ -190,7 +165,6 @@ describe('dataThunkAuth', () => {
       ];
 
       Auth.signOut.mockReturnValue(Promise.resolve());
-      getSecurity.mockReturnValue(intervalId);
 
       const result = await store.dispatch(requestLogout());
 
@@ -198,10 +172,6 @@ describe('dataThunkAuth', () => {
 
       expect(actions).toEqual(expectedActions);
       expect(result).toEqual(null);
-      expect(removeSecurity).toBeCalledWith('sessionTime');
-      expect(getSecurity).toBeCalledWith('interval');
-      expect(clearInterval).toBeCalledWith(intervalId);
-      expect(removeSecurity).toBeCalledWith('interval');
     });
   });
 });

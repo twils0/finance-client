@@ -12,7 +12,7 @@ const FlexColumn = styled.div`
   overflow-x: ${props => props.overflowX};
   overflow-y: ${props => props.overflowY};
 
-  align-securities: ${props => props.alignItems || 'center'};
+  align-items: ${props => props.alignItems || 'center'};
   justify-content: ${props => props.justifyContent || 'center'};
 
   align-self: ${props => props.alignSelf};
@@ -27,7 +27,7 @@ const FlexColumn = styled.div`
 
   @media screen and (max-width: ${props => props.mediaWidth}) {
     position: ${props => props.responsivePosition || 'relative'};
-    align-securities: ${props => props.responsiveAlignSecurities};
+    align-items: ${props => props.responsiveAlignSecurities};
     justify-content: ${props => props.responsiveJustifyContent};
     padding: ${props => props.responsivePadding};
     margin: ${props => (props.separator ? 0 : props.responsiveMargin)};

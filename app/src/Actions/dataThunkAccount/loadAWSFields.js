@@ -11,6 +11,9 @@ import { setAccountStatus, setFields } from '../dataActionsAccount';
 
 import handleErrorCatch from '../../handleErrorCatch';
 
+import { demo } from '../../../../mode.config.json';
+import demoFields from '../../../../demo/demoFields';
+
 const loadAWSFields = () => async (dispatch, getState) => {
   const state = getState();
 
@@ -30,7 +33,13 @@ const loadAWSFields = () => async (dispatch, getState) => {
         ({ user } = await dispatch(requestAWSUser()));
       }
 
-      const fields = await Auth.userAttributes(user);
+      let fields = null;
+
+      if (!demo) {
+        fields = await Auth.userAttributes(user);
+      } else {
+        fields = demoFields;
+      }
 
       fields.forEach((field) => {
         switch (field.Name) {
@@ -46,6 +55,12 @@ const loadAWSFields = () => async (dispatch, getState) => {
               value: field.Value,
             };
             break;
+          case 'custom:email_ver': {
+            dispatch(
+              setCodeType({ id: codeTypeNames.VERIFY_EMAIL, needed: field.Value !== 'true' }),
+            );
+            break;
+          }
           case 'custom:email_additional':
             payload[fieldNames.EMAIL_ADDITIONAL] = {
               id: fieldNames.EMAIL_ADDITIONAL,
@@ -73,12 +88,6 @@ const loadAWSFields = () => async (dispatch, getState) => {
             );
             break;
           }
-          case 'custom:email_ver': {
-            dispatch(
-              setCodeType({ id: codeTypeNames.VERIFY_EMAIL, needed: field.Value !== 'true' }),
-            );
-            break;
-          }
           default:
             break;
         }
@@ -99,9 +108,11 @@ const loadAWSFields = () => async (dispatch, getState) => {
         return null;
       }
 
-      raven.captureException(error, {
-        logger: 'loadAWSFields',
-      });
+      if (!demo) {
+        raven.captureException(error, {
+          logger: 'loadAWSFields',
+        });
+      }
 
       return Promise.reject(error);
     }

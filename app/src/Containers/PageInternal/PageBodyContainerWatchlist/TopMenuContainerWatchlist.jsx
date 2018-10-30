@@ -88,7 +88,7 @@ class TopMenuContainerWatchlist extends React.Component {
                 themeColor="secondary"
                 colorType="default"
                 fontSize="24px"
-                fontFamily="Montserrat"
+                fontFamily="Titillium Web"
                 margin="0"
                 mediaWidth={mediaWidthString}
                 responsiveTextAlign="center"
@@ -99,7 +99,7 @@ class TopMenuContainerWatchlist extends React.Component {
               <Header2
                 colorType="default"
                 fontSize="17px"
-                fontFamily="Montserrat"
+                fontFamily="Titillium Web"
                 margin="0"
                 padding={`${menuSecurityHeightBufferHalfString} 0 0 0`}
                 mediaWidth={mediaWidthString}

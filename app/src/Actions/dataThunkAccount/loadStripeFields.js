@@ -9,14 +9,19 @@ import { setAccountStatus, setFields } from '../dataActionsAccount';
 
 import handleErrorCatch from '../../handleErrorCatch';
 
+import { demo } from '../../../../mode.config.json';
+import demoStripe from '../../../../demo/demoStripe';
+
 const loadStripeFields = () => async (dispatch, getState) => {
   const state = getState();
 
   if (state.data.account.status[statusNames.STRIPE_FIELDS].status !== requestStatusTypes.LOADING) {
-    dispatch(setAccountStatus({
-      id: statusNames.STRIPE_FIELDS,
-      status: requestStatusTypes.LOADING,
-    }));
+    dispatch(
+      setAccountStatus({
+        id: statusNames.STRIPE_FIELDS,
+        status: requestStatusTypes.LOADING,
+      }),
+    );
 
     let { user } = state.data.aws;
     const payload = {};
@@ -26,20 +31,26 @@ const loadStripeFields = () => async (dispatch, getState) => {
         ({ user } = await dispatch(requestAWSUser()));
       }
 
-      const idToken = user.signInUserSession.idToken.jwtToken;
-      const accessToken = user.signInUserSession.accessToken.jwtToken;
+      let stripePayload = null;
 
-      const response = await axios.get(URLs.CUSTOMERS, {
-        headers: {
-          Authorization: idToken,
-        },
-        params: {
-          accessToken,
-        },
-        ...axiosConfig.STRIPE,
-      });
+      if (!demo) {
+        const idToken = user.signInUserSession.idToken.jwtToken;
+        const accessToken = user.signInUserSession.accessToken.jwtToken;
 
-      const stripePayload = response.data.body;
+        const response = await axios.get(URLs.CUSTOMERS, {
+          headers: {
+            Authorization: idToken,
+          },
+          params: {
+            accessToken,
+          },
+          ...axiosConfig.STRIPE,
+        });
+
+        stripePayload = response.data.body;
+      } else {
+        stripePayload = demoStripe;
+      }
 
       payload[fieldNames.NAME_ON_CARD] = {
         id: fieldNames.NAME_ON_CARD,
@@ -56,10 +67,12 @@ const loadStripeFields = () => async (dispatch, getState) => {
     } catch (errorCatch) {
       const error = handleErrorCatch(errorCatch);
 
-      dispatch(setAccountStatus({
-        id: statusNames.STRIPE_FIELDS,
-        status: requestStatusTypes.ERROR,
-      }));
+      dispatch(
+        setAccountStatus({
+          id: statusNames.STRIPE_FIELDS,
+          status: requestStatusTypes.ERROR,
+        }),
+      );
 
       if (typeof error === 'object' && error && error.code === 'NotAuthorizedException') {
         dispatch(requestLogout());
@@ -67,19 +80,23 @@ const loadStripeFields = () => async (dispatch, getState) => {
         return null;
       }
 
-      raven.captureException(error, {
-        logger: 'loadStripeFields',
-      });
+      if (!demo) {
+        raven.captureException(error, {
+          logger: 'loadStripeFields',
+        });
+      }
 
       return Promise.reject(error);
     }
 
     dispatch(setFields(payload));
 
-    dispatch(setAccountStatus({
-      id: statusNames.STRIPE_FIELDS,
-      status: requestStatusTypes.SUCCESS,
-    }));
+    dispatch(
+      setAccountStatus({
+        id: statusNames.STRIPE_FIELDS,
+        status: requestStatusTypes.SUCCESS,
+      }),
+    );
   }
 
   return null;

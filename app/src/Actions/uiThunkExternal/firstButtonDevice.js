@@ -4,7 +4,7 @@ import { setAuthenticated } from '../dataActionsAuth';
 import requestSignOutOtherDevices from '../dataThunkAuth/requestSignOutOtherDevices';
 import { setInputValueError } from '../uiActionsExternal';
 
-const firstButtonDevice = (payload) => {
+const firstButtonDevice = payload => {
   if (!Object.prototype.hasOwnProperty.call(payload, 'history')) {
     throw new Error(`Please enter a value for the 'history' key - ${JSON.stringify(payload)}`);
   }
@@ -24,11 +24,6 @@ const firstButtonDevice = (payload) => {
 
     try {
       await dispatch(requestSignOutOtherDevices(signOutPayload));
-
-      const currentTime = new Date();
-
-      currentTime.setMinutes(currentTime.getMinutes() + 30);
-      window.sessionStorage.setSecurity('sessionTime', currentTime);
 
       dispatch(setAuthenticated({ authenticated: true }));
 

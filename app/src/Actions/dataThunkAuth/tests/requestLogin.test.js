@@ -5,7 +5,6 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import { Auth } from 'aws-amplify';
-import MockDate from 'mockdate';
 
 import { initialState as initialStateAuth } from '../../../Reducers/dataReducersAuth';
 import { requestStatusTypes } from '../../../Constants/universalConstants';
@@ -33,14 +32,6 @@ jest.mock('../../dataThunkWatchlist/loadSecurities', () => jest.fn());
 jest.mock('../requestVerifyField', () => jest.fn());
 jest.mock('../requestVerifyEmail', () => jest.fn());
 
-const setSecurity = jest.fn();
-
-global.window = {
-  sessionStorage: {
-    setSecurity,
-  },
-};
-
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
 
@@ -56,8 +47,6 @@ describe('dataThunkAuth', () => {
       loadAWSFields.mockReset();
       requestVerifyField.mockReset();
       requestVerifyEmail.mockReset();
-      setSecurity.mockReset();
-      MockDate.reset();
     });
 
     it("fails and throws an error when missing 'email' key in payload", async () => {
@@ -583,12 +572,6 @@ describe('dataThunkAuth', () => {
         },
       ];
 
-      const startDate = new Date('1/2/2000');
-      const incrementDate = new Date('1/2/2000');
-      const expectDate = new Date(incrementDate.setMinutes(incrementDate.getMinutes() + 30));
-
-      MockDate.set(startDate);
-
       Auth.signIn.mockReturnValue(Promise.resolve(user));
       requestSignOutOtherDevices.mockReturnValue(() => Promise.resolve());
       loadSecurities.mockReturnValue(() => Promise.resolve());
@@ -606,7 +589,6 @@ describe('dataThunkAuth', () => {
       expect(loadSecurities).toBeCalled();
       expect(loadAWSFields).toBeCalled();
       expect(requestVerifyField).not.toBeCalled();
-      expect(setSecurity).toBeCalledWith('sessionTime', expectDate);
     });
   });
 });

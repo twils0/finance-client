@@ -6,6 +6,8 @@ import { requestStatusTypes } from '../../Constants/universalConstants';
 import { setAWSStatus, setAWSUser } from '../dataActionsAWS';
 import requestLogout from '../dataThunkAuth/requestLogout';
 
+import { demo } from '../../../../mode.config.json';
+
 const requestAWSUser = () => async (dispatch, getState) => {
   const state = getState();
 
@@ -15,25 +17,29 @@ const requestAWSUser = () => async (dispatch, getState) => {
     let user = null;
 
     try {
-      user = await Auth.currentUserPoolUser();
+      if (!demo) {
+        user = await Auth.currentUserPoolUser();
+      }
     } catch (errorCatch) {
       const error = handleErrorCatch(errorCatch);
 
       dispatch(setAWSStatus({ status: requestStatusTypes.ERROR }));
 
       if (
-        (typeof error === 'string' &&
-          (error === 'not authenticated' || error === 'No current user in userPool')) ||
-        (typeof error === 'object' && error && error.code === 'NotAuthorizedException')
+        (typeof error === 'string'
+          && (error === 'not authenticated' || error === 'No current user in userPool'))
+        || (typeof error === 'object' && error && error.code === 'NotAuthorizedException')
       ) {
         dispatch(requestLogout());
 
         return null;
       }
 
-      raven.captureException(error, {
-        logger: 'requestAWSUser',
-      });
+      if (!demo) {
+        raven.captureException(error, {
+          logger: 'requestAWSUser',
+        });
+      }
 
       return Promise.reject(error);
     }

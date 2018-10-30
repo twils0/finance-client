@@ -13,6 +13,8 @@ import { resetAccountState } from '../dataActionsAccount';
 import { resetWatchlistState } from '../dataActionsWatchlist';
 import { setCurrentForm, setButtonText, setButtonVisible } from '../uiActionsAccount';
 
+import { demo } from '../../../../mode.config.json';
+
 const requestDeleteAccount = () => async (dispatch, getState) => {
   const state = getState();
 
@@ -43,22 +45,24 @@ const requestDeleteAccount = () => async (dispatch, getState) => {
         ({ user } = await dispatch(requestAWSUser()));
       }
 
-      const idToken = user.signInUserSession.idToken.jwtToken;
+      if (!demo) {
+        const idToken = user.signInUserSession.idToken.jwtToken;
+        await Promise.all([
+          axios.delete(URLs.CUSTOMERS, {
+            headers: {
+              Authorization: idToken,
+            },
+            ...axiosConfig.STRIPE,
+          }),
+          axios.delete(URLs.USERS, {
+            headers: {
+              Authorization: idToken,
+            },
+            ...axiosConfig.DB,
+          }),
+        ]);
 
-      await Promise.all([
-        axios.delete(URLs.CUSTOMERS, {
-          headers: {
-            Authorization: idToken,
-          },
-          ...axiosConfig.STRIPE,
-        }),
-        axios.delete(URLs.USERS, {
-          headers: {
-            Authorization: idToken,
-          },
-          ...axiosConfig.DB,
-        }),
-        new Promise((resolve, reject) => {
+        await new Promise((resolve, reject) => {
           user.deleteUser((error) => {
             if (error) {
               reject(error);
@@ -66,11 +70,10 @@ const requestDeleteAccount = () => async (dispatch, getState) => {
               resolve();
             }
           });
-        }),
-      ]);
+        });
+      }
     } catch (errorCatch) {
       const error = handleErrorCatch(errorCatch);
-
       dispatch(
         setAuthStatus({
           id: statusNames.DELETE_ACCOUNT,
@@ -84,21 +87,13 @@ const requestDeleteAccount = () => async (dispatch, getState) => {
         return null;
       }
 
-      raven.captureException(error, {
-        logger: 'requestDeleteAccount',
-      });
+      if (!demo) {
+        raven.captureException(error, {
+          logger: 'requestDeleteAccount',
+        });
+      }
 
       return Promise.reject(error);
-    }
-
-    window.sessionStorage.removeSecurity('sessionTime');
-
-    const intervalId = window.sessionStorage.getSecurity('interval');
-
-    if (intervalId) {
-      window.clearInterval(intervalId);
-
-      window.sessionStorage.removeSecurity('interval');
     }
 
     dispatch(resetAWSState());
@@ -106,7 +101,9 @@ const requestDeleteAccount = () => async (dispatch, getState) => {
     dispatch(resetWatchlistState());
     dispatch(resetAuthState());
 
-    raven.setUserContext();
+    if (!demo) {
+      raven.setUserContext();
+    }
   }
 
   return null;

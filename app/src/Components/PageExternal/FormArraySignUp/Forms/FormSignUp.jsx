@@ -32,7 +32,7 @@ const FormSignUp = (props) => {
   return (
     <Form
       display="block"
-      innerRef={heightRef}
+      ref={heightRef}
       id={formString}
       width={widthString}
       padding={`${formHeightBufferHalfString} 0`}
@@ -43,7 +43,7 @@ const FormSignUp = (props) => {
         themeFontWeight="light"
         padding={`0 0 ${inputHeightBufferHalfString} 0`}
         margin="0"
-        height="96px"
+        height="96px" // hardcoded to avoid IE issues
         fontSize="17px"
       >
         Please enter a password containing at least 8 characters, one of the following special
@@ -79,7 +79,7 @@ const FormSignUp = (props) => {
         themeSize="text"
         margin="0"
         padding={`${inputHeightBufferHalfString} 0`}
-        height="70px"
+        height="70px" // hardcoded to avoid IE issues
       >
         {
           'By clicking the "Sign Up" button below to sign up, you agree to abide by and acknowledge you have read our '

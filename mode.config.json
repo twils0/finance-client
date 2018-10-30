@@ -1,3 +1,4 @@
 {
-  "logging": false
+  "logging": false,
+  "demo": false
 }

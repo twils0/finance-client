@@ -8,7 +8,7 @@ const Article = styled.div`
   flex-direction: ${props => props.flexDirection || 'row'};
   flex-wrap: ${props => props.flexWrap || 'wrap'};
 
-  align-securities: ${props => props.alignItems || 'flex-start'};
+  align-items: ${props => props.alignItems || 'flex-start'};
   align-content: ${props => props.alignContent || 'flex-start'};
   justify-content: ${props => props.justifyContent || 'flex-start'};
 

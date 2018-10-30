@@ -55,18 +55,20 @@ const LoadableExternal = Loadable({
 const App = () => (
   <ReduxProvider store={store}>
     <ThemeProvider key="themeProvider" theme={theme}>
-      <GlobalFontStyle />
-      <BrowserRouter>
-        <Switch>
-          <Route path={pathNames.WATCHLIST_SECURITY_ID} component={LoadableInternal} />
-          <Route path={pathNames.ACCOUNT} component={LoadableInternal} />
-          <Route path={pathNames.LOGIN} component={LoadableExternal} />
-          <Route path={pathNames.SIGN_UP} component={LoadableExternal} />
-          <Route path={pathNames.CODE_VERIFY_EMAIL} component={LoadableExternal} />
-          <Route path={pathNames.TERMS} component={LoadableTerms} />
-          <Route path={pathNames.DEFAULT} component={LoadableExternal} />
-        </Switch>
-      </BrowserRouter>
+      <React.Fragment>
+        <GlobalFontStyle />
+        <BrowserRouter>
+          <Switch>
+            <Route path={pathNames.WATCHLIST_SECURITY_ID} component={LoadableInternal} />
+            <Route path={pathNames.ACCOUNT} component={LoadableInternal} />
+            <Route path={pathNames.LOGIN} component={LoadableExternal} />
+            <Route path={pathNames.SIGN_UP} component={LoadableExternal} />
+            <Route path={pathNames.CODE_VERIFY_EMAIL} component={LoadableExternal} />
+            <Route path={pathNames.TERMS} component={LoadableTerms} />
+            <Route path={pathNames.DEFAULT} component={LoadableExternal} />
+          </Switch>
+        </BrowserRouter>
+      </React.Fragment>
     </ThemeProvider>
   </ReduxProvider>
 );

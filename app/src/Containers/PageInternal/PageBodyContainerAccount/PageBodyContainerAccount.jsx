@@ -9,7 +9,6 @@ import { requestStatusTypes } from '../../../Constants/universalConstants';
 import { statusNames } from '../../../Constants/dataConstantsAccount';
 import { errorMessages } from '../../../Constants/uiConstantsApp';
 import { formNames, inputNames } from '../../../Constants/uiConstantsAccount';
-import setSession from '../../../Actions/dataThunkAuth/setSession';
 import loadStripeFields from '../../../Actions/dataThunkAccount/loadStripeFields';
 import loadAWSFields from '../../../Actions/dataThunkAccount/loadAWSFields';
 import loadStripe from '../../../Actions/uiThunkApp/loadStripe';
@@ -25,9 +24,7 @@ class PageBodyContainerAccount extends React.Component {
   constructor(props) {
     super(props);
 
-    const { handleSession, statusAWS } = this.props;
-
-    handleSession();
+    const { statusAWS } = this.props;
 
     if (statusAWS === requestStatusTypes.SUCCESS) {
       const { statusStripe, statusAccount } = this.props;
@@ -82,11 +79,7 @@ class PageBodyContainerAccount extends React.Component {
     }
   }
 
-  componentWillUpdate() {
-    this.props.handleSession();
-  }
-
-  handleStripeChange = (stripeEvent) => {
+  handleStripeChange = stripeEvent => {
     const billingStripe = this.props.forms[formNames.BILLING].inputs[
       inputNames[formNames.BILLING].STRIPE
     ];
@@ -130,7 +123,7 @@ class PageBodyContainerAccount extends React.Component {
     this.props.handleInputValueError(billingStripe);
   };
 
-  handleStripeLoaded = (loaded) => {
+  handleStripeLoaded = loaded => {
     this.props.handleStripeElementLoaded({
       id: inputNames[formNames.BILLING].STRIPE,
       loaded,
@@ -144,7 +137,7 @@ class PageBodyContainerAccount extends React.Component {
     }
   };
 
-  stripeRef = (element) => {
+  stripeRef = element => {
     if (element && !this.elements.stripe) {
       this.elements.stripe = element;
       element.on('change', this.handleStripeChange);
@@ -219,7 +212,6 @@ PageBodyContainerAccount.propTypes = {
   statusStripe: PropTypes.string.isRequired,
   statusAccount: PropTypes.object.isRequired,
   forms: PropTypes.object.isRequired,
-  handleSession: PropTypes.func.isRequired,
   handleStripe: PropTypes.func.isRequired,
   handleAWSFields: PropTypes.func.isRequired,
   handleStripeFields: PropTypes.func.isRequired,
@@ -241,7 +233,6 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  handleSession: () => dispatch(setSession()),
   handleStripe: () => dispatch(loadStripe()),
   handleAWSFields: () => dispatch(loadAWSFields()),
   handleStripeFields: () => dispatch(loadStripeFields()),
@@ -249,4 +240,7 @@ const mapDispatchToProps = dispatch => ({
   handleStripeElementLoaded: payload => dispatch(setStripeElementLoaded(payload)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(PageBodyContainerAccount);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(PageBodyContainerAccount);

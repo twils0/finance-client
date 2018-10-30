@@ -14,7 +14,6 @@ import { statusNames as statusNamesWatchlist } from '../../Constants/dataConstan
 import { imageNames } from '../../Constants/uiConstantsApp';
 import { pageBodyNames } from '../../Constants/uiConstantsInternal';
 import { setAuthStatus, setRedirectURL } from '../../Actions/dataActionsAuth';
-import setSession from '../../Actions/dataThunkAuth/setSession';
 import loadImage from '../../Actions/uiThunkApp/loadImage';
 import { setSecuritiesCurrent } from '../../Actions/dataActionsWatchlist';
 import loadSecurities from '../../Actions/dataThunkWatchlist/loadSecurities';
@@ -46,7 +45,6 @@ class PageContainerInternal extends React.Component {
     super(props);
 
     const {
-      handleSession,
       redirectURL,
       handleAuthStatus,
       statusAuth,
@@ -59,8 +57,6 @@ class PageContainerInternal extends React.Component {
     } = this.props;
     const { path, url, params } = match;
     const { securityId } = params;
-
-    this.initSessionAuth = handleSession();
 
     if (redirectURL !== url) {
       this.setRedirect(match);
@@ -86,15 +82,14 @@ class PageContainerInternal extends React.Component {
     this.setCurrentPageBody(path, currentPageBody);
   }
 
-  componentDidMount() {
-    if (this.initSessionAuth) {
-      this.initSessionAuth = false;
-    }
-  }
-
   componentWillReceiveProps(nextProps) {
     const {
-      statusAWS, redirectURL, statusSecurities, match, securities, currentPageBody,
+      statusAWS,
+      redirectURL,
+      statusSecurities,
+      match,
+      securities,
+      currentPageBody,
     } = nextProps;
     const { path, url, params } = match;
     const { securityId } = params;
@@ -112,17 +107,13 @@ class PageContainerInternal extends React.Component {
     this.setCurrentPageBody(path, currentPageBody);
   }
 
-  componentWillUpdate() {
-    this.props.handleSession();
-  }
-
-  setRedirect = (match) => {
+  setRedirect = match => {
     const { path, url } = match;
 
     if (
-      path === pathNames.WATCHLIST_SECURITY_ID
-      || path === pathNames.WATCHLIST
-      || path === pathNames.ACCOUNT
+      path === pathNames.WATCHLIST_SECURITY_ID ||
+      path === pathNames.WATCHLIST ||
+      path === pathNames.ACCOUNT
     ) {
       this.props.handleRedirectURL({ redirectURL: url });
     }
@@ -131,10 +122,10 @@ class PageContainerInternal extends React.Component {
   setCurrentSecurity = (path, securityId, securities) => {
     if (path === pathNames.WATCHLIST || path === pathNames.WATCHLIST_SECURITY_ID) {
       if (
-        securityId
-        && securityId !== ':securityId'
-        && securities
-        && Object.keys(securities).indexOf(securityId) > -1
+        securityId &&
+        securityId !== ':securityId' &&
+        securities &&
+        Object.keys(securities).indexOf(securityId) > -1
       ) {
         if (securities && securityId !== securities.current) {
           const { handleSecuritiesCurrent, handleUpdateSecurities } = this.props;
@@ -158,22 +149,20 @@ class PageContainerInternal extends React.Component {
   };
 
   render() {
-    const {
-      authenticated, statusFonts, statusexampleHeader, statusAWS, statusAuth,
-    } = this.props;
+    const { authenticated, statusFonts, statusexampleHeader, statusAWS, statusAuth } = this.props;
 
-    if (!this.initSessionAuth && !authenticated) {
+    if (!authenticated) {
       return <Redirect to={pathNames.LOGIN} />;
     }
 
     if (
-      statusFonts !== requestStatusTypes.SUCCESS
-      || statusexampleHeader !== requestStatusTypes.SUCCESS
-      || statusAWS === requestStatusTypes.LOADING
-      || statusAuth[statusNamesAuth.LOGOUT].status === requestStatusTypes.LOADING
-      || statusAuth[statusNamesAuth.LOGOUT].status === requestStatusTypes.SUCCESS
-      || statusAuth[statusNamesAuth.DELETE_ACCOUNT].status === requestStatusTypes.LOADING
-      || statusAuth[statusNamesAuth.DELETE_ACCOUNT].status === requestStatusTypes.SUCCESS
+      statusFonts !== requestStatusTypes.SUCCESS ||
+      statusexampleHeader !== requestStatusTypes.SUCCESS ||
+      statusAWS === requestStatusTypes.LOADING ||
+      statusAuth[statusNamesAuth.LOGOUT].status === requestStatusTypes.LOADING ||
+      statusAuth[statusNamesAuth.LOGOUT].status === requestStatusTypes.SUCCESS ||
+      statusAuth[statusNamesAuth.DELETE_ACCOUNT].status === requestStatusTypes.LOADING ||
+      statusAuth[statusNamesAuth.DELETE_ACCOUNT].status === requestStatusTypes.SUCCESS
     ) {
       return (
         <FlexColumn width="100%" height="100%">
@@ -204,7 +193,6 @@ PageContainerInternal.propTypes = {
   statusFonts: PropTypes.string.isRequired,
   statusAWS: PropTypes.string.isRequired,
   statusSecurities: PropTypes.string.isRequired,
-  handleSession: PropTypes.func.isRequired,
   handleAuthStatus: PropTypes.func.isRequired,
   handleSecuritiesCurrent: PropTypes.func.isRequired,
   handleUpdateSecurities: PropTypes.func.isRequired,
@@ -229,7 +217,6 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  handleSession: () => dispatch(setSession()),
   handleAuthStatus: payload => dispatch(setAuthStatus(payload)),
   handleSecuritiesCurrent: payload => dispatch(setSecuritiesCurrent(payload)),
   handleUpdateSecurities: payload => dispatch(requestUpdateSecurities(payload)),
@@ -242,6 +229,6 @@ const mapDispatchToProps = dispatch => ({
 export default withRouter(
   connect(
     mapStateToProps,
-    mapDispatchToProps,
-  )(PageContainerInternal),
+    mapDispatchToProps
+  )(PageContainerInternal)
 );

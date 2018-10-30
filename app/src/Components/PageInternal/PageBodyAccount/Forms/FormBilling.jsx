@@ -34,7 +34,7 @@ const FormBilling = (props) => {
   const formString = formNames.BILLING;
 
   return (
-    <Form innerRef={heightRef} id={formString} width="100%">
+    <Form ref={heightRef} id={formString} width="100%">
       <FlexRow
         justifyContent="flex-start"
         width="100%"

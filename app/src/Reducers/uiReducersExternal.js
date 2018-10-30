@@ -63,7 +63,7 @@ export const initialState = {
     [formNames.FORGOT_PASSWORD]: {
       id: formNames.FORGOT_PASSWORD,
       height: 220,
-      inputsList: [...inputNames[formNames.FORGOT_PASSWORD]],
+      inputsList: [...Object.values(inputNames[formNames.FORGOT_PASSWORD])],
       inputs: {
         [inputNames[formNames.FORGOT_PASSWORD].EMAIL]: {
           parentId: formNames.FORGOT_PASSWORD,

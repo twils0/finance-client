@@ -7,7 +7,7 @@ import { setAuthenticated } from '../dataActionsAuth';
 import { setCurrentForm, setInputValueError } from '../uiActionsExternal';
 import requestVerifyFieldConfirm from '../dataThunkAuth/requestVerifyFieldConfirm';
 
-const firstButtonCodePhone = (payload) => {
+const firstButtonCodePhone = payload => {
   if (!Object.prototype.hasOwnProperty.call(payload, 'history')) {
     throw new Error(`Please enter a value for the 'history' key - ${JSON.stringify(payload)}`);
   }
@@ -16,7 +16,8 @@ const firstButtonCodePhone = (payload) => {
     const state = getState();
     const { forms } = state.ui.external;
 
-    const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+    const codeCodeVerifyPhone =
+      forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
     if (!codeCodeVerifyPhone.value) {
       codeCodeVerifyPhone.errorMessage = errorMessages.NO_VERIFICATION_CODE_PHONE;
@@ -33,12 +34,12 @@ const firstButtonCodePhone = (payload) => {
           requestVerifyFieldConfirm({
             field: 'phone_number',
             code: codeCodeVerifyPhone.value,
-          }),
+          })
         );
 
         if (
-          codeTypes[codeTypeNames.VERIFY_EMAIL].needed
-          || (codeTypes[codeTypeNames.VERIFY_EMAIL_ADDITIONAL].needed && emailAdditional)
+          codeTypes[codeTypeNames.VERIFY_EMAIL].needed ||
+          (codeTypes[codeTypeNames.VERIFY_EMAIL_ADDITIONAL].needed && emailAdditional)
         ) {
           dispatch(setCurrentForm({ current: formNames.CODE_VERIFY_EMAIL }));
         } else if (status[statusNames.LOGIN_MFA].status === requestStatusTypes.SUCCESS) {
@@ -46,11 +47,6 @@ const firstButtonCodePhone = (payload) => {
         } else {
           const loginEmail = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL];
           const loginPassword = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD];
-
-          const currentTime = new Date();
-
-          currentTime.setMinutes(currentTime.getMinutes() + 30);
-          window.sessionStorage.setSecurity('sessionTime', currentTime);
 
           dispatch(setAuthenticated({ authenticated: true }));
 

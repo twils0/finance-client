@@ -1,1545 +1,197 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Containers PageExternal FormArrayContainerCode Forms FormContainerCodeVerifyPhone shallow renders correctly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerCodeVerifyPhone
-    clearElement={[MockFunction]}
-    currentForm="loginForm"
-    formHeightBuffer={50}
-    handleInputValueError={[Function]}
-    heightRef={[MockFunction]}
-    inputHeightBuffer={15}
-    inputs={
-      Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={700}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "codePhoneVerifyForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAuth={
-      Object {
-        "authStatusChangePassword": Object {
-          "id": "authStatusChangePassword",
-          "status": "IDLE",
-        },
-        "authStatusDeleteAccount": Object {
-          "id": "authStatusDeleteAccount",
-          "status": "SUCCESS",
-        },
-        "authStatusForgotPassword": Object {
-          "id": "authStatusForgotPassword",
-          "status": "IDLE",
-        },
-        "authStatusLogin": Object {
-          "id": "authStatusLogin",
-          "status": "IDLE",
-        },
-        "authStatusLoginMFA": Object {
-          "id": "authStatusLoginMFA",
-          "status": "IDLE",
-        },
-        "authStatusLogout": Object {
-          "id": "authStatusLogout",
-          "status": "SUCCESS",
-        },
-        "authStatusResetPassword": Object {
-          "id": "authStatusResetPassword",
-          "status": "IDLE",
-        },
-        "authStatusSignOutDevices": Object {
-          "id": "authStatusSignOutDevices",
-          "status": "IDLE",
-        },
-        "authStatusSignUp": Object {
-          "id": "authStatusSignUp",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmail": Object {
-          "id": "authStatusVerifyEmail",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmailLink": Object {
-          "id": "authStatusVerifyEmailLink",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhone": Object {
-          "id": "authStatusVerifyPhone",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhoneCode": Object {
-          "id": "authStatusVerifyPhoneCode",
-          "status": "IDLE",
-        },
-      }
-    }
-    width={300}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": false,
-      "formHeightBuffer": 50,
-      "handleInputChange": [Function],
-      "heightRef": [MockFunction],
-      "inputHeightBuffer": 15,
-      "inputs": Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 700,
-      "width": 300,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormCodeVerifyPhone
+  currentFormBool={false}
+  formHeightBuffer={50}
+  handleInputChange={[Function]}
+  heightRef={[MockFunction]}
+  inputHeightBuffer={15}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": false,
-        "formHeightBuffer": 50,
-        "handleInputChange": [Function],
-        "heightRef": [MockFunction],
-        "inputHeightBuffer": 15,
-        "inputs": Object {
-          "codeVerifyPhoneCode": Object {
-            "errorMessage": "",
-            "id": "codeVerifyPhoneCode",
-            "parentId": "codePhoneVerifyForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 700,
-        "width": 300,
+      "codeVerifyPhoneCode": Object {
+        "errorMessage": "",
+        "id": "codeVerifyPhoneCode",
+        "parentId": "codePhoneVerifyForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+    }
+  }
+  mediaWidth={700}
+  width={300}
+/>
 `;
 
 exports[`Containers PageExternal FormArrayContainerCode Forms FormContainerCodeVerifyPhone shallow renders correctly and calls handleInputChange, with invalid phone confirmation code error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerCodeVerifyPhone
-    clearElement={[MockFunction]}
-    currentForm="loginForm"
-    formHeightBuffer={50}
-    handleInputValueError={[Function]}
-    heightRef={[MockFunction]}
-    inputHeightBuffer={15}
-    inputs={
-      Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "Please verify you have entered the correct confirmation code or request a new code.",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={700}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "codePhoneVerifyForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAuth={
-      Object {
-        "authStatusChangePassword": Object {
-          "id": "authStatusChangePassword",
-          "status": "IDLE",
-        },
-        "authStatusDeleteAccount": Object {
-          "id": "authStatusDeleteAccount",
-          "status": "SUCCESS",
-        },
-        "authStatusForgotPassword": Object {
-          "id": "authStatusForgotPassword",
-          "status": "IDLE",
-        },
-        "authStatusLogin": Object {
-          "id": "authStatusLogin",
-          "status": "IDLE",
-        },
-        "authStatusLoginMFA": Object {
-          "id": "authStatusLoginMFA",
-          "status": "IDLE",
-        },
-        "authStatusLogout": Object {
-          "id": "authStatusLogout",
-          "status": "SUCCESS",
-        },
-        "authStatusResetPassword": Object {
-          "id": "authStatusResetPassword",
-          "status": "IDLE",
-        },
-        "authStatusSignOutDevices": Object {
-          "id": "authStatusSignOutDevices",
-          "status": "IDLE",
-        },
-        "authStatusSignUp": Object {
-          "id": "authStatusSignUp",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmail": Object {
-          "id": "authStatusVerifyEmail",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmailLink": Object {
-          "id": "authStatusVerifyEmailLink",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhone": Object {
-          "id": "authStatusVerifyPhone",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhoneCode": Object {
-          "id": "authStatusVerifyPhoneCode",
-          "status": "IDLE",
-        },
-      }
-    }
-    width={300}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": false,
-      "formHeightBuffer": 50,
-      "handleInputChange": [Function],
-      "heightRef": [MockFunction],
-      "inputHeightBuffer": 15,
-      "inputs": Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "Please verify you have entered the correct confirmation code or request a new code.",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 700,
-      "width": 300,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormCodeVerifyPhone
+  currentFormBool={false}
+  formHeightBuffer={50}
+  handleInputChange={[Function]}
+  heightRef={[MockFunction]}
+  inputHeightBuffer={15}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": false,
-        "formHeightBuffer": 50,
-        "handleInputChange": [Function],
-        "heightRef": [MockFunction],
-        "inputHeightBuffer": 15,
-        "inputs": Object {
-          "codeVerifyPhoneCode": Object {
-            "errorMessage": "Please verify you have entered the correct confirmation code or request a new code.",
-            "id": "codeVerifyPhoneCode",
-            "parentId": "codePhoneVerifyForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 700,
-        "width": 300,
+      "codeVerifyPhoneCode": Object {
+        "errorMessage": "Please verify you have entered the correct confirmation code or request a new code.",
+        "id": "codeVerifyPhoneCode",
+        "parentId": "codePhoneVerifyForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+    }
+  }
+  mediaWidth={700}
+  width={300}
+/>
 `;
 
 exports[`Containers PageExternal FormArrayContainerCode Forms FormContainerCodeVerifyPhone shallow renders correctly and calls handleInputChange, with invalid phone verification code error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerCodeVerifyPhone
-    clearElement={[MockFunction]}
-    currentForm="loginForm"
-    formHeightBuffer={50}
-    handleInputValueError={[Function]}
-    heightRef={[MockFunction]}
-    inputHeightBuffer={15}
-    inputs={
-      Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "Please verify you have entered the correct verification code or request a new code.",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={700}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "codePhoneVerifyForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAuth={
-      Object {
-        "authStatusChangePassword": Object {
-          "id": "authStatusChangePassword",
-          "status": "IDLE",
-        },
-        "authStatusDeleteAccount": Object {
-          "id": "authStatusDeleteAccount",
-          "status": "SUCCESS",
-        },
-        "authStatusForgotPassword": Object {
-          "id": "authStatusForgotPassword",
-          "status": "IDLE",
-        },
-        "authStatusLogin": Object {
-          "id": "authStatusLogin",
-          "status": "IDLE",
-        },
-        "authStatusLoginMFA": Object {
-          "id": "authStatusLoginMFA",
-          "status": "IDLE",
-        },
-        "authStatusLogout": Object {
-          "id": "authStatusLogout",
-          "status": "SUCCESS",
-        },
-        "authStatusResetPassword": Object {
-          "id": "authStatusResetPassword",
-          "status": "IDLE",
-        },
-        "authStatusSignOutDevices": Object {
-          "id": "authStatusSignOutDevices",
-          "status": "IDLE",
-        },
-        "authStatusSignUp": Object {
-          "id": "authStatusSignUp",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmail": Object {
-          "id": "authStatusVerifyEmail",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmailLink": Object {
-          "id": "authStatusVerifyEmailLink",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhone": Object {
-          "id": "authStatusVerifyPhone",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhoneCode": Object {
-          "id": "authStatusVerifyPhoneCode",
-          "status": "IDLE",
-        },
-      }
-    }
-    width={300}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": false,
-      "formHeightBuffer": 50,
-      "handleInputChange": [Function],
-      "heightRef": [MockFunction],
-      "inputHeightBuffer": 15,
-      "inputs": Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "Please verify you have entered the correct verification code or request a new code.",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 700,
-      "width": 300,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormCodeVerifyPhone
+  currentFormBool={false}
+  formHeightBuffer={50}
+  handleInputChange={[Function]}
+  heightRef={[MockFunction]}
+  inputHeightBuffer={15}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": false,
-        "formHeightBuffer": 50,
-        "handleInputChange": [Function],
-        "heightRef": [MockFunction],
-        "inputHeightBuffer": 15,
-        "inputs": Object {
-          "codeVerifyPhoneCode": Object {
-            "errorMessage": "Please verify you have entered the correct verification code or request a new code.",
-            "id": "codeVerifyPhoneCode",
-            "parentId": "codePhoneVerifyForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 700,
-        "width": 300,
+      "codeVerifyPhoneCode": Object {
+        "errorMessage": "Please verify you have entered the correct verification code or request a new code.",
+        "id": "codeVerifyPhoneCode",
+        "parentId": "codePhoneVerifyForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+    }
+  }
+  mediaWidth={700}
+  width={300}
+/>
 `;
 
 exports[`Containers PageExternal FormArrayContainerCode Forms FormContainerCodeVerifyPhone shallow renders correctly and calls handleInputChange, with no phone confirmation code error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerCodeVerifyPhone
-    clearElement={[MockFunction]}
-    currentForm="loginForm"
-    formHeightBuffer={50}
-    handleInputValueError={[Function]}
-    heightRef={[MockFunction]}
-    inputHeightBuffer={15}
-    inputs={
-      Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "Please enter the confirmation code sent to your mobile phone.",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={700}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "codePhoneVerifyForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAuth={
-      Object {
-        "authStatusChangePassword": Object {
-          "id": "authStatusChangePassword",
-          "status": "IDLE",
-        },
-        "authStatusDeleteAccount": Object {
-          "id": "authStatusDeleteAccount",
-          "status": "SUCCESS",
-        },
-        "authStatusForgotPassword": Object {
-          "id": "authStatusForgotPassword",
-          "status": "IDLE",
-        },
-        "authStatusLogin": Object {
-          "id": "authStatusLogin",
-          "status": "IDLE",
-        },
-        "authStatusLoginMFA": Object {
-          "id": "authStatusLoginMFA",
-          "status": "IDLE",
-        },
-        "authStatusLogout": Object {
-          "id": "authStatusLogout",
-          "status": "SUCCESS",
-        },
-        "authStatusResetPassword": Object {
-          "id": "authStatusResetPassword",
-          "status": "IDLE",
-        },
-        "authStatusSignOutDevices": Object {
-          "id": "authStatusSignOutDevices",
-          "status": "IDLE",
-        },
-        "authStatusSignUp": Object {
-          "id": "authStatusSignUp",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmail": Object {
-          "id": "authStatusVerifyEmail",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmailLink": Object {
-          "id": "authStatusVerifyEmailLink",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhone": Object {
-          "id": "authStatusVerifyPhone",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhoneCode": Object {
-          "id": "authStatusVerifyPhoneCode",
-          "status": "IDLE",
-        },
-      }
-    }
-    width={300}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": false,
-      "formHeightBuffer": 50,
-      "handleInputChange": [Function],
-      "heightRef": [MockFunction],
-      "inputHeightBuffer": 15,
-      "inputs": Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "Please enter the confirmation code sent to your mobile phone.",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 700,
-      "width": 300,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormCodeVerifyPhone
+  currentFormBool={false}
+  formHeightBuffer={50}
+  handleInputChange={[Function]}
+  heightRef={[MockFunction]}
+  inputHeightBuffer={15}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": false,
-        "formHeightBuffer": 50,
-        "handleInputChange": [Function],
-        "heightRef": [MockFunction],
-        "inputHeightBuffer": 15,
-        "inputs": Object {
-          "codeVerifyPhoneCode": Object {
-            "errorMessage": "Please enter the confirmation code sent to your mobile phone.",
-            "id": "codeVerifyPhoneCode",
-            "parentId": "codePhoneVerifyForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 700,
-        "width": 300,
+      "codeVerifyPhoneCode": Object {
+        "errorMessage": "Please enter the confirmation code sent to your mobile phone.",
+        "id": "codeVerifyPhoneCode",
+        "parentId": "codePhoneVerifyForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+    }
+  }
+  mediaWidth={700}
+  width={300}
+/>
 `;
 
 exports[`Containers PageExternal FormArrayContainerCode Forms FormContainerCodeVerifyPhone shallow renders correctly and calls handleInputChange, with no phone verification code error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerCodeVerifyPhone
-    clearElement={[MockFunction]}
-    currentForm="loginForm"
-    formHeightBuffer={50}
-    handleInputValueError={[Function]}
-    heightRef={[MockFunction]}
-    inputHeightBuffer={15}
-    inputs={
-      Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "Please enter the verification code sent to your mobile phone.",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={700}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "codePhoneVerifyForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAuth={
-      Object {
-        "authStatusChangePassword": Object {
-          "id": "authStatusChangePassword",
-          "status": "IDLE",
-        },
-        "authStatusDeleteAccount": Object {
-          "id": "authStatusDeleteAccount",
-          "status": "SUCCESS",
-        },
-        "authStatusForgotPassword": Object {
-          "id": "authStatusForgotPassword",
-          "status": "IDLE",
-        },
-        "authStatusLogin": Object {
-          "id": "authStatusLogin",
-          "status": "IDLE",
-        },
-        "authStatusLoginMFA": Object {
-          "id": "authStatusLoginMFA",
-          "status": "IDLE",
-        },
-        "authStatusLogout": Object {
-          "id": "authStatusLogout",
-          "status": "SUCCESS",
-        },
-        "authStatusResetPassword": Object {
-          "id": "authStatusResetPassword",
-          "status": "IDLE",
-        },
-        "authStatusSignOutDevices": Object {
-          "id": "authStatusSignOutDevices",
-          "status": "IDLE",
-        },
-        "authStatusSignUp": Object {
-          "id": "authStatusSignUp",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmail": Object {
-          "id": "authStatusVerifyEmail",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmailLink": Object {
-          "id": "authStatusVerifyEmailLink",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhone": Object {
-          "id": "authStatusVerifyPhone",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhoneCode": Object {
-          "id": "authStatusVerifyPhoneCode",
-          "status": "IDLE",
-        },
-      }
-    }
-    width={300}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": false,
-      "formHeightBuffer": 50,
-      "handleInputChange": [Function],
-      "heightRef": [MockFunction],
-      "inputHeightBuffer": 15,
-      "inputs": Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "Please enter the verification code sent to your mobile phone.",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 700,
-      "width": 300,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormCodeVerifyPhone
+  currentFormBool={false}
+  formHeightBuffer={50}
+  handleInputChange={[Function]}
+  heightRef={[MockFunction]}
+  inputHeightBuffer={15}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": false,
-        "formHeightBuffer": 50,
-        "handleInputChange": [Function],
-        "heightRef": [MockFunction],
-        "inputHeightBuffer": 15,
-        "inputs": Object {
-          "codeVerifyPhoneCode": Object {
-            "errorMessage": "Please enter the verification code sent to your mobile phone.",
-            "id": "codeVerifyPhoneCode",
-            "parentId": "codePhoneVerifyForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 700,
-        "width": 300,
+      "codeVerifyPhoneCode": Object {
+        "errorMessage": "Please enter the verification code sent to your mobile phone.",
+        "id": "codeVerifyPhoneCode",
+        "parentId": "codePhoneVerifyForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+    }
+  }
+  mediaWidth={700}
+  width={300}
+/>
 `;
 
 exports[`Containers PageExternal FormArrayContainerCode Forms FormContainerCodeVerifyPhone shallow renders correctly and calls handleInputChange, with unexpected error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerCodeVerifyPhone
-    clearElement={[MockFunction]}
-    currentForm="loginForm"
-    formHeightBuffer={50}
-    handleInputValueError={[Function]}
-    heightRef={[MockFunction]}
-    inputHeightBuffer={15}
-    inputs={
-      Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={700}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "codePhoneVerifyForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAuth={
-      Object {
-        "authStatusChangePassword": Object {
-          "id": "authStatusChangePassword",
-          "status": "IDLE",
-        },
-        "authStatusDeleteAccount": Object {
-          "id": "authStatusDeleteAccount",
-          "status": "SUCCESS",
-        },
-        "authStatusForgotPassword": Object {
-          "id": "authStatusForgotPassword",
-          "status": "IDLE",
-        },
-        "authStatusLogin": Object {
-          "id": "authStatusLogin",
-          "status": "IDLE",
-        },
-        "authStatusLoginMFA": Object {
-          "id": "authStatusLoginMFA",
-          "status": "IDLE",
-        },
-        "authStatusLogout": Object {
-          "id": "authStatusLogout",
-          "status": "SUCCESS",
-        },
-        "authStatusResetPassword": Object {
-          "id": "authStatusResetPassword",
-          "status": "IDLE",
-        },
-        "authStatusSignOutDevices": Object {
-          "id": "authStatusSignOutDevices",
-          "status": "IDLE",
-        },
-        "authStatusSignUp": Object {
-          "id": "authStatusSignUp",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmail": Object {
-          "id": "authStatusVerifyEmail",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmailLink": Object {
-          "id": "authStatusVerifyEmailLink",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhone": Object {
-          "id": "authStatusVerifyPhone",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhoneCode": Object {
-          "id": "authStatusVerifyPhoneCode",
-          "status": "IDLE",
-        },
-      }
-    }
-    width={300}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": false,
-      "formHeightBuffer": 50,
-      "handleInputChange": [Function],
-      "heightRef": [MockFunction],
-      "inputHeightBuffer": 15,
-      "inputs": Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 700,
-      "width": 300,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormCodeVerifyPhone
+  currentFormBool={false}
+  formHeightBuffer={50}
+  handleInputChange={[Function]}
+  heightRef={[MockFunction]}
+  inputHeightBuffer={15}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": false,
-        "formHeightBuffer": 50,
-        "handleInputChange": [Function],
-        "heightRef": [MockFunction],
-        "inputHeightBuffer": 15,
-        "inputs": Object {
-          "codeVerifyPhoneCode": Object {
-            "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
-            "id": "codeVerifyPhoneCode",
-            "parentId": "codePhoneVerifyForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 700,
-        "width": 300,
+      "codeVerifyPhoneCode": Object {
+        "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+        "id": "codeVerifyPhoneCode",
+        "parentId": "codePhoneVerifyForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+    }
+  }
+  mediaWidth={700}
+  width={300}
+/>
 `;
 
 exports[`Containers PageExternal FormArrayContainerCode Forms FormContainerCodeVerifyPhone shallow renders correctly, with componentWillUpdate, componentDidUpdate, and componentWillUnmount 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerCodeVerifyPhone
-    clearElement={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "codePhoneVerifyForm",
-          ],
-          Array [
-            "codePhoneVerifyForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    currentForm="loginForm"
-    formHeightBuffer={50}
-    handleInputValueError={[Function]}
-    heightRef={[MockFunction]}
-    inputHeightBuffer={15}
-    inputs={
-      Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={700}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "codePhoneVerifyForm",
-          ],
-          Array [
-            "codePhoneVerifyForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAuth={
-      Object {
-        "authStatusChangePassword": Object {
-          "id": "authStatusChangePassword",
-          "status": "IDLE",
-        },
-        "authStatusDeleteAccount": Object {
-          "id": "authStatusDeleteAccount",
-          "status": "SUCCESS",
-        },
-        "authStatusForgotPassword": Object {
-          "id": "authStatusForgotPassword",
-          "status": "IDLE",
-        },
-        "authStatusLogin": Object {
-          "id": "authStatusLogin",
-          "status": "IDLE",
-        },
-        "authStatusLoginMFA": Object {
-          "id": "authStatusLoginMFA",
-          "status": "IDLE",
-        },
-        "authStatusLogout": Object {
-          "id": "authStatusLogout",
-          "status": "SUCCESS",
-        },
-        "authStatusResetPassword": Object {
-          "id": "authStatusResetPassword",
-          "status": "IDLE",
-        },
-        "authStatusSignOutDevices": Object {
-          "id": "authStatusSignOutDevices",
-          "status": "IDLE",
-        },
-        "authStatusSignUp": Object {
-          "id": "authStatusSignUp",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmail": Object {
-          "id": "authStatusVerifyEmail",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmailLink": Object {
-          "id": "authStatusVerifyEmailLink",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhone": Object {
-          "id": "authStatusVerifyPhone",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhoneCode": Object {
-          "id": "authStatusVerifyPhoneCode",
-          "status": "IDLE",
-        },
-      }
-    }
-    width={300}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": false,
-      "formHeightBuffer": 50,
-      "handleInputChange": [Function],
-      "heightRef": [MockFunction],
-      "inputHeightBuffer": 15,
-      "inputs": Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 700,
-      "width": 300,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormCodeVerifyPhone
+  currentFormBool={false}
+  formHeightBuffer={50}
+  handleInputChange={[Function]}
+  heightRef={[MockFunction]}
+  inputHeightBuffer={15}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": false,
-        "formHeightBuffer": 50,
-        "handleInputChange": [Function],
-        "heightRef": [MockFunction],
-        "inputHeightBuffer": 15,
-        "inputs": Object {
-          "codeVerifyPhoneCode": Object {
-            "errorMessage": "",
-            "id": "codeVerifyPhoneCode",
-            "parentId": "codePhoneVerifyForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 700,
-        "width": 300,
+      "codeVerifyPhoneCode": Object {
+        "errorMessage": "",
+        "id": "codeVerifyPhoneCode",
+        "parentId": "codePhoneVerifyForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+    }
+  }
+  mediaWidth={700}
+  width={300}
+/>
 `;
 
 exports[`Containers PageExternal FormArrayContainerCode Forms FormContainerCodeVerifyPhone shallow renders correctly, with loading indicator 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerCodeVerifyPhone
-    clearElement={[MockFunction]}
-    currentForm="loginForm"
-    formHeightBuffer={50}
-    handleInputValueError={[Function]}
-    heightRef={[MockFunction]}
-    inputHeightBuffer={15}
-    inputs={
-      Object {
-        "codeVerifyPhoneCode": Object {
-          "errorMessage": "",
-          "id": "codeVerifyPhoneCode",
-          "parentId": "codePhoneVerifyForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={700}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "codePhoneVerifyForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAuth={
-      Object {
-        "authStatusChangePassword": Object {
-          "id": "authStatusChangePassword",
-          "status": "IDLE",
-        },
-        "authStatusDeleteAccount": Object {
-          "id": "authStatusDeleteAccount",
-          "status": "SUCCESS",
-        },
-        "authStatusForgotPassword": Object {
-          "id": "authStatusForgotPassword",
-          "status": "IDLE",
-        },
-        "authStatusLogin": Object {
-          "id": "authStatusLogin",
-          "status": "IDLE",
-        },
-        "authStatusLoginMFA": Object {
-          "id": "authStatusLoginMFA",
-          "status": "IDLE",
-        },
-        "authStatusLogout": Object {
-          "id": "authStatusLogout",
-          "status": "SUCCESS",
-        },
-        "authStatusResetPassword": Object {
-          "id": "authStatusResetPassword",
-          "status": "IDLE",
-        },
-        "authStatusSignOutDevices": Object {
-          "id": "authStatusSignOutDevices",
-          "status": "IDLE",
-        },
-        "authStatusSignUp": Object {
-          "id": "authStatusSignUp",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmail": Object {
-          "id": "authStatusVerifyEmail",
-          "status": "IDLE",
-        },
-        "authStatusVerifyEmailLink": Object {
-          "id": "authStatusVerifyEmailLink",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhone": Object {
-          "id": "authStatusVerifyPhone",
-          "status": "IDLE",
-        },
-        "authStatusVerifyPhoneCode": Object {
-          "id": "authStatusVerifyPhoneCode",
-          "status": "LOADING",
-        },
-      }
-    }
-    width={300}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "alignItems": null,
-      "alignSelf": null,
-      "borderColorType": "border",
-      "borderRadius": null,
-      "borderStyle": null,
-      "borderWidth": null,
-      "boxSizing": null,
-      "children": <BeatLoader
-        color="#509236"
-        loading={true}
-        margin="2px"
-        size="15px"
-      />,
-      "color": Object {},
-      "display": null,
-      "flex": null,
-      "flexWrap": null,
-      "height": "100%",
-      "justifyContent": null,
-      "margin": null,
-      "mediaWidth": null,
-      "minHeight": null,
-      "minWidth": null,
-      "overflowX": null,
-      "overflowY": null,
-      "padding": null,
-      "position": null,
-      "responsiveAlignItems": null,
-      "responsiveJustifyContent": null,
-      "responsiveMargin": null,
-      "responsivePadding": null,
-      "responsivePosition": null,
-      "responsiveWidth": null,
-      "separator": false,
-      "themeColor": "primary",
-      "width": "300px",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "color": "#509236",
-        "loading": true,
-        "margin": "2px",
-        "size": "15px",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "alignItems": null,
-        "alignSelf": null,
-        "borderColorType": "border",
-        "borderRadius": null,
-        "borderStyle": null,
-        "borderWidth": null,
-        "boxSizing": null,
-        "children": <BeatLoader
-          color="#509236"
-          loading={true}
-          margin="2px"
-          size="15px"
-        />,
-        "color": Object {},
-        "display": null,
-        "flex": null,
-        "flexWrap": null,
-        "height": "100%",
-        "justifyContent": null,
-        "margin": null,
-        "mediaWidth": null,
-        "minHeight": null,
-        "minWidth": null,
-        "overflowX": null,
-        "overflowY": null,
-        "padding": null,
-        "position": null,
-        "responsiveAlignItems": null,
-        "responsiveJustifyContent": null,
-        "responsiveMargin": null,
-        "responsivePadding": null,
-        "responsivePosition": null,
-        "responsiveWidth": null,
-        "separator": false,
-        "themeColor": "primary",
-        "width": "300px",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "color": "#509236",
-          "loading": true,
-          "margin": "2px",
-          "size": "15px",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+<FlexColumn
+  alignItems={null}
+  alignSelf={null}
+  borderColorType="border"
+  borderRadius={null}
+  borderStyle={null}
+  borderWidth={null}
+  boxSizing={null}
+  color={Object {}}
+  display={null}
+  flex={null}
+  flexWrap={null}
+  height="100%"
+  justifyContent={null}
+  margin={null}
+  mediaWidth={null}
+  minHeight={null}
+  minWidth={null}
+  overflowX={null}
+  overflowY={null}
+  padding={null}
+  position={null}
+  responsiveAlignSecurities={null}
+  responsiveJustifyContent={null}
+  responsiveMargin={null}
+  responsivePadding={null}
+  responsivePosition={null}
+  responsiveWidth={null}
+  separator={false}
+  themeColor="primary"
+  width="300px"
+>
+  <BeatLoader
+    color="#7367e6"
+    loading={true}
+    margin="2px"
+    size="15px"
+  />
+</FlexColumn>
 `;

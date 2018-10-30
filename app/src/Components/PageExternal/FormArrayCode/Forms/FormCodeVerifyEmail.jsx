@@ -16,25 +16,25 @@ const FormCodeVerifyEmail = (props) => {
   const formString = formNames.CODE_VERIFY_EMAIL;
   let headerText1 = 'Thank you! You have successfully verified your email address. You are now eligible to receive research emails.';
   let headerText2 = "If you would like to log in, please click the 'Continue' button below.";
-  let heightString1 = '104px';
-  let heightString2 = '67px';
+  let heightString1 = '104px'; // hardcoded to avoid IE issues
+  let heightString2 = '67px'; // hardcoded to avoid IE issues
 
   if (email && emailAdditional) {
-    headerText1 = 'Please check for a verification email at the following two email addresses:';
+    headerText1 = 'Please check for verification emails at the following two email addresses:';
     headerText2 = 'Research emails cannot be sent to an email address, until it has been verified.';
-    heightString1 = '60px';
-    heightString2 = '60px';
+    heightString1 = '60px'; // hardcoded to avoid IE issues
+    heightString2 = '60px'; // hardcoded to avoid IE issues
   } else if (email || emailAdditional) {
     headerText1 = 'Please check for a verification email at the following email address:';
     headerText2 = 'Research emails cannot be sent to an email address, until it has been verified.';
-    heightString1 = '60px';
-    heightString2 = '60px';
+    heightString1 = '60px'; // hardcoded to avoid IE issues
+    heightString2 = '60px'; // hardcoded to avoid IE issues
   }
 
   return (
     <Form
       display="block"
-      innerRef={heightRef}
+      ref={heightRef}
       id={formString}
       width={widthString}
       padding={`${formHeightBufferHalfString} 0`}

@@ -8,7 +8,7 @@ const ListItem = styled.div`
   flex: ${props => props.flex};
   flex-direction: ${props => props.flexDirection || 'row'};
 
-  align-securities: ${props => props.alignItems || 'center'};
+  align-items: ${props => props.alignItems || 'center'};
   justify-content: ${props => props.justifyContent || 'flex-start'};
 
   overflow-x: ${props => props.overflowX || 'hidden'};

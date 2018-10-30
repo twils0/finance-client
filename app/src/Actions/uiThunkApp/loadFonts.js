@@ -15,7 +15,7 @@ const loadFonts = () => (dispatch, getState) => {
 
     WebFont.load({
       google: {
-        families: ['Montserrat:400,600', 'Roboto Condensed:300,400', 'Lato:400,600'],
+        families: ['Titillium Web:400,600'],
       },
       active: () => dispatch(setFontsStatus({ status: requestStatusTypes.SUCCESS })),
       fontinactive: () => dispatch(setFontsStatus({ status: requestStatusTypes.ERROR })),
@@ -23,13 +23,7 @@ const loadFonts = () => (dispatch, getState) => {
 
     const GlobalFontStyle = createGlobalStyle`
       @font-face {
-        font-family: Montserrat;
-      }
-      @font-face {
-        font-family: Roboto Condensed;
-      }
-      @font-face {
-        font-family: Lato;
+        font-family: Titillium Web;
       }
     `;
 

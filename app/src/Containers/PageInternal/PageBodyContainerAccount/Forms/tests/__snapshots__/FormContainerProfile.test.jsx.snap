@@ -1,2917 +1,463 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerProfile shallow renders correctly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerProfile
-    clearElement={[MockFunction]}
-    currentForm="profileForm"
-    dataAccountFields={
-      Object {
-        "accountCustomer": Object {
-          "id": "accountCustomer",
-          "value": "",
-        },
-        "accountEmail": Object {
-          "id": "accountEmail",
-          "value": "test@test.com",
-        },
-        "accountEmailAdditional": Object {
-          "id": "accountEmailAdditional",
-          "value": "",
-        },
-        "accountName": Object {
-          "id": "accountName",
-          "value": "testName",
-        },
-        "accountNameOnCard": Object {
-          "id": "accountNameOnCard",
-          "value": "",
-        },
-        "accountPhone": Object {
-          "id": "accountPhone",
-          "value": "+12395550000",
-        },
-        "accountPromoCode": Object {
-          "id": "accountPromoCode",
-          "value": "",
-        },
-        "accountPromoCodeValid": Object {
-          "id": "accountPromoCodeValid",
-          "value": true,
-        },
-        "list": Array [
-          "accountName",
-          "accountEmail",
-          "accountEmailAdditional",
-          "accountPhone",
-          "accountNameOnCard",
-          "accountPromoCode",
-          "accountPromoCodeValid",
-          "accountCustomer",
-        ],
-      }
-    }
-    editForm={false}
-    handleInputValueError={[Function]}
-    headerWidthBufferRight={10}
-    height={0}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "test@test.com",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "testName",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "239-555-0000",
-        },
-      }
-    }
-    mediaWidth={874}
-    rowHeight={60}
-    rowHeightBuffer={18}
-    rowWidthIndent={10}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAccount={
-      Object {
-        "accountStatusAWSFields": Object {
-          "id": "accountStatusAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusStripeFields": Object {
-          "id": "accountStatusStripeFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateAWSFields": Object {
-          "id": "accountStatusUpdateAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateDBFields": Object {
-          "id": "accountStatusUpdateDBFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsRequest": Object {
-          "id": "accountStatusUpdateStripeFieldsRequest",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsToken": Object {
-          "id": "accountStatusUpdateStripeFieldsToken",
-          "status": "IDLE",
-        },
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": true,
-      "editForm": false,
-      "handleInputChange": [Function],
-      "headerWidthBufferRight": 10,
-      "heightRef": [MockFunction],
-      "inputs": Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "test@test.com",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "testName",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "239-555-0000",
-        },
-      },
-      "mediaWidth": 874,
-      "rowHeight": 60,
-      "rowHeightBuffer": 18,
-      "rowWidthIndent": 10,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormProfile
+  currentFormBool={true}
+  editForm={false}
+  handleInputChange={[Function]}
+  headerWidthBufferRight={10}
+  heightRef={[MockFunction]}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": true,
-        "editForm": false,
-        "handleInputChange": [Function],
-        "headerWidthBufferRight": 10,
-        "heightRef": [MockFunction],
-        "inputs": Object {
-          "profileEmail": Object {
-            "errorMessage": "",
-            "id": "profileEmail",
-            "parentId": "profileForm",
-            "value": "test@test.com",
-          },
-          "profileEmailAdditional": Object {
-            "errorMessage": "",
-            "id": "profileEmailAdditional",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileName": Object {
-            "errorMessage": "",
-            "id": "profileName",
-            "parentId": "profileForm",
-            "value": "testName",
-          },
-          "profilePhone": Object {
-            "errorMessage": "",
-            "id": "profilePhone",
-            "parentId": "profileForm",
-            "value": "239-555-0000",
-          },
-        },
-        "mediaWidth": 874,
-        "rowHeight": 60,
-        "rowHeightBuffer": 18,
-        "rowWidthIndent": 10,
+      "profileEmail": Object {
+        "errorMessage": "",
+        "id": "profileEmail",
+        "parentId": "profileForm",
+        "value": "test@test.com",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
+      "profileEmailAdditional": Object {
+        "errorMessage": "",
+        "id": "profileEmailAdditional",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
+      "profileName": Object {
+        "errorMessage": "",
+        "id": "profileName",
+        "parentId": "profileForm",
+        "value": "testName",
       },
-    },
-    "hydrateIn": undefined,
-  },
-}
+      "profilePhone": Object {
+        "errorMessage": "",
+        "id": "profilePhone",
+        "parentId": "profileForm",
+        "value": "239-555-0000",
+      },
+    }
+  }
+  mediaWidth={874}
+  rowHeight={60}
+  rowHeightBuffer={18}
+  rowWidthIndent={10}
+/>
 `;
 
 exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerProfile shallow renders correctly and calls handleInputChange, with email in use internal error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerProfile
-    clearElement={[MockFunction]}
-    currentForm="profileForm"
-    dataAccountFields={
-      Object {
-        "accountCustomer": Object {
-          "id": "accountCustomer",
-          "value": "",
-        },
-        "accountEmail": Object {
-          "id": "accountEmail",
-          "value": "test@test.com",
-        },
-        "accountEmailAdditional": Object {
-          "id": "accountEmailAdditional",
-          "value": "",
-        },
-        "accountName": Object {
-          "id": "accountName",
-          "value": "",
-        },
-        "accountNameOnCard": Object {
-          "id": "accountNameOnCard",
-          "value": "",
-        },
-        "accountPhone": Object {
-          "id": "accountPhone",
-          "value": "",
-        },
-        "accountPromoCode": Object {
-          "id": "accountPromoCode",
-          "value": "",
-        },
-        "accountPromoCodeValid": Object {
-          "id": "accountPromoCodeValid",
-          "value": true,
-        },
-        "list": Array [
-          "accountName",
-          "accountEmail",
-          "accountEmailAdditional",
-          "accountPhone",
-          "accountNameOnCard",
-          "accountPromoCode",
-          "accountPromoCodeValid",
-          "accountCustomer",
-        ],
-      }
-    }
-    editForm={false}
-    handleInputValueError={[Function]}
-    headerWidthBufferRight={10}
-    height={0}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "An account using this email already exists. Please use a different email.",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "test@test.com",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={874}
-    rowHeight={60}
-    rowHeightBuffer={18}
-    rowWidthIndent={10}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAccount={
-      Object {
-        "accountStatusAWSFields": Object {
-          "id": "accountStatusAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusStripeFields": Object {
-          "id": "accountStatusStripeFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateAWSFields": Object {
-          "id": "accountStatusUpdateAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateDBFields": Object {
-          "id": "accountStatusUpdateDBFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsRequest": Object {
-          "id": "accountStatusUpdateStripeFieldsRequest",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsToken": Object {
-          "id": "accountStatusUpdateStripeFieldsToken",
-          "status": "IDLE",
-        },
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": true,
-      "editForm": false,
-      "handleInputChange": [Function],
-      "headerWidthBufferRight": 10,
-      "heightRef": [MockFunction],
-      "inputs": Object {
-        "profileEmail": Object {
-          "errorMessage": "An account using this email already exists. Please use a different email.",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "test@test.com",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 874,
-      "rowHeight": 60,
-      "rowHeightBuffer": 18,
-      "rowWidthIndent": 10,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormProfile
+  currentFormBool={true}
+  editForm={false}
+  handleInputChange={[Function]}
+  headerWidthBufferRight={10}
+  heightRef={[MockFunction]}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": true,
-        "editForm": false,
-        "handleInputChange": [Function],
-        "headerWidthBufferRight": 10,
-        "heightRef": [MockFunction],
-        "inputs": Object {
-          "profileEmail": Object {
-            "errorMessage": "An account using this email already exists. Please use a different email.",
-            "id": "profileEmail",
-            "parentId": "profileForm",
-            "value": "test@test.com",
-          },
-          "profileEmailAdditional": Object {
-            "errorMessage": "",
-            "id": "profileEmailAdditional",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileName": Object {
-            "errorMessage": "",
-            "id": "profileName",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profilePhone": Object {
-            "errorMessage": "",
-            "id": "profilePhone",
-            "parentId": "profileForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 874,
-        "rowHeight": 60,
-        "rowHeightBuffer": 18,
-        "rowWidthIndent": 10,
+      "profileEmail": Object {
+        "errorMessage": "An account using this email already exists. Please use a different email.",
+        "id": "profileEmail",
+        "parentId": "profileForm",
+        "value": "test@test.com",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
+      "profileEmailAdditional": Object {
+        "errorMessage": "",
+        "id": "profileEmailAdditional",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
+      "profileName": Object {
+        "errorMessage": "",
+        "id": "profileName",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "hydrateIn": undefined,
-  },
-}
+      "profilePhone": Object {
+        "errorMessage": "",
+        "id": "profilePhone",
+        "parentId": "profileForm",
+        "value": "",
+      },
+    }
+  }
+  mediaWidth={874}
+  rowHeight={60}
+  rowHeightBuffer={18}
+  rowWidthIndent={10}
+/>
 `;
 
 exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerProfile shallow renders correctly and calls handleInputChange, with invalid email error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerProfile
-    clearElement={[MockFunction]}
-    currentForm="profileForm"
-    dataAccountFields={
-      Object {
-        "accountCustomer": Object {
-          "id": "accountCustomer",
-          "value": "",
-        },
-        "accountEmail": Object {
-          "id": "accountEmail",
-          "value": "test",
-        },
-        "accountEmailAdditional": Object {
-          "id": "accountEmailAdditional",
-          "value": "",
-        },
-        "accountName": Object {
-          "id": "accountName",
-          "value": "",
-        },
-        "accountNameOnCard": Object {
-          "id": "accountNameOnCard",
-          "value": "",
-        },
-        "accountPhone": Object {
-          "id": "accountPhone",
-          "value": "",
-        },
-        "accountPromoCode": Object {
-          "id": "accountPromoCode",
-          "value": "",
-        },
-        "accountPromoCodeValid": Object {
-          "id": "accountPromoCodeValid",
-          "value": true,
-        },
-        "list": Array [
-          "accountName",
-          "accountEmail",
-          "accountEmailAdditional",
-          "accountPhone",
-          "accountNameOnCard",
-          "accountPromoCode",
-          "accountPromoCodeValid",
-          "accountCustomer",
-        ],
-      }
-    }
-    editForm={false}
-    handleInputValueError={[Function]}
-    headerWidthBufferRight={10}
-    height={0}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "Please enter a valid email address.",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "test",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={874}
-    rowHeight={60}
-    rowHeightBuffer={18}
-    rowWidthIndent={10}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAccount={
-      Object {
-        "accountStatusAWSFields": Object {
-          "id": "accountStatusAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusStripeFields": Object {
-          "id": "accountStatusStripeFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateAWSFields": Object {
-          "id": "accountStatusUpdateAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateDBFields": Object {
-          "id": "accountStatusUpdateDBFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsRequest": Object {
-          "id": "accountStatusUpdateStripeFieldsRequest",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsToken": Object {
-          "id": "accountStatusUpdateStripeFieldsToken",
-          "status": "IDLE",
-        },
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": true,
-      "editForm": false,
-      "handleInputChange": [Function],
-      "headerWidthBufferRight": 10,
-      "heightRef": [MockFunction],
-      "inputs": Object {
-        "profileEmail": Object {
-          "errorMessage": "Please enter a valid email address.",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "test",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 874,
-      "rowHeight": 60,
-      "rowHeightBuffer": 18,
-      "rowWidthIndent": 10,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormProfile
+  currentFormBool={true}
+  editForm={false}
+  handleInputChange={[Function]}
+  headerWidthBufferRight={10}
+  heightRef={[MockFunction]}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": true,
-        "editForm": false,
-        "handleInputChange": [Function],
-        "headerWidthBufferRight": 10,
-        "heightRef": [MockFunction],
-        "inputs": Object {
-          "profileEmail": Object {
-            "errorMessage": "Please enter a valid email address.",
-            "id": "profileEmail",
-            "parentId": "profileForm",
-            "value": "test",
-          },
-          "profileEmailAdditional": Object {
-            "errorMessage": "",
-            "id": "profileEmailAdditional",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileName": Object {
-            "errorMessage": "",
-            "id": "profileName",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profilePhone": Object {
-            "errorMessage": "",
-            "id": "profilePhone",
-            "parentId": "profileForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 874,
-        "rowHeight": 60,
-        "rowHeightBuffer": 18,
-        "rowWidthIndent": 10,
+      "profileEmail": Object {
+        "errorMessage": "Please enter a valid email address.",
+        "id": "profileEmail",
+        "parentId": "profileForm",
+        "value": "test",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
+      "profileEmailAdditional": Object {
+        "errorMessage": "",
+        "id": "profileEmailAdditional",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
+      "profileName": Object {
+        "errorMessage": "",
+        "id": "profileName",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "hydrateIn": undefined,
-  },
-}
+      "profilePhone": Object {
+        "errorMessage": "",
+        "id": "profilePhone",
+        "parentId": "profileForm",
+        "value": "",
+      },
+    }
+  }
+  mediaWidth={874}
+  rowHeight={60}
+  rowHeightBuffer={18}
+  rowWidthIndent={10}
+/>
 `;
 
 exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerProfile shallow renders correctly and calls handleInputChange, with invalid email error and email additional input 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerProfile
-    clearElement={[MockFunction]}
-    currentForm="profileForm"
-    dataAccountFields={
-      Object {
-        "accountCustomer": Object {
-          "id": "accountCustomer",
-          "value": "",
-        },
-        "accountEmail": Object {
-          "id": "accountEmail",
-          "value": "",
-        },
-        "accountEmailAdditional": Object {
-          "id": "accountEmailAdditional",
-          "value": "test",
-        },
-        "accountName": Object {
-          "id": "accountName",
-          "value": "",
-        },
-        "accountNameOnCard": Object {
-          "id": "accountNameOnCard",
-          "value": "",
-        },
-        "accountPhone": Object {
-          "id": "accountPhone",
-          "value": "",
-        },
-        "accountPromoCode": Object {
-          "id": "accountPromoCode",
-          "value": "",
-        },
-        "accountPromoCodeValid": Object {
-          "id": "accountPromoCodeValid",
-          "value": true,
-        },
-        "list": Array [
-          "accountName",
-          "accountEmail",
-          "accountEmailAdditional",
-          "accountPhone",
-          "accountNameOnCard",
-          "accountPromoCode",
-          "accountPromoCodeValid",
-          "accountCustomer",
-        ],
-      }
-    }
-    editForm={false}
-    handleInputValueError={[Function]}
-    headerWidthBufferRight={10}
-    height={0}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "Please enter a valid email address.",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "test",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={874}
-    rowHeight={60}
-    rowHeightBuffer={18}
-    rowWidthIndent={10}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAccount={
-      Object {
-        "accountStatusAWSFields": Object {
-          "id": "accountStatusAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusStripeFields": Object {
-          "id": "accountStatusStripeFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateAWSFields": Object {
-          "id": "accountStatusUpdateAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateDBFields": Object {
-          "id": "accountStatusUpdateDBFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsRequest": Object {
-          "id": "accountStatusUpdateStripeFieldsRequest",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsToken": Object {
-          "id": "accountStatusUpdateStripeFieldsToken",
-          "status": "IDLE",
-        },
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": true,
-      "editForm": false,
-      "handleInputChange": [Function],
-      "headerWidthBufferRight": 10,
-      "heightRef": [MockFunction],
-      "inputs": Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "Please enter a valid email address.",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "test",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 874,
-      "rowHeight": 60,
-      "rowHeightBuffer": 18,
-      "rowWidthIndent": 10,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormProfile
+  currentFormBool={true}
+  editForm={false}
+  handleInputChange={[Function]}
+  headerWidthBufferRight={10}
+  heightRef={[MockFunction]}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": true,
-        "editForm": false,
-        "handleInputChange": [Function],
-        "headerWidthBufferRight": 10,
-        "heightRef": [MockFunction],
-        "inputs": Object {
-          "profileEmail": Object {
-            "errorMessage": "",
-            "id": "profileEmail",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileEmailAdditional": Object {
-            "errorMessage": "Please enter a valid email address.",
-            "id": "profileEmailAdditional",
-            "parentId": "profileForm",
-            "value": "test",
-          },
-          "profileName": Object {
-            "errorMessage": "",
-            "id": "profileName",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profilePhone": Object {
-            "errorMessage": "",
-            "id": "profilePhone",
-            "parentId": "profileForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 874,
-        "rowHeight": 60,
-        "rowHeightBuffer": 18,
-        "rowWidthIndent": 10,
+      "profileEmail": Object {
+        "errorMessage": "",
+        "id": "profileEmail",
+        "parentId": "profileForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
+      "profileEmailAdditional": Object {
+        "errorMessage": "Please enter a valid email address.",
+        "id": "profileEmailAdditional",
+        "parentId": "profileForm",
+        "value": "test",
       },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
+      "profileName": Object {
+        "errorMessage": "",
+        "id": "profileName",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "hydrateIn": undefined,
-  },
-}
+      "profilePhone": Object {
+        "errorMessage": "",
+        "id": "profilePhone",
+        "parentId": "profileForm",
+        "value": "",
+      },
+    }
+  }
+  mediaWidth={874}
+  rowHeight={60}
+  rowHeightBuffer={18}
+  rowWidthIndent={10}
+/>
 `;
 
 exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerProfile shallow renders correctly and calls handleInputChange, with invalid phone error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerProfile
-    clearElement={[MockFunction]}
-    currentForm="profileForm"
-    dataAccountFields={
-      Object {
-        "accountCustomer": Object {
-          "id": "accountCustomer",
-          "value": "",
-        },
-        "accountEmail": Object {
-          "id": "accountEmail",
-          "value": "",
-        },
-        "accountEmailAdditional": Object {
-          "id": "accountEmailAdditional",
-          "value": "",
-        },
-        "accountName": Object {
-          "id": "accountName",
-          "value": "",
-        },
-        "accountNameOnCard": Object {
-          "id": "accountNameOnCard",
-          "value": "",
-        },
-        "accountPhone": Object {
-          "id": "accountPhone",
-          "value": "+10000000000",
-        },
-        "accountPromoCode": Object {
-          "id": "accountPromoCode",
-          "value": "",
-        },
-        "accountPromoCodeValid": Object {
-          "id": "accountPromoCodeValid",
-          "value": true,
-        },
-        "list": Array [
-          "accountName",
-          "accountEmail",
-          "accountEmailAdditional",
-          "accountPhone",
-          "accountNameOnCard",
-          "accountPromoCode",
-          "accountPromoCodeValid",
-          "accountCustomer",
-        ],
-      }
-    }
-    editForm={false}
-    handleInputValueError={[Function]}
-    headerWidthBufferRight={10}
-    height={0}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "Please enter a valid mobile phone number.",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "000-000-0000",
-        },
-      }
-    }
-    mediaWidth={874}
-    rowHeight={60}
-    rowHeightBuffer={18}
-    rowWidthIndent={10}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAccount={
-      Object {
-        "accountStatusAWSFields": Object {
-          "id": "accountStatusAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusStripeFields": Object {
-          "id": "accountStatusStripeFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateAWSFields": Object {
-          "id": "accountStatusUpdateAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateDBFields": Object {
-          "id": "accountStatusUpdateDBFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsRequest": Object {
-          "id": "accountStatusUpdateStripeFieldsRequest",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsToken": Object {
-          "id": "accountStatusUpdateStripeFieldsToken",
-          "status": "IDLE",
-        },
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": true,
-      "editForm": false,
-      "handleInputChange": [Function],
-      "headerWidthBufferRight": 10,
-      "heightRef": [MockFunction],
-      "inputs": Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "Please enter a valid mobile phone number.",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "000-000-0000",
-        },
-      },
-      "mediaWidth": 874,
-      "rowHeight": 60,
-      "rowHeightBuffer": 18,
-      "rowWidthIndent": 10,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormProfile
+  currentFormBool={true}
+  editForm={false}
+  handleInputChange={[Function]}
+  headerWidthBufferRight={10}
+  heightRef={[MockFunction]}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": true,
-        "editForm": false,
-        "handleInputChange": [Function],
-        "headerWidthBufferRight": 10,
-        "heightRef": [MockFunction],
-        "inputs": Object {
-          "profileEmail": Object {
-            "errorMessage": "",
-            "id": "profileEmail",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileEmailAdditional": Object {
-            "errorMessage": "",
-            "id": "profileEmailAdditional",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileName": Object {
-            "errorMessage": "",
-            "id": "profileName",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profilePhone": Object {
-            "errorMessage": "Please enter a valid mobile phone number.",
-            "id": "profilePhone",
-            "parentId": "profileForm",
-            "value": "000-000-0000",
-          },
-        },
-        "mediaWidth": 874,
-        "rowHeight": 60,
-        "rowHeightBuffer": 18,
-        "rowWidthIndent": 10,
+      "profileEmail": Object {
+        "errorMessage": "",
+        "id": "profileEmail",
+        "parentId": "profileForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
+      "profileEmailAdditional": Object {
+        "errorMessage": "",
+        "id": "profileEmailAdditional",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
+      "profileName": Object {
+        "errorMessage": "",
+        "id": "profileName",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "hydrateIn": undefined,
-  },
-}
+      "profilePhone": Object {
+        "errorMessage": "Please enter a valid mobile phone number.",
+        "id": "profilePhone",
+        "parentId": "profileForm",
+        "value": "000-000-0000",
+      },
+    }
+  }
+  mediaWidth={874}
+  rowHeight={60}
+  rowHeightBuffer={18}
+  rowWidthIndent={10}
+/>
 `;
 
 exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerProfile shallow renders correctly and calls handleInputChange, with no email error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerProfile
-    clearElement={[MockFunction]}
-    currentForm="profileForm"
-    dataAccountFields={
-      Object {
-        "accountCustomer": Object {
-          "id": "accountCustomer",
-          "value": "",
-        },
-        "accountEmail": Object {
-          "id": "accountEmail",
-          "value": "",
-        },
-        "accountEmailAdditional": Object {
-          "id": "accountEmailAdditional",
-          "value": "",
-        },
-        "accountName": Object {
-          "id": "accountName",
-          "value": "",
-        },
-        "accountNameOnCard": Object {
-          "id": "accountNameOnCard",
-          "value": "",
-        },
-        "accountPhone": Object {
-          "id": "accountPhone",
-          "value": "",
-        },
-        "accountPromoCode": Object {
-          "id": "accountPromoCode",
-          "value": "",
-        },
-        "accountPromoCodeValid": Object {
-          "id": "accountPromoCodeValid",
-          "value": true,
-        },
-        "list": Array [
-          "accountName",
-          "accountEmail",
-          "accountEmailAdditional",
-          "accountPhone",
-          "accountNameOnCard",
-          "accountPromoCode",
-          "accountPromoCodeValid",
-          "accountCustomer",
-        ],
-      }
-    }
-    editForm={false}
-    handleInputValueError={[Function]}
-    headerWidthBufferRight={10}
-    height={0}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "Please enter your email address.",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={874}
-    rowHeight={60}
-    rowHeightBuffer={18}
-    rowWidthIndent={10}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAccount={
-      Object {
-        "accountStatusAWSFields": Object {
-          "id": "accountStatusAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusStripeFields": Object {
-          "id": "accountStatusStripeFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateAWSFields": Object {
-          "id": "accountStatusUpdateAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateDBFields": Object {
-          "id": "accountStatusUpdateDBFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsRequest": Object {
-          "id": "accountStatusUpdateStripeFieldsRequest",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsToken": Object {
-          "id": "accountStatusUpdateStripeFieldsToken",
-          "status": "IDLE",
-        },
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": true,
-      "editForm": false,
-      "handleInputChange": [Function],
-      "headerWidthBufferRight": 10,
-      "heightRef": [MockFunction],
-      "inputs": Object {
-        "profileEmail": Object {
-          "errorMessage": "Please enter your email address.",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 874,
-      "rowHeight": 60,
-      "rowHeightBuffer": 18,
-      "rowWidthIndent": 10,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormProfile
+  currentFormBool={true}
+  editForm={false}
+  handleInputChange={[Function]}
+  headerWidthBufferRight={10}
+  heightRef={[MockFunction]}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": true,
-        "editForm": false,
-        "handleInputChange": [Function],
-        "headerWidthBufferRight": 10,
-        "heightRef": [MockFunction],
-        "inputs": Object {
-          "profileEmail": Object {
-            "errorMessage": "Please enter your email address.",
-            "id": "profileEmail",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileEmailAdditional": Object {
-            "errorMessage": "",
-            "id": "profileEmailAdditional",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileName": Object {
-            "errorMessage": "",
-            "id": "profileName",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profilePhone": Object {
-            "errorMessage": "",
-            "id": "profilePhone",
-            "parentId": "profileForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 874,
-        "rowHeight": 60,
-        "rowHeightBuffer": 18,
-        "rowWidthIndent": 10,
+      "profileEmail": Object {
+        "errorMessage": "Please enter your email address.",
+        "id": "profileEmail",
+        "parentId": "profileForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
+      "profileEmailAdditional": Object {
+        "errorMessage": "",
+        "id": "profileEmailAdditional",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
+      "profileName": Object {
+        "errorMessage": "",
+        "id": "profileName",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "hydrateIn": undefined,
-  },
-}
+      "profilePhone": Object {
+        "errorMessage": "",
+        "id": "profilePhone",
+        "parentId": "profileForm",
+        "value": "",
+      },
+    }
+  }
+  mediaWidth={874}
+  rowHeight={60}
+  rowHeightBuffer={18}
+  rowWidthIndent={10}
+/>
 `;
 
 exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerProfile shallow renders correctly and calls handleInputChange, with no name error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerProfile
-    clearElement={[MockFunction]}
-    currentForm="profileForm"
-    dataAccountFields={
-      Object {
-        "accountCustomer": Object {
-          "id": "accountCustomer",
-          "value": "",
-        },
-        "accountEmail": Object {
-          "id": "accountEmail",
-          "value": "",
-        },
-        "accountEmailAdditional": Object {
-          "id": "accountEmailAdditional",
-          "value": "",
-        },
-        "accountName": Object {
-          "id": "accountName",
-          "value": "",
-        },
-        "accountNameOnCard": Object {
-          "id": "accountNameOnCard",
-          "value": "",
-        },
-        "accountPhone": Object {
-          "id": "accountPhone",
-          "value": "",
-        },
-        "accountPromoCode": Object {
-          "id": "accountPromoCode",
-          "value": "",
-        },
-        "accountPromoCodeValid": Object {
-          "id": "accountPromoCodeValid",
-          "value": true,
-        },
-        "list": Array [
-          "accountName",
-          "accountEmail",
-          "accountEmailAdditional",
-          "accountPhone",
-          "accountNameOnCard",
-          "accountPromoCode",
-          "accountPromoCodeValid",
-          "accountCustomer",
-        ],
-      }
-    }
-    editForm={false}
-    handleInputValueError={[Function]}
-    headerWidthBufferRight={10}
-    height={0}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "Please enter your name.",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={874}
-    rowHeight={60}
-    rowHeightBuffer={18}
-    rowWidthIndent={10}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAccount={
-      Object {
-        "accountStatusAWSFields": Object {
-          "id": "accountStatusAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusStripeFields": Object {
-          "id": "accountStatusStripeFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateAWSFields": Object {
-          "id": "accountStatusUpdateAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateDBFields": Object {
-          "id": "accountStatusUpdateDBFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsRequest": Object {
-          "id": "accountStatusUpdateStripeFieldsRequest",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsToken": Object {
-          "id": "accountStatusUpdateStripeFieldsToken",
-          "status": "IDLE",
-        },
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": true,
-      "editForm": false,
-      "handleInputChange": [Function],
-      "headerWidthBufferRight": 10,
-      "heightRef": [MockFunction],
-      "inputs": Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "Please enter your name.",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 874,
-      "rowHeight": 60,
-      "rowHeightBuffer": 18,
-      "rowWidthIndent": 10,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormProfile
+  currentFormBool={true}
+  editForm={false}
+  handleInputChange={[Function]}
+  headerWidthBufferRight={10}
+  heightRef={[MockFunction]}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": true,
-        "editForm": false,
-        "handleInputChange": [Function],
-        "headerWidthBufferRight": 10,
-        "heightRef": [MockFunction],
-        "inputs": Object {
-          "profileEmail": Object {
-            "errorMessage": "",
-            "id": "profileEmail",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileEmailAdditional": Object {
-            "errorMessage": "",
-            "id": "profileEmailAdditional",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileName": Object {
-            "errorMessage": "Please enter your name.",
-            "id": "profileName",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profilePhone": Object {
-            "errorMessage": "",
-            "id": "profilePhone",
-            "parentId": "profileForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 874,
-        "rowHeight": 60,
-        "rowHeightBuffer": 18,
-        "rowWidthIndent": 10,
+      "profileEmail": Object {
+        "errorMessage": "",
+        "id": "profileEmail",
+        "parentId": "profileForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
+      "profileEmailAdditional": Object {
+        "errorMessage": "",
+        "id": "profileEmailAdditional",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
+      "profileName": Object {
+        "errorMessage": "Please enter your name.",
+        "id": "profileName",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "hydrateIn": undefined,
-  },
-}
+      "profilePhone": Object {
+        "errorMessage": "",
+        "id": "profilePhone",
+        "parentId": "profileForm",
+        "value": "",
+      },
+    }
+  }
+  mediaWidth={874}
+  rowHeight={60}
+  rowHeightBuffer={18}
+  rowWidthIndent={10}
+/>
 `;
 
 exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerProfile shallow renders correctly and calls handleInputChange, with no phone error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerProfile
-    clearElement={[MockFunction]}
-    currentForm="profileForm"
-    dataAccountFields={
-      Object {
-        "accountCustomer": Object {
-          "id": "accountCustomer",
-          "value": "",
-        },
-        "accountEmail": Object {
-          "id": "accountEmail",
-          "value": "",
-        },
-        "accountEmailAdditional": Object {
-          "id": "accountEmailAdditional",
-          "value": "",
-        },
-        "accountName": Object {
-          "id": "accountName",
-          "value": "",
-        },
-        "accountNameOnCard": Object {
-          "id": "accountNameOnCard",
-          "value": "",
-        },
-        "accountPhone": Object {
-          "id": "accountPhone",
-          "value": "",
-        },
-        "accountPromoCode": Object {
-          "id": "accountPromoCode",
-          "value": "",
-        },
-        "accountPromoCodeValid": Object {
-          "id": "accountPromoCodeValid",
-          "value": true,
-        },
-        "list": Array [
-          "accountName",
-          "accountEmail",
-          "accountEmailAdditional",
-          "accountPhone",
-          "accountNameOnCard",
-          "accountPromoCode",
-          "accountPromoCodeValid",
-          "accountCustomer",
-        ],
-      }
-    }
-    editForm={false}
-    handleInputValueError={[Function]}
-    headerWidthBufferRight={10}
-    height={0}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "Please enter your mobile phone number.",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      }
-    }
-    mediaWidth={874}
-    rowHeight={60}
-    rowHeightBuffer={18}
-    rowWidthIndent={10}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAccount={
-      Object {
-        "accountStatusAWSFields": Object {
-          "id": "accountStatusAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusStripeFields": Object {
-          "id": "accountStatusStripeFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateAWSFields": Object {
-          "id": "accountStatusUpdateAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateDBFields": Object {
-          "id": "accountStatusUpdateDBFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsRequest": Object {
-          "id": "accountStatusUpdateStripeFieldsRequest",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsToken": Object {
-          "id": "accountStatusUpdateStripeFieldsToken",
-          "status": "IDLE",
-        },
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": true,
-      "editForm": false,
-      "handleInputChange": [Function],
-      "headerWidthBufferRight": 10,
-      "heightRef": [MockFunction],
-      "inputs": Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "Please enter your mobile phone number.",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "",
-        },
-      },
-      "mediaWidth": 874,
-      "rowHeight": 60,
-      "rowHeightBuffer": 18,
-      "rowWidthIndent": 10,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormProfile
+  currentFormBool={true}
+  editForm={false}
+  handleInputChange={[Function]}
+  headerWidthBufferRight={10}
+  heightRef={[MockFunction]}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": true,
-        "editForm": false,
-        "handleInputChange": [Function],
-        "headerWidthBufferRight": 10,
-        "heightRef": [MockFunction],
-        "inputs": Object {
-          "profileEmail": Object {
-            "errorMessage": "",
-            "id": "profileEmail",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileEmailAdditional": Object {
-            "errorMessage": "",
-            "id": "profileEmailAdditional",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileName": Object {
-            "errorMessage": "",
-            "id": "profileName",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profilePhone": Object {
-            "errorMessage": "Please enter your mobile phone number.",
-            "id": "profilePhone",
-            "parentId": "profileForm",
-            "value": "",
-          },
-        },
-        "mediaWidth": 874,
-        "rowHeight": 60,
-        "rowHeightBuffer": 18,
-        "rowWidthIndent": 10,
+      "profileEmail": Object {
+        "errorMessage": "",
+        "id": "profileEmail",
+        "parentId": "profileForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
+      "profileEmailAdditional": Object {
+        "errorMessage": "",
+        "id": "profileEmailAdditional",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
+      "profileName": Object {
+        "errorMessage": "",
+        "id": "profileName",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "hydrateIn": undefined,
-  },
-}
+      "profilePhone": Object {
+        "errorMessage": "Please enter your mobile phone number.",
+        "id": "profilePhone",
+        "parentId": "profileForm",
+        "value": "",
+      },
+    }
+  }
+  mediaWidth={874}
+  rowHeight={60}
+  rowHeightBuffer={18}
+  rowWidthIndent={10}
+/>
 `;
 
 exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerProfile shallow renders correctly and calls handleInputChange, with undefined error 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerProfile
-    clearElement={[MockFunction]}
-    currentForm="profileForm"
-    dataAccountFields={
-      Object {
-        "accountCustomer": Object {
-          "id": "accountCustomer",
-          "value": "",
-        },
-        "accountEmail": Object {
-          "id": "accountEmail",
-          "value": "",
-        },
-        "accountEmailAdditional": Object {
-          "id": "accountEmailAdditional",
-          "value": "",
-        },
-        "accountName": Object {
-          "id": "accountName",
-          "value": "",
-        },
-        "accountNameOnCard": Object {
-          "id": "accountNameOnCard",
-          "value": "",
-        },
-        "accountPhone": Object {
-          "id": "accountPhone",
-          "value": "+10000000000",
-        },
-        "accountPromoCode": Object {
-          "id": "accountPromoCode",
-          "value": "",
-        },
-        "accountPromoCodeValid": Object {
-          "id": "accountPromoCodeValid",
-          "value": true,
-        },
-        "list": Array [
-          "accountName",
-          "accountEmail",
-          "accountEmailAdditional",
-          "accountPhone",
-          "accountNameOnCard",
-          "accountPromoCode",
-          "accountPromoCodeValid",
-          "accountCustomer",
-        ],
-      }
-    }
-    editForm={false}
-    handleInputValueError={[Function]}
-    headerWidthBufferRight={10}
-    height={0}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "000-000-0000",
-        },
-      }
-    }
-    mediaWidth={874}
-    rowHeight={60}
-    rowHeightBuffer={18}
-    rowWidthIndent={10}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAccount={
-      Object {
-        "accountStatusAWSFields": Object {
-          "id": "accountStatusAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusStripeFields": Object {
-          "id": "accountStatusStripeFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateAWSFields": Object {
-          "id": "accountStatusUpdateAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateDBFields": Object {
-          "id": "accountStatusUpdateDBFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsRequest": Object {
-          "id": "accountStatusUpdateStripeFieldsRequest",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsToken": Object {
-          "id": "accountStatusUpdateStripeFieldsToken",
-          "status": "IDLE",
-        },
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": true,
-      "editForm": false,
-      "handleInputChange": [Function],
-      "headerWidthBufferRight": 10,
-      "heightRef": [MockFunction],
-      "inputs": Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "",
-        },
-        "profilePhone": Object {
-          "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "000-000-0000",
-        },
-      },
-      "mediaWidth": 874,
-      "rowHeight": 60,
-      "rowHeightBuffer": 18,
-      "rowWidthIndent": 10,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormProfile
+  currentFormBool={true}
+  editForm={false}
+  handleInputChange={[Function]}
+  headerWidthBufferRight={10}
+  heightRef={[MockFunction]}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": true,
-        "editForm": false,
-        "handleInputChange": [Function],
-        "headerWidthBufferRight": 10,
-        "heightRef": [MockFunction],
-        "inputs": Object {
-          "profileEmail": Object {
-            "errorMessage": "",
-            "id": "profileEmail",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileEmailAdditional": Object {
-            "errorMessage": "",
-            "id": "profileEmailAdditional",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profileName": Object {
-            "errorMessage": "",
-            "id": "profileName",
-            "parentId": "profileForm",
-            "value": "",
-          },
-          "profilePhone": Object {
-            "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
-            "id": "profilePhone",
-            "parentId": "profileForm",
-            "value": "000-000-0000",
-          },
-        },
-        "mediaWidth": 874,
-        "rowHeight": 60,
-        "rowHeightBuffer": 18,
-        "rowWidthIndent": 10,
+      "profileEmail": Object {
+        "errorMessage": "",
+        "id": "profileEmail",
+        "parentId": "profileForm",
+        "value": "",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
+      "profileEmailAdditional": Object {
+        "errorMessage": "",
+        "id": "profileEmailAdditional",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
+      "profileName": Object {
+        "errorMessage": "",
+        "id": "profileName",
+        "parentId": "profileForm",
+        "value": "",
       },
-    },
-    "hydrateIn": undefined,
-  },
-}
+      "profilePhone": Object {
+        "errorMessage": "Please try your request again. If unsuccessful on subsequent attempts, please contact customer service.",
+        "id": "profilePhone",
+        "parentId": "profileForm",
+        "value": "000-000-0000",
+      },
+    }
+  }
+  mediaWidth={874}
+  rowHeight={60}
+  rowHeightBuffer={18}
+  rowWidthIndent={10}
+/>
 `;
 
 exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerProfile shallow renders correctly, with componentWillUpdate, componentDidUpdate, and componentWillUnmount 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerProfile
-    clearElement={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    currentForm="profileForm"
-    dataAccountFields={
-      Object {
-        "accountCustomer": Object {
-          "id": "accountCustomer",
-          "value": "",
-        },
-        "accountEmail": Object {
-          "id": "accountEmail",
-          "value": "test@test.com",
-        },
-        "accountEmailAdditional": Object {
-          "id": "accountEmailAdditional",
-          "value": "test1@test.com",
-        },
-        "accountName": Object {
-          "id": "accountName",
-          "value": "testName",
-        },
-        "accountNameOnCard": Object {
-          "id": "accountNameOnCard",
-          "value": "",
-        },
-        "accountPhone": Object {
-          "id": "accountPhone",
-          "value": "+12395550000",
-        },
-        "accountPromoCode": Object {
-          "id": "accountPromoCode",
-          "value": "",
-        },
-        "accountPromoCodeValid": Object {
-          "id": "accountPromoCodeValid",
-          "value": true,
-        },
-        "list": Array [
-          "accountName",
-          "accountEmail",
-          "accountEmailAdditional",
-          "accountPhone",
-          "accountNameOnCard",
-          "accountPromoCode",
-          "accountPromoCodeValid",
-          "accountCustomer",
-        ],
-      }
-    }
-    editForm={false}
-    handleInputValueError={[Function]}
-    headerWidthBufferRight={10}
-    height={0}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "test@test.com",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "test1@test.com",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "testName",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "239-555-0000",
-        },
-      }
-    }
-    mediaWidth={874}
-    rowHeight={60}
-    rowHeightBuffer={18}
-    rowWidthIndent={10}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAccount={
-      Object {
-        "accountStatusAWSFields": Object {
-          "id": "accountStatusAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusStripeFields": Object {
-          "id": "accountStatusStripeFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateAWSFields": Object {
-          "id": "accountStatusUpdateAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateDBFields": Object {
-          "id": "accountStatusUpdateDBFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsRequest": Object {
-          "id": "accountStatusUpdateStripeFieldsRequest",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsToken": Object {
-          "id": "accountStatusUpdateStripeFieldsToken",
-          "status": "IDLE",
-        },
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "currentFormBool": true,
-      "editForm": false,
-      "handleInputChange": [Function],
-      "headerWidthBufferRight": 10,
-      "heightRef": [MockFunction],
-      "inputs": Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "test@test.com",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "test1@test.com",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "testName",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "239-555-0000",
-        },
-      },
-      "mediaWidth": 874,
-      "rowHeight": 60,
-      "rowHeightBuffer": 18,
-      "rowWidthIndent": 10,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<FormProfile
+  currentFormBool={true}
+  editForm={false}
+  handleInputChange={[Function]}
+  headerWidthBufferRight={10}
+  heightRef={[MockFunction]}
+  inputs={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "currentFormBool": true,
-        "editForm": false,
-        "handleInputChange": [Function],
-        "headerWidthBufferRight": 10,
-        "heightRef": [MockFunction],
-        "inputs": Object {
-          "profileEmail": Object {
-            "errorMessage": "",
-            "id": "profileEmail",
-            "parentId": "profileForm",
-            "value": "test@test.com",
-          },
-          "profileEmailAdditional": Object {
-            "errorMessage": "",
-            "id": "profileEmailAdditional",
-            "parentId": "profileForm",
-            "value": "test1@test.com",
-          },
-          "profileName": Object {
-            "errorMessage": "",
-            "id": "profileName",
-            "parentId": "profileForm",
-            "value": "testName",
-          },
-          "profilePhone": Object {
-            "errorMessage": "",
-            "id": "profilePhone",
-            "parentId": "profileForm",
-            "value": "239-555-0000",
-          },
-        },
-        "mediaWidth": 874,
-        "rowHeight": 60,
-        "rowHeightBuffer": 18,
-        "rowWidthIndent": 10,
+      "profileEmail": Object {
+        "errorMessage": "",
+        "id": "profileEmail",
+        "parentId": "profileForm",
+        "value": "test@test.com",
       },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
+      "profileEmailAdditional": Object {
+        "errorMessage": "",
+        "id": "profileEmailAdditional",
+        "parentId": "profileForm",
+        "value": "test1@test.com",
       },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
+      "profileName": Object {
+        "errorMessage": "",
+        "id": "profileName",
+        "parentId": "profileForm",
+        "value": "testName",
       },
-    },
-    "hydrateIn": undefined,
-  },
-}
+      "profilePhone": Object {
+        "errorMessage": "",
+        "id": "profilePhone",
+        "parentId": "profileForm",
+        "value": "239-555-0000",
+      },
+    }
+  }
+  mediaWidth={874}
+  rowHeight={60}
+  rowHeightBuffer={18}
+  rowWidthIndent={10}
+/>
 `;
 
 exports[`Containers PageInternal PageBodyContainerAccount Forms FormContainerProfile shallow renders correctly, with loading indicator 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormContainerProfile
-    clearElement={[MockFunction]}
-    currentForm="profileForm"
-    dataAccountFields={
-      Object {
-        "accountCustomer": Object {
-          "id": "accountCustomer",
-          "value": "",
-        },
-        "accountEmail": Object {
-          "id": "accountEmail",
-          "value": "test@test.com",
-        },
-        "accountEmailAdditional": Object {
-          "id": "accountEmailAdditional",
-          "value": "test1@test.com",
-        },
-        "accountName": Object {
-          "id": "accountName",
-          "value": "testName",
-        },
-        "accountNameOnCard": Object {
-          "id": "accountNameOnCard",
-          "value": "",
-        },
-        "accountPhone": Object {
-          "id": "accountPhone",
-          "value": "+12395550000",
-        },
-        "accountPromoCode": Object {
-          "id": "accountPromoCode",
-          "value": "",
-        },
-        "accountPromoCodeValid": Object {
-          "id": "accountPromoCodeValid",
-          "value": true,
-        },
-        "list": Array [
-          "accountName",
-          "accountEmail",
-          "accountEmailAdditional",
-          "accountPhone",
-          "accountNameOnCard",
-          "accountPromoCode",
-          "accountPromoCodeValid",
-          "accountCustomer",
-        ],
-      }
-    }
-    editForm={false}
-    handleInputValueError={[Function]}
-    headerWidthBufferRight={10}
-    height={0}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "test@test.com",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "test1@test.com",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "testName",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "239-555-0000",
-        },
-      }
-    }
-    mediaWidth={874}
-    rowHeight={60}
-    rowHeightBuffer={18}
-    rowWidthIndent={10}
-    setHeight={
-      [MockFunction] {
-        "calls": Array [
-          Array [
-            "profileForm",
-          ],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    statusAccount={
-      Object {
-        "accountStatusAWSFields": Object {
-          "id": "accountStatusAWSFields",
-          "status": "IDLE",
-        },
-        "accountStatusStripeFields": Object {
-          "id": "accountStatusStripeFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateAWSFields": Object {
-          "id": "accountStatusUpdateAWSFields",
-          "status": "LOADING",
-        },
-        "accountStatusUpdateDBFields": Object {
-          "id": "accountStatusUpdateDBFields",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsRequest": Object {
-          "id": "accountStatusUpdateStripeFieldsRequest",
-          "status": "IDLE",
-        },
-        "accountStatusUpdateStripeFieldsToken": Object {
-          "id": "accountStatusUpdateStripeFieldsToken",
-          "status": "IDLE",
-        },
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "alignItems": null,
-      "alignSelf": null,
-      "borderColorType": "border",
-      "borderRadius": null,
-      "borderStyle": null,
-      "borderWidth": null,
-      "boxSizing": null,
-      "children": <BeatLoader
-        color="#509236"
-        loading={true}
-        margin="2px"
-        size="15px"
-      />,
-      "color": Object {},
-      "display": null,
-      "flex": null,
-      "flexWrap": null,
-      "height": "0px",
-      "justifyContent": null,
-      "margin": null,
-      "mediaWidth": null,
-      "minHeight": null,
-      "minWidth": null,
-      "overflowX": null,
-      "overflowY": null,
-      "padding": null,
-      "position": null,
-      "responsiveAlignItems": null,
-      "responsiveJustifyContent": null,
-      "responsiveMargin": null,
-      "responsivePadding": null,
-      "responsivePosition": null,
-      "responsiveWidth": null,
-      "separator": false,
-      "themeColor": "primary",
-      "width": "100%",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "color": "#509236",
-        "loading": true,
-        "margin": "2px",
-        "size": "15px",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "alignItems": null,
-        "alignSelf": null,
-        "borderColorType": "border",
-        "borderRadius": null,
-        "borderStyle": null,
-        "borderWidth": null,
-        "boxSizing": null,
-        "children": <BeatLoader
-          color="#509236"
-          loading={true}
-          margin="2px"
-          size="15px"
-        />,
-        "color": Object {},
-        "display": null,
-        "flex": null,
-        "flexWrap": null,
-        "height": "0px",
-        "justifyContent": null,
-        "margin": null,
-        "mediaWidth": null,
-        "minHeight": null,
-        "minWidth": null,
-        "overflowX": null,
-        "overflowY": null,
-        "padding": null,
-        "position": null,
-        "responsiveAlignItems": null,
-        "responsiveJustifyContent": null,
-        "responsiveMargin": null,
-        "responsivePadding": null,
-        "responsivePosition": null,
-        "responsiveWidth": null,
-        "separator": false,
-        "themeColor": "primary",
-        "width": "100%",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "color": "#509236",
-          "loading": true,
-          "margin": "2px",
-          "size": "15px",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "context": Object {
-      "store": Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
-      },
-    },
-    "hydrateIn": undefined,
-  },
-}
+<FlexColumn
+  alignItems={null}
+  alignSelf={null}
+  borderColorType="border"
+  borderRadius={null}
+  borderStyle={null}
+  borderWidth={null}
+  boxSizing={null}
+  color={Object {}}
+  display={null}
+  flex={null}
+  flexWrap={null}
+  height="0px"
+  justifyContent={null}
+  margin={null}
+  mediaWidth={null}
+  minHeight={null}
+  minWidth={null}
+  overflowX={null}
+  overflowY={null}
+  padding={null}
+  position={null}
+  responsiveAlignSecurities={null}
+  responsiveJustifyContent={null}
+  responsiveMargin={null}
+  responsivePadding={null}
+  responsivePosition={null}
+  responsiveWidth={null}
+  separator={false}
+  themeColor="primary"
+  width="100%"
+>
+  <BeatLoader
+    color="#7367e6"
+    loading={true}
+    margin="2px"
+    size="15px"
+  />
+</FlexColumn>
 `;

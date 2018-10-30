@@ -8,7 +8,7 @@ const PageBody = styled.div`
   flex-direction: ${props => props.flexDirection || 'row'};
   flex-wrap: wrap;
 
-  align-securities: ${props => props.alignItems || 'flex-start'};
+  align-items: ${props => props.alignItems || 'flex-start'};
   justify-content: ${props => props.justifyContent || 'center'};
 
   overflow-x: ${props => props.overflowX || 'visible'};

@@ -19,7 +19,7 @@ const FormDevice = (props) => {
   return (
     <Form
       display="block"
-      innerRef={heightRef}
+      ref={heightRef}
       id={formString}
       padding={`${formHeightBufferHalfString} 0`}
       width={widthString}

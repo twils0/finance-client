@@ -18,9 +18,8 @@ const ImgStyle = styled.img`
   border-style: ${props => props.borderStyle || 'solid'};
   border-width: ${props => props.borderWidth || '0px'};
 
-  border-color: ${props =>
-    props.color[props.borderColorType] ||
-    props.theme.color[props.themeColor][props.borderColorType]};
+  border-color: ${props => props.color[props.borderColorType]
+    || props.theme.color[props.themeColor][props.borderColorType]};
 `;
 
 ImgStyle.propTypes = {

@@ -1,5223 +1,907 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components PageInternal PageBodyAccount Forms FormProfile shallow renders correctly, when currentFormBool and editForm is false 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormProfile
-    currentFormBool={false}
-    editForm={false}
-    handleInputChange={[MockFunction]}
-    headerWidthBufferRight={11}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "testEmail",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "testEmailAdditional",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "testName",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "239-555-0000",
-        },
-      }
-    }
-    mediaWidth={12}
-    rowHeight={13}
-    rowHeightBuffer={14}
-    rowWidthIndent={10}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "alignItems": null,
-      "alignSelf": null,
-      "background": null,
-      "borderColorType": "border",
-      "borderRadius": null,
-      "borderStyle": null,
-      "borderWidth": null,
-      "boxSizing": null,
-      "children": Array [
-        <FlexRow
-          alignItems={null}
-          alignSelf={null}
-          borderColorType="border"
-          borderRadius={null}
-          borderStyle={null}
-          borderWidth="1px 0"
-          boxSizing={null}
-          color={Object {}}
-          display={null}
-          flex={null}
-          flexWrap={null}
-          height={null}
-          justifyContent="flex-start"
-          left={null}
-          margin={null}
-          mediaWidth={null}
-          minHeight="13px"
-          minWidth={null}
-          overflowX={null}
-          overflowY={null}
-          padding={null}
-          position={null}
-          responsiveAlignItems={null}
-          responsiveJustifyContent={null}
-          responsiveMargin={null}
-          responsivePadding={null}
-          responsivePosition={null}
-          themeColor="primary"
-          top={null}
-          width="100%"
-        >
-          <Header2
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="default"
-            display={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            padding="0 11px 0 10px"
-            position={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsiveTextAlign={null}
-            responsiveWidth="calc(30% - 11px)"
-            textAlign={null}
-            themeColor="primary"
-            themeFont="default"
-            themeFontWeight="light"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="h2"
-            type="text"
-            whiteSpace={null}
-            width="calc(35% - 11px)"
-          >
-            Name:
-          </Header2>
-          <Paragraph__P
-            alignItems={null}
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="text"
-            display={null}
-            flex={null}
-            flexDirection={null}
-            flexWrap={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            justifyContent={null}
-            letterSpacing={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            minWidth={null}
-            padding={null}
-            responsiveThemeFont="mobileText"
-            responsiveWidth="70%"
-            textAlign="right"
-            themeColor="primary"
-            themeFont="text"
-            themeFontWeight="normal"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="text"
-            type="text"
-            whiteSpace={null}
-            width="65%"
-          >
-            testName
-          </Paragraph__P>
-        </FlexRow>,
-        <FlexRow
-          alignItems={null}
-          alignSelf={null}
-          borderColorType="border"
-          borderRadius={null}
-          borderStyle={null}
-          borderWidth="0 0 1px 0"
-          boxSizing={null}
-          color={Object {}}
-          display={null}
-          flex={null}
-          flexWrap={null}
-          height={null}
-          justifyContent="flex-start"
-          left={null}
-          margin={null}
-          mediaWidth={null}
-          minHeight="13px"
-          minWidth={null}
-          overflowX={null}
-          overflowY={null}
-          padding={null}
-          position={null}
-          responsiveAlignItems={null}
-          responsiveJustifyContent={null}
-          responsiveMargin={null}
-          responsivePadding={null}
-          responsivePosition={null}
-          themeColor="primary"
-          top={null}
-          width="100%"
-        >
-          <Header2
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="default"
-            display={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            padding="0 0 0 10px"
-            position={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsiveTextAlign={null}
-            responsiveWidth="calc(30% - 11px)"
-            textAlign={null}
-            themeColor="primary"
-            themeFont="default"
-            themeFontWeight="light"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="h2"
-            type="text"
-            whiteSpace={null}
-            width="calc(35% - 11px)"
-          >
-            Login Email:
-          </Header2>
-          <Paragraph__P
-            alignItems={null}
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="text"
-            display={null}
-            flex={null}
-            flexDirection={null}
-            flexWrap={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            justifyContent={null}
-            letterSpacing={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            minWidth={null}
-            padding={null}
-            responsiveThemeFont="mobileText"
-            responsiveWidth="70%"
-            textAlign="right"
-            themeColor="primary"
-            themeFont="text"
-            themeFontWeight="normal"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="text"
-            type="text"
-            whiteSpace={null}
-            width="65%"
-          >
-            testEmail
-          </Paragraph__P>
-        </FlexRow>,
-        <FlexRow
-          alignItems={null}
-          alignSelf={null}
-          borderColorType="border"
-          borderRadius={null}
-          borderStyle={null}
-          borderWidth="0 0 1px 0"
-          boxSizing={null}
-          color={Object {}}
-          display={null}
-          flex={null}
-          flexWrap={null}
-          height={null}
-          justifyContent="flex-start"
-          left={null}
-          margin={null}
-          mediaWidth={null}
-          minHeight="13px"
-          minWidth={null}
-          overflowX={null}
-          overflowY={null}
-          padding={null}
-          position={null}
-          responsiveAlignItems={null}
-          responsiveJustifyContent={null}
-          responsiveMargin={null}
-          responsivePadding={null}
-          responsivePosition={null}
-          themeColor="primary"
-          top={null}
-          width="100%"
-        >
-          <Header2
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="default"
-            display={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            padding="0 0 0 10px"
-            position={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsiveTextAlign={null}
-            responsiveWidth="calc(30% - 11px)"
-            textAlign={null}
-            themeColor="primary"
-            themeFont="default"
-            themeFontWeight="light"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="h2"
-            type="text"
-            whiteSpace={null}
-            width="calc(35% - 11px)"
-          >
-            Additional Email:
-          </Header2>
-          <Paragraph__P
-            alignItems={null}
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="text"
-            display={null}
-            flex={null}
-            flexDirection={null}
-            flexWrap={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            justifyContent={null}
-            letterSpacing={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            minWidth={null}
-            padding={null}
-            responsiveThemeFont="mobileText"
-            responsiveWidth="70%"
-            textAlign="right"
-            themeColor="primary"
-            themeFont="text"
-            themeFontWeight="normal"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="text"
-            type="text"
-            whiteSpace={null}
-            width="65%"
-          >
-            testEmailAdditional
-          </Paragraph__P>
-        </FlexRow>,
-        <FlexRow
-          alignItems={null}
-          alignSelf={null}
-          borderColorType="border"
-          borderRadius={null}
-          borderStyle={null}
-          borderWidth="0 0 1px 0"
-          boxSizing={null}
-          color={Object {}}
-          display={null}
-          flex={null}
-          flexWrap={null}
-          height={null}
-          justifyContent="flex-start"
-          left={null}
-          margin={null}
-          mediaWidth={null}
-          minHeight="13px"
-          minWidth={null}
-          overflowX={null}
-          overflowY={null}
-          padding={null}
-          position={null}
-          responsiveAlignItems={null}
-          responsiveJustifyContent={null}
-          responsiveMargin={null}
-          responsivePadding={null}
-          responsivePosition={null}
-          themeColor="primary"
-          top={null}
-          width="100%"
-        >
-          <Header2
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="default"
-            display={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            padding="0 0 0 10px"
-            position={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsiveTextAlign={null}
-            responsiveWidth="calc(35% - 11px)"
-            textAlign={null}
-            themeColor="primary"
-            themeFont="default"
-            themeFontWeight="light"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="h2"
-            type="text"
-            whiteSpace={null}
-            width="calc(35% - 11px)"
-          >
-            Mobile Phone:
-          </Header2>
-          <Paragraph__P
-            alignItems={null}
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="text"
-            display={null}
-            flex={null}
-            flexDirection={null}
-            flexWrap={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            justifyContent={null}
-            letterSpacing={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            minWidth={null}
-            padding={null}
-            responsiveThemeFont="mobileText"
-            responsiveWidth={null}
-            textAlign="right"
-            themeColor="primary"
-            themeFont="text"
-            themeFontWeight="normal"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="text"
-            type="text"
-            whiteSpace={null}
-            width="65%"
-          >
-            239-555-0000
-          </Paragraph__P>
-        </FlexRow>,
-      ],
-      "color": Object {},
-      "display": null,
-      "flex": null,
-      "flexDirection": null,
-      "height": null,
-      "id": "profileForm",
-      "innerRef": [MockFunction],
-      "justifyContent": null,
-      "margin": null,
-      "mediaWidth": null,
-      "padding": null,
-      "position": null,
-      "themeColor": "primary",
-      "width": "100%",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "alignItems": null,
-          "alignSelf": null,
-          "borderColorType": "border",
-          "borderRadius": null,
-          "borderStyle": null,
-          "borderWidth": "1px 0",
-          "boxSizing": null,
-          "children": Array [
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 11px 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(30% - 11px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Name:
-            </Header2>,
-            <Paragraph__P
-              alignItems={null}
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="text"
-              display={null}
-              flex={null}
-              flexDirection={null}
-              flexWrap={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              justifyContent={null}
-              letterSpacing={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              minWidth={null}
-              padding={null}
-              responsiveThemeFont="mobileText"
-              responsiveWidth="70%"
-              textAlign="right"
-              themeColor="primary"
-              themeFont="text"
-              themeFontWeight="normal"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="text"
-              type="text"
-              whiteSpace={null}
-              width="65%"
-            >
-              testName
-            </Paragraph__P>,
-          ],
-          "color": Object {},
-          "display": null,
-          "flex": null,
-          "flexWrap": null,
-          "height": null,
-          "justifyContent": "flex-start",
-          "left": null,
-          "margin": null,
-          "mediaWidth": null,
-          "minHeight": "13px",
-          "minWidth": null,
-          "overflowX": null,
-          "overflowY": null,
-          "padding": null,
-          "position": null,
-          "responsiveAlignItems": null,
-          "responsiveJustifyContent": null,
-          "responsiveMargin": null,
-          "responsivePadding": null,
-          "responsivePosition": null,
-          "themeColor": "primary",
-          "top": null,
-          "width": "100%",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "Name:",
-              "color": Object {},
-              "colorType": "default",
-              "display": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "padding": "0 11px 0 10px",
-              "position": null,
-              "responsiveJustifyContent": null,
-              "responsiveMargin": null,
-              "responsivePadding": null,
-              "responsiveTextAlign": null,
-              "responsiveWidth": "calc(30% - 11px)",
-              "textAlign": null,
-              "themeColor": "primary",
-              "themeFont": "default",
-              "themeFontWeight": "light",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "h2",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "calc(35% - 11px)",
-            },
-            "ref": null,
-            "rendered": "Name:",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignItems": null,
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "testName",
-              "color": Object {},
-              "colorType": "text",
-              "display": null,
-              "flex": null,
-              "flexDirection": null,
-              "flexWrap": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "justifyContent": null,
-              "letterSpacing": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "minWidth": null,
-              "padding": null,
-              "responsiveThemeFont": "mobileText",
-              "responsiveWidth": "70%",
-              "textAlign": "right",
-              "themeColor": "primary",
-              "themeFont": "text",
-              "themeFontWeight": "normal",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "text",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "65%",
-            },
-            "ref": null,
-            "rendered": "testName",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "alignItems": null,
-          "alignSelf": null,
-          "borderColorType": "border",
-          "borderRadius": null,
-          "borderStyle": null,
-          "borderWidth": "0 0 1px 0",
-          "boxSizing": null,
-          "children": Array [
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(30% - 11px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Login Email:
-            </Header2>,
-            <Paragraph__P
-              alignItems={null}
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="text"
-              display={null}
-              flex={null}
-              flexDirection={null}
-              flexWrap={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              justifyContent={null}
-              letterSpacing={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              minWidth={null}
-              padding={null}
-              responsiveThemeFont="mobileText"
-              responsiveWidth="70%"
-              textAlign="right"
-              themeColor="primary"
-              themeFont="text"
-              themeFontWeight="normal"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="text"
-              type="text"
-              whiteSpace={null}
-              width="65%"
-            >
-              testEmail
-            </Paragraph__P>,
-          ],
-          "color": Object {},
-          "display": null,
-          "flex": null,
-          "flexWrap": null,
-          "height": null,
-          "justifyContent": "flex-start",
-          "left": null,
-          "margin": null,
-          "mediaWidth": null,
-          "minHeight": "13px",
-          "minWidth": null,
-          "overflowX": null,
-          "overflowY": null,
-          "padding": null,
-          "position": null,
-          "responsiveAlignItems": null,
-          "responsiveJustifyContent": null,
-          "responsiveMargin": null,
-          "responsivePadding": null,
-          "responsivePosition": null,
-          "themeColor": "primary",
-          "top": null,
-          "width": "100%",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "Login Email:",
-              "color": Object {},
-              "colorType": "default",
-              "display": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "padding": "0 0 0 10px",
-              "position": null,
-              "responsiveJustifyContent": null,
-              "responsiveMargin": null,
-              "responsivePadding": null,
-              "responsiveTextAlign": null,
-              "responsiveWidth": "calc(30% - 11px)",
-              "textAlign": null,
-              "themeColor": "primary",
-              "themeFont": "default",
-              "themeFontWeight": "light",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "h2",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "calc(35% - 11px)",
-            },
-            "ref": null,
-            "rendered": "Login Email:",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignItems": null,
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "testEmail",
-              "color": Object {},
-              "colorType": "text",
-              "display": null,
-              "flex": null,
-              "flexDirection": null,
-              "flexWrap": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "justifyContent": null,
-              "letterSpacing": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "minWidth": null,
-              "padding": null,
-              "responsiveThemeFont": "mobileText",
-              "responsiveWidth": "70%",
-              "textAlign": "right",
-              "themeColor": "primary",
-              "themeFont": "text",
-              "themeFontWeight": "normal",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "text",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "65%",
-            },
-            "ref": null,
-            "rendered": "testEmail",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "alignItems": null,
-          "alignSelf": null,
-          "borderColorType": "border",
-          "borderRadius": null,
-          "borderStyle": null,
-          "borderWidth": "0 0 1px 0",
-          "boxSizing": null,
-          "children": Array [
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(30% - 11px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Additional Email:
-            </Header2>,
-            <Paragraph__P
-              alignItems={null}
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="text"
-              display={null}
-              flex={null}
-              flexDirection={null}
-              flexWrap={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              justifyContent={null}
-              letterSpacing={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              minWidth={null}
-              padding={null}
-              responsiveThemeFont="mobileText"
-              responsiveWidth="70%"
-              textAlign="right"
-              themeColor="primary"
-              themeFont="text"
-              themeFontWeight="normal"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="text"
-              type="text"
-              whiteSpace={null}
-              width="65%"
-            >
-              testEmailAdditional
-            </Paragraph__P>,
-          ],
-          "color": Object {},
-          "display": null,
-          "flex": null,
-          "flexWrap": null,
-          "height": null,
-          "justifyContent": "flex-start",
-          "left": null,
-          "margin": null,
-          "mediaWidth": null,
-          "minHeight": "13px",
-          "minWidth": null,
-          "overflowX": null,
-          "overflowY": null,
-          "padding": null,
-          "position": null,
-          "responsiveAlignItems": null,
-          "responsiveJustifyContent": null,
-          "responsiveMargin": null,
-          "responsivePadding": null,
-          "responsivePosition": null,
-          "themeColor": "primary",
-          "top": null,
-          "width": "100%",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "Additional Email:",
-              "color": Object {},
-              "colorType": "default",
-              "display": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "padding": "0 0 0 10px",
-              "position": null,
-              "responsiveJustifyContent": null,
-              "responsiveMargin": null,
-              "responsivePadding": null,
-              "responsiveTextAlign": null,
-              "responsiveWidth": "calc(30% - 11px)",
-              "textAlign": null,
-              "themeColor": "primary",
-              "themeFont": "default",
-              "themeFontWeight": "light",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "h2",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "calc(35% - 11px)",
-            },
-            "ref": null,
-            "rendered": "Additional Email:",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignItems": null,
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "testEmailAdditional",
-              "color": Object {},
-              "colorType": "text",
-              "display": null,
-              "flex": null,
-              "flexDirection": null,
-              "flexWrap": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "justifyContent": null,
-              "letterSpacing": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "minWidth": null,
-              "padding": null,
-              "responsiveThemeFont": "mobileText",
-              "responsiveWidth": "70%",
-              "textAlign": "right",
-              "themeColor": "primary",
-              "themeFont": "text",
-              "themeFontWeight": "normal",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "text",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "65%",
-            },
-            "ref": null,
-            "rendered": "testEmailAdditional",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "alignItems": null,
-          "alignSelf": null,
-          "borderColorType": "border",
-          "borderRadius": null,
-          "borderStyle": null,
-          "borderWidth": "0 0 1px 0",
-          "boxSizing": null,
-          "children": Array [
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(35% - 11px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Mobile Phone:
-            </Header2>,
-            <Paragraph__P
-              alignItems={null}
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="text"
-              display={null}
-              flex={null}
-              flexDirection={null}
-              flexWrap={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              justifyContent={null}
-              letterSpacing={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              minWidth={null}
-              padding={null}
-              responsiveThemeFont="mobileText"
-              responsiveWidth={null}
-              textAlign="right"
-              themeColor="primary"
-              themeFont="text"
-              themeFontWeight="normal"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="text"
-              type="text"
-              whiteSpace={null}
-              width="65%"
-            >
-              239-555-0000
-            </Paragraph__P>,
-          ],
-          "color": Object {},
-          "display": null,
-          "flex": null,
-          "flexWrap": null,
-          "height": null,
-          "justifyContent": "flex-start",
-          "left": null,
-          "margin": null,
-          "mediaWidth": null,
-          "minHeight": "13px",
-          "minWidth": null,
-          "overflowX": null,
-          "overflowY": null,
-          "padding": null,
-          "position": null,
-          "responsiveAlignItems": null,
-          "responsiveJustifyContent": null,
-          "responsiveMargin": null,
-          "responsivePadding": null,
-          "responsivePosition": null,
-          "themeColor": "primary",
-          "top": null,
-          "width": "100%",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "Mobile Phone:",
-              "color": Object {},
-              "colorType": "default",
-              "display": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "padding": "0 0 0 10px",
-              "position": null,
-              "responsiveJustifyContent": null,
-              "responsiveMargin": null,
-              "responsivePadding": null,
-              "responsiveTextAlign": null,
-              "responsiveWidth": "calc(35% - 11px)",
-              "textAlign": null,
-              "themeColor": "primary",
-              "themeFont": "default",
-              "themeFontWeight": "light",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "h2",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "calc(35% - 11px)",
-            },
-            "ref": null,
-            "rendered": "Mobile Phone:",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignItems": null,
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "239-555-0000",
-              "color": Object {},
-              "colorType": "text",
-              "display": null,
-              "flex": null,
-              "flexDirection": null,
-              "flexWrap": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "justifyContent": null,
-              "letterSpacing": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "minWidth": null,
-              "padding": null,
-              "responsiveThemeFont": "mobileText",
-              "responsiveWidth": null,
-              "textAlign": "right",
-              "themeColor": "primary",
-              "themeFont": "text",
-              "themeFontWeight": "normal",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "text",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "65%",
-            },
-            "ref": null,
-            "rendered": "239-555-0000",
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "alignItems": null,
-        "alignSelf": null,
-        "background": null,
-        "borderColorType": "border",
-        "borderRadius": null,
-        "borderStyle": null,
-        "borderWidth": null,
-        "boxSizing": null,
-        "children": Array [
-          <FlexRow
-            alignItems={null}
-            alignSelf={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth="1px 0"
-            boxSizing={null}
-            color={Object {}}
-            display={null}
-            flex={null}
-            flexWrap={null}
-            height={null}
-            justifyContent="flex-start"
-            left={null}
-            margin={null}
-            mediaWidth={null}
-            minHeight="13px"
-            minWidth={null}
-            overflowX={null}
-            overflowY={null}
-            padding={null}
-            position={null}
-            responsiveAlignItems={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsivePosition={null}
-            themeColor="primary"
-            top={null}
-            width="100%"
-          >
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 11px 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(30% - 11px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Name:
-            </Header2>
-            <Paragraph__P
-              alignItems={null}
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="text"
-              display={null}
-              flex={null}
-              flexDirection={null}
-              flexWrap={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              justifyContent={null}
-              letterSpacing={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              minWidth={null}
-              padding={null}
-              responsiveThemeFont="mobileText"
-              responsiveWidth="70%"
-              textAlign="right"
-              themeColor="primary"
-              themeFont="text"
-              themeFontWeight="normal"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="text"
-              type="text"
-              whiteSpace={null}
-              width="65%"
-            >
-              testName
-            </Paragraph__P>
-          </FlexRow>,
-          <FlexRow
-            alignItems={null}
-            alignSelf={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth="0 0 1px 0"
-            boxSizing={null}
-            color={Object {}}
-            display={null}
-            flex={null}
-            flexWrap={null}
-            height={null}
-            justifyContent="flex-start"
-            left={null}
-            margin={null}
-            mediaWidth={null}
-            minHeight="13px"
-            minWidth={null}
-            overflowX={null}
-            overflowY={null}
-            padding={null}
-            position={null}
-            responsiveAlignItems={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsivePosition={null}
-            themeColor="primary"
-            top={null}
-            width="100%"
-          >
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(30% - 11px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Login Email:
-            </Header2>
-            <Paragraph__P
-              alignItems={null}
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="text"
-              display={null}
-              flex={null}
-              flexDirection={null}
-              flexWrap={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              justifyContent={null}
-              letterSpacing={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              minWidth={null}
-              padding={null}
-              responsiveThemeFont="mobileText"
-              responsiveWidth="70%"
-              textAlign="right"
-              themeColor="primary"
-              themeFont="text"
-              themeFontWeight="normal"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="text"
-              type="text"
-              whiteSpace={null}
-              width="65%"
-            >
-              testEmail
-            </Paragraph__P>
-          </FlexRow>,
-          <FlexRow
-            alignItems={null}
-            alignSelf={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth="0 0 1px 0"
-            boxSizing={null}
-            color={Object {}}
-            display={null}
-            flex={null}
-            flexWrap={null}
-            height={null}
-            justifyContent="flex-start"
-            left={null}
-            margin={null}
-            mediaWidth={null}
-            minHeight="13px"
-            minWidth={null}
-            overflowX={null}
-            overflowY={null}
-            padding={null}
-            position={null}
-            responsiveAlignItems={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsivePosition={null}
-            themeColor="primary"
-            top={null}
-            width="100%"
-          >
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(30% - 11px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Additional Email:
-            </Header2>
-            <Paragraph__P
-              alignItems={null}
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="text"
-              display={null}
-              flex={null}
-              flexDirection={null}
-              flexWrap={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              justifyContent={null}
-              letterSpacing={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              minWidth={null}
-              padding={null}
-              responsiveThemeFont="mobileText"
-              responsiveWidth="70%"
-              textAlign="right"
-              themeColor="primary"
-              themeFont="text"
-              themeFontWeight="normal"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="text"
-              type="text"
-              whiteSpace={null}
-              width="65%"
-            >
-              testEmailAdditional
-            </Paragraph__P>
-          </FlexRow>,
-          <FlexRow
-            alignItems={null}
-            alignSelf={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth="0 0 1px 0"
-            boxSizing={null}
-            color={Object {}}
-            display={null}
-            flex={null}
-            flexWrap={null}
-            height={null}
-            justifyContent="flex-start"
-            left={null}
-            margin={null}
-            mediaWidth={null}
-            minHeight="13px"
-            minWidth={null}
-            overflowX={null}
-            overflowY={null}
-            padding={null}
-            position={null}
-            responsiveAlignItems={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsivePosition={null}
-            themeColor="primary"
-            top={null}
-            width="100%"
-          >
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(35% - 11px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Mobile Phone:
-            </Header2>
-            <Paragraph__P
-              alignItems={null}
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="text"
-              display={null}
-              flex={null}
-              flexDirection={null}
-              flexWrap={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              justifyContent={null}
-              letterSpacing={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              minWidth={null}
-              padding={null}
-              responsiveThemeFont="mobileText"
-              responsiveWidth={null}
-              textAlign="right"
-              themeColor="primary"
-              themeFont="text"
-              themeFontWeight="normal"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="text"
-              type="text"
-              whiteSpace={null}
-              width="65%"
-            >
-              239-555-0000
-            </Paragraph__P>
-          </FlexRow>,
-        ],
-        "color": Object {},
-        "display": null,
-        "flex": null,
-        "flexDirection": null,
-        "height": null,
-        "id": "profileForm",
-        "innerRef": [MockFunction],
-        "justifyContent": null,
-        "margin": null,
-        "mediaWidth": null,
-        "padding": null,
-        "position": null,
-        "themeColor": "primary",
-        "width": "100%",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "alignItems": null,
-            "alignSelf": null,
-            "borderColorType": "border",
-            "borderRadius": null,
-            "borderStyle": null,
-            "borderWidth": "1px 0",
-            "boxSizing": null,
-            "children": Array [
-              <Header2
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="default"
-                display={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                padding="0 11px 0 10px"
-                position={null}
-                responsiveJustifyContent={null}
-                responsiveMargin={null}
-                responsivePadding={null}
-                responsiveTextAlign={null}
-                responsiveWidth="calc(30% - 11px)"
-                textAlign={null}
-                themeColor="primary"
-                themeFont="default"
-                themeFontWeight="light"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="h2"
-                type="text"
-                whiteSpace={null}
-                width="calc(35% - 11px)"
-              >
-                Name:
-              </Header2>,
-              <Paragraph__P
-                alignItems={null}
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="text"
-                display={null}
-                flex={null}
-                flexDirection={null}
-                flexWrap={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                justifyContent={null}
-                letterSpacing={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                minWidth={null}
-                padding={null}
-                responsiveThemeFont="mobileText"
-                responsiveWidth="70%"
-                textAlign="right"
-                themeColor="primary"
-                themeFont="text"
-                themeFontWeight="normal"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="text"
-                type="text"
-                whiteSpace={null}
-                width="65%"
-              >
-                testName
-              </Paragraph__P>,
-            ],
-            "color": Object {},
-            "display": null,
-            "flex": null,
-            "flexWrap": null,
-            "height": null,
-            "justifyContent": "flex-start",
-            "left": null,
-            "margin": null,
-            "mediaWidth": null,
-            "minHeight": "13px",
-            "minWidth": null,
-            "overflowX": null,
-            "overflowY": null,
-            "padding": null,
-            "position": null,
-            "responsiveAlignItems": null,
-            "responsiveJustifyContent": null,
-            "responsiveMargin": null,
-            "responsivePadding": null,
-            "responsivePosition": null,
-            "themeColor": "primary",
-            "top": null,
-            "width": "100%",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "Name:",
-                "color": Object {},
-                "colorType": "default",
-                "display": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "padding": "0 11px 0 10px",
-                "position": null,
-                "responsiveJustifyContent": null,
-                "responsiveMargin": null,
-                "responsivePadding": null,
-                "responsiveTextAlign": null,
-                "responsiveWidth": "calc(30% - 11px)",
-                "textAlign": null,
-                "themeColor": "primary",
-                "themeFont": "default",
-                "themeFontWeight": "light",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "h2",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "calc(35% - 11px)",
-              },
-              "ref": null,
-              "rendered": "Name:",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignItems": null,
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "testName",
-                "color": Object {},
-                "colorType": "text",
-                "display": null,
-                "flex": null,
-                "flexDirection": null,
-                "flexWrap": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "justifyContent": null,
-                "letterSpacing": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "minWidth": null,
-                "padding": null,
-                "responsiveThemeFont": "mobileText",
-                "responsiveWidth": "70%",
-                "textAlign": "right",
-                "themeColor": "primary",
-                "themeFont": "text",
-                "themeFontWeight": "normal",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "text",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "65%",
-              },
-              "ref": null,
-              "rendered": "testName",
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "alignItems": null,
-            "alignSelf": null,
-            "borderColorType": "border",
-            "borderRadius": null,
-            "borderStyle": null,
-            "borderWidth": "0 0 1px 0",
-            "boxSizing": null,
-            "children": Array [
-              <Header2
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="default"
-                display={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                padding="0 0 0 10px"
-                position={null}
-                responsiveJustifyContent={null}
-                responsiveMargin={null}
-                responsivePadding={null}
-                responsiveTextAlign={null}
-                responsiveWidth="calc(30% - 11px)"
-                textAlign={null}
-                themeColor="primary"
-                themeFont="default"
-                themeFontWeight="light"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="h2"
-                type="text"
-                whiteSpace={null}
-                width="calc(35% - 11px)"
-              >
-                Login Email:
-              </Header2>,
-              <Paragraph__P
-                alignItems={null}
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="text"
-                display={null}
-                flex={null}
-                flexDirection={null}
-                flexWrap={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                justifyContent={null}
-                letterSpacing={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                minWidth={null}
-                padding={null}
-                responsiveThemeFont="mobileText"
-                responsiveWidth="70%"
-                textAlign="right"
-                themeColor="primary"
-                themeFont="text"
-                themeFontWeight="normal"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="text"
-                type="text"
-                whiteSpace={null}
-                width="65%"
-              >
-                testEmail
-              </Paragraph__P>,
-            ],
-            "color": Object {},
-            "display": null,
-            "flex": null,
-            "flexWrap": null,
-            "height": null,
-            "justifyContent": "flex-start",
-            "left": null,
-            "margin": null,
-            "mediaWidth": null,
-            "minHeight": "13px",
-            "minWidth": null,
-            "overflowX": null,
-            "overflowY": null,
-            "padding": null,
-            "position": null,
-            "responsiveAlignItems": null,
-            "responsiveJustifyContent": null,
-            "responsiveMargin": null,
-            "responsivePadding": null,
-            "responsivePosition": null,
-            "themeColor": "primary",
-            "top": null,
-            "width": "100%",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "Login Email:",
-                "color": Object {},
-                "colorType": "default",
-                "display": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "padding": "0 0 0 10px",
-                "position": null,
-                "responsiveJustifyContent": null,
-                "responsiveMargin": null,
-                "responsivePadding": null,
-                "responsiveTextAlign": null,
-                "responsiveWidth": "calc(30% - 11px)",
-                "textAlign": null,
-                "themeColor": "primary",
-                "themeFont": "default",
-                "themeFontWeight": "light",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "h2",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "calc(35% - 11px)",
-              },
-              "ref": null,
-              "rendered": "Login Email:",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignItems": null,
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "testEmail",
-                "color": Object {},
-                "colorType": "text",
-                "display": null,
-                "flex": null,
-                "flexDirection": null,
-                "flexWrap": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "justifyContent": null,
-                "letterSpacing": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "minWidth": null,
-                "padding": null,
-                "responsiveThemeFont": "mobileText",
-                "responsiveWidth": "70%",
-                "textAlign": "right",
-                "themeColor": "primary",
-                "themeFont": "text",
-                "themeFontWeight": "normal",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "text",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "65%",
-              },
-              "ref": null,
-              "rendered": "testEmail",
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "alignItems": null,
-            "alignSelf": null,
-            "borderColorType": "border",
-            "borderRadius": null,
-            "borderStyle": null,
-            "borderWidth": "0 0 1px 0",
-            "boxSizing": null,
-            "children": Array [
-              <Header2
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="default"
-                display={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                padding="0 0 0 10px"
-                position={null}
-                responsiveJustifyContent={null}
-                responsiveMargin={null}
-                responsivePadding={null}
-                responsiveTextAlign={null}
-                responsiveWidth="calc(30% - 11px)"
-                textAlign={null}
-                themeColor="primary"
-                themeFont="default"
-                themeFontWeight="light"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="h2"
-                type="text"
-                whiteSpace={null}
-                width="calc(35% - 11px)"
-              >
-                Additional Email:
-              </Header2>,
-              <Paragraph__P
-                alignItems={null}
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="text"
-                display={null}
-                flex={null}
-                flexDirection={null}
-                flexWrap={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                justifyContent={null}
-                letterSpacing={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                minWidth={null}
-                padding={null}
-                responsiveThemeFont="mobileText"
-                responsiveWidth="70%"
-                textAlign="right"
-                themeColor="primary"
-                themeFont="text"
-                themeFontWeight="normal"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="text"
-                type="text"
-                whiteSpace={null}
-                width="65%"
-              >
-                testEmailAdditional
-              </Paragraph__P>,
-            ],
-            "color": Object {},
-            "display": null,
-            "flex": null,
-            "flexWrap": null,
-            "height": null,
-            "justifyContent": "flex-start",
-            "left": null,
-            "margin": null,
-            "mediaWidth": null,
-            "minHeight": "13px",
-            "minWidth": null,
-            "overflowX": null,
-            "overflowY": null,
-            "padding": null,
-            "position": null,
-            "responsiveAlignItems": null,
-            "responsiveJustifyContent": null,
-            "responsiveMargin": null,
-            "responsivePadding": null,
-            "responsivePosition": null,
-            "themeColor": "primary",
-            "top": null,
-            "width": "100%",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "Additional Email:",
-                "color": Object {},
-                "colorType": "default",
-                "display": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "padding": "0 0 0 10px",
-                "position": null,
-                "responsiveJustifyContent": null,
-                "responsiveMargin": null,
-                "responsivePadding": null,
-                "responsiveTextAlign": null,
-                "responsiveWidth": "calc(30% - 11px)",
-                "textAlign": null,
-                "themeColor": "primary",
-                "themeFont": "default",
-                "themeFontWeight": "light",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "h2",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "calc(35% - 11px)",
-              },
-              "ref": null,
-              "rendered": "Additional Email:",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignItems": null,
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "testEmailAdditional",
-                "color": Object {},
-                "colorType": "text",
-                "display": null,
-                "flex": null,
-                "flexDirection": null,
-                "flexWrap": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "justifyContent": null,
-                "letterSpacing": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "minWidth": null,
-                "padding": null,
-                "responsiveThemeFont": "mobileText",
-                "responsiveWidth": "70%",
-                "textAlign": "right",
-                "themeColor": "primary",
-                "themeFont": "text",
-                "themeFontWeight": "normal",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "text",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "65%",
-              },
-              "ref": null,
-              "rendered": "testEmailAdditional",
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "alignItems": null,
-            "alignSelf": null,
-            "borderColorType": "border",
-            "borderRadius": null,
-            "borderStyle": null,
-            "borderWidth": "0 0 1px 0",
-            "boxSizing": null,
-            "children": Array [
-              <Header2
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="default"
-                display={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                padding="0 0 0 10px"
-                position={null}
-                responsiveJustifyContent={null}
-                responsiveMargin={null}
-                responsivePadding={null}
-                responsiveTextAlign={null}
-                responsiveWidth="calc(35% - 11px)"
-                textAlign={null}
-                themeColor="primary"
-                themeFont="default"
-                themeFontWeight="light"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="h2"
-                type="text"
-                whiteSpace={null}
-                width="calc(35% - 11px)"
-              >
-                Mobile Phone:
-              </Header2>,
-              <Paragraph__P
-                alignItems={null}
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="text"
-                display={null}
-                flex={null}
-                flexDirection={null}
-                flexWrap={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                justifyContent={null}
-                letterSpacing={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                minWidth={null}
-                padding={null}
-                responsiveThemeFont="mobileText"
-                responsiveWidth={null}
-                textAlign="right"
-                themeColor="primary"
-                themeFont="text"
-                themeFontWeight="normal"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="text"
-                type="text"
-                whiteSpace={null}
-                width="65%"
-              >
-                239-555-0000
-              </Paragraph__P>,
-            ],
-            "color": Object {},
-            "display": null,
-            "flex": null,
-            "flexWrap": null,
-            "height": null,
-            "justifyContent": "flex-start",
-            "left": null,
-            "margin": null,
-            "mediaWidth": null,
-            "minHeight": "13px",
-            "minWidth": null,
-            "overflowX": null,
-            "overflowY": null,
-            "padding": null,
-            "position": null,
-            "responsiveAlignItems": null,
-            "responsiveJustifyContent": null,
-            "responsiveMargin": null,
-            "responsivePadding": null,
-            "responsivePosition": null,
-            "themeColor": "primary",
-            "top": null,
-            "width": "100%",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "Mobile Phone:",
-                "color": Object {},
-                "colorType": "default",
-                "display": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "padding": "0 0 0 10px",
-                "position": null,
-                "responsiveJustifyContent": null,
-                "responsiveMargin": null,
-                "responsivePadding": null,
-                "responsiveTextAlign": null,
-                "responsiveWidth": "calc(35% - 11px)",
-                "textAlign": null,
-                "themeColor": "primary",
-                "themeFont": "default",
-                "themeFontWeight": "light",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "h2",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "calc(35% - 11px)",
-              },
-              "ref": null,
-              "rendered": "Mobile Phone:",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignItems": null,
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "239-555-0000",
-                "color": Object {},
-                "colorType": "text",
-                "display": null,
-                "flex": null,
-                "flexDirection": null,
-                "flexWrap": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "justifyContent": null,
-                "letterSpacing": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "minWidth": null,
-                "padding": null,
-                "responsiveThemeFont": "mobileText",
-                "responsiveWidth": null,
-                "textAlign": "right",
-                "themeColor": "primary",
-                "themeFont": "text",
-                "themeFontWeight": "normal",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "text",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "65%",
-              },
-              "ref": null,
-              "rendered": "239-555-0000",
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
-  },
-}
+<Form__FormStyle
+  alignItems={null}
+  alignSelf={null}
+  background={null}
+  borderColorType="border"
+  borderRadius={null}
+  borderStyle={null}
+  borderWidth={null}
+  boxSizing={null}
+  color={Object {}}
+  display={null}
+  flex={null}
+  flexDirection={null}
+  height={null}
+  id="profileForm"
+  justifyContent={null}
+  margin={null}
+  mediaWidth={null}
+  padding={null}
+  position={null}
+  themeColor="primary"
+  width="100%"
+>
+  <FlexRow
+    alignItems={null}
+    alignSelf={null}
+    borderColorType="border"
+    borderRadius={null}
+    borderStyle={null}
+    borderWidth="1px 0"
+    boxSizing={null}
+    color={Object {}}
+    display={null}
+    flex={null}
+    flexWrap={null}
+    height={null}
+    justifyContent="flex-start"
+    left={null}
+    margin={null}
+    mediaWidth={null}
+    minHeight="13px"
+    minWidth={null}
+    overflowX={null}
+    overflowY={null}
+    padding={null}
+    position={null}
+    responsiveAlignSecurities={null}
+    responsiveJustifyContent={null}
+    responsiveMargin={null}
+    responsivePadding={null}
+    responsivePosition={null}
+    themeColor="primary"
+    top={null}
+    width="100%"
+  >
+    <Header2
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="default"
+      display={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      padding="0 11px 0 10px"
+      position={null}
+      responsiveJustifyContent={null}
+      responsiveMargin={null}
+      responsivePadding={null}
+      responsiveTextAlign={null}
+      responsiveWidth="calc(30% - 11px)"
+      textAlign={null}
+      themeColor="primary"
+      themeFont="default"
+      themeFontWeight="light"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="h2"
+      type="text"
+      whiteSpace={null}
+      width="calc(35% - 11px)"
+    >
+      Name:
+    </Header2>
+    <Paragraph__P
+      alignItems={null}
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="text"
+      display={null}
+      flex={null}
+      flexDirection={null}
+      flexWrap={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      justifyContent={null}
+      letterSpacing={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      minWidth={null}
+      padding={null}
+      responsiveThemeFont="mobileText"
+      responsiveWidth="70%"
+      textAlign="right"
+      themeColor="primary"
+      themeFont="text"
+      themeFontWeight="normal"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="text"
+      type="text"
+      whiteSpace={null}
+      width="65%"
+    >
+      testName
+    </Paragraph__P>
+  </FlexRow>
+  <FlexRow
+    alignItems={null}
+    alignSelf={null}
+    borderColorType="border"
+    borderRadius={null}
+    borderStyle={null}
+    borderWidth="0 0 1px 0"
+    boxSizing={null}
+    color={Object {}}
+    display={null}
+    flex={null}
+    flexWrap={null}
+    height={null}
+    justifyContent="flex-start"
+    left={null}
+    margin={null}
+    mediaWidth={null}
+    minHeight="13px"
+    minWidth={null}
+    overflowX={null}
+    overflowY={null}
+    padding={null}
+    position={null}
+    responsiveAlignSecurities={null}
+    responsiveJustifyContent={null}
+    responsiveMargin={null}
+    responsivePadding={null}
+    responsivePosition={null}
+    themeColor="primary"
+    top={null}
+    width="100%"
+  >
+    <Header2
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="default"
+      display={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      padding="0 0 0 10px"
+      position={null}
+      responsiveJustifyContent={null}
+      responsiveMargin={null}
+      responsivePadding={null}
+      responsiveTextAlign={null}
+      responsiveWidth="calc(30% - 11px)"
+      textAlign={null}
+      themeColor="primary"
+      themeFont="default"
+      themeFontWeight="light"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="h2"
+      type="text"
+      whiteSpace={null}
+      width="calc(35% - 11px)"
+    >
+      Login Email:
+    </Header2>
+    <Paragraph__P
+      alignItems={null}
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="text"
+      display={null}
+      flex={null}
+      flexDirection={null}
+      flexWrap={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      justifyContent={null}
+      letterSpacing={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      minWidth={null}
+      padding={null}
+      responsiveThemeFont="mobileText"
+      responsiveWidth="70%"
+      textAlign="right"
+      themeColor="primary"
+      themeFont="text"
+      themeFontWeight="normal"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="text"
+      type="text"
+      whiteSpace={null}
+      width="65%"
+    >
+      testEmail
+    </Paragraph__P>
+  </FlexRow>
+  <FlexRow
+    alignItems={null}
+    alignSelf={null}
+    borderColorType="border"
+    borderRadius={null}
+    borderStyle={null}
+    borderWidth="0 0 1px 0"
+    boxSizing={null}
+    color={Object {}}
+    display={null}
+    flex={null}
+    flexWrap={null}
+    height={null}
+    justifyContent="flex-start"
+    left={null}
+    margin={null}
+    mediaWidth={null}
+    minHeight="13px"
+    minWidth={null}
+    overflowX={null}
+    overflowY={null}
+    padding={null}
+    position={null}
+    responsiveAlignSecurities={null}
+    responsiveJustifyContent={null}
+    responsiveMargin={null}
+    responsivePadding={null}
+    responsivePosition={null}
+    themeColor="primary"
+    top={null}
+    width="100%"
+  >
+    <Header2
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="default"
+      display={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      padding="0 0 0 10px"
+      position={null}
+      responsiveJustifyContent={null}
+      responsiveMargin={null}
+      responsivePadding={null}
+      responsiveTextAlign={null}
+      responsiveWidth="calc(30% - 11px)"
+      textAlign={null}
+      themeColor="primary"
+      themeFont="default"
+      themeFontWeight="light"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="h2"
+      type="text"
+      whiteSpace={null}
+      width="calc(35% - 11px)"
+    >
+      Additional Email:
+    </Header2>
+    <Paragraph__P
+      alignItems={null}
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="text"
+      display={null}
+      flex={null}
+      flexDirection={null}
+      flexWrap={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      justifyContent={null}
+      letterSpacing={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      minWidth={null}
+      padding={null}
+      responsiveThemeFont="mobileText"
+      responsiveWidth="70%"
+      textAlign="right"
+      themeColor="primary"
+      themeFont="text"
+      themeFontWeight="normal"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="text"
+      type="text"
+      whiteSpace={null}
+      width="65%"
+    >
+      testEmailAdditional
+    </Paragraph__P>
+  </FlexRow>
+  <FlexRow
+    alignItems={null}
+    alignSelf={null}
+    borderColorType="border"
+    borderRadius={null}
+    borderStyle={null}
+    borderWidth="0 0 1px 0"
+    boxSizing={null}
+    color={Object {}}
+    display={null}
+    flex={null}
+    flexWrap={null}
+    height={null}
+    justifyContent="flex-start"
+    left={null}
+    margin={null}
+    mediaWidth={null}
+    minHeight="13px"
+    minWidth={null}
+    overflowX={null}
+    overflowY={null}
+    padding={null}
+    position={null}
+    responsiveAlignSecurities={null}
+    responsiveJustifyContent={null}
+    responsiveMargin={null}
+    responsivePadding={null}
+    responsivePosition={null}
+    themeColor="primary"
+    top={null}
+    width="100%"
+  >
+    <Header2
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="default"
+      display={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      padding="0 0 0 10px"
+      position={null}
+      responsiveJustifyContent={null}
+      responsiveMargin={null}
+      responsivePadding={null}
+      responsiveTextAlign={null}
+      responsiveWidth="calc(35% - 11px)"
+      textAlign={null}
+      themeColor="primary"
+      themeFont="default"
+      themeFontWeight="light"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="h2"
+      type="text"
+      whiteSpace={null}
+      width="calc(35% - 11px)"
+    >
+      Mobile Phone:
+    </Header2>
+    <Paragraph__P
+      alignItems={null}
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="text"
+      display={null}
+      flex={null}
+      flexDirection={null}
+      flexWrap={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      justifyContent={null}
+      letterSpacing={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      minWidth={null}
+      padding={null}
+      responsiveThemeFont="mobileText"
+      responsiveWidth={null}
+      textAlign="right"
+      themeColor="primary"
+      themeFont="text"
+      themeFontWeight="normal"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="text"
+      type="text"
+      whiteSpace={null}
+      width="65%"
+    >
+      239-555-0000
+    </Paragraph__P>
+  </FlexRow>
+</Form__FormStyle>
 `;
 
 exports[`Components PageInternal PageBodyAccount Forms FormProfile shallow renders correctly, when currentFormBool and editForm is true 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FormProfile
-    currentFormBool={true}
-    editForm={true}
-    handleInputChange={[MockFunction]}
-    headerWidthBufferRight={11}
-    heightRef={[MockFunction]}
-    inputs={
-      Object {
-        "profileEmail": Object {
-          "errorMessage": "",
-          "id": "profileEmail",
-          "parentId": "profileForm",
-          "value": "testEmail",
-        },
-        "profileEmailAdditional": Object {
-          "errorMessage": "",
-          "id": "profileEmailAdditional",
-          "parentId": "profileForm",
-          "value": "testEmailAdditional",
-        },
-        "profileName": Object {
-          "errorMessage": "",
-          "id": "profileName",
-          "parentId": "profileForm",
-          "value": "testName",
-        },
-        "profilePhone": Object {
-          "errorMessage": "",
-          "id": "profilePhone",
-          "parentId": "profileForm",
-          "value": "239-555-0000",
-        },
+<Form__FormStyle
+  alignItems={null}
+  alignSelf={null}
+  background={null}
+  borderColorType="border"
+  borderRadius={null}
+  borderStyle={null}
+  borderWidth={null}
+  boxSizing={null}
+  color={Object {}}
+  display={null}
+  flex={null}
+  flexDirection={null}
+  height={null}
+  id="profileForm"
+  justifyContent={null}
+  margin={null}
+  mediaWidth={null}
+  padding={null}
+  position={null}
+  themeColor="primary"
+  width="100%"
+>
+  <FlexRow
+    alignItems={null}
+    alignSelf={null}
+    borderColorType="border"
+    borderRadius={null}
+    borderStyle={null}
+    borderWidth="1px 0"
+    boxSizing={null}
+    color={Object {}}
+    display={null}
+    flex={null}
+    flexWrap={null}
+    height={null}
+    justifyContent="flex-start"
+    left={null}
+    margin={null}
+    mediaWidth={null}
+    minHeight="13px"
+    minWidth={null}
+    overflowX={null}
+    overflowY={null}
+    padding={null}
+    position={null}
+    responsiveAlignSecurities={null}
+    responsiveJustifyContent={null}
+    responsiveMargin={null}
+    responsivePadding={null}
+    responsivePosition={null}
+    themeColor="primary"
+    top={null}
+    width="100%"
+  >
+    <Header2
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="default"
+      display={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      padding="0 11px 0 10px"
+      position={null}
+      responsiveJustifyContent={null}
+      responsiveMargin={null}
+      responsivePadding={null}
+      responsiveTextAlign={null}
+      responsiveWidth="calc(100% - 10px)"
+      textAlign={null}
+      themeColor="primary"
+      themeFont="default"
+      themeFontWeight="light"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="h2"
+      type="text"
+      whiteSpace={null}
+      width="calc(35% - 11px)"
+    >
+      Name:
+    </Header2>
+    <Input
+      Error={Object {}}
+      InputStyle={
+        Object {
+          "mediaWidth": "12px",
+        }
       }
-    }
-    mediaWidth={12}
-    rowHeight={13}
-    rowHeightBuffer={14}
-    rowWidthIndent={10}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "alignItems": null,
-      "alignSelf": null,
-      "background": null,
-      "borderColorType": "border",
-      "borderRadius": null,
-      "borderStyle": null,
-      "borderWidth": null,
-      "boxSizing": null,
-      "children": Array [
-        <FlexRow
-          alignItems={null}
-          alignSelf={null}
-          borderColorType="border"
-          borderRadius={null}
-          borderStyle={null}
-          borderWidth="1px 0"
-          boxSizing={null}
-          color={Object {}}
-          display={null}
-          flex={null}
-          flexWrap={null}
-          height={null}
-          justifyContent="flex-start"
-          left={null}
-          margin={null}
-          mediaWidth={null}
-          minHeight="13px"
-          minWidth={null}
-          overflowX={null}
-          overflowY={null}
-          padding={null}
-          position={null}
-          responsiveAlignItems={null}
-          responsiveJustifyContent={null}
-          responsiveMargin={null}
-          responsivePadding={null}
-          responsivePosition={null}
-          themeColor="primary"
-          top={null}
-          width="100%"
-        >
-          <Header2
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="default"
-            display={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            padding="0 11px 0 10px"
-            position={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsiveTextAlign={null}
-            responsiveWidth="calc(100% - 10px)"
-            textAlign={null}
-            themeColor="primary"
-            themeFont="default"
-            themeFontWeight="light"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="h2"
-            type="text"
-            whiteSpace={null}
-            width="calc(35% - 11px)"
-          >
-            Name:
-          </Header2>
-          <Input
-            Error={Object {}}
-            InputStyle={
-              Object {
-                "mediaWidth": "12px",
-              }
-            }
-            Label={Object {}}
-            WrapperDiv={
-              Object {
-                "margin": "7px 0",
-                "mediaWidth": "12px",
-                "responsiveMargin": "0 0 7px 0",
-                "responsivePadding": "0 0 0 10px",
-                "responsiveWidth": "calc(100% - 10px)",
-                "width": "65%",
-              }
-            }
-            dataSet={Object {}}
-            errorMessage=""
-            handleInputChange={[MockFunction]}
-            id="profileName"
-            label={null}
-            tabIndex="0"
-            type="text"
-            value="testName"
-          />
-        </FlexRow>,
-        <FlexRow
-          alignItems={null}
-          alignSelf={null}
-          borderColorType="border"
-          borderRadius={null}
-          borderStyle={null}
-          borderWidth="0 0 1px 0"
-          boxSizing={null}
-          color={Object {}}
-          display={null}
-          flex={null}
-          flexWrap={null}
-          height={null}
-          justifyContent="flex-start"
-          left={null}
-          margin={null}
-          mediaWidth={null}
-          minHeight="13px"
-          minWidth={null}
-          overflowX={null}
-          overflowY={null}
-          padding={null}
-          position={null}
-          responsiveAlignItems={null}
-          responsiveJustifyContent={null}
-          responsiveMargin={null}
-          responsivePadding={null}
-          responsivePosition={null}
-          themeColor="primary"
-          top={null}
-          width="100%"
-        >
-          <Header2
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="default"
-            display={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            padding="0 0 0 10px"
-            position={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsiveTextAlign={null}
-            responsiveWidth="calc(100% - 10px)"
-            textAlign={null}
-            themeColor="primary"
-            themeFont="default"
-            themeFontWeight="light"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="h2"
-            type="text"
-            whiteSpace={null}
-            width="calc(35% - 11px)"
-          >
-            Login Email:
-          </Header2>
-          <Input
-            Error={Object {}}
-            InputStyle={
-              Object {
-                "mediaWidth": "12px",
-              }
-            }
-            Label={Object {}}
-            WrapperDiv={
-              Object {
-                "margin": "7px 0",
-                "mediaWidth": "12px",
-                "responsiveMargin": "0 0 7px 0",
-                "responsivePadding": "0 0 0 10px",
-                "responsiveWidth": "calc(100% - 10px)",
-                "width": "65%",
-              }
-            }
-            dataSet={Object {}}
-            errorMessage=""
-            handleInputChange={[MockFunction]}
-            id="profileEmail"
-            label={null}
-            tabIndex="0"
-            type="email"
-            value="testEmail"
-          />
-        </FlexRow>,
-        <FlexRow
-          alignItems={null}
-          alignSelf={null}
-          borderColorType="border"
-          borderRadius={null}
-          borderStyle={null}
-          borderWidth="0 0 1px 0"
-          boxSizing={null}
-          color={Object {}}
-          display={null}
-          flex={null}
-          flexWrap={null}
-          height={null}
-          justifyContent="flex-start"
-          left={null}
-          margin={null}
-          mediaWidth={null}
-          minHeight="13px"
-          minWidth={null}
-          overflowX={null}
-          overflowY={null}
-          padding={null}
-          position={null}
-          responsiveAlignItems={null}
-          responsiveJustifyContent={null}
-          responsiveMargin={null}
-          responsivePadding={null}
-          responsivePosition={null}
-          themeColor="primary"
-          top={null}
-          width="100%"
-        >
-          <Header2
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="default"
-            display={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            padding="0 0 0 10px"
-            position={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsiveTextAlign={null}
-            responsiveWidth="calc(100% - 10px)"
-            textAlign={null}
-            themeColor="primary"
-            themeFont="default"
-            themeFontWeight="light"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="h2"
-            type="text"
-            whiteSpace={null}
-            width="calc(35% - 11px)"
-          >
-            Additional Email:
-          </Header2>
-          <Input
-            Error={Object {}}
-            InputStyle={
-              Object {
-                "mediaWidth": "12px",
-              }
-            }
-            Label={Object {}}
-            WrapperDiv={
-              Object {
-                "margin": "7px 0",
-                "mediaWidth": "12px",
-                "responsiveMargin": "0 0 7px 0",
-                "responsivePadding": "0 0 0 10px",
-                "responsiveWidth": "calc(100% - 10px)",
-                "width": "65%",
-              }
-            }
-            dataSet={Object {}}
-            errorMessage=""
-            handleInputChange={[MockFunction]}
-            id="profileEmailAdditional"
-            label={null}
-            tabIndex="0"
-            type="email"
-            value="testEmailAdditional"
-          />
-        </FlexRow>,
-        <FlexRow
-          alignItems={null}
-          alignSelf={null}
-          borderColorType="border"
-          borderRadius={null}
-          borderStyle={null}
-          borderWidth="0 0 1px 0"
-          boxSizing={null}
-          color={Object {}}
-          display={null}
-          flex={null}
-          flexWrap={null}
-          height={null}
-          justifyContent="flex-start"
-          left={null}
-          margin={null}
-          mediaWidth={null}
-          minHeight="13px"
-          minWidth={null}
-          overflowX={null}
-          overflowY={null}
-          padding={null}
-          position={null}
-          responsiveAlignItems={null}
-          responsiveJustifyContent={null}
-          responsiveMargin={null}
-          responsivePadding={null}
-          responsivePosition={null}
-          themeColor="primary"
-          top={null}
-          width="100%"
-        >
-          <Header2
-            alignSelf={null}
-            background={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth={null}
-            boxSizing={null}
-            color={Object {}}
-            colorType="default"
-            display={null}
-            fontFamily={null}
-            fontSize={null}
-            fontWeight={null}
-            height={null}
-            id={null}
-            lineHeight={null}
-            margin={null}
-            mediaWidth="12px"
-            padding="0 0 0 10px"
-            position={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsiveTextAlign={null}
-            responsiveWidth="calc(100% - 10px)"
-            textAlign={null}
-            themeColor="primary"
-            themeFont="default"
-            themeFontWeight="light"
-            themeLetterSpacing="default"
-            themeLineHeight="default"
-            themeSize="h2"
-            type="text"
-            whiteSpace={null}
-            width="calc(35% - 11px)"
-          >
-            Mobile Phone:
-          </Header2>
-          <Input
-            Error={Object {}}
-            InputStyle={
-              Object {
-                "mediaWidth": "12px",
-              }
-            }
-            Label={Object {}}
-            WrapperDiv={
-              Object {
-                "margin": "7px 0",
-                "mediaWidth": "12px",
-                "responsiveMargin": "0 0 7px 0",
-                "responsivePadding": "0 0 0 10px",
-                "responsiveWidth": "calc(100% - 10px)",
-                "width": "65%",
-              }
-            }
-            dataSet={Object {}}
-            errorMessage=""
-            handleInputChange={[MockFunction]}
-            id="profilePhone"
-            label={null}
-            tabIndex="0"
-            type="tel"
-            value="239-555-0000"
-          />
-        </FlexRow>,
-      ],
-      "color": Object {},
-      "display": null,
-      "flex": null,
-      "flexDirection": null,
-      "height": null,
-      "id": "profileForm",
-      "innerRef": [MockFunction],
-      "justifyContent": null,
-      "margin": null,
-      "mediaWidth": null,
-      "padding": null,
-      "position": null,
-      "themeColor": "primary",
-      "width": "100%",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "alignItems": null,
-          "alignSelf": null,
-          "borderColorType": "border",
-          "borderRadius": null,
-          "borderStyle": null,
-          "borderWidth": "1px 0",
-          "boxSizing": null,
-          "children": Array [
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 11px 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(100% - 10px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Name:
-            </Header2>,
-            <Input
-              Error={Object {}}
-              InputStyle={
-                Object {
-                  "mediaWidth": "12px",
-                }
-              }
-              Label={Object {}}
-              WrapperDiv={
-                Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                }
-              }
-              dataSet={Object {}}
-              errorMessage=""
-              handleInputChange={[MockFunction]}
-              id="profileName"
-              label={null}
-              tabIndex="0"
-              type="text"
-              value="testName"
-            />,
-          ],
-          "color": Object {},
-          "display": null,
-          "flex": null,
-          "flexWrap": null,
-          "height": null,
-          "justifyContent": "flex-start",
-          "left": null,
-          "margin": null,
-          "mediaWidth": null,
-          "minHeight": "13px",
-          "minWidth": null,
-          "overflowX": null,
-          "overflowY": null,
-          "padding": null,
-          "position": null,
-          "responsiveAlignItems": null,
-          "responsiveJustifyContent": null,
-          "responsiveMargin": null,
-          "responsivePadding": null,
-          "responsivePosition": null,
-          "themeColor": "primary",
-          "top": null,
-          "width": "100%",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "Name:",
-              "color": Object {},
-              "colorType": "default",
-              "display": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "padding": "0 11px 0 10px",
-              "position": null,
-              "responsiveJustifyContent": null,
-              "responsiveMargin": null,
-              "responsivePadding": null,
-              "responsiveTextAlign": null,
-              "responsiveWidth": "calc(100% - 10px)",
-              "textAlign": null,
-              "themeColor": "primary",
-              "themeFont": "default",
-              "themeFontWeight": "light",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "h2",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "calc(35% - 11px)",
-            },
-            "ref": null,
-            "rendered": "Name:",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "Error": Object {},
-              "InputStyle": Object {
-                "mediaWidth": "12px",
-              },
-              "Label": Object {},
-              "WrapperDiv": Object {
-                "margin": "7px 0",
-                "mediaWidth": "12px",
-                "responsiveMargin": "0 0 7px 0",
-                "responsivePadding": "0 0 0 10px",
-                "responsiveWidth": "calc(100% - 10px)",
-                "width": "65%",
-              },
-              "dataSet": Object {},
-              "errorMessage": "",
-              "handleInputChange": [MockFunction],
-              "id": "profileName",
-              "label": null,
-              "tabIndex": "0",
-              "type": "text",
-              "value": "testName",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "alignItems": null,
-          "alignSelf": null,
-          "borderColorType": "border",
-          "borderRadius": null,
-          "borderStyle": null,
-          "borderWidth": "0 0 1px 0",
-          "boxSizing": null,
-          "children": Array [
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(100% - 10px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Login Email:
-            </Header2>,
-            <Input
-              Error={Object {}}
-              InputStyle={
-                Object {
-                  "mediaWidth": "12px",
-                }
-              }
-              Label={Object {}}
-              WrapperDiv={
-                Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                }
-              }
-              dataSet={Object {}}
-              errorMessage=""
-              handleInputChange={[MockFunction]}
-              id="profileEmail"
-              label={null}
-              tabIndex="0"
-              type="email"
-              value="testEmail"
-            />,
-          ],
-          "color": Object {},
-          "display": null,
-          "flex": null,
-          "flexWrap": null,
-          "height": null,
-          "justifyContent": "flex-start",
-          "left": null,
-          "margin": null,
-          "mediaWidth": null,
-          "minHeight": "13px",
-          "minWidth": null,
-          "overflowX": null,
-          "overflowY": null,
-          "padding": null,
-          "position": null,
-          "responsiveAlignItems": null,
-          "responsiveJustifyContent": null,
-          "responsiveMargin": null,
-          "responsivePadding": null,
-          "responsivePosition": null,
-          "themeColor": "primary",
-          "top": null,
-          "width": "100%",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "Login Email:",
-              "color": Object {},
-              "colorType": "default",
-              "display": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "padding": "0 0 0 10px",
-              "position": null,
-              "responsiveJustifyContent": null,
-              "responsiveMargin": null,
-              "responsivePadding": null,
-              "responsiveTextAlign": null,
-              "responsiveWidth": "calc(100% - 10px)",
-              "textAlign": null,
-              "themeColor": "primary",
-              "themeFont": "default",
-              "themeFontWeight": "light",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "h2",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "calc(35% - 11px)",
-            },
-            "ref": null,
-            "rendered": "Login Email:",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "Error": Object {},
-              "InputStyle": Object {
-                "mediaWidth": "12px",
-              },
-              "Label": Object {},
-              "WrapperDiv": Object {
-                "margin": "7px 0",
-                "mediaWidth": "12px",
-                "responsiveMargin": "0 0 7px 0",
-                "responsivePadding": "0 0 0 10px",
-                "responsiveWidth": "calc(100% - 10px)",
-                "width": "65%",
-              },
-              "dataSet": Object {},
-              "errorMessage": "",
-              "handleInputChange": [MockFunction],
-              "id": "profileEmail",
-              "label": null,
-              "tabIndex": "0",
-              "type": "email",
-              "value": "testEmail",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "alignItems": null,
-          "alignSelf": null,
-          "borderColorType": "border",
-          "borderRadius": null,
-          "borderStyle": null,
-          "borderWidth": "0 0 1px 0",
-          "boxSizing": null,
-          "children": Array [
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(100% - 10px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Additional Email:
-            </Header2>,
-            <Input
-              Error={Object {}}
-              InputStyle={
-                Object {
-                  "mediaWidth": "12px",
-                }
-              }
-              Label={Object {}}
-              WrapperDiv={
-                Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                }
-              }
-              dataSet={Object {}}
-              errorMessage=""
-              handleInputChange={[MockFunction]}
-              id="profileEmailAdditional"
-              label={null}
-              tabIndex="0"
-              type="email"
-              value="testEmailAdditional"
-            />,
-          ],
-          "color": Object {},
-          "display": null,
-          "flex": null,
-          "flexWrap": null,
-          "height": null,
-          "justifyContent": "flex-start",
-          "left": null,
-          "margin": null,
-          "mediaWidth": null,
-          "minHeight": "13px",
-          "minWidth": null,
-          "overflowX": null,
-          "overflowY": null,
-          "padding": null,
-          "position": null,
-          "responsiveAlignItems": null,
-          "responsiveJustifyContent": null,
-          "responsiveMargin": null,
-          "responsivePadding": null,
-          "responsivePosition": null,
-          "themeColor": "primary",
-          "top": null,
-          "width": "100%",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "Additional Email:",
-              "color": Object {},
-              "colorType": "default",
-              "display": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "padding": "0 0 0 10px",
-              "position": null,
-              "responsiveJustifyContent": null,
-              "responsiveMargin": null,
-              "responsivePadding": null,
-              "responsiveTextAlign": null,
-              "responsiveWidth": "calc(100% - 10px)",
-              "textAlign": null,
-              "themeColor": "primary",
-              "themeFont": "default",
-              "themeFontWeight": "light",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "h2",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "calc(35% - 11px)",
-            },
-            "ref": null,
-            "rendered": "Additional Email:",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "Error": Object {},
-              "InputStyle": Object {
-                "mediaWidth": "12px",
-              },
-              "Label": Object {},
-              "WrapperDiv": Object {
-                "margin": "7px 0",
-                "mediaWidth": "12px",
-                "responsiveMargin": "0 0 7px 0",
-                "responsivePadding": "0 0 0 10px",
-                "responsiveWidth": "calc(100% - 10px)",
-                "width": "65%",
-              },
-              "dataSet": Object {},
-              "errorMessage": "",
-              "handleInputChange": [MockFunction],
-              "id": "profileEmailAdditional",
-              "label": null,
-              "tabIndex": "0",
-              "type": "email",
-              "value": "testEmailAdditional",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "alignItems": null,
-          "alignSelf": null,
-          "borderColorType": "border",
-          "borderRadius": null,
-          "borderStyle": null,
-          "borderWidth": "0 0 1px 0",
-          "boxSizing": null,
-          "children": Array [
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(100% - 10px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Mobile Phone:
-            </Header2>,
-            <Input
-              Error={Object {}}
-              InputStyle={
-                Object {
-                  "mediaWidth": "12px",
-                }
-              }
-              Label={Object {}}
-              WrapperDiv={
-                Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                }
-              }
-              dataSet={Object {}}
-              errorMessage=""
-              handleInputChange={[MockFunction]}
-              id="profilePhone"
-              label={null}
-              tabIndex="0"
-              type="tel"
-              value="239-555-0000"
-            />,
-          ],
-          "color": Object {},
-          "display": null,
-          "flex": null,
-          "flexWrap": null,
-          "height": null,
-          "justifyContent": "flex-start",
-          "left": null,
-          "margin": null,
-          "mediaWidth": null,
-          "minHeight": "13px",
-          "minWidth": null,
-          "overflowX": null,
-          "overflowY": null,
-          "padding": null,
-          "position": null,
-          "responsiveAlignItems": null,
-          "responsiveJustifyContent": null,
-          "responsiveMargin": null,
-          "responsivePadding": null,
-          "responsivePosition": null,
-          "themeColor": "primary",
-          "top": null,
-          "width": "100%",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "alignSelf": null,
-              "background": null,
-              "borderColorType": "border",
-              "borderRadius": null,
-              "borderStyle": null,
-              "borderWidth": null,
-              "boxSizing": null,
-              "children": "Mobile Phone:",
-              "color": Object {},
-              "colorType": "default",
-              "display": null,
-              "fontFamily": null,
-              "fontSize": null,
-              "fontWeight": null,
-              "height": null,
-              "id": null,
-              "lineHeight": null,
-              "margin": null,
-              "mediaWidth": "12px",
-              "padding": "0 0 0 10px",
-              "position": null,
-              "responsiveJustifyContent": null,
-              "responsiveMargin": null,
-              "responsivePadding": null,
-              "responsiveTextAlign": null,
-              "responsiveWidth": "calc(100% - 10px)",
-              "textAlign": null,
-              "themeColor": "primary",
-              "themeFont": "default",
-              "themeFontWeight": "light",
-              "themeLetterSpacing": "default",
-              "themeLineHeight": "default",
-              "themeSize": "h2",
-              "type": "text",
-              "whiteSpace": null,
-              "width": "calc(35% - 11px)",
-            },
-            "ref": null,
-            "rendered": "Mobile Phone:",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "Error": Object {},
-              "InputStyle": Object {
-                "mediaWidth": "12px",
-              },
-              "Label": Object {},
-              "WrapperDiv": Object {
-                "margin": "7px 0",
-                "mediaWidth": "12px",
-                "responsiveMargin": "0 0 7px 0",
-                "responsivePadding": "0 0 0 10px",
-                "responsiveWidth": "calc(100% - 10px)",
-                "width": "65%",
-              },
-              "dataSet": Object {},
-              "errorMessage": "",
-              "handleInputChange": [MockFunction],
-              "id": "profilePhone",
-              "label": null,
-              "tabIndex": "0",
-              "type": "tel",
-              "value": "239-555-0000",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "alignItems": null,
-        "alignSelf": null,
-        "background": null,
-        "borderColorType": "border",
-        "borderRadius": null,
-        "borderStyle": null,
-        "borderWidth": null,
-        "boxSizing": null,
-        "children": Array [
-          <FlexRow
-            alignItems={null}
-            alignSelf={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth="1px 0"
-            boxSizing={null}
-            color={Object {}}
-            display={null}
-            flex={null}
-            flexWrap={null}
-            height={null}
-            justifyContent="flex-start"
-            left={null}
-            margin={null}
-            mediaWidth={null}
-            minHeight="13px"
-            minWidth={null}
-            overflowX={null}
-            overflowY={null}
-            padding={null}
-            position={null}
-            responsiveAlignItems={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsivePosition={null}
-            themeColor="primary"
-            top={null}
-            width="100%"
-          >
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 11px 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(100% - 10px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Name:
-            </Header2>
-            <Input
-              Error={Object {}}
-              InputStyle={
-                Object {
-                  "mediaWidth": "12px",
-                }
-              }
-              Label={Object {}}
-              WrapperDiv={
-                Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                }
-              }
-              dataSet={Object {}}
-              errorMessage=""
-              handleInputChange={[MockFunction]}
-              id="profileName"
-              label={null}
-              tabIndex="0"
-              type="text"
-              value="testName"
-            />
-          </FlexRow>,
-          <FlexRow
-            alignItems={null}
-            alignSelf={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth="0 0 1px 0"
-            boxSizing={null}
-            color={Object {}}
-            display={null}
-            flex={null}
-            flexWrap={null}
-            height={null}
-            justifyContent="flex-start"
-            left={null}
-            margin={null}
-            mediaWidth={null}
-            minHeight="13px"
-            minWidth={null}
-            overflowX={null}
-            overflowY={null}
-            padding={null}
-            position={null}
-            responsiveAlignItems={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsivePosition={null}
-            themeColor="primary"
-            top={null}
-            width="100%"
-          >
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(100% - 10px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Login Email:
-            </Header2>
-            <Input
-              Error={Object {}}
-              InputStyle={
-                Object {
-                  "mediaWidth": "12px",
-                }
-              }
-              Label={Object {}}
-              WrapperDiv={
-                Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                }
-              }
-              dataSet={Object {}}
-              errorMessage=""
-              handleInputChange={[MockFunction]}
-              id="profileEmail"
-              label={null}
-              tabIndex="0"
-              type="email"
-              value="testEmail"
-            />
-          </FlexRow>,
-          <FlexRow
-            alignItems={null}
-            alignSelf={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth="0 0 1px 0"
-            boxSizing={null}
-            color={Object {}}
-            display={null}
-            flex={null}
-            flexWrap={null}
-            height={null}
-            justifyContent="flex-start"
-            left={null}
-            margin={null}
-            mediaWidth={null}
-            minHeight="13px"
-            minWidth={null}
-            overflowX={null}
-            overflowY={null}
-            padding={null}
-            position={null}
-            responsiveAlignItems={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsivePosition={null}
-            themeColor="primary"
-            top={null}
-            width="100%"
-          >
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(100% - 10px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Additional Email:
-            </Header2>
-            <Input
-              Error={Object {}}
-              InputStyle={
-                Object {
-                  "mediaWidth": "12px",
-                }
-              }
-              Label={Object {}}
-              WrapperDiv={
-                Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                }
-              }
-              dataSet={Object {}}
-              errorMessage=""
-              handleInputChange={[MockFunction]}
-              id="profileEmailAdditional"
-              label={null}
-              tabIndex="0"
-              type="email"
-              value="testEmailAdditional"
-            />
-          </FlexRow>,
-          <FlexRow
-            alignItems={null}
-            alignSelf={null}
-            borderColorType="border"
-            borderRadius={null}
-            borderStyle={null}
-            borderWidth="0 0 1px 0"
-            boxSizing={null}
-            color={Object {}}
-            display={null}
-            flex={null}
-            flexWrap={null}
-            height={null}
-            justifyContent="flex-start"
-            left={null}
-            margin={null}
-            mediaWidth={null}
-            minHeight="13px"
-            minWidth={null}
-            overflowX={null}
-            overflowY={null}
-            padding={null}
-            position={null}
-            responsiveAlignItems={null}
-            responsiveJustifyContent={null}
-            responsiveMargin={null}
-            responsivePadding={null}
-            responsivePosition={null}
-            themeColor="primary"
-            top={null}
-            width="100%"
-          >
-            <Header2
-              alignSelf={null}
-              background={null}
-              borderColorType="border"
-              borderRadius={null}
-              borderStyle={null}
-              borderWidth={null}
-              boxSizing={null}
-              color={Object {}}
-              colorType="default"
-              display={null}
-              fontFamily={null}
-              fontSize={null}
-              fontWeight={null}
-              height={null}
-              id={null}
-              lineHeight={null}
-              margin={null}
-              mediaWidth="12px"
-              padding="0 0 0 10px"
-              position={null}
-              responsiveJustifyContent={null}
-              responsiveMargin={null}
-              responsivePadding={null}
-              responsiveTextAlign={null}
-              responsiveWidth="calc(100% - 10px)"
-              textAlign={null}
-              themeColor="primary"
-              themeFont="default"
-              themeFontWeight="light"
-              themeLetterSpacing="default"
-              themeLineHeight="default"
-              themeSize="h2"
-              type="text"
-              whiteSpace={null}
-              width="calc(35% - 11px)"
-            >
-              Mobile Phone:
-            </Header2>
-            <Input
-              Error={Object {}}
-              InputStyle={
-                Object {
-                  "mediaWidth": "12px",
-                }
-              }
-              Label={Object {}}
-              WrapperDiv={
-                Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                }
-              }
-              dataSet={Object {}}
-              errorMessage=""
-              handleInputChange={[MockFunction]}
-              id="profilePhone"
-              label={null}
-              tabIndex="0"
-              type="tel"
-              value="239-555-0000"
-            />
-          </FlexRow>,
-        ],
-        "color": Object {},
-        "display": null,
-        "flex": null,
-        "flexDirection": null,
-        "height": null,
-        "id": "profileForm",
-        "innerRef": [MockFunction],
-        "justifyContent": null,
-        "margin": null,
-        "mediaWidth": null,
-        "padding": null,
-        "position": null,
-        "themeColor": "primary",
-        "width": "100%",
-      },
-      "ref": null,
-      "rendered": Array [
+      Label={Object {}}
+      WrapperDiv={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "alignItems": null,
-            "alignSelf": null,
-            "borderColorType": "border",
-            "borderRadius": null,
-            "borderStyle": null,
-            "borderWidth": "1px 0",
-            "boxSizing": null,
-            "children": Array [
-              <Header2
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="default"
-                display={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                padding="0 11px 0 10px"
-                position={null}
-                responsiveJustifyContent={null}
-                responsiveMargin={null}
-                responsivePadding={null}
-                responsiveTextAlign={null}
-                responsiveWidth="calc(100% - 10px)"
-                textAlign={null}
-                themeColor="primary"
-                themeFont="default"
-                themeFontWeight="light"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="h2"
-                type="text"
-                whiteSpace={null}
-                width="calc(35% - 11px)"
-              >
-                Name:
-              </Header2>,
-              <Input
-                Error={Object {}}
-                InputStyle={
-                  Object {
-                    "mediaWidth": "12px",
-                  }
-                }
-                Label={Object {}}
-                WrapperDiv={
-                  Object {
-                    "margin": "7px 0",
-                    "mediaWidth": "12px",
-                    "responsiveMargin": "0 0 7px 0",
-                    "responsivePadding": "0 0 0 10px",
-                    "responsiveWidth": "calc(100% - 10px)",
-                    "width": "65%",
-                  }
-                }
-                dataSet={Object {}}
-                errorMessage=""
-                handleInputChange={[MockFunction]}
-                id="profileName"
-                label={null}
-                tabIndex="0"
-                type="text"
-                value="testName"
-              />,
-            ],
-            "color": Object {},
-            "display": null,
-            "flex": null,
-            "flexWrap": null,
-            "height": null,
-            "justifyContent": "flex-start",
-            "left": null,
-            "margin": null,
-            "mediaWidth": null,
-            "minHeight": "13px",
-            "minWidth": null,
-            "overflowX": null,
-            "overflowY": null,
-            "padding": null,
-            "position": null,
-            "responsiveAlignItems": null,
-            "responsiveJustifyContent": null,
-            "responsiveMargin": null,
-            "responsivePadding": null,
-            "responsivePosition": null,
-            "themeColor": "primary",
-            "top": null,
-            "width": "100%",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "Name:",
-                "color": Object {},
-                "colorType": "default",
-                "display": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "padding": "0 11px 0 10px",
-                "position": null,
-                "responsiveJustifyContent": null,
-                "responsiveMargin": null,
-                "responsivePadding": null,
-                "responsiveTextAlign": null,
-                "responsiveWidth": "calc(100% - 10px)",
-                "textAlign": null,
-                "themeColor": "primary",
-                "themeFont": "default",
-                "themeFontWeight": "light",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "h2",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "calc(35% - 11px)",
-              },
-              "ref": null,
-              "rendered": "Name:",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "Error": Object {},
-                "InputStyle": Object {
-                  "mediaWidth": "12px",
-                },
-                "Label": Object {},
-                "WrapperDiv": Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                },
-                "dataSet": Object {},
-                "errorMessage": "",
-                "handleInputChange": [MockFunction],
-                "id": "profileName",
-                "label": null,
-                "tabIndex": "0",
-                "type": "text",
-                "value": "testName",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
+          "margin": "7px 0",
+          "mediaWidth": "12px",
+          "responsiveMargin": "0 0 7px 0",
+          "responsivePadding": "0 0 0 10px",
+          "responsiveWidth": "calc(100% - 10px)",
+          "width": "65%",
+        }
+      }
+      dataSet={Object {}}
+      errorMessage=""
+      handleInputChange={[MockFunction]}
+      id="profileName"
+      label={null}
+      tabIndex="0"
+      type="text"
+      value="testName"
+    />
+  </FlexRow>
+  <FlexRow
+    alignItems={null}
+    alignSelf={null}
+    borderColorType="border"
+    borderRadius={null}
+    borderStyle={null}
+    borderWidth="0 0 1px 0"
+    boxSizing={null}
+    color={Object {}}
+    display={null}
+    flex={null}
+    flexWrap={null}
+    height={null}
+    justifyContent="flex-start"
+    left={null}
+    margin={null}
+    mediaWidth={null}
+    minHeight="13px"
+    minWidth={null}
+    overflowX={null}
+    overflowY={null}
+    padding={null}
+    position={null}
+    responsiveAlignSecurities={null}
+    responsiveJustifyContent={null}
+    responsiveMargin={null}
+    responsivePadding={null}
+    responsivePosition={null}
+    themeColor="primary"
+    top={null}
+    width="100%"
+  >
+    <Header2
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="default"
+      display={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      padding="0 0 0 10px"
+      position={null}
+      responsiveJustifyContent={null}
+      responsiveMargin={null}
+      responsivePadding={null}
+      responsiveTextAlign={null}
+      responsiveWidth="calc(100% - 10px)"
+      textAlign={null}
+      themeColor="primary"
+      themeFont="default"
+      themeFontWeight="light"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="h2"
+      type="text"
+      whiteSpace={null}
+      width="calc(35% - 11px)"
+    >
+      Login Email:
+    </Header2>
+    <Input
+      Error={Object {}}
+      InputStyle={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "alignItems": null,
-            "alignSelf": null,
-            "borderColorType": "border",
-            "borderRadius": null,
-            "borderStyle": null,
-            "borderWidth": "0 0 1px 0",
-            "boxSizing": null,
-            "children": Array [
-              <Header2
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="default"
-                display={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                padding="0 0 0 10px"
-                position={null}
-                responsiveJustifyContent={null}
-                responsiveMargin={null}
-                responsivePadding={null}
-                responsiveTextAlign={null}
-                responsiveWidth="calc(100% - 10px)"
-                textAlign={null}
-                themeColor="primary"
-                themeFont="default"
-                themeFontWeight="light"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="h2"
-                type="text"
-                whiteSpace={null}
-                width="calc(35% - 11px)"
-              >
-                Login Email:
-              </Header2>,
-              <Input
-                Error={Object {}}
-                InputStyle={
-                  Object {
-                    "mediaWidth": "12px",
-                  }
-                }
-                Label={Object {}}
-                WrapperDiv={
-                  Object {
-                    "margin": "7px 0",
-                    "mediaWidth": "12px",
-                    "responsiveMargin": "0 0 7px 0",
-                    "responsivePadding": "0 0 0 10px",
-                    "responsiveWidth": "calc(100% - 10px)",
-                    "width": "65%",
-                  }
-                }
-                dataSet={Object {}}
-                errorMessage=""
-                handleInputChange={[MockFunction]}
-                id="profileEmail"
-                label={null}
-                tabIndex="0"
-                type="email"
-                value="testEmail"
-              />,
-            ],
-            "color": Object {},
-            "display": null,
-            "flex": null,
-            "flexWrap": null,
-            "height": null,
-            "justifyContent": "flex-start",
-            "left": null,
-            "margin": null,
-            "mediaWidth": null,
-            "minHeight": "13px",
-            "minWidth": null,
-            "overflowX": null,
-            "overflowY": null,
-            "padding": null,
-            "position": null,
-            "responsiveAlignItems": null,
-            "responsiveJustifyContent": null,
-            "responsiveMargin": null,
-            "responsivePadding": null,
-            "responsivePosition": null,
-            "themeColor": "primary",
-            "top": null,
-            "width": "100%",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "Login Email:",
-                "color": Object {},
-                "colorType": "default",
-                "display": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "padding": "0 0 0 10px",
-                "position": null,
-                "responsiveJustifyContent": null,
-                "responsiveMargin": null,
-                "responsivePadding": null,
-                "responsiveTextAlign": null,
-                "responsiveWidth": "calc(100% - 10px)",
-                "textAlign": null,
-                "themeColor": "primary",
-                "themeFont": "default",
-                "themeFontWeight": "light",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "h2",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "calc(35% - 11px)",
-              },
-              "ref": null,
-              "rendered": "Login Email:",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "Error": Object {},
-                "InputStyle": Object {
-                  "mediaWidth": "12px",
-                },
-                "Label": Object {},
-                "WrapperDiv": Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                },
-                "dataSet": Object {},
-                "errorMessage": "",
-                "handleInputChange": [MockFunction],
-                "id": "profileEmail",
-                "label": null,
-                "tabIndex": "0",
-                "type": "email",
-                "value": "testEmail",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
+          "mediaWidth": "12px",
+        }
+      }
+      Label={Object {}}
+      WrapperDiv={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "alignItems": null,
-            "alignSelf": null,
-            "borderColorType": "border",
-            "borderRadius": null,
-            "borderStyle": null,
-            "borderWidth": "0 0 1px 0",
-            "boxSizing": null,
-            "children": Array [
-              <Header2
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="default"
-                display={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                padding="0 0 0 10px"
-                position={null}
-                responsiveJustifyContent={null}
-                responsiveMargin={null}
-                responsivePadding={null}
-                responsiveTextAlign={null}
-                responsiveWidth="calc(100% - 10px)"
-                textAlign={null}
-                themeColor="primary"
-                themeFont="default"
-                themeFontWeight="light"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="h2"
-                type="text"
-                whiteSpace={null}
-                width="calc(35% - 11px)"
-              >
-                Additional Email:
-              </Header2>,
-              <Input
-                Error={Object {}}
-                InputStyle={
-                  Object {
-                    "mediaWidth": "12px",
-                  }
-                }
-                Label={Object {}}
-                WrapperDiv={
-                  Object {
-                    "margin": "7px 0",
-                    "mediaWidth": "12px",
-                    "responsiveMargin": "0 0 7px 0",
-                    "responsivePadding": "0 0 0 10px",
-                    "responsiveWidth": "calc(100% - 10px)",
-                    "width": "65%",
-                  }
-                }
-                dataSet={Object {}}
-                errorMessage=""
-                handleInputChange={[MockFunction]}
-                id="profileEmailAdditional"
-                label={null}
-                tabIndex="0"
-                type="email"
-                value="testEmailAdditional"
-              />,
-            ],
-            "color": Object {},
-            "display": null,
-            "flex": null,
-            "flexWrap": null,
-            "height": null,
-            "justifyContent": "flex-start",
-            "left": null,
-            "margin": null,
-            "mediaWidth": null,
-            "minHeight": "13px",
-            "minWidth": null,
-            "overflowX": null,
-            "overflowY": null,
-            "padding": null,
-            "position": null,
-            "responsiveAlignItems": null,
-            "responsiveJustifyContent": null,
-            "responsiveMargin": null,
-            "responsivePadding": null,
-            "responsivePosition": null,
-            "themeColor": "primary",
-            "top": null,
-            "width": "100%",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "Additional Email:",
-                "color": Object {},
-                "colorType": "default",
-                "display": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "padding": "0 0 0 10px",
-                "position": null,
-                "responsiveJustifyContent": null,
-                "responsiveMargin": null,
-                "responsivePadding": null,
-                "responsiveTextAlign": null,
-                "responsiveWidth": "calc(100% - 10px)",
-                "textAlign": null,
-                "themeColor": "primary",
-                "themeFont": "default",
-                "themeFontWeight": "light",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "h2",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "calc(35% - 11px)",
-              },
-              "ref": null,
-              "rendered": "Additional Email:",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "Error": Object {},
-                "InputStyle": Object {
-                  "mediaWidth": "12px",
-                },
-                "Label": Object {},
-                "WrapperDiv": Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                },
-                "dataSet": Object {},
-                "errorMessage": "",
-                "handleInputChange": [MockFunction],
-                "id": "profileEmailAdditional",
-                "label": null,
-                "tabIndex": "0",
-                "type": "email",
-                "value": "testEmailAdditional",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
+          "margin": "7px 0",
+          "mediaWidth": "12px",
+          "responsiveMargin": "0 0 7px 0",
+          "responsivePadding": "0 0 0 10px",
+          "responsiveWidth": "calc(100% - 10px)",
+          "width": "65%",
+        }
+      }
+      dataSet={Object {}}
+      errorMessage=""
+      handleInputChange={[MockFunction]}
+      id="profileEmail"
+      label={null}
+      tabIndex="0"
+      type="email"
+      value="testEmail"
+    />
+  </FlexRow>
+  <FlexRow
+    alignItems={null}
+    alignSelf={null}
+    borderColorType="border"
+    borderRadius={null}
+    borderStyle={null}
+    borderWidth="0 0 1px 0"
+    boxSizing={null}
+    color={Object {}}
+    display={null}
+    flex={null}
+    flexWrap={null}
+    height={null}
+    justifyContent="flex-start"
+    left={null}
+    margin={null}
+    mediaWidth={null}
+    minHeight="13px"
+    minWidth={null}
+    overflowX={null}
+    overflowY={null}
+    padding={null}
+    position={null}
+    responsiveAlignSecurities={null}
+    responsiveJustifyContent={null}
+    responsiveMargin={null}
+    responsivePadding={null}
+    responsivePosition={null}
+    themeColor="primary"
+    top={null}
+    width="100%"
+  >
+    <Header2
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="default"
+      display={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      padding="0 0 0 10px"
+      position={null}
+      responsiveJustifyContent={null}
+      responsiveMargin={null}
+      responsivePadding={null}
+      responsiveTextAlign={null}
+      responsiveWidth="calc(100% - 10px)"
+      textAlign={null}
+      themeColor="primary"
+      themeFont="default"
+      themeFontWeight="light"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="h2"
+      type="text"
+      whiteSpace={null}
+      width="calc(35% - 11px)"
+    >
+      Additional Email:
+    </Header2>
+    <Input
+      Error={Object {}}
+      InputStyle={
         Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "alignItems": null,
-            "alignSelf": null,
-            "borderColorType": "border",
-            "borderRadius": null,
-            "borderStyle": null,
-            "borderWidth": "0 0 1px 0",
-            "boxSizing": null,
-            "children": Array [
-              <Header2
-                alignSelf={null}
-                background={null}
-                borderColorType="border"
-                borderRadius={null}
-                borderStyle={null}
-                borderWidth={null}
-                boxSizing={null}
-                color={Object {}}
-                colorType="default"
-                display={null}
-                fontFamily={null}
-                fontSize={null}
-                fontWeight={null}
-                height={null}
-                id={null}
-                lineHeight={null}
-                margin={null}
-                mediaWidth="12px"
-                padding="0 0 0 10px"
-                position={null}
-                responsiveJustifyContent={null}
-                responsiveMargin={null}
-                responsivePadding={null}
-                responsiveTextAlign={null}
-                responsiveWidth="calc(100% - 10px)"
-                textAlign={null}
-                themeColor="primary"
-                themeFont="default"
-                themeFontWeight="light"
-                themeLetterSpacing="default"
-                themeLineHeight="default"
-                themeSize="h2"
-                type="text"
-                whiteSpace={null}
-                width="calc(35% - 11px)"
-              >
-                Mobile Phone:
-              </Header2>,
-              <Input
-                Error={Object {}}
-                InputStyle={
-                  Object {
-                    "mediaWidth": "12px",
-                  }
-                }
-                Label={Object {}}
-                WrapperDiv={
-                  Object {
-                    "margin": "7px 0",
-                    "mediaWidth": "12px",
-                    "responsiveMargin": "0 0 7px 0",
-                    "responsivePadding": "0 0 0 10px",
-                    "responsiveWidth": "calc(100% - 10px)",
-                    "width": "65%",
-                  }
-                }
-                dataSet={Object {}}
-                errorMessage=""
-                handleInputChange={[MockFunction]}
-                id="profilePhone"
-                label={null}
-                tabIndex="0"
-                type="tel"
-                value="239-555-0000"
-              />,
-            ],
-            "color": Object {},
-            "display": null,
-            "flex": null,
-            "flexWrap": null,
-            "height": null,
-            "justifyContent": "flex-start",
-            "left": null,
-            "margin": null,
-            "mediaWidth": null,
-            "minHeight": "13px",
-            "minWidth": null,
-            "overflowX": null,
-            "overflowY": null,
-            "padding": null,
-            "position": null,
-            "responsiveAlignItems": null,
-            "responsiveJustifyContent": null,
-            "responsiveMargin": null,
-            "responsivePadding": null,
-            "responsivePosition": null,
-            "themeColor": "primary",
-            "top": null,
-            "width": "100%",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "alignSelf": null,
-                "background": null,
-                "borderColorType": "border",
-                "borderRadius": null,
-                "borderStyle": null,
-                "borderWidth": null,
-                "boxSizing": null,
-                "children": "Mobile Phone:",
-                "color": Object {},
-                "colorType": "default",
-                "display": null,
-                "fontFamily": null,
-                "fontSize": null,
-                "fontWeight": null,
-                "height": null,
-                "id": null,
-                "lineHeight": null,
-                "margin": null,
-                "mediaWidth": "12px",
-                "padding": "0 0 0 10px",
-                "position": null,
-                "responsiveJustifyContent": null,
-                "responsiveMargin": null,
-                "responsivePadding": null,
-                "responsiveTextAlign": null,
-                "responsiveWidth": "calc(100% - 10px)",
-                "textAlign": null,
-                "themeColor": "primary",
-                "themeFont": "default",
-                "themeFontWeight": "light",
-                "themeLetterSpacing": "default",
-                "themeLineHeight": "default",
-                "themeSize": "h2",
-                "type": "text",
-                "whiteSpace": null,
-                "width": "calc(35% - 11px)",
-              },
-              "ref": null,
-              "rendered": "Mobile Phone:",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "Error": Object {},
-                "InputStyle": Object {
-                  "mediaWidth": "12px",
-                },
-                "Label": Object {},
-                "WrapperDiv": Object {
-                  "margin": "7px 0",
-                  "mediaWidth": "12px",
-                  "responsiveMargin": "0 0 7px 0",
-                  "responsivePadding": "0 0 0 10px",
-                  "responsiveWidth": "calc(100% - 10px)",
-                  "width": "65%",
-                },
-                "dataSet": Object {},
-                "errorMessage": "",
-                "handleInputChange": [MockFunction],
-                "id": "profilePhone",
-                "label": null,
-                "tabIndex": "0",
-                "type": "tel",
-                "value": "239-555-0000",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getSnapshotBeforeUpdate": true,
-        },
-      },
-    },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
-  },
-}
+          "mediaWidth": "12px",
+        }
+      }
+      Label={Object {}}
+      WrapperDiv={
+        Object {
+          "margin": "7px 0",
+          "mediaWidth": "12px",
+          "responsiveMargin": "0 0 7px 0",
+          "responsivePadding": "0 0 0 10px",
+          "responsiveWidth": "calc(100% - 10px)",
+          "width": "65%",
+        }
+      }
+      dataSet={Object {}}
+      errorMessage=""
+      handleInputChange={[MockFunction]}
+      id="profileEmailAdditional"
+      label={null}
+      tabIndex="0"
+      type="email"
+      value="testEmailAdditional"
+    />
+  </FlexRow>
+  <FlexRow
+    alignItems={null}
+    alignSelf={null}
+    borderColorType="border"
+    borderRadius={null}
+    borderStyle={null}
+    borderWidth="0 0 1px 0"
+    boxSizing={null}
+    color={Object {}}
+    display={null}
+    flex={null}
+    flexWrap={null}
+    height={null}
+    justifyContent="flex-start"
+    left={null}
+    margin={null}
+    mediaWidth={null}
+    minHeight="13px"
+    minWidth={null}
+    overflowX={null}
+    overflowY={null}
+    padding={null}
+    position={null}
+    responsiveAlignSecurities={null}
+    responsiveJustifyContent={null}
+    responsiveMargin={null}
+    responsivePadding={null}
+    responsivePosition={null}
+    themeColor="primary"
+    top={null}
+    width="100%"
+  >
+    <Header2
+      alignSelf={null}
+      background={null}
+      borderColorType="border"
+      borderRadius={null}
+      borderStyle={null}
+      borderWidth={null}
+      boxSizing={null}
+      color={Object {}}
+      colorType="default"
+      display={null}
+      fontFamily={null}
+      fontSize={null}
+      fontWeight={null}
+      height={null}
+      id={null}
+      lineHeight={null}
+      margin={null}
+      mediaWidth="12px"
+      padding="0 0 0 10px"
+      position={null}
+      responsiveJustifyContent={null}
+      responsiveMargin={null}
+      responsivePadding={null}
+      responsiveTextAlign={null}
+      responsiveWidth="calc(100% - 10px)"
+      textAlign={null}
+      themeColor="primary"
+      themeFont="default"
+      themeFontWeight="light"
+      themeLetterSpacing="default"
+      themeLineHeight="default"
+      themeSize="h2"
+      type="text"
+      whiteSpace={null}
+      width="calc(35% - 11px)"
+    >
+      Mobile Phone:
+    </Header2>
+    <Input
+      Error={Object {}}
+      InputStyle={
+        Object {
+          "mediaWidth": "12px",
+        }
+      }
+      Label={Object {}}
+      WrapperDiv={
+        Object {
+          "margin": "7px 0",
+          "mediaWidth": "12px",
+          "responsiveMargin": "0 0 7px 0",
+          "responsivePadding": "0 0 0 10px",
+          "responsiveWidth": "calc(100% - 10px)",
+          "width": "65%",
+        }
+      }
+      dataSet={Object {}}
+      errorMessage=""
+      handleInputChange={[MockFunction]}
+      id="profilePhone"
+      label={null}
+      tabIndex="0"
+      type="tel"
+      value="239-555-0000"
+    />
+  </FlexRow>
+</Form__FormStyle>
 `;

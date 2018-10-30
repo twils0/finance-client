@@ -10,6 +10,8 @@ import requestAWSUser from '../dataThunkAWS/requestAWSUser';
 import loadAWSFields from '../dataThunkAccount/loadAWSFields';
 import loadSecurities from '../dataThunkWatchlist/loadSecurities';
 
+import { demo } from '../../../../mode.config.json';
+
 const requestLoginMFA = (payload) => {
   if (!Object.prototype.hasOwnProperty.call(payload, 'code')) {
     throw new Error(`Please enter a value for the 'code' key - ${JSON.stringify(payload)}`);
@@ -33,7 +35,9 @@ const requestLoginMFA = (payload) => {
           ({ user } = await dispatch(requestAWSUser()));
         }
 
-        await Auth.confirmSignIn(user, payload.code);
+        if (!demo) {
+          await Auth.confirmSignIn(user, payload.code);
+        }
 
         dispatch(loadSecurities());
 
@@ -67,9 +71,11 @@ const requestLoginMFA = (payload) => {
           return Promise.reject(error);
         }
 
-        raven.captureException(error, {
-          logger: 'requestLoginMFA',
-        });
+        if (!demo) {
+          raven.captureException(error, {
+            logger: 'requestLoginMFA',
+          });
+        }
 
         return Promise.reject(error);
       }

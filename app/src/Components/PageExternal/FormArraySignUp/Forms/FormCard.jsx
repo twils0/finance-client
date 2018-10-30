@@ -30,7 +30,7 @@ const FormCard = (props) => {
   return (
     <Form
       display="block"
-      innerRef={heightRef}
+      ref={heightRef}
       id={formString}
       width={widthString}
       padding={`${formHeightBufferHalfString} 0`}
@@ -43,8 +43,7 @@ const FormCard = (props) => {
         margin="0"
         fontSize="17px"
       >
-        Please enter your credit card information. Your card will be charged $450 each quarter. Your
-        initial charge will be prorated until the start of the next billing cycle.
+        Please enter your credit card information.
       </Header2>
       <Input
         id={inputNames[formString].NAME_ON_CARD}

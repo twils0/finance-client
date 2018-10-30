@@ -4,10 +4,12 @@ import raven from 'raven-js';
 import { requestStatusTypes, URLs, axiosConfig } from '../../Constants/universalConstants';
 import { statusNames } from '../../Constants/dataConstantsAuth';
 import requestAWSUser from '../dataThunkAWS/requestAWSUser';
-import requestLogout from '../dataThunkAuth/requestLogout';
+import requestLogout from './requestLogout';
 import { setAuthStatus } from '../dataActionsAuth';
 
 import handleErrorCatch from '../../handleErrorCatch';
+
+import { demo } from '../../../../mode.config.json';
 
 const requestVerifyEmail = () => async (dispatch, getState) => {
   const state = getState();
@@ -27,22 +29,24 @@ const requestVerifyEmail = () => async (dispatch, getState) => {
         ({ user } = await dispatch(requestAWSUser()));
       }
 
-      const idToken = user.signInUserSession.idToken.jwtToken;
-      const accessToken = user.signInUserSession.accessToken.jwtToken;
+      if (!demo) {
+        const idToken = user.signInUserSession.idToken.jwtToken;
+        const accessToken = user.signInUserSession.accessToken.jwtToken;
 
-      await axios.post(
-        URLs.EMAILS,
-        {},
-        {
-          headers: {
-            Authorization: idToken,
+        await axios.post(
+          URLs.EMAILS,
+          {},
+          {
+            headers: {
+              Authorization: idToken,
+            },
+            params: {
+              accessToken,
+            },
+            ...axiosConfig.DB,
           },
-          params: {
-            accessToken,
-          },
-          ...axiosConfig.DB,
-        },
-      );
+        );
+      }
     } catch (errorCatch) {
       const error = handleErrorCatch(errorCatch);
 
@@ -59,9 +63,11 @@ const requestVerifyEmail = () => async (dispatch, getState) => {
         return null;
       }
 
-      raven.captureException(error, {
-        logger: 'requestVerifyEmail',
-      });
+      if (!demo) {
+        raven.captureException(error, {
+          logger: 'requestVerifyEmail',
+        });
+      }
 
       return Promise.reject(error);
     }

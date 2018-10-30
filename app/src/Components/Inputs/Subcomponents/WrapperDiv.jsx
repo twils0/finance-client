@@ -6,7 +6,7 @@ const WrapperDiv = styled.div`
   flex: ${props => props.flex};
   flex-direction: column;
 
-  align-securities: ${props => props.alignItems || 'flex-start'};
+  align-items: ${props => props.alignItems || 'flex-start'};
   justify-content: ${props => props.justifyContent || 'center'};
 
   align-self: ${props => props.alignSelf};

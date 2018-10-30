@@ -27,7 +27,7 @@ const FormCodeMFAPhone = (props) => {
   return (
     <Form
       display="block"
-      innerRef={heightRef}
+      ref={heightRef}
       id={formString}
       width={widthString}
       padding={`${formHeightBufferHalfString} 0`}

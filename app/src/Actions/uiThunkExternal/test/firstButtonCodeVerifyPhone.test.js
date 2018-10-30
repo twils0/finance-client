@@ -4,7 +4,6 @@
 
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import MockDate from 'mockdate';
 
 import { initialState as initialStateAuth } from '../../../Reducers/dataReducersAuth';
 import { initialState as initialStateUIExternal } from '../../../Reducers/uiReducersExternal';
@@ -29,14 +28,6 @@ const history = {
   replace: jest.fn(),
 };
 
-const setSecurity = jest.fn();
-
-global.window = {
-  sessionStorage: {
-    setSecurity,
-  },
-};
-
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
 
@@ -48,7 +39,6 @@ describe('uiThunkExternal', () => {
     afterEach(() => {
       requestSignUpConfirmPhone.mockReset();
       history.replace.mockReset();
-      setSecurity.mockReset();
     });
 
     it("fails and throws an error when missing 'history' key in payload", async () => {
@@ -75,7 +65,8 @@ describe('uiThunkExternal', () => {
       const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
       const { forms } = stateBeforeUIExternal;
 
-      const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+      const codeCodeVerifyPhone =
+        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
       const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
 
@@ -118,7 +109,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_VERIFY_PHONE].CODE
       ].value = code;
 
-      const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+      const codeCodeVerifyPhone =
+        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
       const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
 
@@ -174,7 +166,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_VERIFY_PHONE].CODE
       ].value = code;
 
-      const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+      const codeCodeVerifyPhone =
+        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
       const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
 
@@ -232,7 +225,8 @@ describe('uiThunkExternal', () => {
 
       const loginEmail = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL];
       const loginPassword = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD];
-      const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+      const codeCodeVerifyPhone =
+        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
       const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
       const payloadLoginEmail = JSON.parse(JSON.stringify(loginEmail));
@@ -274,15 +268,6 @@ describe('uiThunkExternal', () => {
       ];
 
       requestSignUpConfirmPhone.mockReturnValue(() => Promise.resolve());
-      global.sessionStorage = {
-        setSecurity: jest.fn(),
-      };
-
-      const startDate = new Date('1/2/2000');
-      const incrementDate = new Date('1/2/2000');
-      const expectDate = new Date(incrementDate.setMinutes(incrementDate.getMinutes() + 30));
-
-      MockDate.set(startDate);
 
       const result = await store.dispatch(firstButtonCodeVerifyPhone({ history }));
 
@@ -294,9 +279,6 @@ describe('uiThunkExternal', () => {
         email,
         code,
       });
-      expect(setSecurity).toBeCalledWith('sessionTime', expectDate);
-
-      MockDate.reset();
     });
 
     it('creates the correct actions with the correct payload, email from info form, login status not success', async () => {
@@ -313,7 +295,8 @@ describe('uiThunkExternal', () => {
       ].value = code;
 
       const infoEmail = forms[formNames.INFO].inputs[inputNames[formNames.INFO].EMAIL];
-      const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+      const codeCodeVerifyPhone =
+        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
       const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
       const payloadInfoEmail = JSON.parse(JSON.stringify(infoEmail));
@@ -384,8 +367,10 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_VERIFY_PHONE].CODE
       ].value = code;
 
-      const forgotPasswordEmail = forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
-      const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+      const forgotPasswordEmail =
+        forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
+      const codeCodeVerifyPhone =
+        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
       const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
       const payloadForgotPasswordEmail = JSON.parse(JSON.stringify(forgotPasswordEmail));
@@ -454,7 +439,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_VERIFY_PHONE].CODE
       ].value = code;
 
-      const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+      const codeCodeVerifyPhone =
+        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
       const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
 
@@ -502,7 +488,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_VERIFY_PHONE].CODE
       ].value = code;
 
-      const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+      const codeCodeVerifyPhone =
+        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
       const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
 
@@ -552,7 +539,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_VERIFY_PHONE].CODE
       ].value = code;
 
-      const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+      const codeCodeVerifyPhone =
+        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
       const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
 
@@ -602,7 +590,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_VERIFY_PHONE].CODE
       ].value = code;
 
-      const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+      const codeCodeVerifyPhone =
+        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
       const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
 
@@ -654,7 +643,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_VERIFY_PHONE].CODE
       ].value = code;
 
-      const codeCodeVerifyPhone = forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
+      const codeCodeVerifyPhone =
+        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
 
       const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
 

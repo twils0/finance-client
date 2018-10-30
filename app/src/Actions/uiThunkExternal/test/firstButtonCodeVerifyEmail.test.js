@@ -4,7 +4,6 @@
 
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import MockDate from 'mockdate';
 
 import { initialState as initialStateAuth } from '../../../Reducers/dataReducersAuth';
 import { initialState as initialStateAWS } from '../../../Reducers/dataReducersAWS';
@@ -24,13 +23,6 @@ const history = {
   replace: jest.fn(),
 };
 
-const setSecurity = jest.fn();
-
-global.window = {
-  sessionStorage: {
-    setSecurity,
-  },
-};
 jest.mock('../../dataThunkAuth/requestVerifyEmailLink', () => jest.fn());
 jest.mock('../../dataThunkAWS/requestAWSUser', () => jest.fn());
 
@@ -52,8 +44,6 @@ describe('uiThunkExternal', () => {
       requestVerifyEmailLink.mockReset();
       requestAWSUser.mockReset();
       history.replace.mockReset();
-      setSecurity.mockReset();
-      MockDate.reset();
     });
 
     it("fails and throws an error when missing 'history' key in payload", async () => {
@@ -119,12 +109,6 @@ describe('uiThunkExternal', () => {
         },
       ];
 
-      const startDate = new Date('1/2/2000');
-      const incrementDate = new Date('1/2/2000');
-      const expectDate = new Date(incrementDate.setMinutes(incrementDate.getMinutes() + 30));
-
-      MockDate.set(startDate);
-
       requestVerifyEmailLink.mockReturnValue(() => Promise.resolve(null));
 
       const result = await store.dispatch(firstButtonCodeVerifyEmail({ history, match }));
@@ -135,7 +119,6 @@ describe('uiThunkExternal', () => {
       expect(result).toEqual(null);
       expect(history.replace).not.toBeCalled();
       expect(requestVerifyEmailLink).toBeCalledWith({ verificationId });
-      expect(setSecurity).toBeCalledWith('sessionTime', expectDate);
     });
 
     it('creates the correct actions with the correct payload, with user from requestAWSUser and verification id', async () => {
@@ -153,12 +136,6 @@ describe('uiThunkExternal', () => {
         },
       ];
 
-      const startDate = new Date('1/2/2000');
-      const incrementDate = new Date('1/2/2000');
-      const expectDate = new Date(incrementDate.setMinutes(incrementDate.getMinutes() + 30));
-
-      MockDate.set(startDate);
-
       requestAWSUser.mockReturnValue(() => Promise.resolve({ user }));
       requestVerifyEmailLink.mockReturnValue(() => Promise.resolve(null));
 
@@ -171,7 +148,6 @@ describe('uiThunkExternal', () => {
       expect(requestAWSUser).toBeCalled();
       expect(history.replace).not.toBeCalled();
       expect(requestVerifyEmailLink).toBeCalledWith({ verificationId });
-      expect(setSecurity).toBeCalledWith('sessionTime', expectDate);
     });
 
     it('creates the correct actions with the correct payload, without user and with verification id', async () => {
@@ -193,7 +169,6 @@ describe('uiThunkExternal', () => {
       expect(result).toEqual(null);
       expect(history.replace).toBeCalledWith(pathNames.LOGIN);
       expect(requestVerifyEmailLink).toBeCalledWith({ verificationId });
-      expect(setSecurity).not.toBeCalled();
     });
 
     it('requestAWSUser throws an unexpected error, redirects to login', async () => {
@@ -218,7 +193,6 @@ describe('uiThunkExternal', () => {
       expect(result).toEqual(null);
       expect(requestVerifyEmailLink).not.toBeCalled();
       expect(history.replace).toBeCalledWith(pathNames.LOGIN);
-      expect(setSecurity).not.toBeCalled();
     });
 
     it('requestVerifyEmailLink throws an unexpected error, redirects to login', async () => {
@@ -244,7 +218,6 @@ describe('uiThunkExternal', () => {
       expect(result).toEqual(null);
       expect(requestVerifyEmailLink).toBeCalledWith({ verificationId });
       expect(history.replace).toBeCalledWith(pathNames.LOGIN);
-      expect(setSecurity).not.toBeCalled();
     });
 
     it('creates the correct actions with the correct payload, with no verification id and login mfa status equals success', async () => {
@@ -269,7 +242,7 @@ describe('uiThunkExternal', () => {
       requestVerifyEmailLink.mockReturnValue(() => Promise.resolve(null));
 
       const result = await store.dispatch(
-        firstButtonCodeVerifyEmail({ history, match: { params: {} } }),
+        firstButtonCodeVerifyEmail({ history, match: { params: {} } })
       );
 
       const actions = store.getActions();
@@ -278,19 +251,21 @@ describe('uiThunkExternal', () => {
       expect(result).toEqual(null);
       expect(history.replace).not.toBeCalled();
       expect(requestVerifyEmailLink).not.toBeCalled();
-      expect(setSecurity).not.toBeCalled();
     });
 
     it('creates the correct actions with the correct payload, with no verification id and login mfa status not equal to success', async () => {
       const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
 
-      stateBeforeUIExternal.forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL].value = 'testValue';
+      stateBeforeUIExternal.forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL].value =
+        'testValue';
       stateBeforeUIExternal.forms[formNames.LOGIN].inputs[
         inputNames[formNames.LOGIN].PASSWORD
       ].value = 'testValue';
 
-      const loginEmail = stateBeforeUIExternal.forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL];
-      const loginPassword = stateBeforeUIExternal.forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD];
+      const loginEmail =
+        stateBeforeUIExternal.forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL];
+      const loginPassword =
+        stateBeforeUIExternal.forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD];
 
       const payloadLoginEmail = JSON.parse(JSON.stringify(loginEmail));
       const payloadLoginPassword = JSON.parse(JSON.stringify(loginPassword));
@@ -322,14 +297,8 @@ describe('uiThunkExternal', () => {
 
       requestVerifyEmailLink.mockReturnValue(() => Promise.resolve(null));
 
-      const startDate = new Date('1/2/2000');
-      const incrementDate = new Date('1/2/2000');
-      const expectDate = new Date(incrementDate.setMinutes(incrementDate.getMinutes() + 30));
-
-      MockDate.set(startDate);
-
       const result = await store.dispatch(
-        firstButtonCodeVerifyEmail({ history, match: { params: {} } }),
+        firstButtonCodeVerifyEmail({ history, match: { params: {} } })
       );
 
       const actions = store.getActions();
@@ -338,7 +307,6 @@ describe('uiThunkExternal', () => {
       expect(result).toEqual(null);
       expect(history.replace).not.toBeCalled();
       expect(requestVerifyEmailLink).not.toBeCalled();
-      expect(setSecurity).toBeCalledWith('sessionTime', expectDate);
     });
   });
 });

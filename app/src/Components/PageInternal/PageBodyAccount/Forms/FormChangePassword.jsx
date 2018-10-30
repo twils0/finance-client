@@ -28,7 +28,7 @@ const FormChangePassword = (props) => {
   const formString = formNames.CHANGE_PASSWORD;
 
   return (
-    <Form innerRef={heightRef} id={formString} width="100%">
+    <Form ref={heightRef} id={formString} width="100%">
       <FlexRow
         justifyContent="flex-start"
         width="100%"

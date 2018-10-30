@@ -14,7 +14,7 @@ const nodeModDir = path.resolve(__dirname, 'node_modules');
 
 const config = {
   entry: {
-    bundle: [path.resolve(srcDir, 'index.jsx')],
+    bundle: ['@babel/polyfill', path.resolve(srcDir, 'index.jsx')],
   },
   output: {
     path: binDir,
@@ -77,11 +77,11 @@ const config = {
         },
       },
     },
-    minimize: true,
     minimizer: [
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
+        sourceMap: true,
         uglifyOptions: {
           compress: {
             warnings: false,

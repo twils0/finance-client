@@ -9,6 +9,9 @@ import requestAWSUser from '../dataThunkAWS/requestAWSUser';
 
 import handleErrorCatch from '../../handleErrorCatch';
 
+import { demo } from '../../../../mode.config.json';
+import demoLoadSecurities from '../../../../demo/demoLoadSecurities';
+
 const loadSecurities = () => async (dispatch, getState) => {
   const state = getState();
 
@@ -23,25 +26,31 @@ const loadSecurities = () => async (dispatch, getState) => {
     let { user } = state.data.aws;
     let securities = null;
 
+    if (demo) {
+      securities = demoLoadSecurities;
+    }
+
     try {
       if (!user) {
         ({ user } = await dispatch(requestAWSUser()));
       }
 
-      const idToken = user.signInUserSession.idToken.jwtToken;
-      const accessToken = user.signInUserSession.accessToken.jwtToken;
+      if (!demo) {
+        const idToken = user.signInUserSession.idToken.jwtToken;
+        const accessToken = user.signInUserSession.accessToken.jwtToken;
 
-      const response = await axios.get(URLs.USERS, {
-        headers: {
-          Authorization: idToken,
-        },
-        params: {
-          accessToken,
-        },
-        ...axiosConfig.DB,
-      });
+        const response = await axios.get(URLs.USERS, {
+          headers: {
+            Authorization: idToken,
+          },
+          params: {
+            accessToken,
+          },
+          ...axiosConfig.DB,
+        });
 
-      ({ securities } = response.data.body);
+        ({ securities } = response.data.body);
+      }
     } catch (errorCatch) {
       const error = handleErrorCatch(errorCatch);
 
@@ -58,9 +67,11 @@ const loadSecurities = () => async (dispatch, getState) => {
         return null;
       }
 
-      raven.captureException(error, {
-        logger: 'loadSecurities',
-      });
+      if (!demo) {
+        raven.captureException(error, {
+          logger: 'loadSecurities',
+        });
+      }
 
       return Promise.reject(error);
     }

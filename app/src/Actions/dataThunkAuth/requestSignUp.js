@@ -6,6 +6,8 @@ import { requestStatusTypes, URLs, axiosConfig } from '../../Constants/universal
 import { statusNames } from '../../Constants/dataConstantsAuth';
 import { setAuthStatus } from '../dataActionsAuth';
 
+import { demo } from '../../../../mode.config.json';
+
 const requestSignUp = (payload) => {
   if (!Object.prototype.hasOwnProperty.call(payload, 'element')) {
     throw new Error(`Please enter a value for the 'element' key - ${JSON.stringify(payload)}`);
@@ -35,7 +37,7 @@ const requestSignUp = (payload) => {
     throw new Error(`Please enter a value for the 'name' key - ${JSON.stringify(payload)}`);
   }
 
-  const plan = 'Basic_450';
+  const plan = 'basic_plan';
 
   return async (dispatch, getState) => {
     const state = getState();
@@ -44,20 +46,24 @@ const requestSignUp = (payload) => {
       dispatch(setAuthStatus({ id: statusNames.SIGN_UP, status: requestStatusTypes.LOADING }));
 
       try {
-        const stripe = state.ui.app.stripe.stripeObject;
-        const { token, error } = await stripe.createToken(payload.element, { name: payload.name });
+        if (!demo) {
+          const stripe = state.ui.app.stripe.stripeObject;
+          const { token, error } = await stripe.createToken(payload.element, {
+            name: payload.name,
+          });
 
-        if (error) {
-          throw error;
+          if (error) {
+            throw error;
+          }
+
+          const signUpPayload = { ...payload };
+          signUpPayload.token = token.id;
+          signUpPayload.plan = plan;
+          delete signUpPayload.element;
+          delete signUpPayload.nameOnCard;
+
+          await axios.post(URLs.CUSTOMERS, signUpPayload, axiosConfig.STRIPE);
         }
-
-        const signUpPayload = { ...payload };
-        signUpPayload.token = token.id;
-        signUpPayload.plan = plan;
-        delete signUpPayload.element;
-        delete signUpPayload.nameOnCard;
-
-        await axios.post(URLs.CUSTOMERS, signUpPayload, axiosConfig.STRIPE);
       } catch (errorCatch) {
         const error = handleErrorCatch(errorCatch);
 
@@ -69,20 +75,22 @@ const requestSignUp = (payload) => {
         );
 
         if (
-          typeof error === 'object' &&
-          error &&
-          (error.raw ||
-            error.code === 'UsernameExistsException' ||
-            error.code === 'coupon_invalid' ||
-            error.code === 'coupon_expired' ||
-            error.code === 'card_declined')
+          typeof error === 'object'
+          && error
+          && (error.raw
+            || error.code === 'UsernameExistsException'
+            || error.code === 'coupon_invalid'
+            || error.code === 'coupon_expired'
+            || error.code === 'card_declined')
         ) {
           return Promise.reject(error);
         }
 
-        raven.captureException(error, {
-          logger: 'requestSignUp',
-        });
+        if (!demo) {
+          raven.captureException(error, {
+            logger: 'requestSignUp',
+          });
+        }
 
         return Promise.reject(error);
       }

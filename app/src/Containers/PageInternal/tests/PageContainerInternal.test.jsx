@@ -20,7 +20,6 @@ import {
   actionTypes as actionTypesUIInternal,
   pageBodyNames,
 } from '../../../Constants/uiConstantsInternal';
-import setSession from '../../../Actions/dataThunkAuth/setSession';
 import loadSecurities from '../../../Actions/dataThunkWatchlist/loadSecurities';
 import requestUpdateSecurities from '../../../Actions/dataThunkWatchlist/requestUpdateSecurities';
 import loadImage from '../../../Actions/uiThunkApp/loadImage';
@@ -32,7 +31,6 @@ const mockStore = configureMockStore(middleware);
 
 importedStore.getState = jest.fn(() => ({ ui: { internal: initialStateUIInternal } }));
 
-jest.mock('../../../Actions/dataThunkAuth/setSession', () => jest.fn());
 jest.mock('../../../Actions/uiThunkApp/loadImage', () => jest.fn(() => () => null));
 jest.mock('../../../Actions/dataThunkWatchlist/loadSecurities', () => jest.fn());
 jest.mock('../../../Actions/dataThunkWatchlist/requestUpdateSecurities', () => jest.fn());
@@ -108,7 +106,6 @@ describe('Containers', () => {
     describe('PageContainerInternal', () => {
       afterEach(() => {
         importedStore.getState.mockReset();
-        setSession.mockReset();
         loadImage.mockReset();
         loadSecurities.mockReset();
         requestUpdateSecurities.mockReset();
@@ -154,7 +151,6 @@ describe('Containers', () => {
           },
         ];
 
-        setSession.mockReturnValue(() => true);
         loadImage.mockReturnValue(() => null);
         loadSecurities.mockReturnValue(() => null);
 
@@ -239,7 +235,6 @@ describe('Containers', () => {
           },
         ];
 
-        setSession.mockReturnValue(() => true);
         loadSecurities.mockReturnValue(() => null);
         requestUpdateSecurities.mockReturnValue(() => null);
 
@@ -261,7 +256,7 @@ describe('Containers', () => {
         expect(history.replace).not.toBeCalled();
       });
 
-      it('shallow renders correctly, when setSession returns false and authenticated equals false, with watchlist path and securityId param equal to current security', async () => {
+      it('shallow renders correctly, when authenticated equals false, with watchlist path and securityId param equal to current security', async () => {
         const stateBeforeAuth = JSON.parse(JSON.stringify(initialStateAuth));
         const stateBeforeWatchlist = JSON.parse(JSON.stringify(initialStateWatchlist));
         const stateBeforeUIApp = JSON.parse(JSON.stringify(initialStateUIApp));
@@ -300,8 +295,6 @@ describe('Containers', () => {
             payload: { id: statusNamesAuth.DELETE_ACCOUNT, status: requestStatusTypes.IDLE },
           },
         ];
-
-        setSession.mockReturnValue(() => false);
 
         const wrapper = shallowComponent(store, pathNames.WATCHLIST, url, { securityId: testId0 });
 
@@ -357,7 +350,6 @@ describe('Containers', () => {
           },
         ];
 
-        setSession.mockReturnValue(() => false);
         requestUpdateSecurities.mockReturnValue(() => null);
 
         const wrapper = shallowComponent(store, pathNames.WATCHLIST, url, { securityId: testId1 });
@@ -409,7 +401,6 @@ describe('Containers', () => {
           },
         ];
 
-        setSession.mockReturnValue(() => false);
         loadSecurities.mockReturnValue(() => null);
 
         const wrapper = shallowComponent(store, pathNames.WATCHLIST, url);
@@ -462,7 +453,6 @@ describe('Containers', () => {
           },
         ];
 
-        setSession.mockReturnValue(() => false);
         requestUpdateSecurities.mockReturnValue(() => null);
 
         const wrapper = shallowComponent(store, pathNames.WATCHLIST, url, { securityId: testId3 });
@@ -514,8 +504,6 @@ describe('Containers', () => {
           },
         ];
 
-        setSession.mockReturnValue(() => true);
-
         const wrapper = shallowComponent(store, pathNames.ACCOUNT, url);
 
         const actions = store.getActions();
@@ -563,7 +551,6 @@ describe('Containers', () => {
           },
         ];
 
-        setSession.mockReturnValue(() => true);
         loadSecurities.mockReturnValue(() => null);
 
         const wrapper = shallowComponent(store, pathNames.WATCHLIST, url, { securityId: testId0 });

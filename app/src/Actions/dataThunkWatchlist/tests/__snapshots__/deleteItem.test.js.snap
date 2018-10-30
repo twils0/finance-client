@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`dataThunkWatchlist deleteItem fails and throws an error when missing 'id' key in payload 1`] = `"Please enter a value for the 'id' key - {}"`;

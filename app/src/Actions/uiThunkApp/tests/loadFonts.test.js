@@ -1,6 +1,6 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { injectGlobal } from 'styled-components';
+// import { createGlobalStyle } from 'styled-components';
 import WebFont from 'webfontloader';
 
 import { initialState as initialStateApp } from '../../../Reducers/uiReducersApp';
@@ -8,17 +8,17 @@ import { requestStatusTypes } from '../../../Constants/universalConstants';
 import { actionTypes as actionTypesApp } from '../../../Constants/uiConstantsApp';
 import loadFonts from '../loadFonts';
 
-jest.mock('styled-components', () => ({
-  injectGlobal: jest.fn(),
-}));
+// jest.mock('styled-components', () => ({
+//   createGlobalStyle: jest.fn(),
+// }));
 
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
 
 describe('uiThunkApp', () => {
-  afterEach(() => {
-    injectGlobal.mockReset();
-  });
+  // afterEach(() => {
+  //   createGlobalStyle.mockReset();
+  // });
 
   describe('loadFonts', () => {
     it('calls the correct actions with the correct payloads, when WebFont returns fontinactive', async () => {
@@ -46,8 +46,7 @@ describe('uiThunkApp', () => {
       const actions = store.getActions();
 
       expect(actions).toEqual(expectedActions);
-      expect(result).toEqual(null);
-      expect(injectGlobal).toMatchSnapshot();
+      expect(result).toMatchSnapshot();
       expect(WebFont.load).toBeCalled();
     });
 
@@ -76,8 +75,7 @@ describe('uiThunkApp', () => {
       const actions = store.getActions();
 
       expect(actions).toEqual(expectedActions);
-      expect(result).toEqual(null);
-      expect(injectGlobal).toMatchSnapshot();
+      expect(result).toMatchSnapshot();
       expect(WebFont.load).toBeCalled();
     });
   });

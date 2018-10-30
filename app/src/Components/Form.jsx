@@ -8,7 +8,7 @@ const FormStyle = styled.form`
   flex: ${props => props.flex};
   flex-direction: ${props => props.flexDirection || 'column'};
 
-  align-securities: ${props => props.alignItems};
+  align-items: ${props => props.alignItems};
   justify-content: ${props => props.justifyContent};
 
   align-self: ${props => props.alignSelf};

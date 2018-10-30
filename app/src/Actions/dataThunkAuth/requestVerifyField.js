@@ -9,6 +9,8 @@ import { setAuthStatus } from '../dataActionsAuth';
 
 import handleErrorCatch from '../../handleErrorCatch';
 
+import { demo } from '../../../../mode.config.json';
+
 const requestVerifyField = (payload) => {
   if (!Object.prototype.hasOwnProperty.call(payload, 'field')) {
     throw new Error(`Please enter a value for the 'field' key - ${JSON.stringify(payload)}`);
@@ -43,7 +45,9 @@ const requestVerifyField = (payload) => {
           ({ user } = await dispatch(requestAWSUser()));
         }
 
-        await Auth.verifyUserAttribute(user, payload.field);
+        if (!demo) {
+          await Auth.verifyUserAttribute(user, payload.field);
+        }
       } catch (errorCatch) {
         const error = handleErrorCatch(errorCatch);
 
@@ -66,9 +70,11 @@ const requestVerifyField = (payload) => {
           return null;
         }
 
-        raven.captureException(error, {
-          logger: 'requestVerifyField',
-        });
+        if (!demo) {
+          raven.captureException(error, {
+            logger: 'requestVerifyField',
+          });
+        }
 
         return Promise.reject({ field: payload.field, error });
       }

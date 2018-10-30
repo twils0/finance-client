@@ -9,6 +9,8 @@ import requestAWSUser from '../dataThunkAWS/requestAWSUser';
 
 import handleErrorCatch from '../../handleErrorCatch';
 
+import { demo } from '../../../../mode.config.json';
+
 const requestVerifyFieldConfirm = (payload) => {
   if (!Object.prototype.hasOwnProperty.call(payload, 'field')) {
     throw new Error(`Please enter a value for the 'field' key - ${JSON.stringify(payload)}`);
@@ -49,7 +51,9 @@ const requestVerifyFieldConfirm = (payload) => {
           ({ user } = await dispatch(requestAWSUser()));
         }
 
-        await Auth.verifyUserAttributeSubmit(user, payload.field, payload.code);
+        if (!demo) {
+          await Auth.verifyUserAttributeSubmit(user, payload.field, payload.code);
+        }
       } catch (errorCatch) {
         const error = handleErrorCatch(errorCatch);
 
@@ -80,9 +84,11 @@ const requestVerifyFieldConfirm = (payload) => {
           return Promise.reject({ field: payload.field, error });
         }
 
-        raven.captureException(error, {
-          logger: 'requestVerifyFieldConfirm',
-        });
+        if (!demo) {
+          raven.captureException(error, {
+            logger: 'requestVerifyFieldConfirm',
+          });
+        }
 
         return Promise.reject({ field: payload.field, error });
       }
