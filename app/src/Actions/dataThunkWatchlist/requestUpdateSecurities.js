@@ -28,11 +28,11 @@ const requestUpdateSecurities = () => async (dispatch, getState) => {
     const { current, list } = state.data.watchlist.securities;
 
     try {
-      if (!user) {
-        ({ user } = await dispatch(requestAWSUser()));
-      }
-
       if (!demo) {
+        if (!user) {
+          ({ user } = await dispatch(requestAWSUser()));
+        }
+
         const idToken = user.signInUserSession.idToken.jwtToken;
         const accessToken = user.signInUserSession.accessToken.jwtToken;
 

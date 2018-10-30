@@ -1,5 +1,5 @@
 const securities = {
-  current: '25877d1e-b9c2-472d-98ab-9823422a96fe',
+  current: 'b35eae21-812a-4986-b0a0-fbf9ef956927',
   list: [
     '25877d1e-b9c2-472d-98ab-9823422a96fe',
     'b35eae21-812a-4986-b0a0-fbf9ef956927',

@@ -94,41 +94,6 @@ describe('Containers', () => {
         expect(wrapper).toMatchSnapshot();
       });
 
-      it('shallow renders correctly, with componentWillUpdate', async () => {
-        const stateBeforeWatchlist = JSON.parse(JSON.stringify(initialStateWatchlist));
-
-        stateBeforeWatchlist.securities = securities;
-
-        const store = mockStore({
-          data: {
-            aws: initialStateAWS,
-            watchlist: stateBeforeWatchlist,
-          },
-          ui: {
-            internal: {
-              ...initialStateUIInternal,
-              watchlist: initialStateUIWatchlist,
-            },
-          },
-        });
-
-        const nextProps = {
-          statusAWS: requestStatusTypes.SUCCESS,
-          statusSecurities: requestStatusTypes.IDLE,
-        };
-
-        const expectedActions = [];
-
-        const wrapper = shallowComponent(store);
-
-        wrapper.setProps(nextProps);
-
-        const actions = store.getActions();
-
-        expect(actions).toEqual(expectedActions);
-        expect(wrapper).toMatchSnapshot();
-      });
-
       it('shallow renders correctly, with loading indicator', async () => {
         const store = mockStore({
           data: {

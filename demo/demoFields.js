@@ -21,7 +21,7 @@ const fields = [
   },
   {
     Name: 'phone_number',
-    Value: '123-555-0000',
+    Value: '+13215550000',
   },
   {
     Name: 'phone_number_verified',

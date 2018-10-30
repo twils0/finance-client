@@ -27,8 +27,8 @@ class FormContainerBilling extends React.Component {
     uiNameOnCard.value = dataAccountFields[fieldNames.NAME_ON_CARD].value;
     uiPromoCode.value = dataAccountFields[fieldNames.PROMO_CODE].value;
     if (
-      dataAccountFields[fieldNames.PROMO_CODE].value &&
-      !dataAccountFields[fieldNames.PROMO_CODE_VALID].value
+      dataAccountFields[fieldNames.PROMO_CODE].value
+      && !dataAccountFields[fieldNames.PROMO_CODE_VALID].value
     ) {
       uiPromoCode.errorMessage = errorMessages.PROMO_CODE_EXPIRED;
     }
@@ -43,8 +43,8 @@ class FormContainerBilling extends React.Component {
 
   componentWillUpdate(nextProps) {
     if (
-      nextProps.statusAccount[statusNames.UPDATE_STRIPE_FIELDS_REQUEST].status ===
-      requestStatusTypes.LOADING
+      nextProps.statusAccount[statusNames.UPDATE_STRIPE_FIELDS_REQUEST].status
+      === requestStatusTypes.LOADING
     ) {
       const { clearElement, resetStripeElement } = nextProps;
 
@@ -127,7 +127,13 @@ class FormContainerBilling extends React.Component {
     }
     return (
       <StripeProvider stripe={stripe.stripeObject}>
-        <Elements>
+        <Elements
+          fonts={[
+            {
+              cssSrc: 'https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700', // only way to load fonts inside stripe iframe
+            },
+          ]}
+        >
           <FormBilling
             stripeRef={stripeRef}
             heightRef={heightRef}
@@ -197,4 +203,7 @@ const mapDispatchToProps = dispatch => ({
   handleInputValueError: payload => dispatch(setInputValueError(payload)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(FormContainerBilling);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(FormContainerBilling);

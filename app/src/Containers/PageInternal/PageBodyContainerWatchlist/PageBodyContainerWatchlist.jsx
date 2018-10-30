@@ -13,48 +13,43 @@ import ListContainerWatchlist from './ListContainerWatchlist';
 import FlexColumn from '../../../Components/Flex/FlexColumn';
 import ArticleContainerWatchlist from './ArticleContainerWatchlist';
 
-class PageBodyContainerWatchlist extends React.Component {
-  render() {
-    const {
-      width,
-      mediaWidth,
-      heightBuffer,
-      menuHeight,
-      menuHeightBuffer,
-      statusSecurities,
-    } = this.props;
-    const widthHalfString = `${width / 2}px`;
-    const mediaWidthString = `${mediaWidth}px`;
-    const heightString = `calc(100% - ${heightBuffer}px)`;
-    const heightBufferHalfString = `${heightBuffer / 2}px`;
-    const menuHeightString = `${menuHeight + menuHeightBuffer}px`;
+const PageBodyContainerWatchlist = (props) => {
+  const {
+    width, mediaWidth, heightBuffer, menuHeight, menuHeightBuffer, statusSecurities,
+  } = props;
+  const widthHalfString = `${width / 2}px`;
+  const mediaWidthString = `${mediaWidth}px`;
+  const heightString = `calc(100% - ${heightBuffer}px)`;
+  const heightBufferHalfString = `${heightBuffer / 2}px`;
+  const menuHeightString = `${menuHeight + menuHeightBuffer}px`;
 
-    if (statusSecurities !== requestStatusTypes.SUCCESS) {
-      return (
-        <FlexColumn width="100%" height={`calc(100% - ${menuHeightString})`}>
-          <BeatLoader color={theme.color.secondary.default} />
-        </FlexColumn>
-      );
-    }
-
+  if (statusSecurities !== requestStatusTypes.SUCCESS) {
     return (
-      <PageBody mediaWidth={mediaWidthString} height={`calc(100% - ${menuHeightString})`}>
-        <ListContainerWatchlist />
-        <FlexColumn
-          themeColor="secondary"
-          borderColorType="default"
-          separator
-          mediaWidth={mediaWidthString}
-          height={heightString}
-          margin={`${heightBufferHalfString} 0`}
-          borderWidth={`0 ${widthHalfString}`}
-          borderRadius="4px"
-        />
-        <ArticleContainerWatchlist />
-      </PageBody>
+      <FlexColumn width="100%" height={`calc(100% - ${menuHeightString})`}>
+        <BeatLoader color={theme.color.secondary.default} />
+      </FlexColumn>
     );
   }
-}
+
+  console.log('test status sec', statusSecurities);
+
+  return (
+    <PageBody mediaWidth={mediaWidthString} height={`calc(100% - ${menuHeightString})`}>
+      <ListContainerWatchlist />
+      <FlexColumn
+        themeColor="secondary"
+        borderColorType="default"
+        separator
+        mediaWidth={mediaWidthString}
+        height={heightString}
+        margin={`${heightBufferHalfString} 0`}
+        borderWidth={`0 ${widthHalfString}`}
+        borderRadius="4px"
+      />
+      <ArticleContainerWatchlist />
+    </PageBody>
+  );
+};
 
 PageBodyContainerWatchlist.propTypes = {
   width: PropTypes.number.isRequired,
