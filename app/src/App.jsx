@@ -32,6 +32,7 @@ if (logging) {
 export const store = createStore(rootReducer, preloadedState, middleware);
 
 const GlobalFontStyle = store.dispatch(loadFonts());
+
 store.dispatch(loadImage({ id: imageNames.EXAMPLE_HEADER }));
 
 const LoadableInternal = Loadable({

@@ -46,7 +46,24 @@ const requestUpdateStripeFields = (payload) => {
       let { user } = state.data.aws;
 
       if (!user) {
-        ({ user } = await dispatch(requestAWSUser()));
+        try {
+          ({ user } = await dispatch(requestAWSUser()));
+        } catch (errorCatch) {
+          const error = handleErrorCatch(errorCatch);
+
+          dispatch(
+            setAccountStatus({
+              id: statusNames.UPDATE_STRIPE_FIELDS_TOKEN,
+              status: requestStatusTypes.ERROR,
+            }),
+          );
+
+          raven.captureException(error, {
+            logger: 'requestUpdateStripeFields',
+          });
+
+          return Promise.reject(error);
+        }
       }
 
       let tokenId = null;

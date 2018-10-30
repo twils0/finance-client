@@ -31,15 +31,18 @@ const requestLoginMFA = (payload) => {
       let { user } = state.data.aws;
 
       try {
+        console.log('test mfa 1');
         if (!user) {
           ({ user } = await dispatch(requestAWSUser()));
         }
+
+        console.log('test mfa 2');
 
         if (!demo) {
           await Auth.confirmSignIn(user, payload.code);
         }
 
-        dispatch(loadSecurities());
+        dispatch(loadSecurities()); // do not need to wait for securities to load
 
         await dispatch(loadAWSFields());
 

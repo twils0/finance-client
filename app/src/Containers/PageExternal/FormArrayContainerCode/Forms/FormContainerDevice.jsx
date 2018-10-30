@@ -21,8 +21,8 @@ class FormContainerDevice extends React.Component {
     const { statusAuth } = nextProps;
 
     if (
-      statusAuth[statusNames.SIGN_OUT_DEVICES].status === requestStatusTypes.LOADING ||
-      statusAuth[statusNames.SIGN_OUT_DEVICES].status === requestStatusTypes.SUCCESS
+      statusAuth[statusNames.SIGN_OUT_DEVICES].status === requestStatusTypes.LOADING
+      || statusAuth[statusNames.SIGN_OUT_DEVICES].status === requestStatusTypes.SUCCESS
     ) {
       nextProps.clearElement(formNames.DEVICE);
     }
@@ -49,8 +49,8 @@ class FormContainerDevice extends React.Component {
     } = this.props;
 
     if (
-      statusAuth[statusNames.SIGN_OUT_DEVICES].status === requestStatusTypes.LOADING ||
-      statusAuth[statusNames.SIGN_OUT_DEVICES].status === requestStatusTypes.SUCCESS
+      statusAuth[statusNames.SIGN_OUT_DEVICES].status === requestStatusTypes.LOADING
+      || statusAuth[statusNames.SIGN_OUT_DEVICES].status === requestStatusTypes.SUCCESS
     ) {
       const widthString = `${width}px`;
 

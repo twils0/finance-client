@@ -9,7 +9,6 @@ import { setAWSStatus, setAWSUser } from '../dataActionsAWS';
 import requestSignOutOtherDevices from './requestSignOutOtherDevices';
 import loadAWSFields from '../dataThunkAccount/loadAWSFields';
 import loadSecurities from '../dataThunkWatchlist/loadSecurities';
-import requestVerifyField from './requestVerifyField';
 import requestVerifyEmail from './requestVerifyEmail';
 import { fieldNames } from '../../Constants/dataConstantsAccount';
 
@@ -41,8 +40,9 @@ const requestLogin = (payload) => {
           user = await Auth.signIn(payload.email, payload.password);
 
           dispatch(setAWSUser({ user }));
-          dispatch(setAWSStatus({ status: requestStatusTypes.SUCCESS }));
         }
+
+        dispatch(setAWSStatus({ status: requestStatusTypes.SUCCESS }));
       } catch (errorCatch) {
         const error = handleErrorCatch(errorCatch);
 
@@ -90,9 +90,7 @@ const requestLogin = (payload) => {
 
             state = getState();
 
-            if (state.data.auth.codeTypes[codeTypeNames.VERIFY_PHONE].needed) {
-              await dispatch(requestVerifyField({ field: 'phone_number' }));
-            } else if (
+            if (
               state.data.auth.codeTypes[codeTypeNames.VERIFY_EMAIL].needed
               || (state.data.auth.codeTypes[codeTypeNames.VERIFY_EMAIL_ADDITIONAL].needed
                 && state.data.account.fields[fieldNames.EMAIL_ADDITIONAL].value)
@@ -101,8 +99,7 @@ const requestLogin = (payload) => {
             }
 
             if (
-              !state.data.auth.codeTypes[codeTypeNames.VERIFY_PHONE].needed
-              && !state.data.auth.codeTypes[codeTypeNames.VERIFY_EMAIL].needed
+              !state.data.auth.codeTypes[codeTypeNames.VERIFY_EMAIL].needed
               && (!state.data.auth.codeTypes[codeTypeNames.VERIFY_EMAIL_ADDITIONAL].needed
                 || !state.data.account.fields[fieldNames.EMAIL_ADDITIONAL].value)
             ) {

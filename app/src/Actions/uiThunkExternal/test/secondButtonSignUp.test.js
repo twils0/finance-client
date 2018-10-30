@@ -18,7 +18,7 @@ const mockStore = configureMockStore(middleware);
 
 const password = 'testPassword1!';
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('secondButtonSignUp', () => {
     afterEach(() => {
       history.replace.mockReset();
@@ -31,10 +31,8 @@ describe('uiThunkAccount', () => {
       forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD].value = password;
       forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2].value = password;
 
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadSignUpPassword = JSON.parse(JSON.stringify(signUpPassword));
       const payloadSignUpPassword2 = JSON.parse(JSON.stringify(signUpPassword2));

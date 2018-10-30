@@ -97,7 +97,13 @@ class FormContainerCard extends React.Component {
     }
     return (
       <StripeProvider stripe={stripe.stripeObject}>
-        <Elements>
+        <Elements
+          fonts={[
+            {
+              cssSrc: 'https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700', // only way to load fonts inside stripe iframe
+            },
+          ]}
+        >
           <FormCard
             stripeRef={stripeRef}
             heightRef={heightRef}
@@ -156,4 +162,7 @@ const mapDispatchToProps = dispatch => ({
   handleInputValueError: payload => dispatch(setInputValueError(payload)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(FormContainerCard);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(FormContainerCard);

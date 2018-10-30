@@ -13,7 +13,6 @@ export const formNames = {
   INFO: 'infoForm',
   SIGN_UP: 'signUpForm',
   CODE_MFA_PHONE: 'codePhoneMFAForm',
-  CODE_VERIFY_PHONE: 'codePhoneVerifyForm',
   CODE_VERIFY_EMAIL: 'codeEmailVerifyForm',
   DEVICE: 'deviceForm',
 };
@@ -47,12 +46,6 @@ export const inputNames = {
   },
   [formNames.CODE_MFA_PHONE]: {
     CODE: 'codeMFAPhoneCode',
-  },
-  [formNames.CODE_VERIFY_PHONE]: {
-    CODE: 'codeVerifyPhoneCode',
-  },
-  [formNames.CODE_VERIFY_EMAIL]: {
-    CODE: 'codeVerifyEmailCode',
   },
 };
 

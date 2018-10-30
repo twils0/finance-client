@@ -25,9 +25,7 @@ const firstButtonCodePhone = () => async (dispatch, getState) => {
       const { codeTypes } = state.data.auth;
       const emailAdditional = state.data.account.fields[fieldNames.EMAIL_ADDITIONAL].value;
 
-      if (codeTypes[codeTypeNames.VERIFY_PHONE].needed) {
-        dispatch(setCurrentForm({ current: formNames.CODE_VERIFY_PHONE }));
-      } else if (
+      if (
         codeTypes[codeTypeNames.VERIFY_EMAIL].needed
         || (codeTypes[codeTypeNames.VERIFY_EMAIL_ADDITIONAL].needed && emailAdditional)
       ) {

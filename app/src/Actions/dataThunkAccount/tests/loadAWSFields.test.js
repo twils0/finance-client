@@ -246,13 +246,6 @@ describe('dataThunkAccount', () => {
         {
           type: actionTypesAuth.SET_CODE_TYPE,
           payload: {
-            id: codeTypeNames.VERIFY_PHONE,
-            needed: false,
-          },
-        },
-        {
-          type: actionTypesAuth.SET_CODE_TYPE,
-          payload: {
             id: codeTypeNames.VERIFY_EMAIL,
             needed: false,
           },

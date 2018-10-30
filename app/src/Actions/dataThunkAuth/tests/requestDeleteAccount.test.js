@@ -39,6 +39,7 @@ const userObject = {
       idToken: { jwtToken: 'testIdToken' },
       accessToken: { jwtToken: 'testAccessToken' },
     },
+    deleteUser: jest.fn(),
   },
 };
 const idToken = userObject.user.signInUserSession.idToken.jwtToken;
@@ -61,9 +62,7 @@ describe('dataThunkAuth', () => {
       requestAWSUser.mockReset();
       requestLogout.mockReset();
       axios.delete.mockReset();
-      if (userObject.user.deleteUser) {
-        delete userObject.user.deleteUser;
-      }
+      userObject.user.deleteUser.mockReset();
     });
 
     it("calls requestAWSUser when missing 'user' object in state", async () => {
@@ -72,9 +71,9 @@ describe('dataThunkAuth', () => {
         ui: { internal: { account: initialStateUIAccount } },
       });
 
-      userObject.user.deleteUser = jest.fn(callback => callback());
       requestAWSUser.mockReturnValue(() => Promise.resolve(userObject));
       axios.delete.mockReturnValue(Promise.resolve());
+      userObject.user.deleteUser.mockImplementation(callback => callback());
 
       await store.dispatch(requestDeleteAccount());
 
@@ -154,7 +153,7 @@ describe('dataThunkAuth', () => {
       ];
 
       axios.delete.mockReturnValue(Promise.reject(error));
-      stateBeforeAWS.user.deleteUser = jest.fn(callback => callback());
+      userObject.user.deleteUser.mockImplementation(callback => callback(error));
       requestLogout.mockReturnValue(() => null);
 
       try {
@@ -169,7 +168,7 @@ describe('dataThunkAuth', () => {
       expect(requestAWSUser).not.toBeCalled();
       expect(axios.delete).toBeCalledWith(URLs.USERS, mockAxiosDBConfig);
       expect(axios.delete).toBeCalledWith(URLs.CUSTOMERS, mockAxiosStripeConfig);
-      expect(userObject.user.deleteUser).toBeCalled();
+      expect(userObject.user.deleteUser).not.toBeCalled();
       expect(requestLogout).toBeCalled();
     });
 
@@ -247,7 +246,7 @@ describe('dataThunkAuth', () => {
       ];
 
       axios.delete.mockReturnValue(Promise.reject(error));
-      stateBeforeAWS.user.deleteUser = jest.fn(callback => callback());
+      userObject.user.deleteUser.mockImplementation(callback => callback());
 
       try {
         await store.dispatch(requestDeleteAccount());
@@ -261,7 +260,7 @@ describe('dataThunkAuth', () => {
       expect(requestAWSUser).not.toBeCalled();
       expect(axios.delete).toBeCalledWith(URLs.USERS, mockAxiosDBConfig);
       expect(axios.delete).toBeCalledWith(URLs.CUSTOMERS, mockAxiosStripeConfig);
-      expect(userObject.user.deleteUser).toBeCalled();
+      expect(userObject.user.deleteUser).not.toBeCalled();
       expect(requestLogout).not.toBeCalled();
     });
 
@@ -321,7 +320,7 @@ describe('dataThunkAuth', () => {
       ];
 
       axios.delete.mockReturnValue(Promise.resolve());
-      stateBeforeAWS.user.deleteUser = jest.fn(callback => callback());
+      userObject.user.deleteUser.mockImplementation(callback => callback());
 
       const result = await store.dispatch(requestDeleteAccount());
 
@@ -368,7 +367,7 @@ describe('dataThunkAuth', () => {
       ];
 
       axios.delete.mockReturnValue(Promise.resolve());
-      stateBeforeAWS.user.deleteUser = jest.fn(callback => callback());
+      userObject.user.deleteUser.mockImplementation(callback => callback());
 
       const result = await store.dispatch(requestDeleteAccount());
 

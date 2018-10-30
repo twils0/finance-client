@@ -6,7 +6,6 @@ import firstButtonForgotPassword from './firstButtonForgotPassword';
 import firstButtonLogin from './firstButtonLogin';
 import firstButtonSignUp from './firstButtonSignUp';
 import firstButtonCodeMFAPhone from './firstButtonCodeMFAPhone';
-import firstButtonCodeVerifyPhone from './firstButtonCodeVerifyPhone';
 import firstButtonCodeVerifyEmail from './firstButtonCodeVerifyEmail';
 import firstButtonDevice from './firstButtonDevice';
 
@@ -62,12 +61,6 @@ const handleClickFirstButton = (payload) => {
       }
       case formNames.CODE_MFA_PHONE: {
         dispatch(firstButtonCodeMFAPhone());
-        break;
-      }
-      case formNames.CODE_VERIFY_PHONE: {
-        const { history } = payload;
-
-        dispatch(firstButtonCodeVerifyPhone({ history }));
         break;
       }
       case formNames.CODE_VERIFY_EMAIL: {

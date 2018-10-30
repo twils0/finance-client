@@ -13,7 +13,6 @@ import secondButtonLogin from '../secondButtonLogin';
 import secondButtonCard from '../secondButtonCard';
 import secondButtonSignUp from '../secondButtonSignUp';
 import secondButtonCodeMFAPhone from '../secondButtonCodeMFAPhone';
-import secondButtonCodeVerifyPhone from '../secondButtonCodeVerifyPhone';
 import secondButtonCodeVerifyEmail from '../secondButtonCodeVerifyEmail';
 import secondButtonDevice from '../secondButtonDevice';
 
@@ -26,7 +25,6 @@ jest.mock('../secondButtonLogin', () => jest.fn());
 jest.mock('../secondButtonCard', () => jest.fn());
 jest.mock('../secondButtonSignUp', () => jest.fn());
 jest.mock('../secondButtonCodeMFAPhone', () => jest.fn());
-jest.mock('../secondButtonCodeVerifyPhone', () => jest.fn());
 jest.mock('../secondButtonCodeVerifyEmail', () => jest.fn());
 jest.mock('../secondButtonDevice', () => jest.fn());
 
@@ -44,7 +42,6 @@ describe('uiThunkExternal', () => {
       secondButtonLogin.mockReset();
       secondButtonSignUp.mockReset();
       secondButtonCodeMFAPhone.mockReset();
-      secondButtonCodeVerifyPhone.mockReset();
       secondButtonCodeVerifyEmail.mockReset();
       secondButtonDevice.mockReset();
     });
@@ -193,20 +190,6 @@ describe('uiThunkExternal', () => {
 
       expect(result).toEqual(null);
       expect(secondButtonCodeMFAPhone).toBeCalledWith({ history });
-    });
-
-    it('calls secondButtonCodeVerifyPhone when form current is CODE_VERIFY_PHONE', async () => {
-      const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
-      stateBeforeUIExternal.forms.current = formNames.CODE_VERIFY_PHONE;
-
-      const store = mockStore({ ui: { external: stateBeforeUIExternal } });
-
-      secondButtonCodeVerifyPhone.mockReturnValue(() => null);
-
-      const result = store.dispatch(handleClickSecondButton(handlerPayload));
-
-      expect(result).toEqual(null);
-      expect(secondButtonCodeVerifyPhone).toBeCalledWith({ history });
     });
 
     it('calls secondButtonCodeVerifyEmail when form current is CODE_VERIFY_EMAIL', async () => {

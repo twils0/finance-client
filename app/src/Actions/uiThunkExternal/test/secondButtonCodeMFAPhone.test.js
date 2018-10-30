@@ -27,7 +27,7 @@ const codeMFA = '234567';
 const email = 'test@test.com';
 const password = 'testPassword1!';
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('secondButtonCodeMFAPhone', () => {
     afterEach(() => {
       history.replace.mockReset();
@@ -62,7 +62,6 @@ describe('uiThunkAccount', () => {
       status[statusNames.SIGN_UP].status = requestStatusTypes.SUCCESS;
       status[statusNames.LOGIN].status = requestStatusTypes.SUCCESS;
       status[statusNames.LOGIN_MFA].status = requestStatusTypes.SUCCESS;
-      status[statusNames.VERIFY_PHONE].status = requestStatusTypes.SUCCESS;
       status[statusNames.SIGN_OUT_DEVICES].status = requestStatusTypes.SUCCESS;
 
       forms[formNames.CODE_MFA_PHONE].inputs[
@@ -71,8 +70,7 @@ describe('uiThunkAccount', () => {
       forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL].value = email;
       forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD].value = password;
 
-      const codeCodeMFAPhone =
-        forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const loginEmail = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL];
       const loginPassword = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD];

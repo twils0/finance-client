@@ -13,7 +13,7 @@ const ButtonAccount = (props) => {
       id={buttonNames.ACCOUNT}
       alignItems="center"
       justifyContent="center"
-      fontFamily="Lato"
+      fontFamily="Titillium Web"
       fontWeight={400}
       onClick={handleClick}
     >

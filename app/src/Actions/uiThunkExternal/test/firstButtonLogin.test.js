@@ -14,14 +14,12 @@ import {
   inputNames,
 } from '../../../Constants/uiConstantsExternal';
 import requestLogin from '../../dataThunkAuth/requestLogin';
-import requestSignUpResendPhone from '../../dataThunkAuth/requestSignUpResendPhone';
 import firstButtonLogin from '../firstButtonLogin';
 
 const history = {
   replace: jest.fn(),
 };
 jest.mock('../../dataThunkAuth/requestLogin', () => jest.fn());
-jest.mock('../../dataThunkAuth/requestSignUpResendPhone', () => jest.fn());
 
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
@@ -30,11 +28,10 @@ const email = 'test1@test.com';
 const emailAdditional = 'test2@test.com';
 const password = 'testPassword1!';
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('firstButtonLogin', () => {
     afterEach(() => {
       requestLogin.mockReset();
-      requestSignUpResendPhone.mockReset();
       history.replace.mockReset();
     });
 
@@ -140,13 +137,12 @@ describe('uiThunkAccount', () => {
       expect(requestLogin).not.toBeCalled();
     });
 
-    it('creates the correct actions with the correct payload, requestLogin returns mfa true, phone and email needed', async () => {
+    it('creates the correct actions with the correct payload, requestLogin returns mfa true, email needed', async () => {
       const stateBeforeAuth = JSON.parse(JSON.stringify(initialStateAuth));
       const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
       const { codeTypes } = stateBeforeAuth;
       const { forms } = stateBeforeUIExternal;
 
-      codeTypes[codeTypeNames.VERIFY_PHONE].needed = true;
       codeTypes[codeTypeNames.VERIFY_EMAIL].needed = true;
 
       forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL].value = email;
@@ -171,13 +167,12 @@ describe('uiThunkAccount', () => {
       expect(history.replace).toBeCalledWith(pathNames.CODE);
     });
 
-    it('creates the correct actions with the correct payload, requestLogin returns mfa false, phone and email needed', async () => {
+    it('creates the correct actions with the correct payload, requestLogin returns mfa false, email needed', async () => {
       const stateBeforeAuth = JSON.parse(JSON.stringify(initialStateAuth));
       const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
       const { codeTypes } = stateBeforeAuth;
       const { forms } = stateBeforeUIExternal;
 
-      codeTypes[codeTypeNames.VERIFY_PHONE].needed = true;
       codeTypes[codeTypeNames.VERIFY_EMAIL].needed = true;
 
       forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL].value = email;
@@ -190,9 +185,9 @@ describe('uiThunkAccount', () => {
 
       const expectedActions = [
         {
-          type: actionTypesUIExternal.SET_CURRENT_FORM,
+          type: 'EXTERNAL_SET_CURRENT_FORM',
           payload: {
-            current: formNames.CODE_VERIFY_PHONE,
+            current: formNames.CODE_VERIFY_EMAIL,
           },
         },
       ];
@@ -216,7 +211,6 @@ describe('uiThunkAccount', () => {
       const { codeTypes } = stateBeforeAuth;
       const { forms } = stateBeforeUIExternal;
 
-      codeTypes[codeTypeNames.VERIFY_PHONE].needed = false;
       codeTypes[codeTypeNames.VERIFY_EMAIL].needed = false;
       codeTypes[codeTypeNames.VERIFY_EMAIL_ADDITIONAL].needed = true;
 
@@ -257,7 +251,6 @@ describe('uiThunkAccount', () => {
       const { codeTypes } = stateBeforeAuth;
       const { forms } = stateBeforeUIExternal;
 
-      codeTypes[codeTypeNames.VERIFY_PHONE].needed = false;
       codeTypes[codeTypeNames.VERIFY_EMAIL].needed = false;
       codeTypes[codeTypeNames.VERIFY_EMAIL_ADDITIONAL].needed = true;
 
@@ -441,51 +434,6 @@ describe('uiThunkAccount', () => {
       expect(actions).toEqual(expectedActions);
       expect(result).toEqual(null);
       expect(requestLogin).toBeCalledWith({ email, password });
-    });
-
-    it("requestLogin throws a 'UserNotConfirmedException' error", async () => {
-      const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
-      const { forms } = stateBeforeUIExternal;
-
-      forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL].value = email;
-      forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD].value = password;
-
-      const loginPassword = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD];
-
-      const payloadLoginPassword = JSON.parse(JSON.stringify(loginPassword));
-
-      payloadLoginPassword.errorMessage = errorMessages.PASSWORD_NOT_FOUND;
-
-      const store = mockStore({
-        data: { auth: initialStateAuth },
-        ui: { external: stateBeforeUIExternal },
-      });
-
-      const error = {
-        code: 'UserNotConfirmedException',
-        message: 'Incorrect username or password.',
-      };
-      const expectedActions = [
-        {
-          type: actionTypesUIExternal.SET_CURRENT_FORM,
-          payload: {
-            current: formNames.CODE_VERIFY_PHONE,
-          },
-        },
-      ];
-
-      requestLogin.mockReturnValue(() => Promise.reject(error));
-      requestSignUpResendPhone.mockReturnValue(() => null);
-
-      const result = await store.dispatch(firstButtonLogin({ history }));
-
-      const actions = store.getActions();
-
-      expect(actions).toEqual(expectedActions);
-      expect(result).toEqual(null);
-      expect(requestLogin).toBeCalledWith({ email, password });
-      expect(requestSignUpResendPhone).toBeCalledWith({ email });
-      expect(history.replace).toBeCalledWith(pathNames.CODE);
     });
 
     it('requestLogin throws an unexpected error', async () => {

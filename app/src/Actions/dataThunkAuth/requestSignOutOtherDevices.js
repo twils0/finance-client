@@ -69,9 +69,10 @@ const requestSignOutOtherDevices = (payload) => {
 
         if (!demo) {
           user = await Auth.signIn(payload.email, payload.password);
+
+          dispatch(setAWSUser({ user }));
         }
 
-        dispatch(setAWSUser({ user }));
         dispatch(setAWSStatus({ status: requestStatusTypes.SUCCESS }));
 
         if (!demo) {

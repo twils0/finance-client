@@ -2,7 +2,7 @@ import { errorMessages } from '../../Constants/uiConstantsApp';
 import { formNames, inputNames } from '../../Constants/uiConstantsAccount';
 import requestVerifyFieldConfirm from '../dataThunkAuth/requestVerifyFieldConfirm';
 import { setInputValueError, setCurrentForm } from '../uiActionsAccount';
-import handleCancel from '../uiThunkAccount/handleCancel';
+import handleCancel from './handleCancel';
 
 const firstButtonCode = () => async (dispatch, getState) => {
   const state = getState();

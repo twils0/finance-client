@@ -7,7 +7,6 @@ import secondButtonLogin from './secondButtonLogin';
 import secondButtonCard from './secondButtonCard';
 import secondButtonSignUp from './secondButtonSignUp';
 import secondButtonCodeMFAPhone from './secondButtonCodeMFAPhone';
-import secondButtonCodeVerifyPhone from './secondButtonCodeVerifyPhone';
 import secondButtonCodeVerifyEmail from './secondButtonCodeVerifyEmail';
 import secondButtonDevice from './secondButtonDevice';
 
@@ -16,7 +15,9 @@ const handleClickSecondButton = (payload) => {
     throw new Error(`Please enter a value for the 'history' key - ${JSON.stringify(payload)}`);
   }
   if (!Object.prototype.hasOwnProperty.call(payload, 'resetStripeElement')) {
-    throw new Error(`Please enter a value for the 'resetStripeElement' key - ${JSON.stringify(payload)}`);
+    throw new Error(
+      `Please enter a value for the 'resetStripeElement' key - ${JSON.stringify(payload)}`,
+    );
   }
 
   return (dispatch, getState) => {
@@ -52,12 +53,6 @@ const handleClickSecondButton = (payload) => {
         const { history } = payload;
 
         dispatch(secondButtonCodeMFAPhone({ history }));
-        break;
-      }
-      case formNames.CODE_VERIFY_PHONE: {
-        const { history } = payload;
-
-        dispatch(secondButtonCodeVerifyPhone({ history }));
         break;
       }
       case formNames.CODE_VERIFY_EMAIL: {

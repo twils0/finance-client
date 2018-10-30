@@ -15,7 +15,7 @@ const loadFonts = () => (dispatch, getState) => {
 
     WebFont.load({
       google: {
-        families: ['Titillium Web:400,600'],
+        families: ['Titillium Web:300,400,700'],
       },
       active: () => dispatch(setFontsStatus({ status: requestStatusTypes.SUCCESS })),
       fontinactive: () => dispatch(setFontsStatus({ status: requestStatusTypes.ERROR })),

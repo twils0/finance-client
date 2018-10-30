@@ -22,10 +22,7 @@ class FormContainerCode extends React.Component {
   componentWillUpdate(nextProps) {
     const { statusAuth } = nextProps;
 
-    if (
-      statusAuth[statusNames.VERIFY_PHONE_CODE].status === requestStatusTypes.LOADING ||
-      statusAuth[statusNames.VERIFY_EMAIL_LINK].status === requestStatusTypes.LOADING
-    ) {
+    if (statusAuth[statusNames.VERIFY_EMAIL_LINK].status === requestStatusTypes.LOADING) {
       nextProps.clearElement(formNames.CODE);
     }
   }

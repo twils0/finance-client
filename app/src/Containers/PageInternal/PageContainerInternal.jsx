@@ -107,13 +107,13 @@ class PageContainerInternal extends React.Component {
     this.setCurrentPageBody(path, currentPageBody);
   }
 
-  setRedirect = match => {
+  setRedirect = (match) => {
     const { path, url } = match;
 
     if (
-      path === pathNames.WATCHLIST_SECURITY_ID ||
-      path === pathNames.WATCHLIST ||
-      path === pathNames.ACCOUNT
+      path === pathNames.WATCHLIST_SECURITY_ID
+      || path === pathNames.WATCHLIST
+      || path === pathNames.ACCOUNT
     ) {
       this.props.handleRedirectURL({ redirectURL: url });
     }
@@ -122,10 +122,10 @@ class PageContainerInternal extends React.Component {
   setCurrentSecurity = (path, securityId, securities) => {
     if (path === pathNames.WATCHLIST || path === pathNames.WATCHLIST_SECURITY_ID) {
       if (
-        securityId &&
-        securityId !== ':securityId' &&
-        securities &&
-        Object.keys(securities).indexOf(securityId) > -1
+        securityId
+        && securityId !== ':securityId'
+        && securities
+        && Object.keys(securities).indexOf(securityId) > -1
       ) {
         if (securities && securityId !== securities.current) {
           const { handleSecuritiesCurrent, handleUpdateSecurities } = this.props;
@@ -149,20 +149,22 @@ class PageContainerInternal extends React.Component {
   };
 
   render() {
-    const { authenticated, statusFonts, statusexampleHeader, statusAWS, statusAuth } = this.props;
+    const {
+      authenticated, statusFonts, statusexampleHeader, statusAWS, statusAuth,
+    } = this.props;
 
     if (!authenticated) {
       return <Redirect to={pathNames.LOGIN} />;
     }
 
     if (
-      statusFonts !== requestStatusTypes.SUCCESS ||
-      statusexampleHeader !== requestStatusTypes.SUCCESS ||
-      statusAWS === requestStatusTypes.LOADING ||
-      statusAuth[statusNamesAuth.LOGOUT].status === requestStatusTypes.LOADING ||
-      statusAuth[statusNamesAuth.LOGOUT].status === requestStatusTypes.SUCCESS ||
-      statusAuth[statusNamesAuth.DELETE_ACCOUNT].status === requestStatusTypes.LOADING ||
-      statusAuth[statusNamesAuth.DELETE_ACCOUNT].status === requestStatusTypes.SUCCESS
+      statusFonts !== requestStatusTypes.SUCCESS
+      || statusexampleHeader !== requestStatusTypes.SUCCESS
+      || statusAWS === requestStatusTypes.LOADING
+      || statusAuth[statusNamesAuth.LOGOUT].status === requestStatusTypes.LOADING
+      || statusAuth[statusNamesAuth.LOGOUT].status === requestStatusTypes.SUCCESS
+      || statusAuth[statusNamesAuth.DELETE_ACCOUNT].status === requestStatusTypes.LOADING
+      || statusAuth[statusNamesAuth.DELETE_ACCOUNT].status === requestStatusTypes.SUCCESS
     ) {
       return (
         <FlexColumn width="100%" height="100%">
@@ -229,6 +231,6 @@ const mapDispatchToProps = dispatch => ({
 export default withRouter(
   connect(
     mapStateToProps,
-    mapDispatchToProps
-  )(PageContainerInternal)
+    mapDispatchToProps,
+  )(PageContainerInternal),
 );

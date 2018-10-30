@@ -30,7 +30,7 @@ const email = 'test@test.com';
 const phone = '239-555-0000';
 const password = 'testPassword1!';
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('secondButtonCard', () => {
     afterEach(() => {
       history.replace.mockReset();
@@ -100,10 +100,8 @@ describe('uiThunkAccount', () => {
       const infoEmail = forms[formNames.INFO].inputs[inputNames[formNames.INFO].EMAIL];
       const infoPhone = forms[formNames.INFO].inputs[inputNames[formNames.INFO].PHONE];
 
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadCardNameOnCard = JSON.parse(JSON.stringify(cardNameOnCard));
       const payloadCardPromoCode = JSON.parse(JSON.stringify(cardPromoCode));

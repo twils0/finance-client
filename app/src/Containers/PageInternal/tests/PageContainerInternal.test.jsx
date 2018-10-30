@@ -44,22 +44,21 @@ global.window = {
 };
 global.document = {};
 
-const shallowComponent = (store, path, url, params) =>
-  shallow(<PageContainerInternal />, {
-    context: {
-      store,
-      router: {
-        history,
-        route: {
-          location: {},
-          match: { path, url, params: params || {} },
-        },
+const shallowComponent = (store, path, url, params) => shallow(<PageContainerInternal />, {
+  context: {
+    store,
+    router: {
+      history,
+      route: {
+        location: {},
+        match: { path, url, params: params || {} },
       },
     },
-  })
-    .dive()
-    .dive()
-    .dive();
+  },
+})
+  .dive()
+  .dive()
+  .dive();
 
 const testId0 = 'testId0';
 const testId1 = 'testId1';
@@ -244,7 +243,6 @@ describe('Containers', () => {
 
         const instance = wrapper.instance();
 
-        instance.componentDidMount();
         instance.componentWillReceiveProps(nextProps);
 
         const actions = store.getActions();

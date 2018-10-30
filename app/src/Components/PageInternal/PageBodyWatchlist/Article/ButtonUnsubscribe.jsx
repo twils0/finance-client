@@ -11,7 +11,7 @@ const ButtonUnsubscribe = (props) => {
       id="accountButton"
       alignItems="center"
       justifyContent="center"
-      fontFamily="Lato"
+      fontFamily="Titillium Web"
       fontWeight={400}
       disabled={statusLoading}
       onClick={handleClick}

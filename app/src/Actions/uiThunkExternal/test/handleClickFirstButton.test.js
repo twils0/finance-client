@@ -12,7 +12,6 @@ import firstButtonForgotPassword from '../firstButtonForgotPassword';
 import firstButtonLogin from '../firstButtonLogin';
 import firstButtonSignUp from '../firstButtonSignUp';
 import firstButtonCodeMFAPhone from '../firstButtonCodeMFAPhone';
-import firstButtonCodeVerifyPhone from '../firstButtonCodeVerifyPhone';
 import firstButtonCodeVerifyEmail from '../firstButtonCodeVerifyEmail';
 import firstButtonDevice from '../firstButtonDevice';
 
@@ -24,7 +23,6 @@ jest.mock('../firstButtonForgotPassword', () => jest.fn());
 jest.mock('../firstButtonLogin', () => jest.fn());
 jest.mock('../firstButtonSignUp', () => jest.fn());
 jest.mock('../firstButtonCodeMFAPhone', () => jest.fn());
-jest.mock('../firstButtonCodeVerifyPhone', () => jest.fn());
 jest.mock('../firstButtonCodeVerifyEmail', () => jest.fn());
 jest.mock('../firstButtonDevice', () => jest.fn());
 
@@ -47,7 +45,6 @@ describe('uiThunkExternal', () => {
       firstButtonLogin.mockReset();
       firstButtonSignUp.mockReset();
       firstButtonCodeMFAPhone.mockReset();
-      firstButtonCodeVerifyPhone.mockReset();
       firstButtonCodeVerifyEmail.mockReset();
       firstButtonDevice.mockReset();
     });
@@ -233,20 +230,6 @@ describe('uiThunkExternal', () => {
 
       expect(result).toEqual(null);
       expect(firstButtonCodeMFAPhone).toBeCalled();
-    });
-
-    it('calls firstButtonCodeVerifyPhone when form current is CODE_VERIFY_PHONE', async () => {
-      const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
-      stateBeforeUIExternal.forms.current = formNames.CODE_VERIFY_PHONE;
-
-      const store = mockStore({ ui: { external: stateBeforeUIExternal } });
-
-      firstButtonCodeVerifyPhone.mockReturnValue(() => null);
-
-      const result = store.dispatch(handleClickFirstButton(handlerPayload));
-
-      expect(result).toEqual(null);
-      expect(firstButtonCodeVerifyPhone).toBeCalledWith({ history });
     });
 
     it('calls firstButtonCodeVerifyEmail when form current is CODE_VERIFY_EMAIL', async () => {

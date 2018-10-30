@@ -1,12 +1,11 @@
 import isEmail from 'validator/lib/isEmail';
 
-import { requestStatusTypes, pathNames } from '../../Constants/universalConstants';
+import { requestStatusTypes } from '../../Constants/universalConstants';
 import { statusNames } from '../../Constants/dataConstantsAuth';
 import { errorMessages } from '../../Constants/uiConstantsApp';
 import { formNames, inputNames } from '../../Constants/uiConstantsExternal';
 import { setAuthStatus } from '../dataActionsAuth';
 import requestForgotPassword from '../dataThunkAuth/requestForgotPassword';
-import requestSignUpResendPhone from '../dataThunkAuth/requestSignUpResendPhone';
 import { setCurrentForm, setInputValueError } from '../uiActionsExternal';
 
 const firstButtonForgotPassword = (payload) => {
@@ -20,8 +19,7 @@ const firstButtonForgotPassword = (payload) => {
 
     const loginEmail = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL];
     const loginPassword = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD];
-    const forgotPasswordEmail =
-      forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
+    const forgotPasswordEmail = forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
 
     if (!forgotPasswordEmail.value) {
       forgotPasswordEmail.errorMessage = errorMessages.NO_EMAIL;
@@ -51,10 +49,12 @@ const firstButtonForgotPassword = (payload) => {
           dispatch(setInputValueError(loginPassword));
         }
 
-        dispatch(setAuthStatus({
-          id: statusNames.FORGOT_PASSWORD,
-          status: requestStatusTypes.IDLE,
-        }));
+        dispatch(
+          setAuthStatus({
+            id: statusNames.FORGOT_PASSWORD,
+            status: requestStatusTypes.IDLE,
+          }),
+        );
       } catch (error) {
         switch (error.code) {
           case 'LimitExceededException': {
@@ -65,13 +65,6 @@ const firstButtonForgotPassword = (payload) => {
           case 'UserNotFoundException': {
             forgotPasswordEmail.errorMessage = errorMessages.EMAIL_NOT_FOUND;
             dispatch(setInputValueError(forgotPasswordEmail));
-            break;
-          }
-          case 'InvalidParameterException': {
-            dispatch(requestSignUpResendPhone({ email: forgotPasswordEmail.value }));
-
-            payload.history.replace(pathNames.CODE);
-            dispatch(setCurrentForm({ current: formNames.CODE_VERIFY_PHONE }));
             break;
           }
           default: {

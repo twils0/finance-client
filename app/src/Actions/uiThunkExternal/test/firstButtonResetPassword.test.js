@@ -11,11 +11,9 @@ import {
   inputNames,
 } from '../../../Constants/uiConstantsExternal';
 import requestResetPassword from '../../dataThunkAuth/requestResetPassword';
-import requestSignUpResendPhone from '../../dataThunkAuth/requestSignUpResendPhone';
 import firstButtonResetPassword from '../firstButtonResetPassword';
 
 jest.mock('../../dataThunkAuth/requestResetPassword', () => jest.fn());
-jest.mock('../../dataThunkAuth/requestSignUpResendPhone', () => jest.fn());
 
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
@@ -24,7 +22,7 @@ const code = '123456';
 const email = 'test@test.com';
 const password = 'testPassword1!';
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('firstButtonResetPassword', () => {
     afterEach(() => {
       requestResetPassword.mockReset();
@@ -34,12 +32,12 @@ describe('uiThunkAccount', () => {
       const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
       const { forms } = stateBeforeUIExternal;
 
-      const resetPasswordCode =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].CODE];
-      const resetPasswordPassword =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD];
-      const resetPasswordPassword2 =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
+      const resetPasswordCode = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].CODE];
+      const resetPasswordPassword = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD];
+      const resetPasswordPassword2 = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
 
       const payloadResetPasswordCode = JSON.parse(JSON.stringify(resetPasswordCode));
       const payloadResetPasswordPassword = JSON.parse(JSON.stringify(resetPasswordPassword));
@@ -85,17 +83,15 @@ describe('uiThunkAccount', () => {
       forms[formNames.RESET_PASSWORD].inputs[
         inputNames[formNames.RESET_PASSWORD].CODE
       ].value = code;
-      forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD].value =
-        'password';
-      forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2].value =
-        'password1';
+      forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD].value = 'password';
+      forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2].value = 'password1';
 
-      const resetPasswordCode =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].CODE];
-      const resetPasswordPassword =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD];
-      const resetPasswordPassword2 =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
+      const resetPasswordCode = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].CODE];
+      const resetPasswordPassword = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD];
+      const resetPasswordPassword2 = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
 
       const payloadResetPasswordCode = JSON.parse(JSON.stringify(resetPasswordCode));
       const payloadResetPasswordPassword = JSON.parse(JSON.stringify(resetPasswordPassword));
@@ -151,14 +147,14 @@ describe('uiThunkAccount', () => {
         inputNames[formNames.RESET_PASSWORD].PASSWORD2
       ].value = password;
 
-      const forgotPasswordEmail =
-        forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
-      const resetPasswordCode =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].CODE];
-      const resetPasswordPassword =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD];
-      const resetPasswordPassword2 =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
+      const forgotPasswordEmail = forms[formNames.FORGOT_PASSWORD]
+        .inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
+      const resetPasswordCode = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].CODE];
+      const resetPasswordPassword = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD];
+      const resetPasswordPassword2 = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
 
       const payloadForgotPasswordEmail = JSON.parse(JSON.stringify(forgotPasswordEmail));
       const payloadResetPasswordCode = JSON.parse(JSON.stringify(resetPasswordCode));
@@ -241,8 +237,8 @@ describe('uiThunkAccount', () => {
         inputNames[formNames.RESET_PASSWORD].PASSWORD2
       ].value = password;
 
-      const resetPasswordPassword2 =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
+      const resetPasswordPassword2 = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
 
       const payloadResetPasswordPassword2 = JSON.parse(JSON.stringify(resetPasswordPassword2));
 
@@ -291,8 +287,8 @@ describe('uiThunkAccount', () => {
         inputNames[formNames.RESET_PASSWORD].PASSWORD2
       ].value = password;
 
-      const resetPasswordPassword2 =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
+      const resetPasswordPassword2 = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
 
       const payloadResetPasswordPassword2 = JSON.parse(JSON.stringify(resetPasswordPassword2));
 
@@ -314,7 +310,6 @@ describe('uiThunkAccount', () => {
       ];
 
       requestResetPassword.mockReturnValue(() => Promise.reject(error));
-      requestSignUpResendPhone.mockReturnValue(() => null);
 
       const result = await store.dispatch(firstButtonResetPassword());
 
@@ -342,8 +337,8 @@ describe('uiThunkAccount', () => {
         inputNames[formNames.RESET_PASSWORD].PASSWORD2
       ].value = password;
 
-      const resetPasswordPassword2 =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
+      const resetPasswordPassword2 = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
 
       const payloadResetPasswordPassword2 = JSON.parse(JSON.stringify(resetPasswordPassword2));
 
@@ -365,7 +360,6 @@ describe('uiThunkAccount', () => {
       ];
 
       requestResetPassword.mockReturnValue(() => Promise.reject(error));
-      requestSignUpResendPhone.mockReturnValue(() => null);
 
       const result = await store.dispatch(firstButtonResetPassword());
 
@@ -393,8 +387,8 @@ describe('uiThunkAccount', () => {
         inputNames[formNames.RESET_PASSWORD].PASSWORD2
       ].value = password;
 
-      const resetPasswordPassword2 =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
+      const resetPasswordPassword2 = forms[formNames.RESET_PASSWORD]
+        .inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
 
       const payloadResetPasswordPassword2 = JSON.parse(JSON.stringify(resetPasswordPassword2));
 
@@ -416,7 +410,6 @@ describe('uiThunkAccount', () => {
       ];
 
       requestResetPassword.mockReturnValue(() => Promise.reject(error));
-      requestSignUpResendPhone.mockReturnValue(() => null);
 
       const result = await store.dispatch(firstButtonResetPassword());
 

@@ -16,7 +16,7 @@ const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
 
 const tokenId = 'testTokenId';
-const plan = 'Basic_450';
+const plan = 'basic_plan';
 const postPayload = {
   promoCode: 'testPromo',
   email: 'testEmail',

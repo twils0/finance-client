@@ -4,7 +4,7 @@ import { setAuthenticated } from '../dataActionsAuth';
 import requestSignOutOtherDevices from '../dataThunkAuth/requestSignOutOtherDevices';
 import { setInputValueError } from '../uiActionsExternal';
 
-const firstButtonDevice = payload => {
+const firstButtonDevice = (payload) => {
   if (!Object.prototype.hasOwnProperty.call(payload, 'history')) {
     throw new Error(`Please enter a value for the 'history' key - ${JSON.stringify(payload)}`);
   }

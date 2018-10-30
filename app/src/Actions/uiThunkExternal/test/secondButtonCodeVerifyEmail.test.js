@@ -23,13 +23,11 @@ const codePayload = {
   history,
 };
 
-const codeVerify = '123456';
 const codeMFA = '234567';
-const codeEmail = '345678';
 const email = 'test@test.com';
 const password = 'testPassword1!';
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('secondButtonCodeVerifyEmail', () => {
     afterEach(() => {
       history.replace.mockReset();
@@ -63,45 +61,25 @@ describe('uiThunkAccount', () => {
 
       status[statusNames.LOGIN].status = requestStatusTypes.SUCCESS;
       status[statusNames.LOGIN_MFA].status = requestStatusTypes.SUCCESS;
-      status[statusNames.VERIFY_PHONE].status = requestStatusTypes.SUCCESS;
       status[statusNames.SIGN_OUT_DEVICES].status = requestStatusTypes.SUCCESS;
 
-      forms[formNames.CODE_VERIFY_PHONE].inputs[
-        inputNames[formNames.CODE_VERIFY_PHONE].CODE
-      ].value = codeVerify;
       forms[formNames.CODE_MFA_PHONE].inputs[
         inputNames[formNames.CODE_MFA_PHONE].CODE
       ].value = codeMFA;
-      forms[formNames.CODE_VERIFY_EMAIL].inputs[
-        inputNames[formNames.CODE_VERIFY_EMAIL].CODE
-      ].value = codeEmail;
       forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL].value = email;
       forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD].value = password;
 
-      const codeCodeVerifyPhone =
-        forms[formNames.CODE_VERIFY_PHONE].inputs[inputNames[formNames.CODE_VERIFY_PHONE].CODE];
-      const codeCodeMFAPhone =
-        forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
-      const codeCodeVerifyEmail =
-        forms[formNames.CODE_VERIFY_EMAIL].inputs[inputNames[formNames.CODE_VERIFY_EMAIL].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const loginEmail = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL];
       const loginPassword = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD];
 
-      const payloadCodeCodeVerifyPhone = JSON.parse(JSON.stringify(codeCodeVerifyPhone));
       const payloadCodeCodeMFAPhone = JSON.parse(JSON.stringify(codeCodeMFAPhone));
-      const payloadCodeCodeVerifyEmail = JSON.parse(JSON.stringify(codeCodeVerifyEmail));
       const payloadLoginEmail = JSON.parse(JSON.stringify(loginEmail));
       const payloadLoginPassword = JSON.parse(JSON.stringify(loginPassword));
 
       payloadCodeCodeMFAPhone.value = '';
       payloadCodeCodeMFAPhone.errorMessage = '';
-
-      payloadCodeCodeVerifyPhone.value = '';
-      payloadCodeCodeVerifyPhone.errorMessage = '';
-
-      payloadCodeCodeVerifyEmail.value = '';
-      payloadCodeCodeVerifyEmail.errorMessage = '';
 
       payloadLoginEmail.value = '';
       payloadLoginEmail.errorMessage = '';
@@ -132,28 +110,13 @@ describe('uiThunkAccount', () => {
         {
           type: actionTypesAuth.SET_AUTH_STATUS,
           payload: {
-            id: statusNames.VERIFY_PHONE,
-            status: requestStatusTypes.IDLE,
-          },
-        },
-        {
-          type: actionTypesAuth.SET_AUTH_STATUS,
-          payload: {
             id: statusNames.SIGN_OUT_DEVICES,
             status: requestStatusTypes.IDLE,
           },
         },
         {
           type: actionTypesUIExternal.SET_INPUT_VALUE_ERROR,
-          payload: payloadCodeCodeVerifyPhone,
-        },
-        {
-          type: actionTypesUIExternal.SET_INPUT_VALUE_ERROR,
           payload: payloadCodeCodeMFAPhone,
-        },
-        {
-          type: actionTypesUIExternal.SET_INPUT_VALUE_ERROR,
-          payload: payloadCodeCodeVerifyEmail,
         },
         {
           type: actionTypesUIExternal.SET_INPUT_VALUE_ERROR,

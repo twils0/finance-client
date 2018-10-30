@@ -1,4 +1,4 @@
 {
-  "logging": false,
-  "demo": false
+  "logging": true,
+  "demo": true
 }

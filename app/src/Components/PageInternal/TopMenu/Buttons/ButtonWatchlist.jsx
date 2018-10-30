@@ -13,7 +13,7 @@ const ButtonWatchlist = (props) => {
       id={buttonNames.WATCHLIST}
       alignItems="center"
       justifyContent="center"
-      fontFamily="Lato"
+      fontFamily="Titillium Web"
       fontWeight={400}
       onClick={handleClick}
     >

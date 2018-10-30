@@ -47,6 +47,7 @@ const requestDeleteAccount = () => async (dispatch, getState) => {
 
       if (!demo) {
         const idToken = user.signInUserSession.idToken.jwtToken;
+
         await Promise.all([
           axios.delete(URLs.CUSTOMERS, {
             headers: {

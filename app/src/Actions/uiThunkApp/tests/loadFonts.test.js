@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-// import { createGlobalStyle } from 'styled-components';
 import WebFont from 'webfontloader';
+// import { createGlobalStyle } from 'styled-components';
 
 import { initialState as initialStateApp } from '../../../Reducers/uiReducersApp';
 import { requestStatusTypes } from '../../../Constants/universalConstants';

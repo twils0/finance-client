@@ -23,11 +23,10 @@ const codePhone = '123456';
 describe('uiThunkAccount', () => {
   describe('firstButtonCode', () => {
     afterEach(() => {
-      requestVerifyFieldConfirm.mockReset();
       handleCancel.mockReset();
     });
 
-    it('creates the correct actions with the correct payload, phone and email needed, no phone and email code', async () => {
+    it('creates the correct actions with the correct payload, phone and email need no phone and email code', async () => {
       const stateBeforeUIAccount = JSON.parse(JSON.stringify(initialStateUIAccount));
       const { forms } = stateBeforeUIAccount;
 
@@ -54,7 +53,6 @@ describe('uiThunkAccount', () => {
 
       expect(actions).toEqual(expectedActions);
       expect(result).toEqual(null);
-      expect(requestVerifyFieldConfirm).not.toBeCalled();
       expect(handleCancel).not.toBeCalled();
     });
 

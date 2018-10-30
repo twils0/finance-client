@@ -6,7 +6,6 @@ import { errorMessages } from '../../Constants/uiConstantsApp';
 import { formNames, inputNames } from '../../Constants/uiConstantsExternal';
 import { fieldNames } from '../../Constants/dataConstantsAccount';
 import requestLogin from '../dataThunkAuth/requestLogin';
-import requestSignUpResendPhone from '../dataThunkAuth/requestSignUpResendPhone';
 import { setCurrentForm, setInputValueError } from '../uiActionsExternal';
 
 const firstButtonLogin = (payload) => {
@@ -49,9 +48,6 @@ const firstButtonLogin = (payload) => {
 
         if (typeof mfa === 'boolean' && mfa) {
           payload.history.replace(pathNames.CODE);
-        } else if (codeTypes[codeTypeNames.VERIFY_PHONE].needed) {
-          payload.history.replace(pathNames.CODE);
-          dispatch(setCurrentForm({ current: formNames.CODE_VERIFY_PHONE }));
         } else if (
           codeTypes[codeTypeNames.VERIFY_EMAIL].needed
           || (codeTypes[codeTypeNames.VERIFY_EMAIL_ADDITIONAL].needed && emailAdditional)
@@ -79,13 +75,6 @@ const firstButtonLogin = (payload) => {
               loginPassword.errorMessage = errorMessages.INTERNAL_ERROR;
               dispatch(setInputValueError(loginPassword));
             }
-            break;
-          }
-          case 'UserNotConfirmedException': {
-            dispatch(requestSignUpResendPhone({ email: loginEmail.value }));
-
-            payload.history.replace(pathNames.CODE);
-            dispatch(setCurrentForm({ current: formNames.CODE_VERIFY_PHONE }));
             break;
           }
           default: {

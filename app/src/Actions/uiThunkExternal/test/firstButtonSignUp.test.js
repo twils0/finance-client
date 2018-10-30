@@ -38,7 +38,7 @@ const phone = '239-555-0000';
 const E164Phone = `+1${phone.replace(/[-() ]/g, '')}`;
 const password = 'testPassword1!';
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('firstButtonSignUp', () => {
     afterEach(() => {
       requestSignUp.mockReset();
@@ -123,10 +123,10 @@ describe('uiThunkAccount', () => {
       const infoEmail = forms[formNames.INFO].inputs[inputNames[formNames.INFO].EMAIL];
       const infoPhone = forms[formNames.INFO].inputs[inputNames[formNames.INFO].PHONE];
 
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadCardNameOnCard = JSON.parse(JSON.stringify(cardNameOnCard));
       const payloadCardPromoCode = JSON.parse(JSON.stringify(cardPromoCode));
@@ -217,10 +217,10 @@ describe('uiThunkAccount', () => {
       const infoEmail = forms[formNames.INFO].inputs[inputNames[formNames.INFO].EMAIL];
       const infoPhone = forms[formNames.INFO].inputs[inputNames[formNames.INFO].PHONE];
 
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadCardNameOnCard = JSON.parse(JSON.stringify(cardNameOnCard));
       const payloadCardPromoCode = JSON.parse(JSON.stringify(cardPromoCode));
@@ -307,10 +307,10 @@ describe('uiThunkAccount', () => {
       const infoEmail = forms[formNames.INFO].inputs[inputNames[formNames.INFO].EMAIL];
       const infoPhone = forms[formNames.INFO].inputs[inputNames[formNames.INFO].PHONE];
 
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadCardNameOnCard = JSON.parse(JSON.stringify(cardNameOnCard));
       const payloadCardPromoCode = JSON.parse(JSON.stringify(cardPromoCode));
@@ -410,10 +410,10 @@ describe('uiThunkAccount', () => {
       const infoEmail = forms[formNames.INFO].inputs[inputNames[formNames.INFO].EMAIL];
       const infoPhone = forms[formNames.INFO].inputs[inputNames[formNames.INFO].PHONE];
 
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadCardNameOnCard = JSON.parse(JSON.stringify(cardNameOnCard));
       const payloadCardPromoCode = JSON.parse(JSON.stringify(cardPromoCode));
@@ -511,17 +511,19 @@ describe('uiThunkAccount', () => {
       const cardStripe = forms[formNames.CARD].inputs[inputNames[formNames.CARD].STRIPE];
 
       const infoName = forms[formNames.INFO].inputs[inputNames[formNames.INFO].NAME];
+      const infoEmail = forms[formNames.INFO].inputs[inputNames[formNames.INFO].EMAIL];
       const infoPhone = forms[formNames.INFO].inputs[inputNames[formNames.INFO].PHONE];
 
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadCardNameOnCard = JSON.parse(JSON.stringify(cardNameOnCard));
       const payloadCardPromoCode = JSON.parse(JSON.stringify(cardPromoCode));
       const payloadCardStripe = JSON.parse(JSON.stringify(cardStripe));
       const payloadInfoName = JSON.parse(JSON.stringify(infoName));
+      const payloadInfoEmail = JSON.parse(JSON.stringify(infoEmail));
       const payloadInfoPhone = JSON.parse(JSON.stringify(infoPhone));
       const payloadSignUpPassword = JSON.parse(JSON.stringify(signUpPassword));
       const payloadSignUpPassword2 = JSON.parse(JSON.stringify(signUpPassword2));
@@ -537,6 +539,9 @@ describe('uiThunkAccount', () => {
 
       payloadInfoName.value = '';
       payloadInfoName.errorMessage = '';
+
+      payloadInfoEmail.value = '';
+      payloadInfoEmail.errorMessage = '';
 
       payloadInfoPhone.value = '';
       payloadInfoPhone.errorMessage = '';
@@ -571,6 +576,10 @@ describe('uiThunkAccount', () => {
         {
           type: actionTypesUIExternal.SET_INPUT_VALUE_ERROR,
           payload: payloadInfoPhone,
+        },
+        {
+          type: actionTypesUIExternal.SET_INPUT_VALUE_ERROR,
+          payload: payloadInfoEmail,
         },
         {
           type: actionTypesUIExternal.SET_INPUT_VALUE_ERROR,
@@ -624,10 +633,10 @@ describe('uiThunkAccount', () => {
       forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2].value = password;
 
       const cardStripe = forms[formNames.CARD].inputs[inputNames[formNames.CARD].STRIPE];
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadCardStripe = JSON.parse(JSON.stringify(cardStripe));
       const payloadSignUpPassword = JSON.parse(JSON.stringify(signUpPassword));
@@ -709,10 +718,10 @@ describe('uiThunkAccount', () => {
       forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2].value = password;
 
       const infoEmail = forms[formNames.INFO].inputs[inputNames[formNames.INFO].EMAIL];
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadInfoEmail = JSON.parse(JSON.stringify(infoEmail));
       const payloadSignUpPassword = JSON.parse(JSON.stringify(signUpPassword));
@@ -790,10 +799,10 @@ describe('uiThunkAccount', () => {
       forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2].value = password;
 
       const cardPromoCode = forms[formNames.CARD].inputs[inputNames[formNames.CARD].PROMO_CODE];
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadCardPromoCode = JSON.parse(JSON.stringify(cardPromoCode));
       const payloadSignUpPassword = JSON.parse(JSON.stringify(signUpPassword));
@@ -871,10 +880,10 @@ describe('uiThunkAccount', () => {
       forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2].value = password;
 
       const cardPromoCode = forms[formNames.CARD].inputs[inputNames[formNames.CARD].PROMO_CODE];
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadCardPromoCode = JSON.parse(JSON.stringify(cardPromoCode));
       const payloadSignUpPassword = JSON.parse(JSON.stringify(signUpPassword));
@@ -951,10 +960,10 @@ describe('uiThunkAccount', () => {
       forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD].value = password;
       forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2].value = password;
 
-      const signUpPassword =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD];
-      const signUpPassword2 =
-        forms[formNames.SIGN_UP].inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
+      const signUpPassword = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD];
+      const signUpPassword2 = forms[formNames.SIGN_UP]
+        .inputs[inputNames[formNames.SIGN_UP].PASSWORD2];
 
       const payloadSignUpPassword = JSON.parse(JSON.stringify(signUpPassword));
       const payloadSignUpPassword2 = JSON.parse(JSON.stringify(signUpPassword2));

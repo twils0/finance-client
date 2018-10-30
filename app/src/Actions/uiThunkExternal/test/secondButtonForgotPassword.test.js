@@ -14,7 +14,7 @@ const mockStore = configureMockStore(middleware);
 
 const email = 'test@test.com';
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('secondButtonForgotPassword', () => {
     it('creates the correct actions with the correct payload, inputs all have values', async () => {
       const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
@@ -24,8 +24,7 @@ describe('uiThunkAccount', () => {
         inputNames[formNames.FORGOT_PASSWORD].EMAIL
       ].value = email;
 
-      const forgotPasswordEmail =
-        forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
+      const forgotPasswordEmail = forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
 
       const payloadForgotPasswordEmail = JSON.parse(JSON.stringify(forgotPasswordEmail));
 

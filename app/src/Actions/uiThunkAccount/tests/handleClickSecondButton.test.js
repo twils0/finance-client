@@ -7,13 +7,11 @@ import { initialState as initialStateUIAccount } from '../../../Reducers/uiReduc
 import { codeTypeNames } from '../../../Constants/dataConstantsAuth';
 import { formNames } from '../../../Constants/uiConstantsAccount';
 import handleClickSecondButton from '../handleClickSecondButton';
-import requestVerifyField from '../../dataThunkAuth/requestVerifyField';
-import handleCancel from '../../uiThunkAccount/handleCancel';
+import handleCancel from '../handleCancel';
 
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
 
-jest.mock('../../dataThunkAuth/requestVerifyField', () => jest.fn());
 jest.mock('../../uiThunkAccount/handleCancel', () => jest.fn());
 handleCancel.mockReturnValue(() => null);
 
@@ -24,7 +22,6 @@ const handlerPayload = {
 describe('uiThunkAccount', () => {
   describe('handleClickSecondButton', () => {
     afterEach(() => {
-      requestVerifyField.mockReset();
       handlerPayload.resetStripeElement.mockReset();
     });
 
@@ -57,7 +54,7 @@ describe('uiThunkAccount', () => {
       expect(handleCancel).toBeCalled();
     });
 
-    it('calls secondButtonCode when form current is CODE, phone needed', async () => {
+    it('calls secondButtonCode when form current is not BILLING', async () => {
       const stateBeforeAuth = JSON.parse(JSON.stringify(initialStateAuth));
       const stateBeforeUIAccount = JSON.parse(JSON.stringify(initialStateUIAccount));
       stateBeforeUIAccount.forms.current = formNames.CODE;
@@ -69,12 +66,9 @@ describe('uiThunkAccount', () => {
         ui: { internal: { account: stateBeforeUIAccount } },
       });
 
-      requestVerifyField.mockReturnValue(() => null);
-
       const result = store.dispatch(handleClickSecondButton(handlerPayload));
 
       expect(result).toEqual(null);
-      expect(requestVerifyField).toBeCalledWith({ field: 'phone_number' });
       expect(handleCancel).toBeCalled();
     });
 

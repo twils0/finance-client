@@ -82,12 +82,6 @@ const loadAWSFields = () => async (dispatch, getState) => {
             };
             break;
           }
-          case 'phone_number_verified': {
-            dispatch(
-              setCodeType({ id: codeTypeNames.VERIFY_PHONE, needed: field.Value !== 'true' }),
-            );
-            break;
-          }
           default:
             break;
         }

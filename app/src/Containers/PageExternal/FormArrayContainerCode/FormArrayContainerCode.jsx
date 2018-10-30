@@ -8,7 +8,6 @@ import { motionStatusTypes } from '../../../Constants/uiConstantsApp';
 import { formNames } from '../../../Constants/uiConstantsExternal';
 
 import FlexRow from '../../../Components/Flex/FlexRow';
-import FormContainerCodeVerifyPhone from './Forms/FormContainerCodeVerifyPhone';
 import FormContainerCodeMFAPhone from './Forms/FormContainerCodeMFAPhone';
 import FormContainerCodeVerifyEmail from './Forms/FormContainerCodeVerifyEmail';
 import FormContainerDevice from './Forms/FormContainerDevice';
@@ -43,15 +42,6 @@ class FormArrayCode extends React.Component {
       case formNames.CODE_MFA_PHONE:
         form = (
           <FormContainerCodeMFAPhone
-            heightRef={heightRef}
-            setHeight={setHeight}
-            clearElement={clearElement}
-          />
-        );
-        break;
-      case formNames.CODE_VERIFY_PHONE:
-        form = (
-          <FormContainerCodeVerifyPhone
             heightRef={heightRef}
             setHeight={setHeight}
             clearElement={clearElement}

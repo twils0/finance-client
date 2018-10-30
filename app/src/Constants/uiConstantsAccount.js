@@ -37,7 +37,6 @@ export const buttonTexts = {
 export const inputNames = {
   [formNames.CODE]: {
     CODE_PHONE: 'codeCodePhone',
-    CODE_EMAIL: 'codeCodeEmail',
   },
   [formNames.PROFILE]: {
     NAME: 'profileName',

@@ -30,7 +30,7 @@ const email = 'test@test.com';
 const password = 'testPassword1!';
 const remembered = true;
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('firstButtonDevice', () => {
     afterEach(() => {
       requestSignOutOtherDevices.mockReset();

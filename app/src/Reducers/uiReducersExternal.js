@@ -174,31 +174,11 @@ export const initialState = {
         },
       },
     },
-    [formNames.CODE_VERIFY_PHONE]: {
-      id: formNames.CODE_VERIFY_PHONE,
-      height: 183,
-      inputsList: [...Object.values(inputNames[formNames.CODE_VERIFY_PHONE])],
-      inputs: {
-        [inputNames[formNames.CODE_VERIFY_PHONE].CODE]: {
-          parentId: formNames.CODE_VERIFY_PHONE,
-          id: inputNames[formNames.CODE_VERIFY_PHONE].CODE,
-          value: '',
-          errorMessage: '',
-        },
-      },
-    },
     [formNames.CODE_VERIFY_EMAIL]: {
       id: formNames.CODE_VERIFY_EMAIL,
-      height: 183,
-      inputsList: [...Object.values(inputNames[formNames.CODE_VERIFY_EMAIL])],
-      inputs: {
-        [inputNames[formNames.CODE_VERIFY_EMAIL].CODE]: {
-          parentId: formNames.CODE_VERIFY_EMAIL,
-          id: inputNames[formNames.CODE_VERIFY_EMAIL].CODE,
-          value: '',
-          errorMessage: '',
-        },
-      },
+      height: 246,
+      inputsList: [],
+      inputs: {},
     },
     [formNames.DEVICE]: {
       id: formNames.DEVICE,
@@ -215,8 +195,6 @@ export const initialState = {
       id: buttonNames.FORGOT_PASSWORD,
       text: buttonTexts.FORGOT_PASSWORD,
     },
-    [buttonNames.RESEND_PHONE]: { id: buttonNames.RESEND_PHONE, text: buttonTexts.RESEND_PHONE },
-    [buttonNames.RESEND_EMAIL]: { id: buttonNames.RESEND_EMAIL, text: buttonTexts.RESEND_EMAIL },
   },
 };
 

@@ -6,7 +6,7 @@ import requestVerifyEmailLink from '../dataThunkAuth/requestVerifyEmailLink';
 import requestAWSUser from '../dataThunkAWS/requestAWSUser';
 import { setCurrentForm, setInputValueError } from '../uiActionsExternal';
 
-const firstButtonCodeEmail = payload => {
+const firstButtonCodeVerifyEmail = (payload) => {
   if (!Object.prototype.hasOwnProperty.call(payload, 'match')) {
     throw new Error(`Please enter a value for the 'match' key - ${JSON.stringify(payload)}`);
   }
@@ -67,4 +67,4 @@ const firstButtonCodeEmail = payload => {
   };
 };
 
-export default firstButtonCodeEmail;
+export default firstButtonCodeVerifyEmail;

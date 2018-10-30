@@ -19,13 +19,10 @@ describe('uiThunkAccount', () => {
       const { forms } = stateBeforeUIAccount;
 
       const codeCodePhone = forms[formNames.CODE].inputs[inputNames[formNames.CODE].CODE_PHONE];
-      const codeCodeEmail = forms[formNames.CODE].inputs[inputNames[formNames.CODE].CODE_EMAIL];
 
       const payloadCodeCodePhone = JSON.parse(JSON.stringify(codeCodePhone));
-      const payloadCodeCodeEmail = JSON.parse(JSON.stringify(codeCodeEmail));
 
       codeCodePhone.value = 'testValue';
-      codeCodeEmail.value = 'testValue';
 
       const store = mockStore({ ui: { internal: { account: stateBeforeUIAccount } } });
 
@@ -33,10 +30,6 @@ describe('uiThunkAccount', () => {
         {
           type: actionTypesUIAccount.SET_INPUT_VALUE_ERROR,
           payload: payloadCodeCodePhone,
-        },
-        {
-          type: actionTypesUIAccount.SET_INPUT_VALUE_ERROR,
-          payload: payloadCodeCodeEmail,
         },
       ];
 
@@ -53,13 +46,10 @@ describe('uiThunkAccount', () => {
       const { forms } = stateBeforeUIAccount;
 
       const codeCodePhone = forms[formNames.CODE].inputs[inputNames[formNames.CODE].CODE_PHONE];
-      const codeCodeEmail = forms[formNames.CODE].inputs[inputNames[formNames.CODE].CODE_EMAIL];
 
       const payloadCodeCodePhone = JSON.parse(JSON.stringify(codeCodePhone));
-      const payloadCodeCodeEmail = JSON.parse(JSON.stringify(codeCodeEmail));
 
       codeCodePhone.errorMessage = 'testError';
-      codeCodeEmail.errorMessage = 'testError';
 
       const store = mockStore({ ui: { internal: { account: stateBeforeUIAccount } } });
 
@@ -67,10 +57,6 @@ describe('uiThunkAccount', () => {
         {
           type: actionTypesUIAccount.SET_INPUT_VALUE_ERROR,
           payload: payloadCodeCodePhone,
-        },
-        {
-          type: actionTypesUIAccount.SET_INPUT_VALUE_ERROR,
-          payload: payloadCodeCodeEmail,
         },
       ];
 

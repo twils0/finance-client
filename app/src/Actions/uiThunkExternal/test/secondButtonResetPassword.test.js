@@ -19,7 +19,7 @@ const email = 'test@test.com';
 const code = '123456';
 const password = 'password1!';
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('secondButtonResetPassword', () => {
     it('creates the correct actions with the correct payload, inputs all have values', async () => {
       const stateBeforeAuth = JSON.parse(JSON.stringify(initialStateAuth));
@@ -42,14 +42,10 @@ describe('uiThunkAccount', () => {
         inputNames[formNames.RESET_PASSWORD].PASSWORD2
       ].value = password;
 
-      const forgotPasswordEmail =
-        forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
-      const resetPasswordCode =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].CODE];
-      const resetPasswordPassword =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD];
-      const resetPasswordPassword2 =
-        forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
+      const forgotPasswordEmail = forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
+      const resetPasswordCode = forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].CODE];
+      const resetPasswordPassword = forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD];
+      const resetPasswordPassword2 = forms[formNames.RESET_PASSWORD].inputs[inputNames[formNames.RESET_PASSWORD].PASSWORD2];
 
       const payloadForgotPasswordEmail = JSON.parse(JSON.stringify(forgotPasswordEmail));
       const payloadResetPasswordCode = JSON.parse(JSON.stringify(resetPasswordCode));

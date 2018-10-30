@@ -2,7 +2,7 @@ import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
 import { initialState as initialStateUIExternal } from '../../../Reducers/uiReducersExternal';
-import { requestStatusTypes, pathNames } from '../../../Constants/universalConstants';
+import { requestStatusTypes } from '../../../Constants/universalConstants';
 import { actionTypes as actionTypesAuth, statusNames } from '../../../Constants/dataConstantsAuth';
 import { errorMessages } from '../../../Constants/uiConstantsApp';
 import {
@@ -11,14 +11,12 @@ import {
   inputNames,
 } from '../../../Constants/uiConstantsExternal';
 import requestForgotPassword from '../../dataThunkAuth/requestForgotPassword';
-import requestSignUpResendPhone from '../../dataThunkAuth/requestSignUpResendPhone';
 import firstButtonForgotPassword from '../firstButtonForgotPassword';
 
 const history = {
   replace: jest.fn(),
 };
 jest.mock('../../dataThunkAuth/requestForgotPassword', () => jest.fn());
-jest.mock('../../dataThunkAuth/requestSignUpResendPhone', () => jest.fn());
 
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
@@ -26,7 +24,7 @@ const mockStore = configureMockStore(middleware);
 const email = 'test@test.com';
 const password = 'testPassword1!';
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('firstButtonForgotPassword', () => {
     afterEach(() => {
       requestForgotPassword.mockReset();
@@ -56,8 +54,8 @@ describe('uiThunkAccount', () => {
       const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
       const { forms } = stateBeforeUIExternal;
 
-      const forgotPasswordEmail =
-        forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
+      const forgotPasswordEmail = forms[formNames.FORGOT_PASSWORD]
+        .inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
 
       const payloadForgotPasswordEmail = JSON.parse(JSON.stringify(forgotPasswordEmail));
 
@@ -89,11 +87,10 @@ describe('uiThunkAccount', () => {
       const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
       const { forms } = stateBeforeUIExternal;
 
-      forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL].value =
-        'wrongEmail';
+      forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL].value = 'wrongEmail';
 
-      const forgotPasswordEmail =
-        forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
+      const forgotPasswordEmail = forms[formNames.FORGOT_PASSWORD]
+        .inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
 
       const payloadForgotPasswordEmail = JSON.parse(JSON.stringify(forgotPasswordEmail));
 
@@ -132,8 +129,8 @@ describe('uiThunkAccount', () => {
       forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL].value = email;
       forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD].value = password;
 
-      const forgotPasswordEmail =
-        forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
+      const forgotPasswordEmail = forms[formNames.FORGOT_PASSWORD]
+        .inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
       const loginEmail = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].EMAIL];
       const loginPassword = forms[formNames.LOGIN].inputs[inputNames[formNames.LOGIN].PASSWORD];
 
@@ -196,8 +193,8 @@ describe('uiThunkAccount', () => {
         inputNames[formNames.FORGOT_PASSWORD].EMAIL
       ].value = email;
 
-      const forgotPasswordEmail =
-        forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
+      const forgotPasswordEmail = forms[formNames.FORGOT_PASSWORD]
+        .inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
 
       const payloadForgotPasswordEmail = JSON.parse(JSON.stringify(forgotPasswordEmail));
 
@@ -237,8 +234,8 @@ describe('uiThunkAccount', () => {
         inputNames[formNames.FORGOT_PASSWORD].EMAIL
       ].value = email;
 
-      const forgotPasswordEmail =
-        forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
+      const forgotPasswordEmail = forms[formNames.FORGOT_PASSWORD]
+        .inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
 
       const payloadForgotPasswordEmail = JSON.parse(JSON.stringify(forgotPasswordEmail));
 
@@ -270,52 +267,6 @@ describe('uiThunkAccount', () => {
       expect(requestForgotPassword).toBeCalledWith({ email });
     });
 
-    it("requestForgotPassword throws a 'InvalidParameterException' error", async () => {
-      const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
-      const { forms } = stateBeforeUIExternal;
-
-      forms[formNames.FORGOT_PASSWORD].inputs[
-        inputNames[formNames.FORGOT_PASSWORD].EMAIL
-      ].value = email;
-
-      const forgotPasswordEmail =
-        forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
-
-      const payloadForgotPasswordEmail = JSON.parse(JSON.stringify(forgotPasswordEmail));
-
-      payloadForgotPasswordEmail.errorMessage = errorMessages.EMAIL_NOT_FOUND;
-
-      const store = mockStore({
-        ui: { external: stateBeforeUIExternal },
-      });
-
-      const error = {
-        code: 'InvalidParameterException',
-        message: 'testMessage',
-      };
-      const expectedActions = [
-        {
-          type: actionTypesUIExternal.SET_CURRENT_FORM,
-          payload: {
-            current: formNames.CODE_VERIFY_PHONE,
-          },
-        },
-      ];
-
-      requestForgotPassword.mockReturnValue(() => Promise.reject(error));
-      requestSignUpResendPhone.mockReturnValue(() => null);
-
-      const result = await store.dispatch(firstButtonForgotPassword({ history }));
-
-      const actions = store.getActions();
-
-      expect(actions).toEqual(expectedActions);
-      expect(result).toEqual(null);
-      expect(requestForgotPassword).toBeCalledWith({ email });
-      expect(requestSignUpResendPhone).toBeCalledWith({ email });
-      expect(history.replace).toBeCalledWith(pathNames.CODE);
-    });
-
     it('requestForgotPassword throws an unexpected error', async () => {
       const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
       const { forms } = stateBeforeUIExternal;
@@ -324,8 +275,8 @@ describe('uiThunkAccount', () => {
         inputNames[formNames.FORGOT_PASSWORD].EMAIL
       ].value = email;
 
-      const forgotPasswordEmail =
-        forms[formNames.FORGOT_PASSWORD].inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
+      const forgotPasswordEmail = forms[formNames.FORGOT_PASSWORD]
+        .inputs[inputNames[formNames.FORGOT_PASSWORD].EMAIL];
 
       const payloadForgotPasswordEmail = JSON.parse(JSON.stringify(forgotPasswordEmail));
 

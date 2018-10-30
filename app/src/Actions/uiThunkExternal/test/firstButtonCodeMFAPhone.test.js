@@ -33,7 +33,8 @@ describe('uiThunkExternal', () => {
       const stateBeforeUIExternal = JSON.parse(JSON.stringify(initialStateUIExternal));
       const { forms } = stateBeforeUIExternal;
 
-      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE]
+        .inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const payloadCodeCodeMFAPhone = JSON.parse(JSON.stringify(codeCodeMFAPhone));
 
@@ -73,7 +74,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_MFA_PHONE].CODE
       ].value = code;
 
-      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE]
+        .inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const payloadCodeCodeMFAPhone = JSON.parse(JSON.stringify(codeCodeMFAPhone));
 
@@ -89,7 +91,7 @@ describe('uiThunkExternal', () => {
         {
           type: actionTypesUIExternal.SET_CURRENT_FORM,
           payload: {
-            current: formNames.CODE_VERIFY_PHONE,
+            current: formNames.CODE_VERIFY_EMAIL,
           },
         },
         {
@@ -125,7 +127,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_MFA_PHONE].CODE
       ].value = code;
 
-      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE]
+        .inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const payloadCodeCodeMFAPhone = JSON.parse(JSON.stringify(codeCodeMFAPhone));
 
@@ -180,7 +183,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_MFA_PHONE].CODE
       ].value = code;
 
-      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE]
+        .inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const payloadCodeCodeMFAPhone = JSON.parse(JSON.stringify(codeCodeMFAPhone));
 
@@ -233,7 +237,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_MFA_PHONE].CODE
       ].value = code;
 
-      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE]
+        .inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const payloadCodeCodeMFAPhone = JSON.parse(JSON.stringify(codeCodeMFAPhone));
 
@@ -285,7 +290,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_MFA_PHONE].CODE
       ].value = code;
 
-      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE]
+        .inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const payloadCodeCodeMFAPhone = JSON.parse(JSON.stringify(codeCodeMFAPhone));
 
@@ -337,7 +343,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_MFA_PHONE].CODE
       ].value = code;
 
-      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE]
+        .inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const errorPayloadCodeCodeMFAPhone = JSON.parse(JSON.stringify(codeCodeMFAPhone));
 
@@ -386,7 +393,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_MFA_PHONE].CODE
       ].value = code;
 
-      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE]
+        .inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const errorPayloadCodeCodeMFAPhone = JSON.parse(JSON.stringify(codeCodeMFAPhone));
 
@@ -435,7 +443,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_MFA_PHONE].CODE
       ].value = code;
 
-      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE]
+        .inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const errorPayloadCodeCodeMFAPhone = JSON.parse(JSON.stringify(codeCodeMFAPhone));
 
@@ -484,7 +493,8 @@ describe('uiThunkExternal', () => {
         inputNames[formNames.CODE_MFA_PHONE].CODE
       ].value = code;
 
-      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE].inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
+      const codeCodeMFAPhone = forms[formNames.CODE_MFA_PHONE]
+        .inputs[inputNames[formNames.CODE_MFA_PHONE].CODE];
 
       const errorPayloadCodeCodeMFAPhone = JSON.parse(JSON.stringify(codeCodeMFAPhone));
 

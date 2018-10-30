@@ -24,7 +24,7 @@ const loginPayload = {
 const email = 'test@test.com';
 const password = 'testPassword1!';
 
-describe('uiThunkAccount', () => {
+describe('uiThunkExternal', () => {
   describe('secondButtonLogin', () => {
     afterEach(() => {
       history.replace.mockReset();

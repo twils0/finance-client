@@ -94,8 +94,8 @@ const theme = {
   size: {
     font: {
       default: '15px',
-      text: '14px',
-      mobileText: '15px',
+      text: '15px',
+      mobileText: '16px',
       paragraph: '17px',
       table: '16px',
       tablePage: '18px',

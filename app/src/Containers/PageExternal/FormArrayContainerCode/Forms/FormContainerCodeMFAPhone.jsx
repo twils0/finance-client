@@ -23,8 +23,8 @@ class FormContainerCodeMFAPhone extends React.Component {
     const { statusAuth } = nextProps;
 
     if (
-      statusAuth[statusNames.LOGIN_MFA].status === requestStatusTypes.LOADING ||
-      statusAuth[statusNames.LOGIN_MFA].status === requestStatusTypes.SUCCESS
+      statusAuth[statusNames.LOGIN_MFA].status === requestStatusTypes.LOADING
+      || statusAuth[statusNames.LOGIN_MFA].status === requestStatusTypes.SUCCESS
     ) {
       nextProps.clearElement(formNames.CODE_MFA_PHONE);
     }
@@ -91,8 +91,8 @@ class FormContainerCodeMFAPhone extends React.Component {
     } = this.props;
 
     if (
-      statusAuth[statusNames.LOGIN_MFA].status === requestStatusTypes.LOADING ||
-      statusAuth[statusNames.LOGIN_MFA].status === requestStatusTypes.SUCCESS
+      statusAuth[statusNames.LOGIN_MFA].status === requestStatusTypes.LOADING
+      || statusAuth[statusNames.LOGIN_MFA].status === requestStatusTypes.SUCCESS
     ) {
       const widthString = `${width}px`;
 
@@ -148,4 +148,7 @@ const mapDispatchToProps = dispatch => ({
   handleInputValueError: payload => dispatch(setInputValueError(payload)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(FormContainerCodeMFAPhone);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(FormContainerCodeMFAPhone);

@@ -25,15 +25,14 @@ const clearElement = jest.fn();
 
 const codePhone = '123456';
 
-const shallowComponent = store =>
-  shallow(
-    <FormContainerCode heightRef={heightRef} setHeight={setHeight} clearElement={clearElement} />,
-    {
-      context: {
-        store,
-      },
+const shallowComponent = store => shallow(
+  <FormContainerCode heightRef={heightRef} setHeight={setHeight} clearElement={clearElement} />,
+  {
+    context: {
+      store,
     },
-  ).dive();
+  },
+).dive();
 
 describe('Containers', () => {
   describe('PageInternal', () => {
@@ -92,7 +91,7 @@ describe('Containers', () => {
 
             const nextProps = {
               statusAuth: {
-                [statusNames.VERIFY_PHONE_CODE]: {
+                [statusNames.VERIFY_EMAIL_LINK]: {
                   status: requestStatusTypes.LOADING,
                 },
               },
@@ -125,8 +124,8 @@ describe('Containers', () => {
             const stateBeforeAuth = JSON.parse(JSON.stringify(initialStateAuth));
             const stateBeforeUIAccount = JSON.parse(JSON.stringify(initialStateUIAccount));
 
-            stateBeforeAuth.status[statusNames.VERIFY_PHONE_CODE].status =
-              requestStatusTypes.LOADING;
+            stateBeforeAuth
+              .status[statusNames.VERIFY_PHONE_CODE].status = requestStatusTypes.LOADING;
 
             const store = mockStore({
               data: {
@@ -154,8 +153,9 @@ describe('Containers', () => {
             const stateBeforeUIAccount = JSON.parse(JSON.stringify(initialStateUIAccount));
             const { forms } = stateBeforeUIAccount;
 
-            forms[formNames.CODE].inputs[inputNames[formNames.CODE].CODE_PHONE].errorMessage =
-              errorMessages.NO_VERIFICATION_CODE_PHONE;
+            forms[formNames.CODE]
+              .inputs[inputNames[formNames.CODE].CODE_PHONE]
+              .errorMessage = errorMessages.NO_VERIFICATION_CODE_PHONE;
 
             const store = mockStore({
               data: {
@@ -211,8 +211,9 @@ describe('Containers', () => {
             forms[formNames.CODE].inputs[
               inputNames[formNames.CODE].CODE_PHONE
             ].value = wrongCodePhone;
-            forms[formNames.CODE].inputs[inputNames[formNames.CODE].CODE_PHONE].errorMessage =
-              errorMessages.INVALID_VERIFICATION_CODE;
+            forms[formNames.CODE]
+              .inputs[inputNames[formNames.CODE].CODE_PHONE]
+              .errorMessage = errorMessages.INVALID_VERIFICATION_CODE;
 
             const store = mockStore({
               data: {
@@ -263,8 +264,9 @@ describe('Containers', () => {
             const stateBeforeUIAccount = JSON.parse(JSON.stringify(initialStateUIAccount));
             const { forms } = stateBeforeUIAccount;
 
-            forms[formNames.CODE].inputs[inputNames[formNames.CODE].CODE_PHONE].errorMessage =
-              errorMessages.INTERNAL_ERROR;
+            forms[formNames.CODE]
+              .inputs[inputNames[formNames.CODE].CODE_PHONE]
+              .errorMessage = errorMessages.INTERNAL_ERROR;
 
             const store = mockStore({
               data: {

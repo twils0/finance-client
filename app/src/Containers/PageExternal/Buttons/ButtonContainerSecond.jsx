@@ -26,8 +26,6 @@ class ButtonContainerSecond extends React.Component {
       statusAuth[statusNames.LOGIN].status === requestStatusTypes.LOADING
       || statusAuth[statusNames.SIGN_OUT_DEVICES].status === requestStatusTypes.LOADING
       || statusAuth[statusNames.LOGIN_MFA].status === requestStatusTypes.LOADING
-      || statusAuth[statusNames.VERIFY_PHONE].status === requestStatusTypes.LOADING
-      || statusAuth[statusNames.VERIFY_PHONE_CODE].status === requestStatusTypes.LOADING
       || statusAuth[statusNames.VERIFY_EMAIL].status === requestStatusTypes.LOADING
       || statusAuth[statusNames.FORGOT_PASSWORD].status === requestStatusTypes.LOADING
       || statusAuth[statusNames.CHANGE_PASSWORD].status === requestStatusTypes.LOADING

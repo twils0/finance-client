@@ -43,7 +43,7 @@ const stripePayload = {
   ...stripePayloadNoCard,
 };
 const tokenId = 'testTokenId';
-const plan = 'Basic_450';
+const plan = 'basic_plan';
 const putPayloadNoCard = {
   token: null,
   ...stripePayloadNoCard,

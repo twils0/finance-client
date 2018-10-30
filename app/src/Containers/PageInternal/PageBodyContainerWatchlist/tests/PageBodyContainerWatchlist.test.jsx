@@ -15,12 +15,11 @@ import PageBodyContainerWatchlist from '../PageBodyContainerWatchlist';
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
 
-const shallowComponent = store =>
-  shallow(<PageBodyContainerWatchlist />, {
-    context: {
-      store,
-    },
-  }).dive();
+const shallowComponent = store => shallow(<PageBodyContainerWatchlist />, {
+  context: {
+    store,
+  },
+}).dive();
 
 const testId0 = 'testId0';
 const testId1 = 'testId1';
@@ -122,9 +121,7 @@ describe('Containers', () => {
 
         const wrapper = shallowComponent(store);
 
-        const instance = wrapper.instance();
-
-        instance.componentWillUpdate(nextProps);
+        wrapper.setProps(nextProps);
 
         const actions = store.getActions();
 

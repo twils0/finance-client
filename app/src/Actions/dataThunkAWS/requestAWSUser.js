@@ -44,7 +44,9 @@ const requestAWSUser = () => async (dispatch, getState) => {
       return Promise.reject(error);
     }
 
-    dispatch(setAWSUser({ user }));
+    if (!demo) {
+      dispatch(setAWSUser({ user }));
+    }
     dispatch(setAWSStatus({ status: requestStatusTypes.SUCCESS }));
 
     return { user };

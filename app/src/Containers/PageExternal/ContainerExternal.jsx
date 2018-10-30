@@ -55,7 +55,6 @@ class ContainerExternal extends React.Component {
       [formNames.INFO]: null,
       [formNames.SIGN_UP]: null,
       [formNames.CODE_MFA_PHONE]: null,
-      [formNames.CODE_VERIFY_PHONE]: null,
       [formNames.CODE_VERIFY_EMAIL]: null,
       [formNames.DEVICE]: null,
     };
@@ -115,7 +114,6 @@ class ContainerExternal extends React.Component {
     if (
       (path === pathNames.CODE || path === pathNames.CODE_VERIFY_EMAIL)
       && currentForm !== formNames.CODE_MFA_PHONE
-      && currentForm !== formNames.CODE_VERIFY_PHONE
       && currentForm !== formNames.CODE_VERIFY_EMAIL
       && currentForm !== formNames.DEVICE
     ) {
@@ -184,7 +182,7 @@ class ContainerExternal extends React.Component {
     }
 
     if (path === pathNames.CODE || path === pathNames.CODE_VERIFY_EMAIL) {
-      if (currentForm === formNames.CODE_VERIFY_PHONE || currentForm === formNames.CODE_MFA_PHONE) {
+      if (currentForm === formNames.CODE_MFA_PHONE) {
         if (buttons[buttonNames.FIRST].text !== buttonTexts.SUBMIT) {
           this.props.handleButtonText({ id: buttonNames.FIRST, text: buttonTexts.SUBMIT });
         }
