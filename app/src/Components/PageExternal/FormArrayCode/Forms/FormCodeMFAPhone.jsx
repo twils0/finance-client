@@ -37,7 +37,6 @@ const FormCodeMFAPhone = (props) => {
         themeFontWeight="light"
         padding={`0 0 ${inputHeightBufferHalfString} 0`}
         margin="0"
-        height="52px"
       >
         Please enter the confirmation code sent to your mobile phone.
       </Header2>

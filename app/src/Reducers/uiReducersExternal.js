@@ -37,7 +37,7 @@ export const initialState = {
     list: [...Object.values(formNames)],
     [formNames.RESET_PASSWORD]: {
       id: formNames.RESET_PASSWORD,
-      height: 339,
+      height: 384,
       inputsList: [...Object.values(inputNames[formNames.RESET_PASSWORD])],
       inputs: {
         [inputNames[formNames.RESET_PASSWORD].CODE]: {
@@ -62,7 +62,7 @@ export const initialState = {
     },
     [formNames.FORGOT_PASSWORD]: {
       id: formNames.FORGOT_PASSWORD,
-      height: 220,
+      height: 250,
       inputsList: [...Object.values(inputNames[formNames.FORGOT_PASSWORD])],
       inputs: {
         [inputNames[formNames.FORGOT_PASSWORD].EMAIL]: {
@@ -75,7 +75,7 @@ export const initialState = {
     },
     [formNames.LOGIN]: {
       id: formNames.LOGIN,
-      height: 222,
+      height: 240,
       inputsList: [...Object.values(inputNames[formNames.LOGIN])],
       inputs: {
         [inputNames[formNames.LOGIN].EMAIL]: {
@@ -119,7 +119,7 @@ export const initialState = {
     },
     [formNames.INFO]: {
       id: formNames.INFO,
-      height: 280,
+      height: 303,
       inputsList: [...Object.values(inputNames[formNames.INFO])],
       inputs: {
         [inputNames[formNames.INFO].NAME]: {
@@ -144,7 +144,7 @@ export const initialState = {
     },
     [formNames.SIGN_UP]: {
       id: formNames.SIGN_UP,
-      height: 247,
+      height: 398,
       inputsList: [...Object.values(inputNames[formNames.SIGN_UP])],
       inputs: {
         [inputNames[formNames.SIGN_UP].PASSWORD]: {
@@ -163,7 +163,7 @@ export const initialState = {
     },
     [formNames.CODE_MFA_PHONE]: {
       id: formNames.CODE_MFA_PHONE,
-      height: 183,
+      height: 191,
       inputsList: [...Object.values(inputNames[formNames.CODE_MFA_PHONE])],
       inputs: {
         [inputNames[formNames.CODE_MFA_PHONE].CODE]: {
@@ -176,13 +176,13 @@ export const initialState = {
     },
     [formNames.CODE_VERIFY_EMAIL]: {
       id: formNames.CODE_VERIFY_EMAIL,
-      height: 246,
+      height: 235,
       inputsList: [],
       inputs: {},
     },
     [formNames.DEVICE]: {
       id: formNames.DEVICE,
-      height: 146,
+      height: 183,
       inputsList: [],
       inputs: {},
     },

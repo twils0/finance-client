@@ -6,7 +6,9 @@
 
 The demo of this project has no backend. It makes no API calls, except to IEX for equity price and description information.
 
-To login, please enter any email, password (more than 8 characters, at least one number, and at least one special character), and confirmation code (one or more characters). The demo will accept anything that conforms to the basic format it expects (i.e. 'test@test.com' would pass as an email; 'test.com' would not). Please click 'Continue' on the email verification form and either 'Yes' or 'No' on the device form.
+In demo mode, the login password field and all confirmation code fields will accept one or more of any character. All other fields will accept anything that conforms to the basic format expected for that field (i.e. 'test@test.com' would work for an email field; 'test.com' would not).
+
+To login, please enter any email and password on the login form and press 'Log In'. Please enter any confirmation code on the MFA form and press 'Submit'. Please click 'Continue' on the email verification form and either 'Yes' or 'No' on the device form.
 
 Once logged in, you may:
 

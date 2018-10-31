@@ -29,7 +29,6 @@ const FormDevice = (props) => {
         themeFontWeight="light"
         padding={`0 0 ${inputHeightBufferString} 0`}
         margin="0"
-        height="82px" // hardcoded to avoid IE issues
       >
         Should we remember this device to speed up the login process in the future?
       </Header2>
@@ -38,7 +37,6 @@ const FormDevice = (props) => {
         themeFontWeight="light"
         padding={`0 0 ${inputHeightBufferHalfString} 0`}
         margin="0"
-        height="52px" // hardcoded to avoid IE issues
       >
         {'We recommend you select "No" below, if you are on a public computer.'}
       </Header2>

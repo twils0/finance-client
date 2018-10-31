@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom';
 import theme from '../../../../themes';
 
 import { pathNames } from '../../../../Constants/universalConstants';
-import { formNames, inputNames } from '../../../../Constants/uiConstantsExternal';
+import {
+  formNames,
+  inputNames,
+} from '../../../../Constants/uiConstantsExternal';
 
 import Form from '../../../Form';
 import Header2 from '../../../Header2';
@@ -43,11 +46,10 @@ const FormSignUp = (props) => {
         themeFontWeight="light"
         padding={`0 0 ${inputHeightBufferHalfString} 0`}
         margin="0"
-        height="96px" // hardcoded to avoid IE issues
         fontSize="17px"
       >
-        Please enter a password containing at least 8 characters, one of the following special
-        characters, $@!%*#?&, one letter, and one number.
+        Please enter a password containing at least 8 characters, one of the
+        following special characters, $@!%*#?&, one letter, and one number.
       </Header2>
       <Input
         id={inputNames[formString].PASSWORD}
@@ -79,7 +81,6 @@ const FormSignUp = (props) => {
         themeSize="text"
         margin="0"
         padding={`${inputHeightBufferHalfString} 0`}
-        height="70px" // hardcoded to avoid IE issues
       >
         {
           'By clicking the "Sign Up" button below to sign up, you agree to abide by and acknowledge you have read our '

@@ -1,6 +1,6 @@
 {
   "name": "finance_client",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "client allowing users to subscribe to equities",
   "author": "twils0",
   "repository": {
@@ -90,6 +90,7 @@
     "halogenium": "^2.2.3",
     "isomorphic-fetch": "^2.2.1",
     "polished": "^2.3.0",
+    "prettier-eslint": "^8.8.2",
     "prop-types": "^15.6.2",
     "raven-js": "^3.27.0",
     "react": "^16.6.0",
