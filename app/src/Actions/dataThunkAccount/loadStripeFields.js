@@ -10,7 +10,7 @@ import { setAccountStatus, setFields } from '../dataActionsAccount';
 import handleErrorCatch from '../../handleErrorCatch';
 
 import { demo } from '../../../../mode.config.json';
-import demoStripe from '../../../../demo/demoStripe';
+import demoStripe from '../../../../demoConfig/demoStripe';
 
 const loadStripeFields = () => async (dispatch, getState) => {
   const state = getState();

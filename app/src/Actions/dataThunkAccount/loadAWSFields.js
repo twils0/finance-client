@@ -12,7 +12,7 @@ import { setAccountStatus, setFields } from '../dataActionsAccount';
 import handleErrorCatch from '../../handleErrorCatch';
 
 import { demo } from '../../../../mode.config.json';
-import demoFields from '../../../../demo/demoFields';
+import demoFields from '../../../../demoConfig/demoFields';
 
 const loadAWSFields = () => async (dispatch, getState) => {
   const state = getState();

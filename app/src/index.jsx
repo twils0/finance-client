@@ -1,20 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import amplify from 'aws-amplify';
-// import raven from 'raven-js';
+import amplify from 'aws-amplify';
+import raven from 'raven-js';
 
 import 'react-hot-loader/patch';
 import 'isomorphic-fetch';
 import { AppContainer } from 'react-hot-loader';
-// import sentry from '../../sentry.config.json';
-// import credentials from '../../amplify.config.json';
-// import { logging } from '../../mode.config.json';
+import sentry from '../../sentry.config.json';
+import credentials from '../../amplify.config.json';
+import { demo, logging } from '../../mode.config.json';
 
 import App from './App';
-/*
-amplify.configure(credentials);
 
-if (!logging) {
+if (!demo) {
+  amplify.configure(credentials);
+}
+
+if (!demo && !logging) {
   raven.config(sentry.url).install();
 
   window.onerror = (message, url, line, column, error) => {
@@ -39,7 +41,7 @@ if (!logging) {
     return true;
   };
 }
-*/
+
 const render = (AppInstance) => {
   ReactDOM.render(
     <AppContainer>
@@ -49,10 +51,10 @@ const render = (AppInstance) => {
   );
 };
 
+render(App);
+
 if (module.hot) {
   module.hot.accept('./App', () => {
     render(App);
   });
 }
-
-render(App);

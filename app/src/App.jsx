@@ -41,17 +41,19 @@ const LoadableInternal = Loadable({
   delay: 0,
 });
 
+const LoadableExternal = Loadable({
+  loader: () => import('./Containers/PageExternal/PageContainerExternal'),
+  loading: Loading,
+  delay: 0,
+});
+
 const LoadableTerms = Loadable({
   loader: () => import('./Containers/PageExternal/PageBodyContainerTerms'),
   loading: Loading,
   delay: 0,
 });
 
-const LoadableExternal = Loadable({
-  loader: () => import('./Containers/PageExternal/PageContainerExternal'),
-  loading: Loading,
-  delay: 0,
-});
+console.log('test app');
 
 const App = () => (
   <ReduxProvider store={store}>
@@ -60,11 +62,17 @@ const App = () => (
         <GlobalFontStyle />
         <BrowserRouter>
           <Switch>
-            <Route path={pathNames.WATCHLIST_SECURITY_ID} component={LoadableInternal} />
+            <Route
+              path={pathNames.WATCHLIST_SECURITY_ID}
+              component={LoadableInternal}
+            />
             <Route path={pathNames.ACCOUNT} component={LoadableInternal} />
             <Route path={pathNames.LOGIN} component={LoadableExternal} />
             <Route path={pathNames.SIGN_UP} component={LoadableExternal} />
-            <Route path={pathNames.CODE_VERIFY_EMAIL} component={LoadableExternal} />
+            <Route
+              path={pathNames.CODE_VERIFY_EMAIL}
+              component={LoadableExternal}
+            />
             <Route path={pathNames.TERMS} component={LoadableTerms} />
             <Route path={pathNames.DEFAULT} component={LoadableExternal} />
           </Switch>

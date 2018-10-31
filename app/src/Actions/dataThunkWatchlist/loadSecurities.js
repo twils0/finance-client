@@ -10,7 +10,7 @@ import requestAWSUser from '../dataThunkAWS/requestAWSUser';
 import handleErrorCatch from '../../handleErrorCatch';
 
 import { demo } from '../../../../mode.config.json';
-import demoLoadSecurities from '../../../../demo/demoLoadSecurities';
+import demoLoadSecurities from '../../../../demoConfig/demoLoadSecurities';
 
 const loadSecurities = () => async (dispatch, getState) => {
   const state = getState();

@@ -11,7 +11,7 @@ import { BeatLoader } from 'halogenium';
 import theme from '../../../themes';
 // import handleErrorCatch from '../../../handleErrorCatch';
 
-import demoSecurities from '../../../../../demo/demoAllSecurities';
+import demoSecurities from '../../../../../demoConfig/demoAllSecurities';
 
 import {
   // axiosConfig,

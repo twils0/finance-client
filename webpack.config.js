@@ -9,7 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const rootDir = path.resolve(__dirname);
 const srcDir = path.resolve(__dirname, 'app/src');
-const binDir = path.resolve(__dirname, 'app/bin');
+const demoDir = path.resolve(__dirname, 'demo');
 const nodeModDir = path.resolve(__dirname, 'node_modules');
 
 const config = {
@@ -17,9 +17,8 @@ const config = {
     bundle: ['@babel/polyfill', path.resolve(srcDir, 'index.jsx')],
   },
   output: {
-    path: binDir,
+    path: demoDir,
     filename: '[name].[hash].min.js',
-    publicPath: '/',
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -69,11 +68,11 @@ const config = {
   optimization: {
     runtimeChunk: false,
     splitChunks: {
+      chunks: 'all',
       cacheGroups: {
         vendors: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          chunks: 'all',
         },
       },
     },
@@ -81,24 +80,22 @@ const config = {
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
-        sourceMap: true,
         uglifyOptions: {
-          compress: {
-            warnings: false,
-          },
+          compress: false,
+          ecma: 6,
+          mangle: true,
         },
       }),
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(['app/bin']),
+    new CleanWebpackPlugin([demoDir]),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
-      path: binDir,
+      path: demoDir,
       filename: 'styles.[hash].css',
-      publicPath: '/',
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(srcDir, 'index.html'),
