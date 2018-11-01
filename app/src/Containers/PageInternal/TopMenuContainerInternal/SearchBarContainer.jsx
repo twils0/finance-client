@@ -2,20 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-// import axios from 'axios';
-// import raven from 'raven-js';
+import axios from 'axios';
+import raven from 'raven-js';
 import AsyncSelect from 'react-select/lib/Async';
 import { components } from 'react-select';
 import { BeatLoader } from 'halogenium';
 
 import theme from '../../../themes';
-// import handleErrorCatch from '../../../handleErrorCatch';
+import handleErrorCatch from '../../../handleErrorCatch';
 
+import demo from '../../../../../mode.config.json';
 import demoSecurities from '../../../../../demoConfig/demoAllSecurities';
 
 import {
-  // axiosConfig,
-  // URLs,
+  axiosConfig,
+  URLs,
   pathNames,
   requestStatusTypes,
 } from '../../../Constants/universalConstants';
@@ -167,32 +168,34 @@ class SearchBarContainer extends React.Component {
 
     if (currentTime - this.inputTime > 0) {
       try {
-        // altered for github pages demo
         const search = inputValue.toLowerCase();
+        let securities = [];
 
-        const securities = demoSecurities.filter((security) => {
-          const {
-            tickerCusip, name, category, exchange,
-          } = security;
+        if (!demo) {
+          const response = await axios.get(URLs.SECURITIES_SEARCH, {
+            params: {
+              search: inputValue.toLowerCase(),
+            },
+            ...axiosConfig.DB,
+          });
 
-          if (tickerCusip.toLowerCase().includes(search)
+          ({ securities } = response.data.body);
+        } else {
+          securities = demoSecurities.filter((security) => {
+            const {
+              tickerCusip, name, category, exchange,
+            } = security;
+
+            if (tickerCusip.toLowerCase().includes(search)
           || name.toLowerCase().includes(search)
           || category.toLowerCase().includes(search)
           || exchange.toLowerCase().includes(search)) {
-            return true;
-          }
+              return true;
+            }
 
-          return false;
-        });
-
-        // const response = await axios.get(URLs.SECURITIES_SEARCH, {
-        //   params: {
-        //     search: inputValue.toLowerCase(),
-        //   },
-        //   ...axiosConfig.DB,
-        // });
-        //
-        // const { securities } = response.data.body;
+            return false;
+          });
+        }
 
         if (
           !securities
@@ -205,11 +208,13 @@ class SearchBarContainer extends React.Component {
 
         return this.addGroups(securities);
       } catch (errorCatch) {
-        // const error = handleErrorCatch(errorCatch);
-        //
-        // raven.captureException(error, {
-        //   logger: 'loadOptions',
-        // });
+        const error = handleErrorCatch(errorCatch);
+
+        if (!demo) {
+          raven.captureException(error, {
+            logger: 'loadOptions',
+          });
+        }
       }
     }
 
