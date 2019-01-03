@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const ButtonStyle = styled.button`
   display: ${props => props.display || 'block'};
 
-  transition: 0.1s color linear, 0.1s background, 0.1s border-color linear;
+  transition: 0.1s color linear, 0.1s background linear, 0.1s border-color linear;
 
   text-align: ${props => props.textAlign};
 
