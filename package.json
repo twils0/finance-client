@@ -12,11 +12,12 @@
   },
   "homepage": "https://github.com/twils0/finance_client#readme",
   "scripts": {
-    "webpack": "webpack --progress --colors --mode production",
-    "dev": "webpack-dev-server --mode development",
-    "prod": "webpack-dev-server --mode production --display-error-details",
+    "build": "webpack --progress --colors --mode production --env.prod=true",
+    "dev": "webpack-dev-server --mode development --env.prod=false",
+    "prod": "webpack-dev-server --mode production --display-error-details --env.prod=true",
     "test": "jest",
-    "test_watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "jest": {
     "verbose": true,
@@ -27,8 +28,8 @@
       "<rootDir>/node_modules"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/mockFile.js",
-      "\\.(css)$": "<rootDir>/__mocks__/mockStyle.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "babel-jest",
+      "\\.(css)$": "babel-jest"
     },
     "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
     "snapshotSerializers": [
@@ -73,6 +74,7 @@
     "jest": "^23.6.0",
     "mini-css-extract-plugin": "^0.4.4",
     "mockdate": "^2.0.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "redux-mock-store": "^1.5.3",
     "serverless-s3bucket-sync": "^0.1.5",
     "style-loader": "^0.23.1",
