@@ -21,9 +21,8 @@ const BurgerMenuBar = styled.div`
   width: ${props => props.width};
   height: ${props => props.height};
 
-  background: ${props =>
-    props.color[props.colorType] ||
-    lighten(0.1, props.theme.color[props.themeColor][props.colorType])};
+  background: ${props => props.color[props.colorType]
+    || lighten(0.1, props.theme.color[props.themeColor][props.colorType])};
 `;
 
 BurgerMenuBar.propTypes = {
