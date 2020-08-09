@@ -21,8 +21,6 @@ class ArticleContainerWatchlist extends React.Component {
       const { handleSecurityData } = this.props;
       const { id, tickerCusip } = currentSecurity;
 
-      console.log('test con sec data 1');
-
       handleSecurityData({ id, tickerCusip });
     }
   }
