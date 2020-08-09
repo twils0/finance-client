@@ -43,10 +43,6 @@ class ArticleContainerWatchlist extends React.Component {
     }
   }
 
-  componentWillUnmount() {
-    console.log('test art unmount');
-  }
-
   render() {
     const {
       outsideWidthTotal,
